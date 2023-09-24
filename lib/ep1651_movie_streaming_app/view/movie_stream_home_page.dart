@@ -13,11 +13,43 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
     return Scaffold(
       body: SafeArea(
         top: true,
+        child: Column(
+          children: [
+            Row(
+              children: [
+                Container(
+                  height: 42,
+                  width: 42,
+                  decoration: BoxDecoration(
+                    color: Colors.grey,
+                  ),
+                ),
+                Expanded(
+                    child: Column(
+                  children: [
+                    Text("Welcome Back!"),
+                    Text("Dream Walker 👋"),
+                  ],
+                )),
+                Spacer(),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.search),
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.notifications_none),
+                )
+              ],
+            )
+          ],
+        ),
       ),
       bottomNavigationBar: BottomAppBar(
         height: 82,
         color: Colors.white,
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             IconButton(
               onPressed: () {},
