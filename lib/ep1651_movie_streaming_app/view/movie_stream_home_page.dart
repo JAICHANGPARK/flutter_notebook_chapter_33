@@ -25,20 +25,25 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
                   ),
                 ),
                 const Expanded(
-                    child: Column(
-                  children: [
-                    Text("Welcome Back!"),
-                    Text("Dream Walker 👋"),
-                  ],
-                )),
+                  child: Column(
+                    children: [
+                      Text("Welcome Back!"),
+                      Text("Dream Walker 👋"),
+                    ],
+                  ),
+                ),
                 const Spacer(),
                 IconButton(
                   onPressed: () {},
-                  icon: const Icon(Icons.search),
+                  icon: const Icon(
+                    Icons.search,
+                  ),
                 ),
                 IconButton(
                   onPressed: () {},
-                  icon: const Icon(Icons.notifications_none),
+                  icon: const Icon(
+                    Icons.notifications_none,
+                  ),
                 )
               ],
             )
