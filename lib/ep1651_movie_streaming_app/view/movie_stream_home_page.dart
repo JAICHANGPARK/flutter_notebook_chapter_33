@@ -20,25 +20,25 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
                 Container(
                   height: 42,
                   width: 42,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Colors.grey,
                   ),
                 ),
-                Expanded(
+                const Expanded(
                     child: Column(
                   children: [
                     Text("Welcome Back!"),
                     Text("Dream Walker 👋"),
                   ],
                 )),
-                Spacer(),
+                const Spacer(),
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(Icons.search),
+                  icon: const Icon(Icons.search),
                 ),
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(Icons.notifications_none),
+                  icon: const Icon(Icons.notifications_none),
                 )
               ],
             )
@@ -53,22 +53,22 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
           children: [
             IconButton(
               onPressed: () {},
-              icon: Icon(Icons.explore_outlined),
+              icon: const Icon(Icons.explore_outlined),
             ),
             IconButton(
               onPressed: () {},
-              icon: Icon(Icons.explore_outlined),
+              icon: const Icon(Icons.explore_outlined),
             ),
-            CircleAvatar(
+            const CircleAvatar(
               backgroundColor: Colors.indigo,
             ),
             IconButton(
               onPressed: () {},
-              icon: Icon(Icons.download_for_offline_outlined),
+              icon: const Icon(Icons.download_for_offline_outlined),
             ),
             IconButton(
               onPressed: () {},
-              icon: Icon(Icons.person_outline),
+              icon: const Icon(Icons.person_outline),
             ),
           ],
         ),
