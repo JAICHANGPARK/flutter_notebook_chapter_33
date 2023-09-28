@@ -26,25 +26,27 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
                       color: Colors.grey,
                     ),
                   ),
-                  SizedBox(width: 8,),
+                  SizedBox(
+                    width: 8,
+                  ),
                   const Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text("Welcome Back!"),
-                        SizedBox(height: 4,),
+                        SizedBox(
+                          height: 4,
+                        ),
                         Text(
                           "Dream Walker 👋",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 18,
-
                           ),
                         ),
                       ],
                     ),
                   ),
-               
                   IconButton(
                     onPressed: () {},
                     icon: const Icon(
@@ -57,6 +59,40 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
                       Icons.notifications_none,
                     ),
                   )
+                ],
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+              height: 360,
+              decoration: BoxDecoration(
+                color: Colors.purple,
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              height: 140,
+              child: Row(
+                children: [
+                  Expanded(
+                      child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.grey[300],
+                    ),
+                  )),
+                  Expanded(
+                      child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.indigo,
+                    ),
+                  )),
+                  
+                  Expanded(
+                      child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.grey[300],
+                    ),
+                  )),
                 ],
               ),
             )
