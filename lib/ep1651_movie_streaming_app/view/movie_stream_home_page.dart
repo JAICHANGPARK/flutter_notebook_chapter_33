@@ -118,6 +118,14 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
                   )
                 ],
               ),
+            ),
+            Expanded(
+              child: ListView.builder(itemBuilder: (context, index){
+                return Container(
+                  height: 140,
+                  color: Colors.blue,
+                );
+              },),
             )
           ],
         ),
