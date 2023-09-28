@@ -75,27 +75,36 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
               child: Row(
                 children: [
                   Expanded(
-                      child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.grey[300],
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.indigo[50],
+                        borderRadius: BorderRadius.circular(8),
+                      ),
                     ),
-                  )),
+                  ),
+                  SizedBox(
+                    width: 16,
+                  ),
                   Expanded(
-                      child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.indigo,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.indigo,
+                      ),
                     ),
-                  )),
-                  
+                  ),
+                  SizedBox(
+                    width: 16,
+                  ),
                   Expanded(
-                      child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.grey[300],
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.grey[300],
+                      ),
                     ),
-                  )),
+                  ),
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),
