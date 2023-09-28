@@ -87,9 +87,7 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
                   ),
                   Expanded(
                     child: Container(
-                      decoration: BoxDecoration(
-                        color: Colors.indigo,
-                      ),
+                      decoration: BoxDecoration(color: Colors.indigo, borderRadius: BorderRadius.circular(8)),
                     ),
                   ),
                   SizedBox(
@@ -97,14 +95,27 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
                   ),
                   Expanded(
                     child: Container(
-                      decoration: BoxDecoration(
-                        color: Colors.grey[300],
-                      ),
+                      decoration: BoxDecoration(color: Colors.indigo[50], borderRadius: BorderRadius.circular(8)),
                     ),
                   ),
                 ],
               ),
             ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text("Feature Movies"),
+                  TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      "See All",
+                    ),
+                  )
+                ],
+              ),
+            )
           ],
         ),
       ),
