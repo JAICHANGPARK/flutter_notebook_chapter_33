@@ -15,37 +15,48 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
         top: true,
         child: Column(
           children: [
-            Row(
-              children: [
-                Container(
-                  height: 42,
-                  width: 42,
-                  decoration: const BoxDecoration(
-                    color: Colors.grey,
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                children: [
+                  Container(
+                    height: 52,
+                    width: 52,
+                    decoration: const BoxDecoration(
+                      color: Colors.grey,
+                    ),
                   ),
-                ),
-                const Expanded(
-                  child: Column(
-                    children: [
-                      Text("Welcome Back!"),
-                      Text("Dream Walker 👋"),
-                    ],
+                  
+                  const Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text("Welcome Back!"),
+                        Text(
+                          "Dream Walker 👋",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-                const Spacer(),
-                IconButton(
-                  onPressed: () {},
-                  icon: const Icon(
-                    Icons.search,
+                  const Spacer(),
+                  IconButton(
+                    onPressed: () {},
+                    icon: const Icon(
+                      Icons.search,
+                    ),
                   ),
-                ),
-                IconButton(
-                  onPressed: () {},
-                  icon: const Icon(
-                    Icons.notifications_none,
-                  ),
-                )
-              ],
+                  IconButton(
+                    onPressed: () {},
+                    icon: const Icon(
+                      Icons.notifications_none,
+                    ),
+                  )
+                ],
+              ),
             )
           ],
         ),
