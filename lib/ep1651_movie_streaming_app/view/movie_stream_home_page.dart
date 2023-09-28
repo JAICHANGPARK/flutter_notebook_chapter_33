@@ -26,23 +26,25 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
                       color: Colors.grey,
                     ),
                   ),
-                  
+                  SizedBox(width: 8,),
                   const Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text("Welcome Back!"),
+                        SizedBox(height: 4,),
                         Text(
                           "Dream Walker 👋",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 18,
+
                           ),
                         ),
                       ],
                     ),
                   ),
-                  const Spacer(),
+               
                   IconButton(
                     onPressed: () {},
                     icon: const Icon(
