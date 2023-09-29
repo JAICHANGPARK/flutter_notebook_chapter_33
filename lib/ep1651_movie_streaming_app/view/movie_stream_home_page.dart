@@ -65,15 +65,14 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
             Container(
               margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
               height: 320,
-              decoration:  BoxDecoration(
-                borderRadius: BorderRadius.circular(16),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(16),
                   color: Colors.purple,
                   gradient: LinearGradient(
                     begin: Alignment.bottomCenter,
                     end: Alignment.topCenter,
                     colors: [
                       Colors.indigo,
-
                       Colors.indigo[200]!,
                     ],
                   )),
@@ -85,11 +84,23 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
                     left: 16,
                     child: Row(
                       children: [
-                        Expanded(child: Column()),
+                        Expanded(
+                          child: Column(
+                            children: [
+                              Chip(
+                                label: Text("Action"),
+                              ),
+                              Text("Movie Title title title")
+                            ],
+                          ),
+                        ),
                         CircleAvatar(
                           radius: 28,
                           backgroundColor: Colors.white,
-                          child: Icon(Icons.play_arrow),
+                          child: Icon(
+                            Icons.play_arrow,
+                            size: 32,
+                          ),
                           foregroundColor: Colors.indigo,
                         )
                       ],
