@@ -89,10 +89,10 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Chip(
+                              const Chip(
                                 label: Text("Action"),
                               ),
-                              Text(
+                              const Text(
                                 "Movie Title title title",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -100,7 +100,7 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
                                   fontSize: 18,
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 8,
                               ),
                               Row(
@@ -114,18 +114,18 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
                                     width: 32,
                                     height: 4,
                                   ),
-                                  SizedBox(width: 8,),
-                                  CircleAvatar(
+                                  const SizedBox(width: 8,),
+                                  const CircleAvatar(
                                     radius: 2,
                                     backgroundColor: Colors.grey,
                                   ),
-                                  SizedBox(width: 8,),
-                                  CircleAvatar(
+                                  const SizedBox(width: 8,),
+                                  const CircleAvatar(
                                     radius: 2,
                                     backgroundColor: Colors.grey,
                                   ),
-                                  SizedBox(width: 8,),
-                                  CircleAvatar(
+                                  const SizedBox(width: 8,),
+                                  const CircleAvatar(
                                     radius: 2,
                                     backgroundColor: Colors.grey,
                                   )
@@ -134,7 +134,7 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
                             ],
                           ),
                         ),
-                        CircleAvatar(
+                        const CircleAvatar(
                           radius: 28,
                           backgroundColor: Colors.white,
                           child: Icon(
@@ -160,7 +160,7 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
                         color: Colors.indigo[50],
                         borderRadius: BorderRadius.circular(8),
                       ),
-                      child: Column(
+                      child: const Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           CircleAvatar(
@@ -184,7 +184,7 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
                         color: Colors.indigo,
                         borderRadius: BorderRadius.circular(8),
                       ),
-                      child: Column(
+                      child: const Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           CircleAvatar(
@@ -210,7 +210,7 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
                         color: Colors.indigo[50],
                         borderRadius: BorderRadius.circular(8),
                       ),
-                      child: Column(
+                      child: const Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           CircleAvatar(
