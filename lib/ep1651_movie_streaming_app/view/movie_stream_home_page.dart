@@ -184,6 +184,21 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
                         color: Colors.indigo,
                         borderRadius: BorderRadius.circular(8),
                       ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          CircleAvatar(
+                            radius: 24,
+                            backgroundColor: Colors.white,
+
+                          ),
+                          SizedBox(height: 16,),
+                          Text("Movies", style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white
+                          ),),
+                        ],
+                      ),
                     ),
                   ),
                   const SizedBox(
