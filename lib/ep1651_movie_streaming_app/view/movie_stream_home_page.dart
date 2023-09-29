@@ -66,6 +66,7 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
               margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
               height: 320,
               decoration:  BoxDecoration(
+                borderRadius: BorderRadius.circular(16),
                   color: Colors.purple,
                   gradient: LinearGradient(
                     begin: Alignment.bottomCenter,
@@ -77,7 +78,24 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
                     ],
                   )),
               child: Stack(
-                children: [],
+                children: [
+                  Positioned(
+                    bottom: 16,
+                    right: 16,
+                    left: 16,
+                    child: Row(
+                      children: [
+                        Expanded(child: Column()),
+                        CircleAvatar(
+                          radius: 28,
+                          backgroundColor: Colors.white,
+                          child: Icon(Icons.play_arrow),
+                          foregroundColor: Colors.indigo,
+                        )
+                      ],
+                    ),
+                  )
+                ],
               ),
             ),
             Container(
