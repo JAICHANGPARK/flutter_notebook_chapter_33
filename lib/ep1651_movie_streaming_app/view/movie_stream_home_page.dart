@@ -268,12 +268,13 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
                 itemBuilder: (context, index) {
                   return Container(
                     height: 120,
+                    margin: EdgeInsets.symmetric(horizontal: 16,vertical: 8),
                     color: Colors.blue,
                     child: Row(
                       children: [
                         Container(
-                          height: 64,
-                          width: 64,
+                          height: 100,
+                          width: 100,
                           decoration: BoxDecoration(
                             color: Colors.grey,
                             borderRadius: BorderRadius.circular(8)
@@ -281,7 +282,19 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
                         ),
                         Expanded(
                           child: Column(
-                            children: [],
+                            children: [
+                              Text("Actions"),
+                              Text("Ragnarok"),
+                              Row(
+                                children: [
+                                  Icon(Icons.access_time_filled),
+                                  Text("165 Minuts"),
+                                  Icon(Icons.star),
+                                  Text("4.7"),
+                                  Text("(52)"),
+                                ],
+                              )
+                            ],
                           ),
                         )
                       ],
