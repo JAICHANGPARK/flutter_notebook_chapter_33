@@ -106,25 +106,28 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
                               Row(
                                 children: [
                                   Container(
-
-                                    decoration: BoxDecoration(
-                                        color: Colors.white,
-                                      borderRadius: BorderRadius.circular(4)
-                                    ),
+                                    decoration:
+                                        BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(4)),
                                     width: 32,
                                     height: 4,
                                   ),
-                                  const SizedBox(width: 8,),
+                                  const SizedBox(
+                                    width: 8,
+                                  ),
                                   const CircleAvatar(
                                     radius: 2,
                                     backgroundColor: Colors.grey,
                                   ),
-                                  const SizedBox(width: 8,),
+                                  const SizedBox(
+                                    width: 8,
+                                  ),
                                   const CircleAvatar(
                                     radius: 2,
                                     backgroundColor: Colors.grey,
                                   ),
-                                  const SizedBox(width: 8,),
+                                  const SizedBox(
+                                    width: 8,
+                                  ),
                                   const CircleAvatar(
                                     radius: 2,
                                     backgroundColor: Colors.grey,
@@ -167,10 +170,15 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
                             radius: 24,
                             backgroundColor: Colors.white,
                           ),
-                          SizedBox(height: 16,),
-                          Text("Genre", style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                          ),),
+                          SizedBox(
+                            height: 16,
+                          ),
+                          Text(
+                            "Genre",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                         ],
                       ),
                     ),
@@ -190,13 +198,14 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
                           CircleAvatar(
                             radius: 24,
                             backgroundColor: Colors.white,
-
                           ),
-                          SizedBox(height: 16,),
-                          Text("Movies", style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white
-                          ),),
+                          SizedBox(
+                            height: 16,
+                          ),
+                          Text(
+                            "Movies",
+                            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+                          ),
                         ],
                       ),
                     ),
@@ -216,13 +225,16 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
                           CircleAvatar(
                             radius: 24,
                             backgroundColor: Colors.white,
-
                           ),
-                          SizedBox(height: 16,),
-                          Text("Go pro", style: TextStyle(
+                          SizedBox(
+                            height: 16,
+                          ),
+                          Text(
+                            "Go pro",
+                            style: TextStyle(
                               fontWeight: FontWeight.bold,
-
-                          ),),
+                            ),
+                          ),
                         ],
                       ),
                     ),
@@ -255,8 +267,25 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
               child: ListView.builder(
                 itemBuilder: (context, index) {
                   return Container(
-                    height: 140,
+                    height: 120,
                     color: Colors.blue,
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 64,
+                          width: 64,
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                            borderRadius: BorderRadius.circular(8)
+                          ),
+                        ),
+                        Expanded(
+                          child: Column(
+                            children: [],
+                          ),
+                        )
+                      ],
+                    ),
                   );
                 },
               ),
