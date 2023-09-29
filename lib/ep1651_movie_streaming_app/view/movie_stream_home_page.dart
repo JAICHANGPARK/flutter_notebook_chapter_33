@@ -268,33 +268,42 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
                 itemBuilder: (context, index) {
                   return Container(
                     height: 120,
-                    margin: EdgeInsets.symmetric(horizontal: 16,vertical: 8),
-                    color: Colors.blue,
+                    margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                     child: Row(
                       children: [
                         Container(
                           height: 100,
                           width: 100,
-                          decoration: BoxDecoration(
-                            color: Colors.grey,
-                            borderRadius: BorderRadius.circular(8)
-                          ),
+                          decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(8)),
                         ),
                         Expanded(
-                          child: Column(
-                            children: [
-                              Text("Actions"),
-                              Text("Ragnarok"),
-                              Row(
-                                children: [
-                                  Icon(Icons.access_time_filled),
-                                  Text("165 Minuts"),
-                                  Icon(Icons.star),
-                                  Text("4.7"),
-                                  Text("(52)"),
-                                ],
-                              )
-                            ],
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text("Actions"),
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(vertical: 8),
+                                  child: Text(
+                                    "Ragnarok",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ),
+                                Row(
+                                  children: [
+                                    Icon(Icons.access_time_filled),
+                                    Text("165 Minuts"),
+                                    Icon(Icons.star),
+                                    Text("4.7"),
+                                    Text("(52)"),
+                                  ],
+                                )
+                              ],
+                            ),
                           ),
                         )
                       ],
