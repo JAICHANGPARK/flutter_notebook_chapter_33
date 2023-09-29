@@ -66,16 +66,17 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
               margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
               height: 320,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(16),
-                  color: Colors.purple,
-                  gradient: LinearGradient(
-                    begin: Alignment.bottomCenter,
-                    end: Alignment.topCenter,
-                    colors: [
-                      Colors.indigo,
-                      Colors.indigo[200]!,
-                    ],
-                  )),
+                borderRadius: BorderRadius.circular(16),
+                color: Colors.purple,
+                gradient: LinearGradient(
+                  begin: Alignment.bottomCenter,
+                  end: Alignment.topCenter,
+                  colors: [
+                    Colors.indigo,
+                    Colors.indigo[200]!,
+                  ],
+                ),
+              ),
               child: Stack(
                 children: [
                   Positioned(
@@ -95,10 +96,41 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
                                 "Movie Title title title",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
-                                  color: Colors.white
+                                  color: Colors.white,
+                                  fontSize: 18,
                                 ),
                               ),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Row(
+                                children: [
+                                  Container(
 
+                                    decoration: BoxDecoration(
+                                        color: Colors.white,
+                                      borderRadius: BorderRadius.circular(4)
+                                    ),
+                                    width: 32,
+                                    height: 4,
+                                  ),
+                                  SizedBox(width: 8,),
+                                  CircleAvatar(
+                                    radius: 2,
+                                    backgroundColor: Colors.grey,
+                                  ),
+                                  SizedBox(width: 8,),
+                                  CircleAvatar(
+                                    radius: 2,
+                                    backgroundColor: Colors.grey,
+                                  ),
+                                  SizedBox(width: 8,),
+                                  CircleAvatar(
+                                    radius: 2,
+                                    backgroundColor: Colors.grey,
+                                  )
+                                ],
+                              )
                             ],
                           ),
                         ),
