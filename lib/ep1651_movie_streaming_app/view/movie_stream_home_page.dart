@@ -26,7 +26,7 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
                       color: Colors.grey,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 8,
                   ),
                   const Expanded(
@@ -63,14 +63,24 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
               ),
             ),
             Container(
-              margin: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+              margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
               height: 360,
-              decoration: BoxDecoration(
-                color: Colors.purple,
+              decoration:  BoxDecoration(
+                  color: Colors.purple,
+                  gradient: LinearGradient(
+                    colors: [
+                      Colors.indigo,
+                      Colors.indigo[600],
+                      Colors.indigo[400],
+                      Colors.indigo[200],
+                    ],
+                  )),
+              child: Stack(
+                children: [],
               ),
             ),
             Container(
-              margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               height: 140,
               child: Row(
                 children: [
@@ -82,15 +92,18 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 16,
                   ),
                   Expanded(
                     child: Container(
-                      decoration: BoxDecoration(color: Colors.indigo, borderRadius: BorderRadius.circular(8)),
+                      decoration: BoxDecoration(
+                        color: Colors.indigo,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 16,
                   ),
                   Expanded(
@@ -109,10 +122,16 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("Feature Movies"),
+                  const Text(
+                    "Feature Movies",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18,
+                    ),
+                  ),
                   TextButton(
                     onPressed: () {},
-                    child: Text(
+                    child: const Text(
                       "See All",
                     ),
                   )
