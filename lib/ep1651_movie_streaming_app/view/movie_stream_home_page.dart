@@ -86,11 +86,19 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
                       children: [
                         Expanded(
                           child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Chip(
                                 label: Text("Action"),
                               ),
-                              Text("Movie Title title title")
+                              Text(
+                                "Movie Title title title",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white
+                                ),
+                              ),
+
                             ],
                           ),
                         ),
