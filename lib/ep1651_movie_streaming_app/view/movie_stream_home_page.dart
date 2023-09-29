@@ -151,7 +151,7 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
             ),
             Container(
               margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-              height: 140,
+              height: 130,
               child: Row(
                 children: [
                   Expanded(
@@ -209,6 +209,21 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
                       decoration: BoxDecoration(
                         color: Colors.indigo[50],
                         borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          CircleAvatar(
+                            radius: 24,
+                            backgroundColor: Colors.white,
+
+                          ),
+                          SizedBox(height: 16,),
+                          Text("Go pro", style: TextStyle(
+                              fontWeight: FontWeight.bold,
+
+                          ),),
+                        ],
                       ),
                     ),
                   ),
