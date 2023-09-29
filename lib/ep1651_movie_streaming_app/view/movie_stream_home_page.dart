@@ -160,6 +160,19 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
                         color: Colors.indigo[50],
                         borderRadius: BorderRadius.circular(8),
                       ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          CircleAvatar(
+                            radius: 24,
+                            backgroundColor: Colors.white,
+                          ),
+                          SizedBox(height: 16,),
+                          Text("Genre", style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),),
+                        ],
+                      ),
                     ),
                   ),
                   const SizedBox(
