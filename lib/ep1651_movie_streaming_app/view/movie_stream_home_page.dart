@@ -64,15 +64,16 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
             ),
             Container(
               margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
-              height: 360,
+              height: 320,
               decoration:  BoxDecoration(
                   color: Colors.purple,
                   gradient: LinearGradient(
+                    begin: Alignment.bottomCenter,
+                    end: Alignment.topCenter,
                     colors: [
                       Colors.indigo,
-                      Colors.indigo[600],
-                      Colors.indigo[400],
-                      Colors.indigo[200],
+
+                      Colors.indigo[200]!,
                     ],
                   )),
               child: Stack(
