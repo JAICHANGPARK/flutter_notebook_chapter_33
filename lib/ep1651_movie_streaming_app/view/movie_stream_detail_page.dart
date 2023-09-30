@@ -22,9 +22,13 @@ class MovieStreamDetailPage extends StatelessWidget {
                     Container(
                       decoration: BoxDecoration(
                         color: Colors.grey,
+                        borderRadius: BorderRadius.circular(32)
                       ),
-                      
+                      padding: EdgeInsets.all(24),
+                      margin: EdgeInsets.all(24),
+
                       child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Icon(Icons.calendar_month),
                           Text("17 Sep 2022"),
