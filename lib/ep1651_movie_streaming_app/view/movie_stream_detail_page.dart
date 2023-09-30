@@ -52,7 +52,7 @@ class MovieStreamDetailPage extends StatelessWidget {
                     ),
                     Text("Cast and Crew"),
                     Container(
-                      height: 48,
+                      height: 64,
                       child: ListView.builder(
                         itemCount: 10,
                         scrollDirection: Axis.horizontal,
