@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_33/ep1651_movie_streaming_app/view/movie_stream_detail_page.dart';
 
 class MovieStreamingHomePage extends StatefulWidget {
   const MovieStreamingHomePage({super.key});
@@ -62,94 +63,105 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
                 ],
               ),
             ),
-            Container(
-              margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
-              height: 310,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(16),
-                color: Colors.purple,
-                gradient: LinearGradient(
-                  begin: Alignment.bottomCenter,
-                  end: Alignment.topCenter,
-                  colors: [
-                    Colors.indigo,
-                    Colors.indigo[200]!,
+            GestureDetector(
+              onTap: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => const MovieStreamDetailPage(),
+                  ),
+                );
+              },
+              child: Container(
+                margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+                height: 310,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(16),
+                  color: Colors.purple,
+                  gradient: LinearGradient(
+                    begin: Alignment.bottomCenter,
+                    end: Alignment.topCenter,
+                    colors: [
+                      Colors.indigo,
+                      Colors.indigo[200]!,
+                    ],
+                  ),
+                ),
+                child: Stack(
+                  children: [
+                    Positioned(
+                      bottom: 16,
+                      right: 16,
+                      left: 16,
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                const Chip(
+                                  label: Text("Action"),
+                                ),
+                                const Text(
+                                  "Movie Title title title",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
+                                    fontSize: 18,
+                                  ),
+                                ),
+                                const SizedBox(
+                                  height: 8,
+                                ),
+                                Row(
+                                  children: [
+                                    Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.white,
+                                        borderRadius: BorderRadius.circular(4),
+                                      ),
+                                      width: 32,
+                                      height: 4,
+                                    ),
+                                    const SizedBox(
+                                      width: 8,
+                                    ),
+                                    const CircleAvatar(
+                                      radius: 2,
+                                      backgroundColor: Colors.grey,
+                                    ),
+                                    const SizedBox(
+                                      width: 8,
+                                    ),
+                                    const CircleAvatar(
+                                      radius: 2,
+                                      backgroundColor: Colors.grey,
+                                    ),
+                                    const SizedBox(
+                                      width: 8,
+                                    ),
+                                    const CircleAvatar(
+                                      radius: 2,
+                                      backgroundColor: Colors.grey,
+                                    )
+                                  ],
+                                )
+                              ],
+                            ),
+                          ),
+                          const CircleAvatar(
+                            radius: 28,
+                            backgroundColor: Colors.white,
+                            child: Icon(
+                              Icons.play_arrow,
+                              size: 32,
+                            ),
+                            foregroundColor: Colors.indigo,
+                          )
+                        ],
+                      ),
+                    )
                   ],
                 ),
-              ),
-              child: Stack(
-                children: [
-                  Positioned(
-                    bottom: 16,
-                    right: 16,
-                    left: 16,
-                    child: Row(
-                      children: [
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              const Chip(
-                                label: Text("Action"),
-                              ),
-                              const Text(
-                                "Movie Title title title",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                  fontSize: 18,
-                                ),
-                              ),
-                              const SizedBox(
-                                height: 8,
-                              ),
-                              Row(
-                                children: [
-                                  Container(
-                                    decoration:
-                                        BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(4)),
-                                    width: 32,
-                                    height: 4,
-                                  ),
-                                  const SizedBox(
-                                    width: 8,
-                                  ),
-                                  const CircleAvatar(
-                                    radius: 2,
-                                    backgroundColor: Colors.grey,
-                                  ),
-                                  const SizedBox(
-                                    width: 8,
-                                  ),
-                                  const CircleAvatar(
-                                    radius: 2,
-                                    backgroundColor: Colors.grey,
-                                  ),
-                                  const SizedBox(
-                                    width: 8,
-                                  ),
-                                  const CircleAvatar(
-                                    radius: 2,
-                                    backgroundColor: Colors.grey,
-                                  )
-                                ],
-                              )
-                            ],
-                          ),
-                        ),
-                        const CircleAvatar(
-                          radius: 28,
-                          backgroundColor: Colors.white,
-                          child: Icon(
-                            Icons.play_arrow,
-                            size: 32,
-                          ),
-                          foregroundColor: Colors.indigo,
-                        )
-                      ],
-                    ),
-                  )
-                ],
               ),
             ),
             Container(
