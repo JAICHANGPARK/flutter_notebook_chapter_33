@@ -328,10 +328,11 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
             ),
             IconButton(
               onPressed: () {},
-              icon: const Icon(Icons.explore_outlined),
+              icon: const Icon(Icons.play_circle_outline),
             ),
             const CircleAvatar(
               backgroundColor: Colors.indigo,
+              child: Icon(Icons.home_filled),
             ),
             IconButton(
               onPressed: () {},
