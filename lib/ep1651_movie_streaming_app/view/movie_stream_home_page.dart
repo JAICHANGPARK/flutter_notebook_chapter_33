@@ -319,30 +319,34 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
       bottomNavigationBar: BottomAppBar(
         height: 82,
         color: Colors.white,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(Icons.explore_outlined),
-            ),
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(Icons.play_circle_outline),
-            ),
-            const CircleAvatar(
-              backgroundColor: Colors.indigo,
-              child: Icon(Icons.home_filled),
-            ),
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(Icons.download_for_offline_outlined),
-            ),
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(Icons.person_outline),
-            ),
-          ],
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              IconButton(
+                onPressed: () {},
+                icon: const Icon(Icons.explore_outlined),
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: const Icon(Icons.play_circle_outline),
+              ),
+              const CircleAvatar(
+                backgroundColor: Colors.indigo,
+                child: Icon(Icons.home_filled),
+                foregroundColor: Colors.white,
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: const Icon(Icons.download_for_offline_outlined),
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: const Icon(Icons.person_outline),
+              ),
+            ],
+          ),
         ),
       ),
     );
