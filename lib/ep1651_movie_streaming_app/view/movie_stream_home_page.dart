@@ -204,7 +204,10 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
                           ),
                           Text(
                             "Movies",
-                            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
                           ),
                         ],
                       ),
