@@ -1,3 +1,4 @@
+import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 
 class EcommerceMainPage extends StatefulWidget {
@@ -8,6 +9,16 @@ class EcommerceMainPage extends StatefulWidget {
 }
 
 class _EcommerceMainPageState extends State<EcommerceMainPage> {
+  List<String> tabItems = [
+    "All",
+    "Hoodie",
+    "Jacket",
+    "Pants",
+    'T-Shirt',
+    "Shirt",
+    "Outwear",
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,19 +36,21 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                           decoration: BoxDecoration(
                             color: Colors.grey[200],
                           ),
-                          child: const TextField(
-
-                          ),
+                          child: const TextField(),
                         ),
                       ),
-                      const SizedBox(width: 8,),
+                      const SizedBox(
+                        width: 8,
+                      ),
                       CircleAvatar(
                         backgroundColor: Colors.grey[200],
                         child: const Badge(
                           child: Icon(Icons.notifications_none),
                         ),
                       ),
-                      const SizedBox(width: 8,),
+                      const SizedBox(
+                        width: 8,
+                      ),
                       CircleAvatar(
                         backgroundColor: Colors.grey[200],
                         child: const Badge(
@@ -45,6 +58,40 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                         ),
                       ),
                     ],
+                  ),
+                ),
+                Container(
+                  height: 140,
+                  color: Colors.blue,
+                ),
+                DotsIndicator(dotsCount: 4),
+                Expanded(
+                  child: DefaultTabController(
+                    length: tabItems.length,
+                    child: Column(
+                      children: [
+                        TabBar(
+                          
+                          tabs: tabItems
+                              .map(
+                                (e) => Tab(
+                                  text: e,
+                                ),
+                              )
+                              .toList(),
+                        ),
+                        Expanded(child: TabBarView(
+                          children: [
+                            Container(),
+                            Container(),
+                            Container(),
+                            Container(),
+                            Container(),
+                            Container(),
+                          ],
+                        ))
+                      ],
+                    ),
                   ),
                 )
               ],
