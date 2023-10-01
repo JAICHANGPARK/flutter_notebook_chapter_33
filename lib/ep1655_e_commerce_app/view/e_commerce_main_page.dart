@@ -62,6 +62,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                 ),
                 Container(
                   height: 140,
+                  margin: EdgeInsets.fromLTRB(16, 16 , 0 ,16),
                   color: Colors.blue,
                 ),
                 DotsIndicator(dotsCount: 4),
@@ -71,7 +72,10 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                     child: Column(
                       children: [
                         TabBar(
-                          
+                          isScrollable: true,
+                          unselectedLabelColor: Colors.grey,
+                          labelColor: Colors.deepOrange,
+                          indicatorColor: Colors.transparent,
                           tabs: tabItems
                               .map(
                                 (e) => Tab(
@@ -80,7 +84,8 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                               )
                               .toList(),
                         ),
-                        Expanded(child: TabBarView(
+                        Expanded(
+                            child: TabBarView(
                           children: [
                             Container(),
                             Container(),
