@@ -111,6 +111,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                 child: BottomNavigationBar(
 
                   backgroundColor: Colors.black,
+                  type: BottomNavigationBarType.fixed,
                   items: [
                     BottomNavigationBarItem(
                       icon: Icon(Icons.home),
@@ -120,7 +121,21 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                         icon: Icon(Icons.explore_outlined),
                         label: "Discover"
                     ),
+                    BottomNavigationBarItem(
+                        icon: Icon(Icons.favorite_border),
+                        label: "Discover"
+                    ),
+                    BottomNavigationBarItem(
+                        icon: Icon(Icons.chat_outlined),
+                        label: "Discover"
+                    ),
+                    BottomNavigationBarItem(
+                        icon: Icon(Icons.person_outline),
+                        label: "Discover"
+                    ),
                   ],
+                  unselectedItemColor: Colors.grey,
+                  
                 ),
               ),
             )
