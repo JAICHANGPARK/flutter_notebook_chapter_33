@@ -13,7 +13,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
     return Scaffold(
       body: Stack(
         children: [
-          
+
         ],
       ),
     );
