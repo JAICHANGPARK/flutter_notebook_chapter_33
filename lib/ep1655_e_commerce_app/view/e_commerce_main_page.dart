@@ -135,7 +135,8 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                     ),
                   ],
                   unselectedItemColor: Colors.grey,
-                  
+                  selectedItemColor: Colors.deepOrange,
+
                 ),
               ),
             )
