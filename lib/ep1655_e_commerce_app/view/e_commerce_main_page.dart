@@ -62,7 +62,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                 ),
                 Container(
                   height: 140,
-                  margin: EdgeInsets.fromLTRB(16, 16 , 0 ,16),
+                  margin: EdgeInsets.fromLTRB(16, 16, 0, 16),
                   color: Colors.blue,
                 ),
                 DotsIndicator(dotsCount: 4),
@@ -93,6 +93,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                             Container(),
                             Container(),
                             Container(),
+                            Container(),
                           ],
                         ))
                       ],
@@ -100,6 +101,28 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                   ),
                 )
               ],
+            ),
+            Positioned(
+              bottom: 16,
+              left: 16,
+              right: 16,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(32),
+                child: BottomNavigationBar(
+
+                  backgroundColor: Colors.black,
+                  items: [
+                    BottomNavigationBarItem(
+                      icon: Icon(Icons.home),
+                      label: "Home"
+                    ),
+                    BottomNavigationBarItem(
+                        icon: Icon(Icons.explore_outlined),
+                        label: "Discover"
+                    ),
+                  ],
+                ),
+              ),
             )
           ],
         ),
