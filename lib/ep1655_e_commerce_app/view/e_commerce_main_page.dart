@@ -25,18 +25,24 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                           decoration: BoxDecoration(
                             color: Colors.grey[200],
                           ),
-                          child: TextField(
+                          child: const TextField(
 
                           ),
                         ),
                       ),
-                      SizedBox(width: 8,),
+                      const SizedBox(width: 8,),
                       CircleAvatar(
-                        child: Badge(),
+                        backgroundColor: Colors.grey[200],
+                        child: const Badge(
+                          child: Icon(Icons.notifications_none),
+                        ),
                       ),
-                      SizedBox(width: 8,),
+                      const SizedBox(width: 8,),
                       CircleAvatar(
-                        child: Badge(),
+                        backgroundColor: Colors.grey[200],
+                        child: const Badge(
+                          child: Icon(Icons.shopping_bag_outlined),
+                        ),
                       ),
                     ],
                   ),
