@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_33/ep1655_e_commerce_app/view/e_commerce_main_page.dart';
 
 void main() {
-  runApp(ECommerceApp());
+  runApp(const ECommerceApp());
 }
 
 class ECommerceApp extends StatelessWidget {
@@ -9,6 +10,8 @@ class ECommerceApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return const MaterialApp(
+      home: EcommerceMainPage(),
+    );
   }
 }
