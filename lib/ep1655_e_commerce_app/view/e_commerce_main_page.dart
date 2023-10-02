@@ -87,18 +87,14 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                           children: [
                             const Text(
                               "Get your special\nsale up to 50%",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 18
-                              ),
+                              style: TextStyle(color: Colors.white, fontSize: 18),
                             ),
-                            const SizedBox(height: 8,),
+                            const SizedBox(
+                              height: 8,
+                            ),
                             Container(
                               padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
-                              decoration: BoxDecoration(
-                                color: Colors.black,
-                                borderRadius: BorderRadius.circular(32)
-                              ),
+                              decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(32)),
                               child: const Text(
                                 "Shop Now",
                                 style: TextStyle(
@@ -137,9 +133,28 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                             Padding(
                               padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
                               child: GridView.builder(
-                                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+                                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                                    crossAxisCount: 2, childAspectRatio: 0.8),
                                 itemBuilder: (context, index) {
-                                  return const Card();
+                                  return Card(
+                                    child: Column(
+                                      children: [
+                                        Expanded(
+                                          child: Container(
+
+                                            decoration: BoxDecoration(
+                                              color: Colors.grey,
+                                            ),
+                                            child: Stack(
+                                              children: [
+
+                                              ],
+                                            ),
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  );
                                 },
                               ),
                             ),
