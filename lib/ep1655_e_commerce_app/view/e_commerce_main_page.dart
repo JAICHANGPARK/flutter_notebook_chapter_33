@@ -81,16 +81,25 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                           borderRadius: BorderRadius.circular(8),
                         ),
                         margin: EdgeInsets.only(right: 12),
+                        padding: EdgeInsets.all(16),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text("Get your special\nsale up to 50%"),
+                            Text(
+                              "Get your special\nsale up to 50%",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
                             Container(
                               decoration: BoxDecoration(
                                 color: Colors.black,
                               ),
-                              child: Center(
-                                child: Text("Shop Now"),
+                              child: Text(
+                                "Shop Now",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
                               ),
                             )
                           ],
@@ -122,7 +131,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                             child: TabBarView(
                           children: [
                             Padding(
-                              padding: const EdgeInsets.fromLTRB(16,8,16,0),
+                              padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
                               child: GridView.builder(
                                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
                                 itemBuilder: (context, index) {
