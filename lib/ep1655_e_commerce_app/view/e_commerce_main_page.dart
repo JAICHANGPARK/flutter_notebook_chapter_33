@@ -75,11 +75,14 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) {
                       return Container(
+                        width: 300,
                         decoration: BoxDecoration(
                           color: Colors.orange,
-                          borderRadius: BorderRadius.circular(12),
+                          borderRadius: BorderRadius.circular(8),
                         ),
+                        
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text("Get your special\nsale up to 50%"),
                             Container(
