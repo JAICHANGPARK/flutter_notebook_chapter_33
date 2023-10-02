@@ -159,7 +159,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                                                   color: Colors.deepOrange,
                                                   borderRadius: BorderRadius.circular(16),
                                                 ),
-                                                padding: EdgeInsets.symmetric(horizontal: 4,vertical: 2),
+                                                padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
                                                 child: Text(
                                                   "Hoodie",
                                                   style: TextStyle(
@@ -168,7 +168,27 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                                                   ),
                                                 ),
                                               ),
-                                              Text("Title Title Title Title Title Title Title Title")
+                                              Padding(
+                                                padding: const EdgeInsets.symmetric(vertical: 8),
+                                                child: Text("Title Title Title Title Title Title Title Title"),
+                                              ),
+                                              Row(
+                                                children: [
+                                                  Icon(
+                                                    Icons.star,
+                                                    size: 12,
+                                                  ),
+                                                  Text("4.8"),
+                                                  Spacer(),
+                                                  Text(
+                                                    "\$17.00",
+                                                    style: TextStyle(
+                                                      fontWeight: FontWeight.bold,
+                                                      color: Colors.deepOrange,
+                                                    ),
+                                                  )
+                                                ],
+                                              )
                                             ],
                                           ),
                                         )
