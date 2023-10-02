@@ -35,8 +35,14 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                         child: Container(
                           decoration: BoxDecoration(
                             color: Colors.grey[200],
+                            borderRadius: BorderRadius.circular(34),
+
                           ),
-                          child: const TextField(),
+                          child: const TextField(
+                            decoration: InputDecoration(
+                              hintText: "Search"
+                            ),
+                          ),
                         ),
                       ),
                       const SizedBox(
