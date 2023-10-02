@@ -94,6 +94,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                             ),
                             SizedBox(height: 8,),
                             Container(
+                              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                               decoration: BoxDecoration(
                                 color: Colors.black,
                               ),
