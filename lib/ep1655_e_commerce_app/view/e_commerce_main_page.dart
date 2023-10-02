@@ -37,7 +37,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                             color: Colors.grey[200],
                             borderRadius: BorderRadius.circular(34),
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 16),
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
                           child: const TextField(
                             decoration: InputDecoration(
                                 hintText: "Search", border: InputBorder.none, suffixIcon: Icon(Icons.search)),
@@ -69,8 +69,8 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                 ),
                 Container(
                   height: 140,
-                  margin: EdgeInsets.fromLTRB(16, 16, 0, 16),
-                  color: Colors.blue,
+                  margin: const EdgeInsets.fromLTRB(16, 16, 0, 16),
+                  // color: Colors.blue,
                   child: ListView.builder(
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) {
@@ -80,26 +80,26 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                           color: Colors.orange,
                           borderRadius: BorderRadius.circular(8),
                         ),
-                        margin: EdgeInsets.only(right: 12),
-                        padding: EdgeInsets.all(16),
+                        margin: const EdgeInsets.only(right: 12),
+                        padding: const EdgeInsets.all(16),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(
+                            const Text(
                               "Get your special\nsale up to 50%",
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 18
                               ),
                             ),
-                            SizedBox(height: 8,),
+                            const SizedBox(height: 8,),
                             Container(
-                              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                               decoration: BoxDecoration(
                                 color: Colors.black,
                                 borderRadius: BorderRadius.circular(32)
                               ),
-                              child: Text(
+                              child: const Text(
                                 "Shop Now",
                                 style: TextStyle(
                                   color: Colors.white,
@@ -137,9 +137,9 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                             Padding(
                               padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
                               child: GridView.builder(
-                                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+                                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
                                 itemBuilder: (context, index) {
-                                  return Card();
+                                  return const Card();
                                 },
                               ),
                             ),
@@ -167,11 +167,11 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                   backgroundColor: Colors.black,
                   type: BottomNavigationBarType.fixed,
                   items: [
-                    BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-                    BottomNavigationBarItem(icon: Icon(Icons.explore_outlined), label: "Discover"),
-                    BottomNavigationBarItem(icon: Icon(Icons.favorite_border), label: "Discover"),
-                    BottomNavigationBarItem(icon: Icon(Icons.chat_outlined), label: "Discover"),
-                    BottomNavigationBarItem(icon: Icon(Icons.person_outline), label: "Discover"),
+                    const BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+                    const BottomNavigationBarItem(icon: Icon(Icons.explore_outlined), label: "Discover"),
+                    const BottomNavigationBarItem(icon: Icon(Icons.favorite_border), label: "Discover"),
+                    const BottomNavigationBarItem(icon: Icon(Icons.chat_outlined), label: "Discover"),
+                    const BottomNavigationBarItem(icon: Icon(Icons.person_outline), label: "Discover"),
                   ],
                   unselectedItemColor: Colors.grey,
                   selectedItemColor: Colors.deepOrange,
