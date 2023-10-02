@@ -97,6 +97,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                               padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                               decoration: BoxDecoration(
                                 color: Colors.black,
+                                borderRadius: BorderRadius.circular(32)
                               ),
                               child: Text(
                                 "Shop Now",
