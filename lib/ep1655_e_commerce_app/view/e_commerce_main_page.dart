@@ -89,8 +89,10 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                               "Get your special\nsale up to 50%",
                               style: TextStyle(
                                 color: Colors.white,
+                                fontSize: 18
                               ),
                             ),
+                            SizedBox(height: 8,),
                             Container(
                               decoration: BoxDecoration(
                                 color: Colors.black,
