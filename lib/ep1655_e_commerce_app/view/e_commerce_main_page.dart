@@ -80,7 +80,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                           color: Colors.orange,
                           borderRadius: BorderRadius.circular(8),
                         ),
-                        
+                        margin: EdgeInsets.only(right: 12),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
