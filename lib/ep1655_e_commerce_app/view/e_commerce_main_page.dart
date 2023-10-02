@@ -141,16 +141,24 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                                       children: [
                                         Expanded(
                                           child: Container(
-
                                             decoration: BoxDecoration(
                                               color: Colors.grey,
                                             ),
                                             child: Stack(
-                                              children: [
-
-                                              ],
+                                              children: [],
                                             ),
                                           ),
+                                        ),
+                                        Column(
+                                          children: [
+                                            Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.deepOrange,
+                                                borderRadius: BorderRadius.circular(16),
+                                              ),
+                                              child: Text("Hoodie"),
+                                            )
+                                          ],
                                         )
                                       ],
                                     ),
