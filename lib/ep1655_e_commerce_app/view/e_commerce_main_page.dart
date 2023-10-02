@@ -118,7 +118,15 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                         Expanded(
                             child: TabBarView(
                           children: [
-                            Container(),
+                            Padding(
+                              padding: const EdgeInsets.fromLTRB(16,8,16,0),
+                              child: GridView.builder(
+                                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+                                itemBuilder: (context, index) {
+                                  return Card();
+                                },
+                              ),
+                            ),
                             Container(),
                             Container(),
                             Container(),
