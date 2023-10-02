@@ -52,15 +52,18 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                       ),
                       CircleAvatar(
                         backgroundColor: Colors.grey[200],
+                        foregroundColor: Colors.black,
                         child: const Badge(
                           child: Icon(Icons.notifications_none),
                         ),
+
                       ),
                       const SizedBox(
                         width: 8,
                       ),
                       CircleAvatar(
                         backgroundColor: Colors.grey[200],
+                        foregroundColor: Colors.black,
                         child: const Badge(
                           child: Icon(Icons.shopping_bag_outlined),
                         ),
