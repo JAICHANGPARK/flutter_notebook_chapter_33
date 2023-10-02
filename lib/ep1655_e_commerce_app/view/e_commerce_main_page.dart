@@ -134,7 +134,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                               padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
                               child: GridView.builder(
                                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                                    crossAxisCount: 2, childAspectRatio: 0.8),
+                                    crossAxisCount: 2, childAspectRatio: 0.7),
                                 itemBuilder: (context, index) {
                                   return Card(
                                     child: Column(
