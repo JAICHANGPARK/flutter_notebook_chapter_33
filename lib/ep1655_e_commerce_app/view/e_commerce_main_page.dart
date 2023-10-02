@@ -149,16 +149,27 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                                             ),
                                           ),
                                         ),
-                                        Column(
-                                          children: [
-                                            Container(
-                                              decoration: BoxDecoration(
-                                                color: Colors.deepOrange,
-                                                borderRadius: BorderRadius.circular(16),
+                                        Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.deepOrange,
+                                                  borderRadius: BorderRadius.circular(16),
+                                                ),
+                                                child: Text(
+                                                  "Hoodie",
+                                                  style: TextStyle(
+                                                    fontSize: 12,
+                                                    color: Colors.white,
+                                                  ),
+                                                ),
                                               ),
-                                              child: Text("Hoodie"),
-                                            )
-                                          ],
+                                              Text("Title Title Title Title Title Title Title Title")
+                                            ],
+                                          ),
                                         )
                                       ],
                                     ),
