@@ -159,10 +159,11 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                                                   color: Colors.deepOrange,
                                                   borderRadius: BorderRadius.circular(16),
                                                 ),
+                                                padding: EdgeInsets.symmetric(horizontal: 4,vertical: 2),
                                                 child: Text(
                                                   "Hoodie",
                                                   style: TextStyle(
-                                                    fontSize: 12,
+                                                    fontSize: 10,
                                                     color: Colors.white,
                                                   ),
                                                 ),
