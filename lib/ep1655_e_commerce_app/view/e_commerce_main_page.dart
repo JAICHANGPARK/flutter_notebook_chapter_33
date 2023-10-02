@@ -40,10 +40,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                           padding: EdgeInsets.symmetric(horizontal: 16),
                           child: const TextField(
                             decoration: InputDecoration(
-                              hintText: "Search",
-                              border: InputBorder.none,
-                              suffixIcon: Icon(Icons.search)
-                            ),
+                                hintText: "Search", border: InputBorder.none, suffixIcon: Icon(Icons.search)),
                           ),
                         ),
                       ),
@@ -56,7 +53,6 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                         child: const Badge(
                           child: Icon(Icons.notifications_none),
                         ),
-
                       ),
                       const SizedBox(
                         width: 8,
@@ -75,6 +71,30 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                   height: 140,
                   margin: EdgeInsets.fromLTRB(16, 16, 0, 16),
                   color: Colors.blue,
+                  child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    itemBuilder: (context, index) {
+                      return Container(
+                        decoration: BoxDecoration(
+                          color: Colors.orange,
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: Column(
+                          children: [
+                            Text("Get your special\nsale up to 50%"),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.black,
+                              ),
+                              child: Center(
+                                child: Text("Shop Now"),
+                              ),
+                            )
+                          ],
+                        ),
+                      );
+                    },
+                  ),
                 ),
                 DotsIndicator(dotsCount: 4),
                 Expanded(
