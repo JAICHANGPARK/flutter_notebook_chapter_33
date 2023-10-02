@@ -36,11 +36,13 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                           decoration: BoxDecoration(
                             color: Colors.grey[200],
                             borderRadius: BorderRadius.circular(34),
-
                           ),
+                          padding: EdgeInsets.symmetric(horizontal: 16),
                           child: const TextField(
                             decoration: InputDecoration(
-                              hintText: "Search"
+                              hintText: "Search",
+                              border: InputBorder.none,
+                              suffixIcon: Icon(Icons.search)
                             ),
                           ),
                         ),
