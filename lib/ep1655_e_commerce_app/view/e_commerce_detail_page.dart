@@ -51,19 +51,29 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                 color: Colors.orange,
                 child: Row(
                   children: [
-                    Expanded(child: Container(
+                    Expanded(
+                        child: Container(
                       color: Colors.grey,
                     )),
-                    SizedBox(width: 8,),
-                    Expanded(child: Container(
+                    SizedBox(
+                      width: 8,
+                    ),
+                    Expanded(
+                        child: Container(
                       color: Colors.grey,
                     )),
-                    SizedBox(width: 8,),
-                    Expanded(child: Container(
+                    SizedBox(
+                      width: 8,
+                    ),
+                    Expanded(
+                        child: Container(
                       color: Colors.grey,
                     )),
-                    SizedBox(width: 8,),
-                    Expanded(child: Container(
+                    SizedBox(
+                      width: 8,
+                    ),
+                    Expanded(
+                        child: Container(
                       color: Colors.grey,
                     )),
                   ],
@@ -87,7 +97,38 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                     foregroundColor: Colors.black,
                     child: Icon(Icons.favorite_border),
                   )
-
+                ],
+              ),
+              Row(
+                children: [
+                  Expanded(
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.star,
+                          size: 14,
+                        ),
+                        Text("4.2"),
+                        Text("(100 Reviews)"),
+                      ],
+                    ),
+                  ),
+                  Expanded(
+                    child: Row(
+                      children: [
+                        Text("112"),
+                        Text("(Purchased)"),
+                      ],
+                    ),
+                  ),
+                  Expanded(
+                    child: Row(
+                      children: [
+                        Text("122"),
+                        Text("(Stocks)"),
+                      ],
+                    ),
+                  )
                 ],
               )
             ],
