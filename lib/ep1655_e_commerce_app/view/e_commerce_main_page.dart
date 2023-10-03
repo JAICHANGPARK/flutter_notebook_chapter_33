@@ -1,5 +1,6 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_33/ep1655_e_commerce_app/view/e_commerce_detail_page.dart';
 
 class EcommerceMainPage extends StatefulWidget {
   const EcommerceMainPage({super.key});
@@ -136,63 +137,72 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 2, childAspectRatio: 0.7),
                                 itemBuilder: (context, index) {
-                                  return Card(
-                                    child: Column(
-                                      children: [
-                                        Expanded(
-                                          child: Container(
-                                            decoration: BoxDecoration(
-                                              color: Colors.grey,
-                                            ),
-                                            child: Stack(
-                                              children: [],
-                                            ),
-                                          ),
+                                  return InkWell(
+                                    onTap: () {
+                                      Navigator.of(context).push(
+                                        MaterialPageRoute(
+                                          builder: (context) => EcommerceDetailPage(),
                                         ),
-                                        Padding(
-                                          padding: const EdgeInsets.all(8.0),
-                                          child: Column(
-                                            crossAxisAlignment: CrossAxisAlignment.start,
-                                            children: [
-                                              Container(
-                                                decoration: BoxDecoration(
-                                                  color: Colors.deepOrange,
-                                                  borderRadius: BorderRadius.circular(16),
-                                                ),
-                                                padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
-                                                child: Text(
-                                                  "Hoodie",
-                                                  style: TextStyle(
-                                                    fontSize: 10,
-                                                    color: Colors.white,
-                                                  ),
-                                                ),
+                                      );
+                                    },
+                                    child: Card(
+                                      child: Column(
+                                        children: [
+                                          Expanded(
+                                            child: Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.grey,
                                               ),
-                                              Padding(
-                                                padding: const EdgeInsets.symmetric(vertical: 8),
-                                                child: Text("Title Title Title Title Title Title Title Title"),
+                                              child: Stack(
+                                                children: [],
                                               ),
-                                              Row(
-                                                children: [
-                                                  Icon(
-                                                    Icons.star,
-                                                    size: 12,
-                                                  ),
-                                                  Text("4.8"),
-                                                  Spacer(),
-                                                  Text(
-                                                    "\$17.00",
-                                                    style: TextStyle(
-                                                      fontWeight: FontWeight.bold,
-                                                      color: Colors.deepOrange,
-                                                    ),
-                                                  )
-                                                ],
-                                              )
-                                            ],
+                                            ),
                                           ),
-                                        )
-                                      ],
+                                          Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              children: [
+                                                Container(
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.deepOrange,
+                                                    borderRadius: BorderRadius.circular(16),
+                                                  ),
+                                                  padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                                                  child: Text(
+                                                    "Hoodie",
+                                                    style: TextStyle(
+                                                      fontSize: 10,
+                                                      color: Colors.white,
+                                                    ),
+                                                  ),
+                                                ),
+                                                Padding(
+                                                  padding: const EdgeInsets.symmetric(vertical: 8),
+                                                  child: Text("Title Title Title Title Title Title Title Title"),
+                                                ),
+                                                Row(
+                                                  children: [
+                                                    Icon(
+                                                      Icons.star,
+                                                      size: 12,
+                                                    ),
+                                                    Text("4.8"),
+                                                    Spacer(),
+                                                    Text(
+                                                      "\$17.00",
+                                                      style: TextStyle(
+                                                        fontWeight: FontWeight.bold,
+                                                        color: Colors.deepOrange,
+                                                      ),
+                                                    )
+                                                  ],
+                                                )
+                                              ],
+                                            ),
+                                          )
+                                        ],
+                                      ),
                                     ),
                                   );
                                 },
