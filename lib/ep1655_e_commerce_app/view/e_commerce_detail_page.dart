@@ -175,6 +175,13 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                         )),SizedBox(width: 8,),
                   ],
                 ),
+              ),
+              Text('Description Product'),
+              Expanded(child: Text("")),
+              Row(
+                children: [
+
+                ],
               )
             ],
           ),
