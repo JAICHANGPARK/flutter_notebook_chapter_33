@@ -82,6 +82,11 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                       ],
                     ),
                   ),
+                  CircleAvatar(
+                    backgroundColor: Colors.grey[200],
+                    foregroundColor: Colors.black,
+                    child: Icon(Icons.favorite_border),
+                  )
 
                 ],
               )
