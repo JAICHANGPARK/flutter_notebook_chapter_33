@@ -130,6 +130,21 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                     ),
                   )
                 ],
+              ),
+              Text("Size"),
+              Container(
+                height: 52,
+                child: Row(
+                  children: [
+                    Expanded(
+                        child: Container(
+                      child: Text("S"),
+                      decoration: BoxDecoration(
+                        color: Colors.grey,
+                      ),
+                    ))
+                  ],
+                ),
               )
             ],
           ),
