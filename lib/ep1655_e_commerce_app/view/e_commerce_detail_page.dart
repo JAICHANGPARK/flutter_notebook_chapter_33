@@ -24,10 +24,13 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                   CircleAvatar(
                     child: Icon(Icons.share),
                     backgroundColor: Colors.grey[200],
+                    foregroundColor: Colors.black,
                   ),
                   SizedBox(width: 8,),
                   CircleAvatar(
                     child: Icon(Icons.message_outlined),
+                    backgroundColor: Colors.grey[200],
+                    foregroundColor: Colors.black,
                   ),
                 ],
               )
