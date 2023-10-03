@@ -133,16 +133,44 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
               ),
               Text("Size"),
               Container(
-                height: 52,
+                height: 42,
                 child: Row(
                   children: [
                     Expanded(
                         child: Container(
-                      child: Text("S"),
+                      child: Center(child: Text("S")),
                       decoration: BoxDecoration(
                         color: Colors.grey,
                       ),
-                    ))
+                    )),
+                    Expanded(
+                        child: Container(
+                      child: Center(child: Text("S")),
+                      decoration: BoxDecoration(
+                        color: Colors.grey,
+                      ),
+                    )),
+                    Expanded(
+                        child: Container(
+                          child: Center(child: Text("S")),
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                          ),
+                        )),
+                    Expanded(
+                        child: Container(
+                          child: Center(child: Text("S")),
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                          ),
+                        )),
+                    Expanded(
+                        child: Container(
+                          child: Center(child: Text("S")),
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                          ),
+                        )),
                   ],
                 ),
               )
