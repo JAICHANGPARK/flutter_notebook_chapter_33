@@ -26,13 +26,48 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                     backgroundColor: Colors.grey[200],
                     foregroundColor: Colors.black,
                   ),
-                  SizedBox(width: 8,),
+                  SizedBox(
+                    width: 8,
+                  ),
                   CircleAvatar(
                     child: Icon(Icons.message_outlined),
                     backgroundColor: Colors.grey[200],
                     foregroundColor: Colors.black,
                   ),
                 ],
+              ),
+              SizedBox(
+                height: 16,
+              ),
+              Container(
+                height: 220,
+                color: Colors.deepOrange,
+              ),
+              SizedBox(
+                height: 8,
+              ),
+              Container(
+                height: 84,
+                color: Colors.orange,
+                child: Row(
+                  children: [
+                    Expanded(child: Container(
+                      color: Colors.grey,
+                    )),
+                    SizedBox(width: 8,),
+                    Expanded(child: Container(
+                      color: Colors.grey,
+                    )),
+                    SizedBox(width: 8,),
+                    Expanded(child: Container(
+                      color: Colors.grey,
+                    )),
+                    SizedBox(width: 8,),
+                    Expanded(child: Container(
+                      color: Colors.grey,
+                    )),
+                  ],
+                ),
               )
             ],
           ),
