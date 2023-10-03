@@ -144,35 +144,49 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                         color: Colors.grey,
                       ),
                     )),
-                    SizedBox(width: 8,),
+                    SizedBox(
+                      width: 8,
+                    ),
                     Expanded(
                         child: Container(
                       child: Center(child: Text("S")),
                       decoration: BoxDecoration(
                         color: Colors.grey,
                       ),
-                    )),SizedBox(width: 8,),
+                    )),
+                    SizedBox(
+                      width: 8,
+                    ),
                     Expanded(
                         child: Container(
-                          child: Center(child: Text("S")),
-                          decoration: BoxDecoration(
-                            color: Colors.grey,
-                          ),
-                        )),SizedBox(width: 8,),
+                      child: Center(child: Text("S")),
+                      decoration: BoxDecoration(
+                        color: Colors.grey,
+                      ),
+                    )),
+                    SizedBox(
+                      width: 8,
+                    ),
                     Expanded(
                         child: Container(
-                          child: Center(child: Text("S")),
-                          decoration: BoxDecoration(
-                            color: Colors.grey,
-                          ),
-                        )),SizedBox(width: 8,),
+                      child: Center(child: Text("S")),
+                      decoration: BoxDecoration(
+                        color: Colors.grey,
+                      ),
+                    )),
+                    SizedBox(
+                      width: 8,
+                    ),
                     Expanded(
                         child: Container(
-                          child: Center(child: Text("S")),
-                          decoration: BoxDecoration(
-                            color: Colors.grey,
-                          ),
-                        )),SizedBox(width: 8,),
+                      child: Center(child: Text("S")),
+                      decoration: BoxDecoration(
+                        color: Colors.grey,
+                      ),
+                    )),
+                    SizedBox(
+                      width: 8,
+                    ),
                   ],
                 ),
               ),
@@ -180,7 +194,15 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
               Expanded(child: Text("")),
               Row(
                 children: [
-
+                  Expanded(
+                    child: Column(
+                      children: [
+                        Text("Price"),
+                        Text("\$17.00"),
+                      ],
+                    ),
+                  ),
+                  Expanded(child: Container())
                 ],
               )
             ],
