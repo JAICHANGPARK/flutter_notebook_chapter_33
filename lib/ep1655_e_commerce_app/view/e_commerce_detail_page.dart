@@ -57,7 +57,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
               ),
               Container(
                 height: 64,
-                color: Colors.orange,
+                // color: Colors.orange,
                 child: Row(
                   children: [
                     Expanded(
@@ -176,17 +176,41 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                   )
                 ],
               ),
-              Text("Size"),
+              SizedBox(
+                height: 16,
+              ),
+              Text(
+                "Size",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              SizedBox(
+                height: 16,
+              ),
               Container(
                 height: 42,
                 child: Row(
                   children: [
                     Expanded(
+                      child: Container(
+                        child: Center(child: Text("S")),
+                        decoration: BoxDecoration(
+                          color: Colors.grey[200],
+                          borderRadius: BorderRadius.circular(4),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 8,
+                    ),
+                    Expanded(
                         child: Container(
                       child: Center(child: Text("S")),
-                      decoration: BoxDecoration(
-                        color: Colors.grey,
-                      ),
+                          decoration: BoxDecoration(
+                            color: Colors.grey[200],
+                            borderRadius: BorderRadius.circular(4),
+                          ),
                     )),
                     SizedBox(
                       width: 8,
@@ -194,9 +218,10 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                     Expanded(
                         child: Container(
                       child: Center(child: Text("S")),
-                      decoration: BoxDecoration(
-                        color: Colors.grey,
-                      ),
+                          decoration: BoxDecoration(
+                            color: Colors.grey[200],
+                            borderRadius: BorderRadius.circular(4),
+                          ),
                     )),
                     SizedBox(
                       width: 8,
@@ -204,9 +229,10 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                     Expanded(
                         child: Container(
                       child: Center(child: Text("S")),
-                      decoration: BoxDecoration(
-                        color: Colors.grey,
-                      ),
+                          decoration: BoxDecoration(
+                            color: Colors.grey[200],
+                            borderRadius: BorderRadius.circular(4),
+                          ),
                     )),
                     SizedBox(
                       width: 8,
@@ -214,19 +240,10 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                     Expanded(
                         child: Container(
                       child: Center(child: Text("S")),
-                      decoration: BoxDecoration(
-                        color: Colors.grey,
-                      ),
-                    )),
-                    SizedBox(
-                      width: 8,
-                    ),
-                    Expanded(
-                        child: Container(
-                      child: Center(child: Text("S")),
-                      decoration: BoxDecoration(
-                        color: Colors.grey,
-                      ),
+                          decoration: BoxDecoration(
+                            color: Colors.grey[200],
+                            borderRadius: BorderRadius.circular(4),
+                          ),
                     )),
                     SizedBox(
                       width: 8,
