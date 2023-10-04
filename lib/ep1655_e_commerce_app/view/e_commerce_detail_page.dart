@@ -133,6 +133,9 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                   )
                 ],
               ),
+              SizedBox(
+                height: 16,
+              ),
               Row(
                 children: [
                   Expanded(
@@ -141,14 +144,21 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                         Icon(
                           Icons.star,
                           size: 14,
+                          color: Colors.orange,
                         ),
-                        Text("4.2"),
+                        Text(
+                          "4.2",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                         Text("(100 Reviews)"),
                       ],
                     ),
                   ),
                   Expanded(
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text("112"),
                         Text("(Purchased)"),
@@ -157,6 +167,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                   ),
                   Expanded(
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text("122"),
                         Text("(Stocks)"),
