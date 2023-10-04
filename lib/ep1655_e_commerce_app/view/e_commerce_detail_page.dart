@@ -95,6 +95,9 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                   ],
                 ),
               ),
+              SizedBox(
+                height: 16,
+              ),
               Row(
                 children: [
                   Expanded(
@@ -102,9 +105,24 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                          child: Text("Hoodie"),
+                          padding: EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                          decoration: BoxDecoration(color: Colors.deepOrange, borderRadius: BorderRadius.circular(8)),
+                          child: Text(
+                            "Hoodie",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
                         ),
-                        Text("Erigo Hoodie Kagosima Dark\nOak Unisex"),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Text(
+                          "Erigo Hoodie Kagosima Dark\nOak Unisex",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                       ],
                     ),
                   ),
