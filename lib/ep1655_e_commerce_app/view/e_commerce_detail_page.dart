@@ -55,7 +55,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
               const SizedBox(
                 height: 8,
               ),
-              Container(
+              SizedBox(
                 height: 64,
                 // color: Colors.orange,
                 child: Row(
@@ -208,7 +208,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
               const SizedBox(
                 height: 16,
               ),
-              Container(
+              SizedBox(
                 height: 42,
                 child: Row(
                   children: [
@@ -311,7 +311,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                     ),
                   ),
                   Expanded(
-                    child: Container(
+                    child: SizedBox(
                       height: 48,
                       child: Row(
                         children: [
