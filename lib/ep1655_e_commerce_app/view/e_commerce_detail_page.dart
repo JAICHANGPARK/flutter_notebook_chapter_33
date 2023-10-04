@@ -23,26 +23,26 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                 children: [
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(Icons.arrow_back),
+                    icon: const Icon(Icons.arrow_back),
                   ),
-                  Text("Detail"),
-                  Spacer(),
+                  const Text("Detail"),
+                  const Spacer(),
                   CircleAvatar(
                     backgroundColor: Colors.grey[200],
                     foregroundColor: Colors.black,
-                    child: Icon(Icons.share),
+                    child: const Icon(Icons.share),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 8,
                   ),
                   CircleAvatar(
                     backgroundColor: Colors.grey[200],
                     foregroundColor: Colors.black,
-                    child: Icon(Icons.message_outlined),
+                    child: const Icon(Icons.message_outlined),
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 16,
               ),
               Container(
@@ -52,7 +52,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                   borderRadius: BorderRadius.circular(8),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 8,
               ),
               Container(
@@ -71,21 +71,21 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 8,
                     ),
                     Expanded(
                         child: Container(
                       color: Colors.grey,
                     )),
-                    SizedBox(
+                    const SizedBox(
                       width: 8,
                     ),
                     Expanded(
                         child: Container(
                       color: Colors.grey,
                     )),
-                    SizedBox(
+                    const SizedBox(
                       width: 8,
                     ),
                     Expanded(
@@ -95,7 +95,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 16,
               ),
               Row(
@@ -105,19 +105,19 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                          padding: EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                          padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                           decoration: BoxDecoration(color: Colors.deepOrange, borderRadius: BorderRadius.circular(8)),
-                          child: Text(
+                          child: const Text(
                             "Hoodie",
                             style: TextStyle(
                               color: Colors.white,
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 8,
                         ),
-                        Text(
+                        const Text(
                           "Erigo Hoodie Kagosima Dark\nOak Unisex",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
@@ -129,14 +129,14 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                   CircleAvatar(
                     backgroundColor: Colors.grey[200],
                     foregroundColor: Colors.black,
-                    child: Icon(Icons.favorite_border),
+                    child: const Icon(Icons.favorite_border),
                   )
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 16,
               ),
-              Row(
+              const Row(
                 children: [
                   Expanded(
                     child: Row(
@@ -176,16 +176,16 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                   )
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 16,
               ),
-              Text(
+              const Text(
                 "Size",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 16,
               ),
               Container(
@@ -198,10 +198,10 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                           color: Colors.grey[200],
                           borderRadius: BorderRadius.circular(4),
                         ),
-                        child: Center(child: Text("S")),
+                        child: const Center(child: Text("S")),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 8,
                     ),
                     Expanded(
@@ -210,9 +210,9 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                         color: Colors.grey[200],
                         borderRadius: BorderRadius.circular(4),
                       ),
-                      child: Center(child: Text("S")),
+                      child: const Center(child: Text("S")),
                     )),
-                    SizedBox(
+                    const SizedBox(
                       width: 8,
                     ),
                     Expanded(
@@ -221,9 +221,9 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                         color: Colors.grey[200],
                         borderRadius: BorderRadius.circular(4),
                       ),
-                      child: Center(child: Text("S")),
+                      child: const Center(child: Text("S")),
                     )),
-                    SizedBox(
+                    const SizedBox(
                       width: 8,
                     ),
                     Expanded(
@@ -232,9 +232,9 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                         color: Colors.grey[200],
                         borderRadius: BorderRadius.circular(4),
                       ),
-                      child: Center(child: Text("S")),
+                      child: const Center(child: Text("S")),
                     )),
-                    SizedBox(
+                    const SizedBox(
                       width: 8,
                     ),
                     Expanded(
@@ -243,35 +243,35 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                         color: Colors.grey[200],
                         borderRadius: BorderRadius.circular(4),
                       ),
-                      child: Center(child: Text("S")),
+                      child: const Center(child: Text("S")),
                     )),
-                    SizedBox(
+                    const SizedBox(
                       width: 8,
                     ),
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 16,
               ),
-              Text(
+              const Text(
                 'Description Product',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 16,
               ),
-              Expanded(
+              const Expanded(
                   child: SelectableText(
                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")),
-              SizedBox(
+              const SizedBox(
                 height: 16,
               ),
               Row(
                 children: [
-                  Expanded(
+                  const Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -296,11 +296,11 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                       child: Row(
                         children: [
                           Container(
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               color: Colors.deepOrange,
                             ),
-                            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                            child: Center(
+                            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                            child: const Center(
                               child: Icon(
                                 Icons.add_shopping_cart,
                                 color: Colors.white,
@@ -310,7 +310,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                           Expanded(
                             child: Container(
                               color: Colors.black,
-                              child: Center(
+                              child: const Center(
                                 child: Text(
                                   "Buy Now",
                                   style: TextStyle(
