@@ -281,13 +281,18 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                         ),
                         Text(
                           "\$17.00",
-                          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.deepOrange, fontSize: 18),
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.deepOrange,
+                            fontSize: 18,
+                          ),
                         ),
                       ],
                     ),
                   ),
                   Expanded(
                     child: Container(
+                      height: 48,
                       child: Row(
                         children: [
                           Container(
@@ -295,11 +300,21 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                               color: Colors.deepOrange,
                             ),
                             padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                            child: Icon(
-                              Icons.add_shopping_cart,
-                              color: Colors.white,
+                            child: Center(
+                              child: Icon(
+                                Icons.add_shopping_cart,
+                                color: Colors.white,
+                              ),
                             ),
                           ),
+                          Expanded(
+                            child: Container(
+                              color: Colors.black,
+                              child: Center(
+                                child: Text("Buy Now"),
+                              ),
+                            ),
+                          )
                         ],
                       ),
                     ),
