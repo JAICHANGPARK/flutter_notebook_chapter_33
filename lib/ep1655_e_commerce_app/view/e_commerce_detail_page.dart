@@ -230,7 +230,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                         color: Colors.grey[200],
                         borderRadius: BorderRadius.circular(4),
                       ),
-                      child: const Center(child: Text("S")),
+                      child: const Center(child: Text("M")),
                     )),
                     const SizedBox(
                       width: 8,
@@ -241,7 +241,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                         color: Colors.grey[200],
                         borderRadius: BorderRadius.circular(4),
                       ),
-                      child: const Center(child: Text("S")),
+                      child: const Center(child: Text("L")),
                     )),
                     const SizedBox(
                       width: 8,
@@ -252,7 +252,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                         color: Colors.grey[200],
                         borderRadius: BorderRadius.circular(4),
                       ),
-                      child: const Center(child: Text("S")),
+                      child: const Center(child: Text("XL")),
                     )),
                     const SizedBox(
                       width: 8,
@@ -263,7 +263,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                         color: Colors.grey[200],
                         borderRadius: BorderRadius.circular(4),
                       ),
-                      child: const Center(child: Text("S")),
+                      child: const Center(child: Text("XXL")),
                     )),
                     const SizedBox(
                       width: 8,
