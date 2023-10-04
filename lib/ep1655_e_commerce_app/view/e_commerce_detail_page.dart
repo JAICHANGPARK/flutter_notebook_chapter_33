@@ -22,7 +22,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
               Row(
                 children: [
                   IconButton(
-                    onPressed: () {},
+                    onPressed: () => Navigator.of(context).pop(),
                     icon: const Icon(Icons.arrow_back),
                   ),
                   const Text("Detail"),
@@ -90,13 +90,13 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                     ),
                     Expanded(
                         child: Container(
-                          decoration: BoxDecoration(
-                            color: Colors.grey,
-                            border: Border.all(
-                              color: Colors.transparent,
-                            ),
-                            borderRadius: BorderRadius.circular(8),
-                          ),
+                      decoration: BoxDecoration(
+                        color: Colors.grey,
+                        border: Border.all(
+                          color: Colors.transparent,
+                        ),
+                        borderRadius: BorderRadius.circular(8),
+                      ),
                     )),
                     const SizedBox(
                       width: 8,
