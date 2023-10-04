@@ -8,6 +8,8 @@ class EcommerceDetailPage extends StatefulWidget {
 }
 
 class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
+  int selectedIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,7 +47,10 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
               ),
               Container(
                 height: 240,
-                color: Colors.deepOrange,
+                decoration: BoxDecoration(
+                  color: Colors.deepOrange,
+                  borderRadius: BorderRadius.circular(8),
+                ),
               ),
               SizedBox(
                 height: 8,
@@ -56,30 +61,38 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                 child: Row(
                   children: [
                     Expanded(
-                        child: Container(
-                      color: Colors.grey,
-                    )),
+                      child: Container(
+
+                        decoration: BoxDecoration(
+                            color: Colors.grey,
+                            border: Border.all(
+                              color: selectedIndex == 0 ?
+                              Colors.deepOrange : Colors.transparent,
+                            )
+                        ),
+                      ),
+                    ),
                     SizedBox(
                       width: 8,
                     ),
                     Expanded(
                         child: Container(
-                      color: Colors.grey,
-                    )),
+                          color: Colors.grey,
+                        )),
                     SizedBox(
                       width: 8,
                     ),
                     Expanded(
                         child: Container(
-                      color: Colors.grey,
-                    )),
+                          color: Colors.grey,
+                        )),
                     SizedBox(
                       width: 8,
                     ),
                     Expanded(
                         child: Container(
-                      color: Colors.grey,
-                    )),
+                          color: Colors.grey,
+                        )),
                   ],
                 ),
               ),
@@ -142,51 +155,51 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                   children: [
                     Expanded(
                         child: Container(
-                      child: Center(child: Text("S")),
-                      decoration: BoxDecoration(
-                        color: Colors.grey,
-                      ),
-                    )),
+                          child: Center(child: Text("S")),
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                          ),
+                        )),
                     SizedBox(
                       width: 8,
                     ),
                     Expanded(
                         child: Container(
-                      child: Center(child: Text("S")),
-                      decoration: BoxDecoration(
-                        color: Colors.grey,
-                      ),
-                    )),
+                          child: Center(child: Text("S")),
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                          ),
+                        )),
                     SizedBox(
                       width: 8,
                     ),
                     Expanded(
                         child: Container(
-                      child: Center(child: Text("S")),
-                      decoration: BoxDecoration(
-                        color: Colors.grey,
-                      ),
-                    )),
+                          child: Center(child: Text("S")),
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                          ),
+                        )),
                     SizedBox(
                       width: 8,
                     ),
                     Expanded(
                         child: Container(
-                      child: Center(child: Text("S")),
-                      decoration: BoxDecoration(
-                        color: Colors.grey,
-                      ),
-                    )),
+                          child: Center(child: Text("S")),
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                          ),
+                        )),
                     SizedBox(
                       width: 8,
                     ),
                     Expanded(
                         child: Container(
-                      child: Center(child: Text("S")),
-                      decoration: BoxDecoration(
-                        color: Colors.grey,
-                      ),
-                    )),
+                          child: Center(child: Text("S")),
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                          ),
+                        )),
                     SizedBox(
                       width: 8,
                     ),
