@@ -13,13 +13,16 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16,vertical: 16),
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
                 children: [
-                  IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back)),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.arrow_back),
+                  ),
                   Text("Detail"),
                   Spacer(),
                   CircleAvatar(
