@@ -75,23 +75,43 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                       width: 8,
                     ),
                     Expanded(
-                        child: Container(
-                      color: Colors.grey,
-                    )),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.grey,
+                          border: Border.all(
+                            color: Colors.transparent,
+                          ),
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                      ),
+                    ),
                     const SizedBox(
                       width: 8,
                     ),
                     Expanded(
                         child: Container(
-                      color: Colors.grey,
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                            border: Border.all(
+                              color: Colors.transparent,
+                            ),
+                            borderRadius: BorderRadius.circular(8),
+                          ),
                     )),
                     const SizedBox(
                       width: 8,
                     ),
                     Expanded(
-                        child: Container(
-                      color: Colors.grey,
-                    )),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.grey,
+                          border: Border.all(
+                            color: Colors.transparent,
+                          ),
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),
