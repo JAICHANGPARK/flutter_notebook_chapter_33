@@ -28,17 +28,17 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                   Text("Detail"),
                   Spacer(),
                   CircleAvatar(
-                    child: Icon(Icons.share),
                     backgroundColor: Colors.grey[200],
                     foregroundColor: Colors.black,
+                    child: Icon(Icons.share),
                   ),
                   SizedBox(
                     width: 8,
                   ),
                   CircleAvatar(
-                    child: Icon(Icons.message_outlined),
                     backgroundColor: Colors.grey[200],
                     foregroundColor: Colors.black,
+                    child: Icon(Icons.message_outlined),
                   ),
                 ],
               ),
@@ -194,11 +194,11 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                   children: [
                     Expanded(
                       child: Container(
-                        child: Center(child: Text("S")),
                         decoration: BoxDecoration(
                           color: Colors.grey[200],
                           borderRadius: BorderRadius.circular(4),
                         ),
+                        child: Center(child: Text("S")),
                       ),
                     ),
                     SizedBox(
@@ -206,44 +206,44 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                     ),
                     Expanded(
                         child: Container(
-                      child: Center(child: Text("S")),
                       decoration: BoxDecoration(
                         color: Colors.grey[200],
                         borderRadius: BorderRadius.circular(4),
                       ),
+                      child: Center(child: Text("S")),
                     )),
                     SizedBox(
                       width: 8,
                     ),
                     Expanded(
                         child: Container(
-                      child: Center(child: Text("S")),
                       decoration: BoxDecoration(
                         color: Colors.grey[200],
                         borderRadius: BorderRadius.circular(4),
                       ),
+                      child: Center(child: Text("S")),
                     )),
                     SizedBox(
                       width: 8,
                     ),
                     Expanded(
                         child: Container(
-                      child: Center(child: Text("S")),
                       decoration: BoxDecoration(
                         color: Colors.grey[200],
                         borderRadius: BorderRadius.circular(4),
                       ),
+                      child: Center(child: Text("S")),
                     )),
                     SizedBox(
                       width: 8,
                     ),
                     Expanded(
                         child: Container(
-                      child: Center(child: Text("S")),
                       decoration: BoxDecoration(
                         color: Colors.grey[200],
                         borderRadius: BorderRadius.circular(4),
                       ),
+                      child: Center(child: Text("S")),
                     )),
                     SizedBox(
                       width: 8,
@@ -291,14 +291,14 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                       child: Row(
                         children: [
                           Container(
-                            child: Icon(
-                              Icons.add_shopping_cart,
-                              color: Colors.white,
-                            ),
                             decoration: BoxDecoration(
                               color: Colors.deepOrange,
                             ),
                             padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                            child: Icon(
+                              Icons.add_shopping_cart,
+                              color: Colors.white,
+                            ),
                           ),
                         ],
                       ),
