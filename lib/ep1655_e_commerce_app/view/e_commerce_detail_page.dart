@@ -207,10 +207,10 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                     Expanded(
                         child: Container(
                       child: Center(child: Text("S")),
-                          decoration: BoxDecoration(
-                            color: Colors.grey[200],
-                            borderRadius: BorderRadius.circular(4),
-                          ),
+                      decoration: BoxDecoration(
+                        color: Colors.grey[200],
+                        borderRadius: BorderRadius.circular(4),
+                      ),
                     )),
                     SizedBox(
                       width: 8,
@@ -218,10 +218,10 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                     Expanded(
                         child: Container(
                       child: Center(child: Text("S")),
-                          decoration: BoxDecoration(
-                            color: Colors.grey[200],
-                            borderRadius: BorderRadius.circular(4),
-                          ),
+                      decoration: BoxDecoration(
+                        color: Colors.grey[200],
+                        borderRadius: BorderRadius.circular(4),
+                      ),
                     )),
                     SizedBox(
                       width: 8,
@@ -229,10 +229,10 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                     Expanded(
                         child: Container(
                       child: Center(child: Text("S")),
-                          decoration: BoxDecoration(
-                            color: Colors.grey[200],
-                            borderRadius: BorderRadius.circular(4),
-                          ),
+                      decoration: BoxDecoration(
+                        color: Colors.grey[200],
+                        borderRadius: BorderRadius.circular(4),
+                      ),
                     )),
                     SizedBox(
                       width: 8,
@@ -240,10 +240,10 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                     Expanded(
                         child: Container(
                       child: Center(child: Text("S")),
-                          decoration: BoxDecoration(
-                            color: Colors.grey[200],
-                            borderRadius: BorderRadius.circular(4),
-                          ),
+                      decoration: BoxDecoration(
+                        color: Colors.grey[200],
+                        borderRadius: BorderRadius.circular(4),
+                      ),
                     )),
                     SizedBox(
                       width: 8,
@@ -251,7 +251,15 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                   ],
                 ),
               ),
-              Text('Description Product'),
+              SizedBox(
+                height: 16,
+              ),
+              Text(
+                'Description Product',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
               Expanded(child: Text("")),
               Row(
                 children: [
