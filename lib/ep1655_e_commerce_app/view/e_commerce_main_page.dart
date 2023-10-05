@@ -10,6 +10,7 @@ class EcommerceMainPage extends StatefulWidget {
 }
 
 class _EcommerceMainPageState extends State<EcommerceMainPage> {
+  int menuIndex = 0;
   List<String> tabItems = [
     "All",
     "Hoodie",
