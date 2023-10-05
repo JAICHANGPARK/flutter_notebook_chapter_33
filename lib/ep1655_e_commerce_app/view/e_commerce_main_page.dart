@@ -263,6 +263,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                         color: Colors.grey[200],
                         borderRadius: BorderRadius.circular(32)
                       ),
+                      padding: EdgeInsets.symmetric(horizontal: 16),
                       child: TextField(
                         decoration: InputDecoration(
                           hintText: "Search",
