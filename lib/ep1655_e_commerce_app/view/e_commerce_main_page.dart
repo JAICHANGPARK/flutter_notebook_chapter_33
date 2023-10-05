@@ -273,6 +273,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                       ),
                     ),
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text("Collections"),
                         TextButton(
