@@ -232,7 +232,11 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                     Row(
                       children: [
                         IconButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            setState(() {
+                              menuIndex = 0;
+                            });
+                          },
                           icon: Icon(Icons.arrow_back),
                         ),
                         Text("Discover"),
