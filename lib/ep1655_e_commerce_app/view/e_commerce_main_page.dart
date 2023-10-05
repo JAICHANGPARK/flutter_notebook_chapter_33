@@ -239,9 +239,9 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                                 menuIndex = 0;
                               });
                             },
-                            icon: Icon(Icons.arrow_back),
+                            icon: const Icon(Icons.arrow_back),
                           ),
-                          Text("Discover"),
+                          const Text("Discover"),
                         ],
                       ),
                     ),
@@ -251,23 +251,24 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                         controller: PageController(viewportFraction: 0.8, initialPage: 1),
                         itemBuilder: (context, index) {
                           return Container(
-                            margin: EdgeInsets.symmetric(horizontal: 8),
+                            margin: const EdgeInsets.symmetric(horizontal: 8),
                             decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(8)),
                           );
                         },
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.all(16),
+                      margin: const EdgeInsets.all(16),
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
                       decoration: BoxDecoration(
                         color: Colors.grey[200],
-                        borderRadius: BorderRadius.circular(32)
+                        borderRadius: BorderRadius.circular(32),
                       ),
-                      padding: EdgeInsets.symmetric(horizontal: 16),
-                      child: TextField(
+                      child: const TextField(
                         decoration: InputDecoration(
                           hintText: "Search",
                           suffixIcon: Icon(Icons.search),
+                          border: InputBorder.none,
                         ),
                       ),
                     )
