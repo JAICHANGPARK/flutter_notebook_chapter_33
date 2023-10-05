@@ -330,6 +330,15 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                               )
                             ],
                           ),
+                          Expanded(
+                            child: GridView.builder(
+                                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                                  crossAxisCount: 2,
+                                ),
+                                itemBuilder: (context, index) {
+                                  return Container();
+                                }),
+                          ),
                         ],
                       ),
                     )
