@@ -142,7 +142,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                                     onTap: () {
                                       Navigator.of(context).push(
                                         MaterialPageRoute(
-                                          builder: (context) => EcommerceDetailPage(),
+                                          builder: (context) => const EcommerceDetailPage(),
                                         ),
                                       );
                                     },
@@ -151,10 +151,10 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                                         children: [
                                           Expanded(
                                             child: Container(
-                                              decoration: BoxDecoration(
+                                              decoration: const BoxDecoration(
                                                 color: Colors.grey,
                                               ),
-                                              child: Stack(
+                                              child: const Stack(
                                                 children: [],
                                               ),
                                             ),
@@ -169,8 +169,8 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                                                     color: Colors.deepOrange,
                                                     borderRadius: BorderRadius.circular(16),
                                                   ),
-                                                  padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
-                                                  child: Text(
+                                                  padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                                                  child: const Text(
                                                     "Hoodie",
                                                     style: TextStyle(
                                                       fontSize: 10,
@@ -178,11 +178,11 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                                                     ),
                                                   ),
                                                 ),
-                                                Padding(
-                                                  padding: const EdgeInsets.symmetric(vertical: 8),
+                                                const Padding(
+                                                  padding: EdgeInsets.symmetric(vertical: 8),
                                                   child: Text("Title Title Title Title Title Title Title Title"),
                                                 ),
-                                                Row(
+                                                const Row(
                                                   children: [
                                                     Icon(
                                                       Icons.star,
