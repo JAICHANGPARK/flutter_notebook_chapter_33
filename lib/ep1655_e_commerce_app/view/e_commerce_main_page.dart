@@ -245,15 +245,23 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                         ],
                       ),
                     ),
-                    PageView.builder(
-                      itemBuilder: (context, index) {
-                        return Container(
-                          decoration: BoxDecoration(
-                            color: Colors.blue,
-                            borderRadius: BorderRadius.circular(8)
-                          ),
-                        );
-                      },
+                    SizedBox(
+                      height: 180,
+                      child: PageView.builder(
+                        controller: PageController(
+                          viewportFraction: 0.8,
+                          initialPage: 1
+                        ),
+                        itemBuilder: (context, index) {
+                          return Container(
+                            margin: EdgeInsets.symmetric(horizontal: 8),
+                            decoration: BoxDecoration(
+                              color: Colors.blue,
+                              borderRadius: BorderRadius.circular(8)
+                            ),
+                          );
+                        },
+                      ),
                     ),
                   ],
                 )
