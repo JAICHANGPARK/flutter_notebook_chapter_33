@@ -311,6 +311,27 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                           )
                         ],
                       ),
+                    ),
+                    Expanded(
+                      child: Column(
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                "Collections",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              TextButton(
+                                onPressed: () {},
+                                child: Text("View all"),
+                              )
+                            ],
+                          ),
+                        ],
+                      ),
                     )
                   ],
                 )
