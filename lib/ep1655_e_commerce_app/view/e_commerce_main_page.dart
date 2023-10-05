@@ -286,14 +286,15 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                               )
                             ],
                           ),
-                          SizedBox(height: 16,),
+                          SizedBox(height: 8,),
                           Container(
-                            height: 92,
+                            height: 120,
                             child: ListView.builder(
                               scrollDirection: Axis.horizontal,
                               itemBuilder: (context, index) {
                                 return Container(
-                                  width: 84,
+                                  width: 120,
+                                  margin: EdgeInsets.only(right: 8),
                                   decoration: BoxDecoration(
                                     color: Colors.orange,
                                   ),
