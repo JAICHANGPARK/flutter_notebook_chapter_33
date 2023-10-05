@@ -271,6 +271,29 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                           border: InputBorder.none,
                         ),
                       ),
+                    ),
+                    Row(
+                      children: [
+                        Text("Collections"),
+                        TextButton(
+                          onPressed: () {},
+                          child: Text("View all"),
+                        )
+                      ],
+                    ),
+                    Container(
+                      height: 92,
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemBuilder: (context, index) {
+                          return Container(
+                            width: 84,
+                            decoration: BoxDecoration(
+                              color: Colors.orange,
+                            ),
+                          );
+                        },
+                      ),
                     )
                   ],
                 )
