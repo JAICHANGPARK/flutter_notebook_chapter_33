@@ -235,9 +235,12 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                       menuIndex = idx;
                     });
                   },
+                  type: BottomNavigationBarType.fixed,
                   currentIndex: menuIndex,
                   backgroundColor: Colors.black,
-                  type: BottomNavigationBarType.fixed,
+
+                  unselectedItemColor: Colors.grey,
+                  selectedItemColor: Colors.deepOrange,
                   items: const [
                     BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
                     BottomNavigationBarItem(icon: Icon(Icons.explore_outlined), label: "Discover"),
@@ -245,8 +248,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                     BottomNavigationBarItem(icon: Icon(Icons.chat_outlined), label: "Discover"),
                     BottomNavigationBarItem(icon: Icon(Icons.person_outline), label: "Discover"),
                   ],
-                  unselectedItemColor: Colors.grey,
-                  selectedItemColor: Colors.deepOrange,
+
                 ),
               ),
             )
