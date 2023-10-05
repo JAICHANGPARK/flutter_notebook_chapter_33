@@ -279,14 +279,21 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text("Collections"),
+                              Text(
+                                "Collections",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                               TextButton(
                                 onPressed: () {},
                                 child: Text("View all"),
                               )
                             ],
                           ),
-                          SizedBox(height: 8,),
+                          SizedBox(
+                            height: 8,
+                          ),
                           Container(
                             height: 120,
                             child: ListView.builder(
@@ -305,7 +312,6 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                         ],
                       ),
                     )
-
                   ],
                 )
               ],
