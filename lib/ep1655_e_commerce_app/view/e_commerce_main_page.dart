@@ -339,6 +339,8 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                               child: GridView.builder(
                                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 2,
+                                    crossAxisSpacing: 8,
+                                    mainAxisSpacing: 8
                                   ),
                                   itemBuilder: (context, index) {
                                     return Container(
