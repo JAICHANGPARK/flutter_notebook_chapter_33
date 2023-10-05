@@ -99,7 +99,8 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                                 ),
                                 Container(
                                   padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
-                                  decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(32)),
+                                  decoration:
+                                      BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(32)),
                                   child: const Text(
                                     "Shop Now",
                                     style: TextStyle(
@@ -226,6 +227,19 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                     )
                   ],
                 ),
+                Column(
+                  children: [
+                    Row(
+                      children: [
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(Icons.arrow_back),
+                        ),
+                        Text("Discover"),
+                      ],
+                    )
+                  ],
+                )
               ],
             ),
             Positioned(
@@ -235,7 +249,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(32),
                 child: BottomNavigationBar(
-                  onTap: (idx){
+                  onTap: (idx) {
                     setState(() {
                       menuIndex = idx;
                     });
@@ -243,7 +257,6 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                   type: BottomNavigationBarType.fixed,
                   currentIndex: menuIndex,
                   backgroundColor: Colors.black,
-
                   unselectedItemColor: Colors.grey,
                   selectedItemColor: Colors.deepOrange,
                   items: const [
@@ -253,7 +266,6 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                     BottomNavigationBarItem(icon: Icon(Icons.chat_outlined), label: "Discover"),
                     BottomNavigationBarItem(icon: Icon(Icons.person_outline), label: "Discover"),
                   ],
-
                 ),
               ),
             )
