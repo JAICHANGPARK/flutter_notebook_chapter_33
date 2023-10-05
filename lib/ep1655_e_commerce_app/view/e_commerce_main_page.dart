@@ -272,30 +272,39 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                         ),
                       ),
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text("Collections"),
-                        TextButton(
-                          onPressed: () {},
-                          child: Text("View all"),
-                        )
-                      ],
-                    ),
-                    Container(
-                      height: 92,
-                      child: ListView.builder(
-                        scrollDirection: Axis.horizontal,
-                        itemBuilder: (context, index) {
-                          return Container(
-                            width: 84,
-                            decoration: BoxDecoration(
-                              color: Colors.orange,
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: Column(
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text("Collections"),
+                              TextButton(
+                                onPressed: () {},
+                                child: Text("View all"),
+                              )
+                            ],
+                          ),
+                          SizedBox(height: 16,),
+                          Container(
+                            height: 92,
+                            child: ListView.builder(
+                              scrollDirection: Axis.horizontal,
+                              itemBuilder: (context, index) {
+                                return Container(
+                                  width: 84,
+                                  decoration: BoxDecoration(
+                                    color: Colors.orange,
+                                  ),
+                                );
+                              },
                             ),
-                          );
-                        },
+                          )
+                        ],
                       ),
                     )
+
                   ],
                 )
               ],
