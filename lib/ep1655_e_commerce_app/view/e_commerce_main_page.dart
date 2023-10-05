@@ -315,29 +315,37 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                     Expanded(
                       child: Column(
                         children: [
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text(
-                                "Collections",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 16),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  "Collections",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
                                 ),
-                              ),
-                              TextButton(
-                                onPressed: () {},
-                                child: Text("View all"),
-                              )
-                            ],
+                                TextButton(
+                                  onPressed: () {},
+                                  child: Text("View all"),
+                                )
+                              ],
+                            ),
                           ),
                           Expanded(
-                            child: GridView.builder(
-                                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                                  crossAxisCount: 2,
-                                ),
-                                itemBuilder: (context, index) {
-                                  return Container();
-                                }),
+                            child: Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 16,),
+                              child: GridView.builder(
+                                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                                    crossAxisCount: 2,
+                                  ),
+                                  itemBuilder: (context, index) {
+                                    return Container(
+                                      color: Colors.blue,
+                                    );
+                                  }),
+                            ),
                           ),
                         ],
                       ),
