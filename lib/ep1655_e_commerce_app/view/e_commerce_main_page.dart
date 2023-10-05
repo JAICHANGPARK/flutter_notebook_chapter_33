@@ -248,21 +248,28 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                     SizedBox(
                       height: 180,
                       child: PageView.builder(
-                        controller: PageController(
-                          viewportFraction: 0.8,
-                          initialPage: 1
-                        ),
+                        controller: PageController(viewportFraction: 0.8, initialPage: 1),
                         itemBuilder: (context, index) {
                           return Container(
                             margin: EdgeInsets.symmetric(horizontal: 8),
-                            decoration: BoxDecoration(
-                              color: Colors.blue,
-                              borderRadius: BorderRadius.circular(8)
-                            ),
+                            decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(8)),
                           );
                         },
                       ),
                     ),
+                    Container(
+                      margin: EdgeInsets.all(16),
+                      decoration: BoxDecoration(
+                        color: Colors.grey[200],
+                        borderRadius: BorderRadius.circular(32)
+                      ),
+                      child: TextField(
+                        decoration: InputDecoration(
+                          hintText: "Search",
+                          suffixIcon: Icon(Icons.search),
+                        ),
+                      ),
+                    )
                   ],
                 )
               ],
