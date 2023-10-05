@@ -229,19 +229,32 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                 ),
                 Column(
                   children: [
-                    Row(
-                      children: [
-                        IconButton(
-                          onPressed: () {
-                            setState(() {
-                              menuIndex = 0;
-                            });
-                          },
-                          icon: Icon(Icons.arrow_back),
-                        ),
-                        Text("Discover"),
-                      ],
-                    )
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Row(
+                        children: [
+                          IconButton(
+                            onPressed: () {
+                              setState(() {
+                                menuIndex = 0;
+                              });
+                            },
+                            icon: Icon(Icons.arrow_back),
+                          ),
+                          Text("Discover"),
+                        ],
+                      ),
+                    ),
+                    PageView.builder(
+                      itemBuilder: (context, index) {
+                        return Container(
+                          decoration: BoxDecoration(
+                            color: Colors.blue,
+                            borderRadius: BorderRadius.circular(8)
+                          ),
+                        );
+                      },
+                    ),
                   ],
                 )
               ],
