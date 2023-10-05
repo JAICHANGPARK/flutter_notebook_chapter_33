@@ -230,14 +230,20 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(32),
                 child: BottomNavigationBar(
+                  onTap: (idx){
+                    setState(() {
+                      menuIndex = idx;
+                    });
+                  },
+                  currentIndex: menuIndex,
                   backgroundColor: Colors.black,
                   type: BottomNavigationBarType.fixed,
-                  items: [
-                    const BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-                    const BottomNavigationBarItem(icon: Icon(Icons.explore_outlined), label: "Discover"),
-                    const BottomNavigationBarItem(icon: Icon(Icons.favorite_border), label: "Discover"),
-                    const BottomNavigationBarItem(icon: Icon(Icons.chat_outlined), label: "Discover"),
-                    const BottomNavigationBarItem(icon: Icon(Icons.person_outline), label: "Discover"),
+                  items: const [
+                    BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+                    BottomNavigationBarItem(icon: Icon(Icons.explore_outlined), label: "Discover"),
+                    BottomNavigationBarItem(icon: Icon(Icons.favorite_border), label: "Discover"),
+                    BottomNavigationBarItem(icon: Icon(Icons.chat_outlined), label: "Discover"),
+                    BottomNavigationBarItem(icon: Icon(Icons.person_outline), label: "Discover"),
                   ],
                   unselectedItemColor: Colors.grey,
                   selectedItemColor: Colors.deepOrange,
