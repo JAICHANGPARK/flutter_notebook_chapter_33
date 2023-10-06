@@ -58,8 +58,8 @@ class _EcommerceNotificationPageState extends State<EcommerceNotificationPage> {
                   child: Row(
                     children: [
                       Container(
-                        height: 94,
-                        width: 94,
+                        height: 112,
+                        width: 100,
                         decoration: BoxDecoration(
                           color: Colors.grey[300],
                           borderRadius: BorderRadius.circular(8),
