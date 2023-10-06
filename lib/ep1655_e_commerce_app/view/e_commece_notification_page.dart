@@ -40,13 +40,21 @@ class _EcommerceNotificationPageState extends State<EcommerceNotificationPage> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text("Order status"),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text(
+              "Order status",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
           Expanded(
             child: ListView.builder(
               itemBuilder: (context, index) {
                 return Container(
                   margin: EdgeInsets.all(8),
-                  color: Colors.blue,
+                  // color: Colors.blue,
                   child: Row(
                     children: [
                       Container(
@@ -78,7 +86,12 @@ class _EcommerceNotificationPageState extends State<EcommerceNotificationPage> {
                               ),
                             ),
                           ),
-                          Text("Package received"),
+                          Text(
+                            "Package received",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                           Text("Package 123456789 from message 12345789 has been received,"),
                           Text("01 - 08 - 2023 ")
                         ],
