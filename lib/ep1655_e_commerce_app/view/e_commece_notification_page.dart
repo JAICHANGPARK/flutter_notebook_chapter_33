@@ -25,11 +25,12 @@ class _EcommerceNotificationPageState extends State<EcommerceNotificationPage> {
               child: Icon(Icons.notifications_none),
             ),
           ),
+          SizedBox(width: 8,),
           CircleAvatar(
             backgroundColor: Colors.grey[200],
             foregroundColor: Colors.black,
             child: Badge(
-              child: Icon(Icons.notifications_none),
+              child: Icon(Icons.shopping_bag_outlined),
             ),
           ),
         ],
