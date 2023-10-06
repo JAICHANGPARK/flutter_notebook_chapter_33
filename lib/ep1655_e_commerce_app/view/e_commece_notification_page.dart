@@ -10,6 +10,14 @@ class EcommerceNotificationPage extends StatefulWidget {
 class _EcommerceNotificationPageState extends State<EcommerceNotificationPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text("Notifications"),
+        actions: [
+
+        ],
+      ),
+    );
   }
 }
