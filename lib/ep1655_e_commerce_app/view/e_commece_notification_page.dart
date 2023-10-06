@@ -16,22 +16,22 @@ class _EcommerceNotificationPageState extends State<EcommerceNotificationPage> {
         foregroundColor: Colors.black,
         backgroundColor: Colors.white,
         elevation: 0,
-        title: Text("Notifications"),
+        title: const Text("Notifications"),
         actions: [
           CircleAvatar(
             backgroundColor: Colors.grey[200],
             foregroundColor: Colors.black,
-            child: Badge(
+            child: const Badge(
               child: Icon(Icons.notifications_none),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             width: 8,
           ),
           CircleAvatar(
             backgroundColor: Colors.grey[200],
             foregroundColor: Colors.black,
-            child: Badge(
+            child: const Badge(
               child: Icon(Icons.shopping_bag_outlined),
             ),
           ),
@@ -40,8 +40,8 @@ class _EcommerceNotificationPageState extends State<EcommerceNotificationPage> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Padding(
-            padding: const EdgeInsets.all(8.0),
+          const Padding(
+            padding: EdgeInsets.all(8.0),
             child: Text(
               "Order status",
               style: TextStyle(
@@ -53,7 +53,7 @@ class _EcommerceNotificationPageState extends State<EcommerceNotificationPage> {
             child: ListView.builder(
               itemBuilder: (context, index) {
                 return Container(
-                  margin: EdgeInsets.all(8),
+                  margin: const EdgeInsets.all(8),
                   // color: Colors.blue,
                   child: Row(
                     children: [
@@ -65,7 +65,8 @@ class _EcommerceNotificationPageState extends State<EcommerceNotificationPage> {
                           borderRadius: BorderRadius.circular(8),
                         ),
                       ),
-                      SizedBox(
+
+                      const SizedBox(
                         width: 8,
                       ),
                       Expanded(
@@ -73,12 +74,12 @@ class _EcommerceNotificationPageState extends State<EcommerceNotificationPage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
-                            padding: EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                            padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                             decoration: BoxDecoration(
                               color: Colors.deepOrange,
                               borderRadius: BorderRadius.circular(16),
                             ),
-                            child: Text(
+                            child: const Text(
                               "T-Shirt",
                               style: TextStyle(
                                 color: Colors.white,
@@ -86,19 +87,22 @@ class _EcommerceNotificationPageState extends State<EcommerceNotificationPage> {
                               ),
                             ),
                           ),
-                          Text(
+                          SizedBox(height: 4,),
+                          const Text(
                             "Package received",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          Text("Package 123456789 from message 12345789 has been received,"),
-                          Text("01 - 08 - 2023 ")
+                          SizedBox(height: 4,),
+                          const Text("Package 123456789 from message 12345789 has been received,"),
+                          SizedBox(height: 4,),
+                          const Text("01 - 08 - 2023 ")
                         ],
                       )),
                       IconButton(
                         onPressed: () {},
-                        icon: Icon(Icons.keyboard_arrow_down_outlined),
+                        icon: const Icon(Icons.keyboard_arrow_down_outlined),
                       ),
                     ],
                   ),
