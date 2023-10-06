@@ -60,7 +60,15 @@ class _EcommerceNotificationPageState extends State<EcommerceNotificationPage> {
                       SizedBox(
                         width: 8,
                       ),
-                      Expanded(child: Column()),
+                      Expanded(child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(),
+                            child: Text("T-Shirt"),
+                          )
+                        ],
+                      )),
                       IconButton(
                         onPressed: () {},
                         icon: Icon(Icons.keyboard_arrow_down_outlined),
