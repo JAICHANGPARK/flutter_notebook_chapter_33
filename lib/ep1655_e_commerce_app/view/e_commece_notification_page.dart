@@ -50,8 +50,8 @@ class _EcommerceNotificationPageState extends State<EcommerceNotificationPage> {
                   child: Row(
                     children: [
                       Container(
-                        height: 84,
-                        width: 84,
+                        height: 94,
+                        width: 94,
                         decoration: BoxDecoration(
                           color: Colors.grey[300],
                           borderRadius: BorderRadius.circular(8),
@@ -60,13 +60,19 @@ class _EcommerceNotificationPageState extends State<EcommerceNotificationPage> {
                       SizedBox(
                         width: 8,
                       ),
-                      Expanded(child: Column(
+                      Expanded(
+                          child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
-                            decoration: BoxDecoration(),
+                            decoration: BoxDecoration(
+                              color: Colors.deepOrange,
+                            ),
                             child: Text("T-Shirt"),
-                          )
+                          ),
+                          Text("Package received"),
+                          Text("Package 123456789 from message 12345789 has been received,"),
+                          Text("01 - 08 - 2023 ")
                         ],
                       )),
                       IconButton(
