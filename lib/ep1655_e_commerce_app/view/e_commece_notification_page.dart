@@ -13,6 +13,9 @@ class _EcommerceNotificationPageState extends State<EcommerceNotificationPage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
+        foregroundColor: Colors.black,
+        backgroundColor: Colors.white,
+        elevation: 0,
         title: Text("Notifications"),
         actions: [
 
