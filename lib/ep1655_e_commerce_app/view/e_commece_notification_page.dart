@@ -47,6 +47,26 @@ class _EcommerceNotificationPageState extends State<EcommerceNotificationPage> {
                 return Container(
                   margin: EdgeInsets.all(8),
                   color: Colors.blue,
+                  child: Row(
+                    children: [
+                      Container(
+                        height: 84,
+                        width: 84,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[300],
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                      ),
+                      SizedBox(
+                        width: 8,
+                      ),
+                      Expanded(child: Column()),
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(Icons.keyboard_arrow_down_outlined),
+                      ),
+                    ],
+                  ),
                 );
               },
             ),
