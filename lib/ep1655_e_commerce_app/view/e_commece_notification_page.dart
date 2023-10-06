@@ -18,7 +18,20 @@ class _EcommerceNotificationPageState extends State<EcommerceNotificationPage> {
         elevation: 0,
         title: Text("Notifications"),
         actions: [
-
+          CircleAvatar(
+            backgroundColor: Colors.grey[200],
+            foregroundColor: Colors.black,
+            child: Badge(
+              child: Icon(Icons.notifications_none),
+            ),
+          ),
+          CircleAvatar(
+            backgroundColor: Colors.grey[200],
+            foregroundColor: Colors.black,
+            child: Badge(
+              child: Icon(Icons.notifications_none),
+            ),
+          ),
         ],
       ),
     );
