@@ -279,7 +279,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text(
+                              const Text(
                                 "Collections",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -287,11 +287,11 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                               ),
                               TextButton(
                                 onPressed: () {},
-                                child: Text("View all"),
+                                child: const Text("View all"),
                               )
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 8,
                           ),
                           Container(
@@ -301,8 +301,8 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                               itemBuilder: (context, index) {
                                 return Container(
                                   width: 120,
-                                  margin: EdgeInsets.only(right: 8),
-                                  decoration: BoxDecoration(
+                                  margin: const EdgeInsets.only(right: 8),
+                                  decoration: const BoxDecoration(
                                     color: Colors.orange,
                                   ),
                                 );
@@ -320,7 +320,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text(
+                                const Text(
                                   "Collections",
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
@@ -328,25 +328,25 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                                 ),
                                 TextButton(
                                   onPressed: () {},
-                                  child: Text("View all"),
+                                  child: const Text("View all"),
                                 )
                               ],
                             ),
                           ),
                           Expanded(
                             child: Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 16,),
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 16,
+                              ),
                               child: GridView.builder(
-                                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                                    crossAxisCount: 2,
-                                    crossAxisSpacing: 8,
-                                    mainAxisSpacing: 8
-                                  ),
-                                  itemBuilder: (context, index) {
-                                    return Container(
-                                      color: Colors.blue,
-                                    );
-                                  }),
+                                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                                    crossAxisCount: 2, crossAxisSpacing: 8, mainAxisSpacing: 8),
+                                itemBuilder: (context, index) {
+                                  return Container(
+                                    color: Colors.blue,
+                                  );
+                                },
+                              ),
                             ),
                           ),
                         ],
