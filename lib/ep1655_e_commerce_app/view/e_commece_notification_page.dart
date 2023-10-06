@@ -38,10 +38,18 @@ class _EcommerceNotificationPageState extends State<EcommerceNotificationPage> {
         ],
       ),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text("Order status"),
           Expanded(
-            child: ListView.builder(itemBuilder: (context, index) {}),
+            child: ListView.builder(
+              itemBuilder: (context, index) {
+                return Container(
+                  margin: EdgeInsets.all(8),
+                  color: Colors.blue,
+                );
+              },
+            ),
           ),
         ],
       ),
