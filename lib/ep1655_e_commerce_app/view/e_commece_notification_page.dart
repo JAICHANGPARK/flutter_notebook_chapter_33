@@ -65,10 +65,18 @@ class _EcommerceNotificationPageState extends State<EcommerceNotificationPage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
+                            padding: EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                             decoration: BoxDecoration(
                               color: Colors.deepOrange,
+                              borderRadius: BorderRadius.circular(16),
                             ),
-                            child: Text("T-Shirt"),
+                            child: Text(
+                              "T-Shirt",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 12,
+                              ),
+                            ),
                           ),
                           Text("Package received"),
                           Text("Package 123456789 from message 12345789 has been received,"),
