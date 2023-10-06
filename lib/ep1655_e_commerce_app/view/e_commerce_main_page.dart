@@ -1,5 +1,6 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_33/ep1655_e_commerce_app/view/e_commece_notification_page.dart';
 import 'package:flutter_notebook_chapter_33/ep1655_e_commerce_app/view/e_commerce_detail_page.dart';
 
 class EcommerceMainPage extends StatefulWidget {
@@ -55,8 +56,17 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                           CircleAvatar(
                             backgroundColor: Colors.grey[200],
                             foregroundColor: Colors.black,
-                            child: const Badge(
-                              child: Icon(Icons.notifications_none),
+                            child: GestureDetector(
+                              onTap: () {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (context) => EcommerceNotificationPage(),
+                                  ),
+                                );
+                              },
+                              child: const Badge(
+                                child: Icon(Icons.notifications_none),
+                              ),
                             ),
                           ),
                           const SizedBox(
