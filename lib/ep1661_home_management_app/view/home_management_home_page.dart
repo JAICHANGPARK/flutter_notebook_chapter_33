@@ -174,15 +174,19 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                               Icon(Icons.favorite_border),
                             ],
                           ),
+                          SizedBox(height: 8,),
                           Text("Sigle private room in sunny apt."),
+                          SizedBox(height: 8,),
                           Row(
                             children: [
                               Icon(
                                 Icons.location_on_outlined,
+                                size: 14,
                               ),
                               Text(
                                 "Seoul, Republic of Korea",
                               ),
+                              Spacer(),
                               Text(
                                 "\$150/",
                               ),
