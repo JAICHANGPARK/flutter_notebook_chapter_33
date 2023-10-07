@@ -20,7 +20,7 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                 children: [
                   Expanded(
                     child: Container(
-                      padding: EdgeInsets.all(8),
+                      padding: const EdgeInsets.all(8),
                       decoration: BoxDecoration(
                         border: Border.all(
                           color: Colors.grey[300]!,
@@ -33,9 +33,9 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                           Container(
                             height: 32,
                             width: 32,
-                            decoration: BoxDecoration(color: Colors.blue),
+                            decoration: const BoxDecoration(color: Colors.blue),
                           ),
-                          Column(
+                          const Column(
                             children: [
                               Text("YOUR LOCATION"),
                               Row(
@@ -50,7 +50,7 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 16,
                   ),
                   Container(
@@ -60,7 +60,7 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                         ),
                         borderRadius: BorderRadius.circular(4)),
                     child: IconButton(
-                      icon: Icon(Icons.notifications_none),
+                      icon: const Icon(Icons.notifications_none),
                       onPressed: () {},
                     ),
                   )
@@ -68,24 +68,24 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
               ),
               Container(
                 height: 84,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Colors.blue,
                 ),
-                margin: EdgeInsets.symmetric(vertical: 16),
-                padding: EdgeInsets.symmetric(horizontal: 16),
+                margin: const EdgeInsets.symmetric(vertical: 16),
+                padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: Center(
                   child: Container(
-                    decoration: BoxDecoration(color: Colors.white),
+                    decoration: const BoxDecoration(color: Colors.white),
                     child: Row(
                       children: [
-                        Icon(Icons.location_on_outlined),
-                        Text("Find on the map"),
+                        const Icon(Icons.location_on_outlined),
+                        const Text("Find on the map"),
                         Container(
                           decoration: BoxDecoration(
                             color: Colors.grey[300]!,
                           ),
                           child: IconButton(
-                            icon: Icon(Icons.keyboard_arrow_right),
+                            icon: const Icon(Icons.keyboard_arrow_right),
                             onPressed: () {},
                           ),
                         )
@@ -103,27 +103,27 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
         showUnselectedLabels: false,
         type: BottomNavigationBarType.fixed,
         items: [
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(
               Icons.home_outlined,
             ),
             label: "Home",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(
               Icons.search,
             ),
             label: "Home",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.add_box_outlined),
             label: "add",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.chat_outlined),
             label: "add",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.person_outline),
             label: "add",
           ),
