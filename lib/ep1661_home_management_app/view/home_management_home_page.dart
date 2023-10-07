@@ -201,42 +201,39 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                               )
                             ],
                           ),
-                          SizedBox(
-                            height: 42,
-                            child: Container(
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(4),
+                          Row(
+                            children: [
+                              Expanded(
+                                child: Container(
+                                  height: 42,
+                                  decoration: BoxDecoration(
+                                    border: Border.all(),
+                                    borderRadius: BorderRadius.circular(4),
+                                  ),
+                                  padding: EdgeInsets.symmetric(horizontal: 8),
+                                  child: Row(
+                                    children: [
+                                      Text("View details"),
+                                      Spacer(),
+                                      Icon(Icons.keyboard_arrow_right),
+                                    ],
+                                  ),
+                                ),
                               ),
-                              child: Row(
-                                children: [
-                                  Expanded(
-                                    child: Container(
-                                      decoration: BoxDecoration(
-                                        color: Colors.blueAccent,
-                                      ),
-                                      child: Row(
-                                        children: [
-                                          Text("View details"),
-                                          Icon(Icons.keyboard_arrow_right),
-                                        ],
-                                      ),
+                              Expanded(
+                                child: Container(
+                                  height: 42,
+                                  decoration: BoxDecoration(
+                                    color: Colors.blueAccent,
+                                  ),
+                                  child: Center(
+                                    child: Text(
+                                      "Book room",
                                     ),
                                   ),
-                                  Expanded(
-                                    child: Container(
-                                      decoration: BoxDecoration(
-                                        color: Colors.blueAccent,
-                                      ),
-                                      child: Center(
-                                        child: Text(
-                                          "Book room",
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
+                                ),
                               ),
-                            ),
+                            ],
                           )
                         ],
                       ),
