@@ -11,6 +11,7 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       bottomNavigationBar: BottomNavigationBar(
         showSelectedLabels: false,
         showUnselectedLabels: false,
