@@ -83,28 +83,37 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
               ),
               Container(
                 height: 84,
-                decoration: const BoxDecoration(
+                decoration: BoxDecoration(
                   color: Colors.blue,
+                  borderRadius: BorderRadius.circular(12)
                 ),
                 margin: const EdgeInsets.symmetric(vertical: 16),
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: Center(
-                  child: Container(
-                    decoration: const BoxDecoration(color: Colors.white),
-                    child: Row(
-                      children: [
-                        const Icon(Icons.location_on_outlined),
-                        const Text("Find on the map"),
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.grey[300]!,
-                          ),
-                          child: IconButton(
-                            icon: const Icon(Icons.keyboard_arrow_right),
-                            onPressed: () {},
-                          ),
-                        )
-                      ],
+                  child: Card(
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+                      child: Row(
+                        children: [
+                          const Icon(Icons.location_on_outlined),
+                          const Text("Find on the map"),
+                          Spacer(),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.grey[300]!,
+                            ),
+                            child: IconButton(
+                              constraints: BoxConstraints(
+                                maxHeight: 42,
+                                maxWidth: 42,
+                              ),
+                              iconSize: 24,
+                              icon: const Icon(Icons.keyboard_arrow_right),
+                              onPressed: () {},
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 ),
