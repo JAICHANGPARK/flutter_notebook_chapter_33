@@ -150,7 +150,10 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                 child: ListView.separated(
                   itemCount: 10,
                   separatorBuilder: (context, index) {
-                    return Divider();
+                    return Divider(
+                      color: Colors.grey,
+                      height: 32,
+                    );
                   },
                   itemBuilder: (context, index) {
                     return Container(
