@@ -148,9 +148,45 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                               Text(
                                 "Seoul, Republic of Korea",
                               ),
-                              Text("\$150/"),
-                              
+                              Text(
+                                "\$150/",
+                              ),
+                              Text(
+                                "mo",
+                              )
                             ],
+                          ),
+                          SizedBox(
+                            height: 42,
+                            child: Row(
+                              children: [
+                                Expanded(
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.blueAccent,
+                                    ),
+                                    child: Row(
+                                      children: [
+                                        Text("View details"),
+                                        Icon(Icons.keyboard_arrow_right),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.blueAccent,
+                                    ),
+                                    child: Center(
+                                      child: Text(
+                                        "Book room",
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
                           )
                         ],
                       ),
