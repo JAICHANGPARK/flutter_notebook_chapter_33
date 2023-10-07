@@ -71,14 +71,26 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                 decoration: BoxDecoration(
                   color: Colors.blue,
                 ),
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white
-                  ),
-                  child: Row(
-                    children: [
-                      Icon(Icons.location_on_outlined),
-                    ],
+                margin: EdgeInsets.symmetric(vertical: 16),
+                padding: EdgeInsets.symmetric(horizontal: 16),
+                child: Center(
+                  child: Container(
+                    decoration: BoxDecoration(color: Colors.white),
+                    child: Row(
+                      children: [
+                        Icon(Icons.location_on_outlined),
+                        Text("Find on the map"),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.grey[300]!,
+                          ),
+                          child: IconButton(
+                            icon: Icon(Icons.keyboard_arrow_right),
+                            onPressed: () {},
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                 ),
               )
