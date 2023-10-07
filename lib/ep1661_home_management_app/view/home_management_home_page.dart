@@ -117,7 +117,7 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                 ),
               ),
               Text(
-                "Best for you",
+                "🔥 Best for you",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 20,
