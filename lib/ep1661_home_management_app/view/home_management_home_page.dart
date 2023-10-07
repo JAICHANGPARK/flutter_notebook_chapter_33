@@ -11,7 +11,32 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      body: SafeArea(
+        child: Column(
+          children: [
+            Row(
+              children: [
+                Expanded(child: Container(decoration: BoxDecoration(
+                  border: Border.all(),
+                color: Colors.red
+                ),
+                child: Row(
+                  children: [
+                    Container(
+                      height: 42,
+                      width: 42,
+                      decoration: BoxDecoration(
+                        color: Colors.blue
+                      ),
+                    )
+                  ],
+                ),
+                ))
+              ],
+            )
+          ],
+        ),
+      ),
       bottomNavigationBar: BottomNavigationBar(
         showSelectedLabels: false,
         showUnselectedLabels: false,
