@@ -151,8 +151,9 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                   },
                   itemBuilder: (context, index) {
                     return Container(
-                      
+
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
                             height: 120,
@@ -167,7 +168,9 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                               CircleAvatar(
                                 radius: 12,
                               ),
+                              SizedBox(width: 8),
                               Text("Dream Walker"),
+                              Spacer(),
                               Icon(Icons.favorite_border),
                             ],
                           ),
