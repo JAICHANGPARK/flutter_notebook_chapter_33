@@ -129,12 +129,13 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                   children: tabItems
                       .map(
                         (e) => Container(
-                          padding: EdgeInsets.symmetric(horizontal: 8,vertical: 8),
+                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                           margin: EdgeInsets.only(right: 8),
                           decoration: BoxDecoration(
                             border: Border.all(
                               color: Colors.grey[300]!,
                             ),
+                            borderRadius: BorderRadius.circular(4),
                           ),
                           child: Text(e),
                         ),
