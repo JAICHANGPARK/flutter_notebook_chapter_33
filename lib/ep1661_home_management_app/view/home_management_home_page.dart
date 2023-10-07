@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class HomeManagementHomePage extends StatefulWidget {
   const HomeManagementHomePage({super.key});
 
@@ -11,6 +10,19 @@ class HomeManagementHomePage extends StatefulWidget {
 class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      bottomNavigationBar: BottomNavigationBar(
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.home_outlined,
+            ),
+            label: "Home",
+          ),
+        ],
+      ),
+    );
   }
 }
