@@ -112,6 +112,7 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                     )
                     .toList(),
               ),
+              SizedBox(height: 16,),
               Expanded(
                 child: ListView.separated(
                   itemCount: 10,
@@ -124,7 +125,7 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                       child: Column(
                         children: [
                           Container(
-                            height: 96,
+                            height: 120,
                             decoration: BoxDecoration(
                               color: Colors.orange,
                               borderRadius: BorderRadius.circular(8),
