@@ -12,29 +12,50 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [
-            Row(
-              children: [
-                Expanded(child: Container(decoration: BoxDecoration(
-                  border: Border.all(),
-                color: Colors.red
-                ),
-                child: Row(
-                  children: [
-                    Container(
-                      height: 42,
-                      width: 42,
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  Expanded(
+                    child: Container(
+                      padding: EdgeInsets.all(8),
                       decoration: BoxDecoration(
-                        color: Colors.blue
+                        border: Border.all(
+                          color: Colors.grey[300]!,
+                        ),
+                        borderRadius: BorderRadius.circular(4),
+                        color: Colors.red,
                       ),
-                    )
-                  ],
-                ),
-                ))
-              ],
-            )
-          ],
+                      child: Row(
+                        children: [
+                          Container(
+                            height: 32,
+                            width: 32,
+                            decoration: BoxDecoration(color: Colors.blue),
+                          ),
+                          Column(
+                            children: [
+                              Text("YOUR LOCATION"),
+                              Row(
+                                children: [Text("Seoul, Republic of Korea"), Icon(Icons.keyboard_arrow_down_outlined)],
+                              )
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                  Container(
+                    child: IconButton(
+                      icon: Icon(Icons.notifications_none), onPressed: () {  },
+                    ),
+                  )
+                ],
+              )
+            ],
+          ),
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
@@ -55,22 +76,15 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
             label: "Home",
           ),
           BottomNavigationBarItem(
-            icon: Icon(
-              Icons.add_box_outlined
-            ),
+            icon: Icon(Icons.add_box_outlined),
             label: "add",
           ),
           BottomNavigationBarItem(
-            icon: Icon(
-                Icons.chat_outlined
-            ),
+            icon: Icon(Icons.chat_outlined),
             label: "add",
           ),
           BottomNavigationBarItem(
-            icon: Icon(
-                Icons.person_outline
-
-            ),
+            icon: Icon(Icons.person_outline),
             label: "add",
           ),
         ],
