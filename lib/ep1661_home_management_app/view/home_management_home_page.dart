@@ -14,6 +14,7 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
       bottomNavigationBar: BottomNavigationBar(
         showSelectedLabels: false,
         showUnselectedLabels: false,
+        type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(
             icon: Icon(
