@@ -83,10 +83,7 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
               ),
               Container(
                 height: 84,
-                decoration: BoxDecoration(
-                  color: Colors.blue,
-                  borderRadius: BorderRadius.circular(12)
-                ),
+                decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(12)),
                 margin: const EdgeInsets.symmetric(vertical: 16),
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: Center(
@@ -101,6 +98,7 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                           Container(
                             decoration: BoxDecoration(
                               color: Colors.grey[300]!,
+                              borderRadius: BorderRadius.circular(4),
                             ),
                             child: IconButton(
                               constraints: BoxConstraints(
@@ -118,24 +116,31 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                   ),
                 ),
               ),
-              Text("Best for you"),
-              Row(
-                children: tabItems
-                    .map(
-                      (e) => Container(
-                        margin: EdgeInsets.only(right: 8),
-                        decoration: BoxDecoration(
-                          border: Border.all(
-                            color: Colors.grey[300]!,
-                          ),
-                        ),
-                        child: Text(e),
-                      ),
-                    )
-                    .toList(),
+              Text(
+                "Best for you",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
+                ),
               ),
-              SizedBox(
-                height: 16,
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 16),
+                child: Row(
+                  children: tabItems
+                      .map(
+                        (e) => Container(
+                          padding: EdgeInsets.symmetric(horizontal: 8,vertical: 8),
+                          margin: EdgeInsets.only(right: 8),
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.grey[300]!,
+                            ),
+                          ),
+                          child: Text(e),
+                        ),
+                      )
+                      .toList(),
+                ),
               ),
               Expanded(
                 child: ListView.separated(
