@@ -129,7 +129,10 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                   children: tabItems
                       .map(
                         (e) => Container(
-                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 8,
+                            vertical: 8,
+                          ),
                           margin: EdgeInsets.only(right: 8),
                           decoration: BoxDecoration(
                             border: Border.all(
@@ -178,7 +181,12 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                           SizedBox(
                             height: 8,
                           ),
-                          Text("Sigle private room in sunny apt."),
+                          Text(
+                            "Sigle private room in sunny apt.",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                           SizedBox(
                             height: 8,
                           ),
