@@ -127,8 +127,30 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                             height: 96,
                             decoration: BoxDecoration(
                               color: Colors.orange,
-                              borderRadius: BorderRadius.circular(8)
+                              borderRadius: BorderRadius.circular(8),
                             ),
+                          ),
+                          Row(
+                            children: [
+                              CircleAvatar(
+                                radius: 12,
+                              ),
+                              Text("Dream Walker"),
+                              Icon(Icons.favorite_border),
+                            ],
+                          ),
+                          Text("Sigle private room in sunny apt."),
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.location_on_outlined,
+                              ),
+                              Text(
+                                "Seoul, Republic of Korea",
+                              ),
+                              Text("\$150/"),
+                              
+                            ],
                           )
                         ],
                       ),
