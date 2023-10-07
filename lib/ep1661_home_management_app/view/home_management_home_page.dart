@@ -47,9 +47,19 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                       ),
                     ),
                   ),
+                  SizedBox(
+                    width: 16,
+                  ),
                   Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.grey[300]!,
+                      ),
+                      borderRadius: BorderRadius.circular(4)
+                    ),
                     child: IconButton(
-                      icon: Icon(Icons.notifications_none), onPressed: () {  },
+                      icon: Icon(Icons.notifications_none),
+                      onPressed: () {},
                     ),
                   )
                 ],
