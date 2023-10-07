@@ -17,56 +17,69 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Row(
-                children: [
-                  Expanded(
-                    child: Container(
-                      padding: const EdgeInsets.all(8),
+              SizedBox(
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Container(
+                        padding: const EdgeInsets.all(8),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(4),
+                          border: Border.all(
+                            color: Colors.grey[300]!,
+                          ),
+                        ),
+                        child: Row(
+                          children: [
+                            Container(
+                              height: 32,
+                              width: 32,
+                              decoration: const BoxDecoration(color: Colors.blue),
+                            ),
+                            SizedBox(
+                              width: 8,
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "YOUR LOCATION",
+                                  style: TextStyle(
+                                    color: Colors.grey[400]!,
+                                    fontSize: 12,
+                                  ),
+                                ),
+                                Row(
+                                  children: [
+                                    Text("Seoul, Republic of Korea"),
+                                    Icon(Icons.keyboard_arrow_down_outlined),
+                                  ],
+                                )
+                              ],
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    const SizedBox(
+                      width: 16,
+                    ),
+                    Container(
                       decoration: BoxDecoration(
                         border: Border.all(
                           color: Colors.grey[300]!,
                         ),
                         borderRadius: BorderRadius.circular(4),
-                        color: Colors.red,
                       ),
-                      child: Row(
-                        children: [
-                          Container(
-                            height: 32,
-                            width: 32,
-                            decoration: const BoxDecoration(color: Colors.blue),
-                          ),
-                          const Column(
-                            children: [
-                              Text("YOUR LOCATION"),
-                              Row(
-                                children: [
-                                  Text("Seoul, Republic of Korea"),
-                                  Icon(Icons.keyboard_arrow_down_outlined),
-                                ],
-                              )
-                            ],
-                          )
-                        ],
+                      child: IconButton(
+                        icon: const Icon(Icons.notifications_none),
+                        onPressed: () {},
                       ),
-                    ),
-                  ),
-                  const SizedBox(
-                    width: 16,
-                  ),
-                  Container(
-                    decoration: BoxDecoration(
-                        border: Border.all(
-                          color: Colors.grey[300]!,
-                        ),
-                        borderRadius: BorderRadius.circular(4)),
-                    child: IconButton(
-                      icon: const Icon(Icons.notifications_none),
-                      onPressed: () {},
-                    ),
-                  )
-                ],
+                    )
+                  ],
+                ),
               ),
               Container(
                 height: 84,
@@ -112,7 +125,9 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                     )
                     .toList(),
               ),
-              SizedBox(height: 16,),
+              SizedBox(
+                height: 16,
+              ),
               Expanded(
                 child: ListView.separated(
                   itemCount: 10,
