@@ -111,6 +111,12 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                       ),
                     )
                     .toList(),
+              ),
+              Expanded(
+                child: ListView.builder(
+                  itemCount: 10,
+                  itemBuilder: (context, index) {},
+                ),
               )
             ],
           ),
