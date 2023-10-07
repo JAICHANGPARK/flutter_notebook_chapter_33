@@ -39,7 +39,10 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                             children: [
                               Text("YOUR LOCATION"),
                               Row(
-                                children: [Text("Seoul, Republic of Korea"), Icon(Icons.keyboard_arrow_down_outlined)],
+                                children: [
+                                  Text("Seoul, Republic of Korea"),
+                                  Icon(Icons.keyboard_arrow_down_outlined),
+                                ],
                               )
                             ],
                           )
@@ -52,17 +55,32 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                   ),
                   Container(
                     decoration: BoxDecoration(
-                      border: Border.all(
-                        color: Colors.grey[300]!,
-                      ),
-                      borderRadius: BorderRadius.circular(4)
-                    ),
+                        border: Border.all(
+                          color: Colors.grey[300]!,
+                        ),
+                        borderRadius: BorderRadius.circular(4)),
                     child: IconButton(
                       icon: Icon(Icons.notifications_none),
                       onPressed: () {},
                     ),
                   )
                 ],
+              ),
+              Container(
+                height: 84,
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                ),
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white
+                  ),
+                  child: Row(
+                    children: [
+                      Icon(Icons.location_on_outlined),
+                    ],
+                  ),
+                ),
               )
             ],
           ),
