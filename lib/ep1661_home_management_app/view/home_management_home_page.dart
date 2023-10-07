@@ -151,7 +151,6 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                   },
                   itemBuilder: (context, index) {
                     return Container(
-
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -162,7 +161,9 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                               borderRadius: BorderRadius.circular(8),
                             ),
                           ),
-                          SizedBox(height: 8,),
+                          SizedBox(
+                            height: 8,
+                          ),
                           Row(
                             children: [
                               CircleAvatar(
@@ -174,9 +175,13 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                               Icon(Icons.favorite_border),
                             ],
                           ),
-                          SizedBox(height: 8,),
+                          SizedBox(
+                            height: 8,
+                          ),
                           Text("Sigle private room in sunny apt."),
-                          SizedBox(height: 8,),
+                          SizedBox(
+                            height: 8,
+                          ),
                           Row(
                             children: [
                               Icon(
@@ -189,6 +194,7 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                               Spacer(),
                               Text(
                                 "\$150/",
+                                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                               ),
                               Text(
                                 "mo",
@@ -197,34 +203,39 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                           ),
                           SizedBox(
                             height: 42,
-                            child: Row(
-                              children: [
-                                Expanded(
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                      color: Colors.blueAccent,
-                                    ),
-                                    child: Row(
-                                      children: [
-                                        Text("View details"),
-                                        Icon(Icons.keyboard_arrow_right),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                                Expanded(
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                      color: Colors.blueAccent,
-                                    ),
-                                    child: Center(
-                                      child: Text(
-                                        "Book room",
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(4),
+                              ),
+                              child: Row(
+                                children: [
+                                  Expanded(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.blueAccent,
+                                      ),
+                                      child: Row(
+                                        children: [
+                                          Text("View details"),
+                                          Icon(Icons.keyboard_arrow_right),
+                                        ],
                                       ),
                                     ),
                                   ),
-                                ),
-                              ],
+                                  Expanded(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.blueAccent,
+                                      ),
+                                      child: Center(
+                                        child: Text(
+                                          "Book room",
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
                           )
                         ],
