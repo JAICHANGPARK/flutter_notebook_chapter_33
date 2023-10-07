@@ -21,6 +21,31 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
             ),
             label: "Home",
           ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.search,
+            ),
+            label: "Home",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.add_box_outlined
+            ),
+            label: "add",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+                Icons.chat_outlined
+            ),
+            label: "add",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+                Icons.person_outline
+
+            ),
+            label: "add",
+          ),
         ],
       ),
     );
