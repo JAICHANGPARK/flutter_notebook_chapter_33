@@ -201,6 +201,9 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                               )
                             ],
                           ),
+                          SizedBox(
+                            height: 8,
+                          ),
                           Row(
                             children: [
                               Expanded(
@@ -220,15 +223,22 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                                   ),
                                 ),
                               ),
+                              SizedBox(
+                                width: 16,
+                              ),
                               Expanded(
                                 child: Container(
                                   height: 42,
                                   decoration: BoxDecoration(
                                     color: Colors.blueAccent,
+                                    borderRadius: BorderRadius.circular(4),
                                   ),
                                   child: Center(
                                     child: Text(
                                       "Book room",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                      ),
                                     ),
                                   ),
                                 ),
