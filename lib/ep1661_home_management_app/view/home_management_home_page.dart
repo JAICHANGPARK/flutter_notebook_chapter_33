@@ -8,6 +8,8 @@ class HomeManagementHomePage extends StatefulWidget {
 }
 
 class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
+  List<String> tabItems = ["All", "Room", "Roommate", "Events"];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -93,6 +95,22 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                     ),
                   ),
                 ),
+              ),
+              Text("Best for you"),
+              Row(
+                children: tabItems
+                    .map(
+                      (e) => Container(
+                        margin: EdgeInsets.only(right: 8),
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Colors.grey[300]!,
+                          ),
+                        ),
+                        child: Text(e),
+                      ),
+                    )
+                    .toList(),
               )
             ],
           ),
