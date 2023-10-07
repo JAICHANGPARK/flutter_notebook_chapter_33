@@ -151,7 +151,7 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                   },
                   itemBuilder: (context, index) {
                     return Container(
-                      color: Colors.grey,
+                      
                       child: Column(
                         children: [
                           Container(
@@ -161,6 +161,7 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                               borderRadius: BorderRadius.circular(8),
                             ),
                           ),
+                          SizedBox(height: 8,),
                           Row(
                             children: [
                               CircleAvatar(
