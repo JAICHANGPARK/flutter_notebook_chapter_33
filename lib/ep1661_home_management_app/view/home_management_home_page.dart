@@ -187,14 +187,21 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                               Icon(
                                 Icons.location_on_outlined,
                                 size: 14,
+                                color: Colors.grey[600],
                               ),
                               Text(
                                 "Seoul, Republic of Korea",
+                                style: TextStyle(
+                                  color: Colors.grey[600],
+                                ),
                               ),
                               Spacer(),
                               Text(
                                 "\$150/",
-                                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18,
+                                ),
                               ),
                               Text(
                                 "mo",
