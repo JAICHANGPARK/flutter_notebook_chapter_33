@@ -91,21 +91,28 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
             Divider(),
             Text("BADGES"),
             Container(
+              padding: EdgeInsets.all(7),
+              decoration: BoxDecoration(
+                border: Border.all(
+                  color: Colors.grey[200]!,
+                ),
+                borderRadius: BorderRadius.circular(4)
+              ),
               child: Row(
                 children: [
                   Column(
                     children: [
                       Container(
                         decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          border: Border.all(
-                            color: Colors.blueAccent,
-                          ),
-                          color: Colors.blue[50]
-                        ),
+                            shape: BoxShape.circle,
+                            border: Border.all(
+                              color: Colors.blueAccent,
+                            ),
+                            color: Colors.blue[50]),
                         padding: EdgeInsets.all(9),
                         child: Icon(Icons.lock_open),
-                      )
+                      ),
+                      Text("Bronze"),
                     ],
                   )
                 ],
