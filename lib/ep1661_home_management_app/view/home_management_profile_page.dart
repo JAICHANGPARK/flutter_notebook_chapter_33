@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class HomeManagementProfilePage extends StatefulWidget {
   const HomeManagementProfilePage({super.key});
 
@@ -12,10 +11,24 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-
-        ],
+      body: SafeArea(
+        child: Column(
+          children: [
+            Container(
+              height: 42,
+              width: 42,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(4),
+                border: Border.all(
+                  color: Colors.grey[300]!,
+                ),
+              ),
+              child: Center(
+                child: Icon(Icons.keyboard_arrow_left),
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
