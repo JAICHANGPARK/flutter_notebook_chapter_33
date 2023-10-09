@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_33/ep1661_home_management_app/view/home_management_detail_page.dart';
 import 'package:flutter_notebook_chapter_33/ep1661_home_management_app/view/home_management_profile_page.dart';
 
 class HomeManagementHomePage extends StatefulWidget {
@@ -235,19 +236,25 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                           Row(
                             children: [
                               Expanded(
-                                child: Container(
-                                  height: 42,
-                                  decoration: BoxDecoration(
-                                    border: Border.all(),
-                                    borderRadius: BorderRadius.circular(4),
-                                  ),
-                                  padding: EdgeInsets.symmetric(horizontal: 8),
-                                  child: Row(
-                                    children: [
-                                      Text("View details"),
-                                      Spacer(),
-                                      Icon(Icons.keyboard_arrow_right),
-                                    ],
+                                child: InkWell(
+                                  onTap: (){
+                                    Navigator.of(context).push(MaterialPageRoute(builder: (context)=>
+                                    HomeManagementDetailPage()));
+                                  },
+                                  child: Container(
+                                    height: 42,
+                                    decoration: BoxDecoration(
+                                      border: Border.all(),
+                                      borderRadius: BorderRadius.circular(4),
+                                    ),
+                                    padding: EdgeInsets.symmetric(horizontal: 8),
+                                    child: Row(
+                                      children: [
+                                        Text("View details"),
+                                        Spacer(),
+                                        Icon(Icons.keyboard_arrow_right),
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ),
