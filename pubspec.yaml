@@ -13,14 +13,13 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.6
-  dots_indicator:
+  dots_indicator: any
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
   flutter_lints: ^2.0.3
-
 
 flutter:
 
