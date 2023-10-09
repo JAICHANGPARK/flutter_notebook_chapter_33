@@ -169,7 +169,7 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
               ],
             ),
             Container(
-              height: 200,
+              height: 280,
               color: Colors.blue,
               child: ListView.builder(
 
