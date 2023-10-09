@@ -167,6 +167,21 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                   ),
                 )
               ],
+            ),
+            Container(
+              height: 200,
+              color: Colors.blue,
+              child: ListView.builder(
+
+                itemBuilder: (context, index) {
+                  return Container(
+                    width: 320,
+                    margin: EdgeInsets.only(right: 12),
+                    color: Colors.orange,
+                  );
+                },
+                scrollDirection: Axis.horizontal,
+              ),
             )
           ],
         ),
