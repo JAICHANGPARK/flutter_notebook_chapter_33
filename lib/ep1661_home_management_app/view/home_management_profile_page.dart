@@ -93,11 +93,10 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
             Container(
               padding: EdgeInsets.all(7),
               decoration: BoxDecoration(
-                border: Border.all(
-                  color: Colors.grey[200]!,
-                ),
-                borderRadius: BorderRadius.circular(4)
-              ),
+                  border: Border.all(
+                    color: Colors.grey[200]!,
+                  ),
+                  borderRadius: BorderRadius.circular(4)),
               child: Row(
                 children: [
                   Column(
@@ -120,18 +119,40 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
             ),
             Text("PERFORMANCE"),
             Container(
+              decoration: BoxDecoration(
+                border: Border.all(
+                  color: Colors.grey[300]!,
+                ),
+              ),
+              padding: EdgeInsets.all(9),
               child: Row(
                 children: [
                   Expanded(
                     child: Column(
                       children: [
                         Text("RESPONSE RATE"),
-                        Text("90%")
-
+                        Text("90%"),
                       ],
                     ),
                   ),
                   VerticalDivider(),
+                  Expanded(
+                    child: Column(
+                      children: [
+                        Text("RESPONSE RATE"),
+                        Text("90%"),
+                      ],
+                    ),
+                  ),
+                  VerticalDivider(),
+                  Expanded(
+                    child: Column(
+                      children: [
+                        Text("RESPONSE RATE"),
+                        Text("90%"),
+                      ],
+                    ),
+                  ),
                 ],
               ),
             )
