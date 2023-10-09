@@ -11,6 +11,6 @@ class HomeManagementDetailPage extends StatefulWidget {
 class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold();
   }
 }
