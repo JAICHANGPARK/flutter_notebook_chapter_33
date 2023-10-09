@@ -117,6 +117,23 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                   )
                 ],
               ),
+            ),
+            Text("PERFORMANCE"),
+            Container(
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Column(
+                      children: [
+                        Text("RESPONSE RATE"),
+                        Text("90%")
+
+                      ],
+                    ),
+                  ),
+                  VerticalDivider(),
+                ],
+              ),
             )
           ],
         ),
