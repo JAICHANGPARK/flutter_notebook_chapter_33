@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_33/ep1661_home_management_app/view/home_management_profile_page.dart';
 
 class HomeManagementHomePage extends StatefulWidget {
   const HomeManagementHomePage({super.key});
@@ -172,8 +173,17 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                           ),
                           Row(
                             children: [
-                              CircleAvatar(
-                                radius: 12,
+                              InkWell(
+                                onTap: () {
+                                  Navigator.of(context).push(
+                                    MaterialPageRoute(
+                                      builder: (context) => HomeManagementProfilePage(),
+                                    ),
+                                  );
+                                },
+                                child: CircleAvatar(
+                                  radius: 12,
+                                ),
                               ),
                               SizedBox(width: 8),
                               Text("Dream Walker"),
