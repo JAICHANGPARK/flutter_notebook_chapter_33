@@ -11,6 +11,12 @@ class HomeManagementProfilePage extends StatefulWidget {
 class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Column(
+        children: [
+
+        ],
+      ),
+    );
   }
 }
