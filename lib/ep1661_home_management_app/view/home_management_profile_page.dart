@@ -37,23 +37,46 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                     borderRadius: BorderRadius.circular(8),
                   ),
                 ),
-                Text("Dream Walker"),
-                Row(
-                  children: [
-                    Icon(
-                      Icons.location_on_outlined,
-                    ),
-                    Text("Seoul, Republic of Korea"),
-                  ],
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Colors.blueAccent,
-                    ),
-                    borderRadius: BorderRadius.circular(4),
+                Expanded(child: Column(children: [
+                  Text("Dream Walker"),
+                  Row(
+                    children: [
+                      Icon(
+                        Icons.location_on_outlined,
+                      ),
+                      Text("Seoul, Republic of Korea"),
+                    ],
                   ),
-                )
+                  Row(
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Colors.blueAccent,
+                          ),
+                          borderRadius: BorderRadius.circular(4),
+                        ),
+                        child: Icon(
+                          Icons.phone_outlined,
+                          color: Colors.blueAccent,
+                        ),
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Colors.blueAccent,
+                          ),
+                          borderRadius: BorderRadius.circular(4),
+                        ),
+                        child: Icon(
+                          Icons.phone_outlined,
+                          color: Colors.blueAccent,
+                        ),
+                      ),
+                    ],
+                  )
+                ],))
+
               ],
             )
           ],
