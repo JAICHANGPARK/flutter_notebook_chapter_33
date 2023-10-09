@@ -155,6 +155,18 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                   ),
                 ],
               ),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text("More listing"),
+                TextButton(
+                  onPressed: () {},
+                  child: Text(
+                    "See All",
+                  ),
+                )
+              ],
             )
           ],
         ),
