@@ -26,6 +26,35 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
               child: Center(
                 child: Icon(Icons.keyboard_arrow_left),
               ),
+            ),
+            Row(
+              children: [
+                Container(
+                  height: 120,
+                  width: 120,
+                  decoration: BoxDecoration(
+                    color: Colors.grey,
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                ),
+                Text("Dream Walker"),
+                Row(
+                  children: [
+                    Icon(
+                      Icons.location_on_outlined,
+                    ),
+                    Text("Seoul, Republic of Korea"),
+                  ],
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.blueAccent,
+                    ),
+                    borderRadius: BorderRadius.circular(4),
+                  ),
+                )
+              ],
             )
           ],
         ),
