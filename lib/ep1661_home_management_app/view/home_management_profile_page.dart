@@ -322,8 +322,82 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                   itemBuilder: (context, index) {
                     return Container(
                       width: 320,
-                      margin: EdgeInsets.only(right: 12),
-                      color: Colors.orange,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            height: 120,
+                            decoration: BoxDecoration(
+                              color: Colors.orange,
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                          ),
+                          SizedBox(
+                            height: 8,
+                          ),
+                          Row(
+                            children: [
+                              InkWell(
+                                onTap: () {
+                                  Navigator.of(context).push(
+                                    MaterialPageRoute(
+                                      builder: (context) => HomeManagementProfilePage(),
+                                    ),
+                                  );
+                                },
+                                child: CircleAvatar(
+                                  radius: 12,
+                                ),
+                              ),
+                              SizedBox(width: 8),
+                              Text("Dream Walker"),
+                              Spacer(),
+                              Icon(Icons.favorite_border),
+                            ],
+                          ),
+                          SizedBox(
+                            height: 8,
+                          ),
+                          Text(
+                            "Sigle private room in sunny apt.",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 8,
+                          ),
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.location_on_outlined,
+                                size: 14,
+                                color: Colors.grey[600],
+                              ),
+                              Text(
+                                "Seoul, Republic of Korea",
+                                style: TextStyle(
+                                  color: Colors.grey[600],
+                                ),
+                              ),
+                              Spacer(),
+                              Text(
+                                "\$150/",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18,
+                                ),
+                              ),
+                              Text(
+                                "mo",
+                              )
+                            ],
+                          ),
+                          SizedBox(
+                            height: 8,
+                          ),
+                        ],
+                      ),
                     );
                   },
                   scrollDirection: Axis.horizontal,
