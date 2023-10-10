@@ -52,16 +52,27 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                         ),
                         Expanded(
                           child: Column(
+
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("Dream Walker"),
-                              Row(
-                                children: [
-                                  Icon(
-                                    Icons.location_on_outlined,
-                                  ),
-                                  Text("Seoul, Republic of Korea"),
-                                ],
+                              Text(
+                                "Dream Walker",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                fontSize: 24
+                                ),
+                              ),
+
+                              Padding(
+                                padding: const EdgeInsets.symmetric(vertical: 8),
+                                child: Row(
+                                  children: [
+                                    Icon(
+                                      Icons.location_on_outlined,
+                                    ),
+                                    Text("Seoul, Republic of Korea"),
+                                  ],
+                                ),
                               ),
                               Row(
                                 children: [
