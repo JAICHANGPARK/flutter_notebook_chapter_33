@@ -96,7 +96,7 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                                     ),
                                     padding: EdgeInsets.all(6),
                                     child: Icon(
-                                      Icons.phone_outlined,
+                                      Icons.chat_outlined,
                                       color: Colors.blueAccent,
                                     ),
                                   ),
