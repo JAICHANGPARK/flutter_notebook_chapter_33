@@ -21,17 +21,22 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Container(
-                      height: 42,
-                      width: 42,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(4),
-                        border: Border.all(
-                          color: Colors.grey[300]!,
+                    GestureDetector(
+                      onTap: (){
+                        Navigator.of(context).pop();
+                      },
+                      child: Container(
+                        height: 42,
+                        width: 42,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(4),
+                          border: Border.all(
+                            color: Colors.grey[300]!,
+                          ),
                         ),
-                      ),
-                      child: const Center(
-                        child: Icon(Icons.keyboard_arrow_left),
+                        child: const Center(
+                          child: Icon(Icons.keyboard_arrow_left),
+                        ),
                       ),
                     ),
                     const SizedBox(
