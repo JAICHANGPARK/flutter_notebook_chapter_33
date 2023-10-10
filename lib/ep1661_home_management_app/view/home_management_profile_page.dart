@@ -315,18 +315,19 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                 ),
               ),
               Container(
-                height: 280,
+                height: 240,
                 margin: EdgeInsets.only(left: 16),
                 color: Colors.blue,
                 child: ListView.builder(
                   itemBuilder: (context, index) {
                     return Container(
                       width: 320,
+                      margin: EdgeInsets.only(right: 12),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
-                            height: 120,
+                            height: 140,
                             decoration: BoxDecoration(
                               color: Colors.orange,
                               borderRadius: BorderRadius.circular(8),
