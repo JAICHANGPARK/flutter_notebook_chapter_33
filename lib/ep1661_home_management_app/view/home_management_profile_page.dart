@@ -13,7 +13,14 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+
+              ],
+            ),
             Container(
               height: 42,
               width: 42,
