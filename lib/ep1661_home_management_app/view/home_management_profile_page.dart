@@ -33,7 +33,9 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                       child: Icon(Icons.keyboard_arrow_left),
                     ),
                   ),
-                  SizedBox(height: 16,),
+                  SizedBox(
+                    height: 16,
+                  ),
                   Row(
                     children: [
                       Container(
@@ -44,7 +46,9 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                           borderRadius: BorderRadius.circular(8),
                         ),
                       ),
-                      SizedBox(width: 16,),
+                      SizedBox(
+                        width: 16,
+                      ),
                       Expanded(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -91,14 +95,31 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                       ),
                     ],
                   ),
-                  Divider(),
-                  Text("About"),
+                  Divider(
+                    height: 32,
+                  ),
+                  Text(
+                    "About",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 8,
+                  ),
                   Text(
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                     maxLines: 3,
                   ),
-                  Divider(),
-                  Text("BADGES"),
+                  Divider(
+                    height: 32,
+                  ),
+                  Text(
+                    "BADGES",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                   Container(
                     padding: EdgeInsets.all(7),
                     decoration: BoxDecoration(
