@@ -30,11 +30,11 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                           color: Colors.grey[300]!,
                         ),
                       ),
-                      child: Center(
+                      child: const Center(
                         child: Icon(Icons.keyboard_arrow_left),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 16,
                     ),
                     Row(
@@ -47,19 +47,19 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                             borderRadius: BorderRadius.circular(8),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 16,
                         ),
                         Expanded(
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text(
+                              const Text(
                                 "Dream Walker",
                                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
                               ),
-                              Padding(
-                                padding: const EdgeInsets.symmetric(vertical: 8),
+                              const Padding(
+                                padding: EdgeInsets.symmetric(vertical: 8),
                                 child: Row(
                                   children: [
                                     Icon(
@@ -78,13 +78,13 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                                       ),
                                       borderRadius: BorderRadius.circular(4),
                                     ),
-                                    padding: EdgeInsets.all(6),
-                                    child: Icon(
+                                    padding: const EdgeInsets.all(6),
+                                    child: const Icon(
                                       Icons.phone_outlined,
                                       color: Colors.blueAccent,
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     width: 12,
                                   ),
                                   Container(
@@ -94,8 +94,8 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                                       ),
                                       borderRadius: BorderRadius.circular(4),
                                     ),
-                                    padding: EdgeInsets.all(6),
-                                    child: Icon(
+                                    padding: const EdgeInsets.all(6),
+                                    child: const Icon(
                                       Icons.chat_outlined,
                                       color: Colors.blueAccent,
                                     ),
@@ -107,34 +107,34 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                         ),
                       ],
                     ),
-                    Divider(
+                    const Divider(
                       height: 32,
                     ),
-                    Text(
+                    const Text(
                       "About",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 8,
                     ),
-                    Text(
+                    const Text(
                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                       maxLines: 3,
                     ),
-                    Divider(
+                    const Divider(
                       height: 32,
                     ),
-                    Text(
+                    const Text(
                       "BADGES",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.symmetric(vertical: 16),
-                      padding: EdgeInsets.all(8),
+                      margin: const EdgeInsets.symmetric(vertical: 16),
+                      padding: const EdgeInsets.all(8),
                       decoration: BoxDecoration(
                         border: Border.all(
                           color: Colors.grey[200]!,
@@ -153,10 +153,10 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                                       color: Colors.blueAccent,
                                     ),
                                     color: Colors.blue[50]),
-                                padding: EdgeInsets.all(9),
-                                child: Icon(Icons.lock_open),
+                                padding: const EdgeInsets.all(9),
+                                child: const Icon(Icons.lock_open),
                               ),
-                              Text("Bronze"),
+                              const Text("Bronze"),
                             ],
                           ),
                           Column(
@@ -168,10 +168,10 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                                       color: Colors.grey,
                                     ),
                                     color: Colors.blue[50]),
-                                padding: EdgeInsets.all(9),
-                                child: Icon(Icons.lock_open),
+                                padding: const EdgeInsets.all(9),
+                                child: const Icon(Icons.lock_open),
                               ),
-                              Text("Bronze"),
+                              const Text("Bronze"),
                             ],
                           ),
                           Column(
@@ -183,10 +183,10 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                                       color: Colors.grey,
                                     ),
                                     color: Colors.blue[50]),
-                                padding: EdgeInsets.all(9),
-                                child: Icon(Icons.lock_open),
+                                padding: const EdgeInsets.all(9),
+                                child: const Icon(Icons.lock_open),
                               ),
-                              Text("Bronze"),
+                              const Text("Bronze"),
                             ],
                           ),
                           Column(
@@ -198,10 +198,10 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                                       color: Colors.grey,
                                     ),
                                     color: Colors.blue[50]),
-                                padding: EdgeInsets.all(9),
-                                child: Icon(Icons.lock_open),
+                                padding: const EdgeInsets.all(9),
+                                child: const Icon(Icons.lock_open),
                               ),
-                              Text("Bronze"),
+                              const Text("Bronze"),
                             ],
                           ),
                           Column(
@@ -213,16 +213,16 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                                       color: Colors.grey,
                                     ),
                                     color: Colors.blue[50]),
-                                padding: EdgeInsets.all(9),
-                                child: Icon(Icons.lock_open),
+                                padding: const EdgeInsets.all(9),
+                                child: const Icon(Icons.lock_open),
                               ),
-                              Text("Bronze"),
+                              const Text("Bronze"),
                             ],
                           )
                         ],
                       ),
                     ),
-                    Text(
+                    const Text(
                       "PERFORMANCE",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
@@ -234,9 +234,9 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                             color: Colors.grey[300]!,
                           ),
                           borderRadius: BorderRadius.circular(4)),
-                      margin: EdgeInsets.symmetric(vertical: 8),
-                      padding: EdgeInsets.all(9),
-                      child: Row(
+                      margin: const EdgeInsets.symmetric(vertical: 8),
+                      padding: const EdgeInsets.all(9),
+                      child: const Row(
                         children: [
                           Expanded(
                             child: Column(
@@ -299,7 +299,7 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
+                    const Text(
                       "More listing",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
@@ -307,7 +307,7 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                     ),
                     TextButton(
                       onPressed: () {},
-                      child: Text(
+                      child: const Text(
                         "See All",
                       ),
                     )
@@ -316,13 +316,12 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
               ),
               Container(
                 height: 240,
-                margin: EdgeInsets.only(left: 16),
-                color: Colors.blue,
+                margin: const EdgeInsets.only(left: 16),
                 child: ListView.builder(
                   itemBuilder: (context, index) {
                     return Container(
                       width: 320,
-                      margin: EdgeInsets.only(right: 12),
+                      margin: const EdgeInsets.only(right: 12),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -333,7 +332,7 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                               borderRadius: BorderRadius.circular(8),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 8,
                           ),
                           Row(
@@ -342,30 +341,30 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                                 onTap: () {
                                   Navigator.of(context).push(
                                     MaterialPageRoute(
-                                      builder: (context) => HomeManagementProfilePage(),
+                                      builder: (context) => const HomeManagementProfilePage(),
                                     ),
                                   );
                                 },
-                                child: CircleAvatar(
+                                child: const CircleAvatar(
                                   radius: 12,
                                 ),
                               ),
-                              SizedBox(width: 8),
-                              Text("Dream Walker"),
-                              Spacer(),
-                              Icon(Icons.favorite_border),
+                              const SizedBox(width: 8),
+                              const Text("Dream Walker"),
+                              const Spacer(),
+                              const Icon(Icons.favorite_border),
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 8,
                           ),
-                          Text(
+                          const Text(
                             "Sigle private room in sunny apt.",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 8,
                           ),
                           Row(
@@ -381,20 +380,20 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                                   color: Colors.grey[600],
                                 ),
                               ),
-                              Spacer(),
-                              Text(
+                              const Spacer(),
+                              const Text(
                                 "\$150/",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 18,
                                 ),
                               ),
-                              Text(
+                              const Text(
                                 "mo",
                               )
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 8,
                           ),
                         ],
