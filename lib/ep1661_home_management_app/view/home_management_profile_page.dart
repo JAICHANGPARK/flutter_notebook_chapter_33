@@ -52,17 +52,12 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                         ),
                         Expanded(
                           child: Column(
-
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
                                 "Dream Walker",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                fontSize: 24
-                                ),
+                                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
                               ),
-
                               Padding(
                                 padding: const EdgeInsets.symmetric(vertical: 8),
                                 child: Row(
@@ -83,10 +78,14 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                                       ),
                                       borderRadius: BorderRadius.circular(4),
                                     ),
+                                    padding: EdgeInsets.all(6),
                                     child: Icon(
                                       Icons.phone_outlined,
                                       color: Colors.blueAccent,
                                     ),
+                                  ),
+                                  SizedBox(
+                                    width: 12,
                                   ),
                                   Container(
                                     decoration: BoxDecoration(
@@ -95,6 +94,7 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                                       ),
                                       borderRadius: BorderRadius.circular(4),
                                     ),
+                                    padding: EdgeInsets.all(6),
                                     child: Icon(
                                       Icons.phone_outlined,
                                       color: Colors.blueAccent,
