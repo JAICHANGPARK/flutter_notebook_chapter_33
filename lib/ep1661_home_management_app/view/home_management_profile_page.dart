@@ -121,6 +121,7 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                     ),
                   ),
                   Container(
+                    margin: EdgeInsets.symmetric(vertical: 16),
                     padding: EdgeInsets.all(7),
                     decoration: BoxDecoration(
                         border: Border.all(
