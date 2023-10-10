@@ -211,13 +211,19 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                         ],
                       ),
                     ),
-                    Text("PERFORMANCE"),
+                    Text(
+                      "PERFORMANCE",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                     Container(
                       decoration: BoxDecoration(
-                        border: Border.all(
-                          color: Colors.grey[300]!,
-                        ),
-                      ),
+                          border: Border.all(
+                            color: Colors.grey[300]!,
+                          ),
+                          borderRadius: BorderRadius.circular(4)),
+                      margin: EdgeInsets.symmetric(vertical: 8),
                       padding: EdgeInsets.all(9),
                       child: Row(
                         children: [
@@ -225,7 +231,15 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                             child: Column(
                               children: [
                                 Text("RESPONSE RATE"),
-                                Text("90%"),
+                                SizedBox(
+                                  height: 8,
+                                ),
+                                Text(
+                                  "90%",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
                               ],
                             ),
                           ),
@@ -234,7 +248,15 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                             child: Column(
                               children: [
                                 Text("RESPONSE RATE"),
-                                Text("90%"),
+                                SizedBox(
+                                  height: 8,
+                                ),
+                                Text(
+                                  "90%",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
                               ],
                             ),
                           ),
@@ -243,7 +265,15 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                             child: Column(
                               children: [
                                 Text("RESPONSE RATE"),
-                                Text("90%"),
+                                SizedBox(
+                                  height: 8,
+                                ),
+                                Text(
+                                  "90%",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
                               ],
                             ),
                           ),
