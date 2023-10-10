@@ -166,20 +166,24 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
               ),
             ),
 
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text("More listing"),
-                TextButton(
-                  onPressed: () {},
-                  child: Text(
-                    "See All",
-                  ),
-                )
-              ],
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text("More listing"),
+                  TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      "See All",
+                    ),
+                  )
+                ],
+              ),
             ),
             Container(
               height: 280,
+              margin: EdgeInsets.only(left: 16),
               color: Colors.blue,
               child: ListView.builder(
 
