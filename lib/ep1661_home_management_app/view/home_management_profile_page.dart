@@ -33,6 +33,7 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                       child: Icon(Icons.keyboard_arrow_left),
                     ),
                   ),
+                  SizedBox(height: 16,),
                   Row(
                     children: [
                       Container(
@@ -43,8 +44,10 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                           borderRadius: BorderRadius.circular(8),
                         ),
                       ),
+                      SizedBox(width: 16,),
                       Expanded(
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text("Dream Walker"),
                             Row(
@@ -165,13 +168,17 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                 ],
               ),
             ),
-
             Padding(
-              padding: const EdgeInsets.all(16.0),
+              padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("More listing"),
+                  Text(
+                    "More listing",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                   TextButton(
                     onPressed: () {},
                     child: Text(
@@ -186,7 +193,6 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
               margin: EdgeInsets.only(left: 16),
               color: Colors.blue,
               child: ListView.builder(
-
                 itemBuilder: (context, index) {
                   return Container(
                     width: 320,
