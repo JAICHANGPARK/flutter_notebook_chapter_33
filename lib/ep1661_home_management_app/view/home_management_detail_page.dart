@@ -15,12 +15,12 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
       body: Column(
         children: [
           Container(
-            height: 400,
+            height: 360,
             color: Colors.blue,
           ),
           Container(
             margin: EdgeInsets.symmetric(vertical: 8),
-            height: 42,
+            height: 52,
             color: Colors.blue,
           )
         ],
