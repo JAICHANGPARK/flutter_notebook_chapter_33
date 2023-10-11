@@ -66,8 +66,10 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                             ),
                           ),
                           child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Icon(Icons.phone),
+                              SizedBox(width: 8,),
                               Text("Call owner"),
                             ],
                           ),
