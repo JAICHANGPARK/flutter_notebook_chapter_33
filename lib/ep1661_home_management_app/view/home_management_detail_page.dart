@@ -19,7 +19,10 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
             color: Colors.blue,
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            padding: const EdgeInsets.symmetric(
+              horizontal: 16,
+              vertical: 8,
+            ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -30,7 +33,10 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                 ),
                 Text(
                   "Single room in sunny apartment.",
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
+                  ),
                 ),
                 SizedBox(
                   height: 12,
@@ -119,19 +125,20 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                     ),
                     Container(
                       decoration: BoxDecoration(
-                        border: Border.all(
-                          color: Colors.grey[300]!,
-                        ),
-                        borderRadius: BorderRadius.circular(8)
-                      ),
+                          border: Border.all(
+                            color: Colors.grey[300]!,
+                          ),
+                          borderRadius: BorderRadius.circular(8)),
                       child: Row(
                         children: [
-                          Expanded(child: Column(children: [
-
-                          ],)),
-                          Expanded(child: Column(children: [
-
-                          ],))
+                          Expanded(
+                              child: Column(
+                            children: [],
+                          )),
+                          Expanded(
+                              child: Column(
+                            children: [],
+                          ))
                         ],
                       ),
                     )
