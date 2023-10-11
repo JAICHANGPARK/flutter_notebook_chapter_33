@@ -18,54 +18,58 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
             height: 360,
             color: Colors.blue,
           ),
-          Column(
-            children: [
-              Container(
-                margin: EdgeInsets.symmetric(vertical: 8),
-                height: 52,
-                color: Colors.blue,
-              ),
-              Text(
-                "Single room in sunny apartment.",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-              ),
-              Row(
-                children: [
-                  Icon(
-                    Icons.location_on_outlined,
-                  ),
-                  Text("Seoul, Republic of korea")
-                ],
-              ),
-              Text("Posted 2 days ago"),
-              Container(
-                height: 52,
-                child: Row(
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Container(
+                  margin: EdgeInsets.symmetric(vertical: 8),
+                  height: 52,
+                  color: Colors.blue,
+                ),
+                Text(
+                  "Single room in sunny apartment.",
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                ),
+                Row(
                   children: [
-                    Expanded(
-                      child: Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(4),
-                          border: Border.all(
-                            color: Colors.blueAccent,
-                          ),
-                        ),
-                        child: Row(
-                          children: [
-                            Icon(Icons.phone),
-                            Text("Call owner"),
-                          ],
-                        ),
-                      ),
+                    Icon(
+                      Icons.location_on_outlined,
                     ),
-                    SizedBox(
-                      width: 16,
-                    ),
-                    Expanded(child: Container()),
+                    Text("Seoul, Republic of korea")
                   ],
                 ),
-              ),
-            ],
+                Text("Posted 2 days ago"),
+                Container(
+                  height: 52,
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(4),
+                            border: Border.all(
+                              color: Colors.blueAccent,
+                            ),
+                          ),
+                          child: Row(
+                            children: [
+                              Icon(Icons.phone),
+                              Text("Call owner"),
+                            ],
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        width: 16,
+                      ),
+                      Expanded(child: Container()),
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ),
           Divider(
             color: Colors.grey,
