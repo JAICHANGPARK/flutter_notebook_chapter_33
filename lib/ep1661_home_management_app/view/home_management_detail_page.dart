@@ -33,7 +33,7 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                 ),
                 SizedBox(
-                  height: 8,
+                  height: 12,
                 ),
                 Row(
                   children: [
@@ -51,7 +51,7 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                   ],
                 ),
                 SizedBox(
-                  height: 8,
+                  height: 12,
                 ),
                 Text(
                   "Posted 2 days ago",
@@ -60,10 +60,10 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                   ),
                 ),
                 SizedBox(
-                  height: 8,
+                  height: 12,
                 ),
                 Container(
-                  height: 52,
+                  height: 42,
                   child: Row(
                     children: [
                       Expanded(
@@ -95,9 +95,7 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                           padding: EdgeInsets.all(8),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(4),
-                            border: Border.all(
-                              color: Colors.blueAccent,
-                            ),
+                           color: Colors.blue
                           ),
                           child: Center(
                             child: Text("Call owner"),
