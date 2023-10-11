@@ -129,20 +129,23 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                     ),
                     Container(
                       decoration: BoxDecoration(
-                          border: Border.all(
-                            color: Colors.grey[300]!,
-                          ),
-                          borderRadius: BorderRadius.circular(8)),
+                        border: Border.all(
+                          color: Colors.grey[300]!,
+                        ),
+                        borderRadius: BorderRadius.circular(8),
+                      ),
                       child: Row(
                         children: [
                           Expanded(
-                              child: Column(
-                            children: [],
-                          )),
+                            child: Column(
+                              children: [],
+                            ),
+                          ),
                           Expanded(
-                              child: Column(
-                            children: [],
-                          ))
+                            child: Column(
+                              children: [],
+                            ),
+                          )
                         ],
                       ),
                     )
