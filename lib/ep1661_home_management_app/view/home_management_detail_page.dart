@@ -104,7 +104,7 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                       ),
                     ],
                   ),
-                ),
+                ),Con
               ],
             ),
           ),
