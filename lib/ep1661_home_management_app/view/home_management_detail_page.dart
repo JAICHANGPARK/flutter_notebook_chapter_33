@@ -32,7 +32,9 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                   "Single room in sunny apartment.",
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                 ),
-                SizedBox(height: 8,),
+                SizedBox(
+                  height: 8,
+                ),
                 Row(
                   children: [
                     Icon(
@@ -48,14 +50,20 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                     )
                   ],
                 ),
-                SizedBox(height: 8,),
-                Text("Posted 2 days ago", style: TextStyle(
-                  color: Colors.grey[400],
-                ),),
-                SizedBox(height: 8,),
+                SizedBox(
+                  height: 8,
+                ),
+                Text(
+                  "Posted 2 days ago",
+                  style: TextStyle(
+                    color: Colors.grey[400],
+                  ),
+                ),
+                SizedBox(
+                  height: 8,
+                ),
                 Container(
                   height: 52,
-
                   child: Row(
                     children: [
                       Expanded(
@@ -71,7 +79,9 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Icon(Icons.phone),
-                              SizedBox(width: 8,),
+                              SizedBox(
+                                width: 8,
+                              ),
                               Text("Call owner"),
                             ],
                           ),
