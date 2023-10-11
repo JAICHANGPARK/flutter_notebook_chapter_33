@@ -13,6 +13,7 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
             height: 360,
@@ -29,6 +30,17 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
               Icon(Icons.location_on_outlined,),
               Text("Seoul, Republic of korea")
             ],
+          ),
+          Text("Posted 2 days ago"),
+          Container(
+            height: 52,
+            child: Row(
+              children: [
+                Expanded(child: Container()),
+                SizedBox(width: 16,),
+                Expanded(child: Container()),
+              ],
+            ),
           )
         ],
       ),
