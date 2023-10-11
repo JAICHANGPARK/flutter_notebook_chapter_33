@@ -11,6 +11,15 @@ class HomeManagementDetailPage extends StatefulWidget {
 class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [
+          Container(
+            height: 400,
+            color: Colors.blue,
+          )
+        ],
+      ),
+    );
   }
 }
