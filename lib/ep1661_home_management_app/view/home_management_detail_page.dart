@@ -18,47 +18,54 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
             height: 360,
             color: Colors.blue,
           ),
-          Container(
-            margin: EdgeInsets.symmetric(vertical: 8),
-            height: 52,
-            color: Colors.blue,
-          ),
-          Text("Single room in sunny apartment."),
-          Row(
+          Column(
             children: [
-              Icon(
-                Icons.location_on_outlined,
+              Container(
+                margin: EdgeInsets.symmetric(vertical: 8),
+                height: 52,
+                color: Colors.blue,
               ),
-              Text("Seoul, Republic of korea")
-            ],
-          ),
-          Text("Posted 2 days ago"),
-          Container(
-            height: 52,
-            child: Row(
-              children: [
-                Expanded(
-                  child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(4),
-                      border: Border.all(
-                        color: Colors.blueAccent,
+              Text(
+                "Single room in sunny apartment.",
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+              ),
+              Row(
+                children: [
+                  Icon(
+                    Icons.location_on_outlined,
+                  ),
+                  Text("Seoul, Republic of korea")
+                ],
+              ),
+              Text("Posted 2 days ago"),
+              Container(
+                height: 52,
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(4),
+                          border: Border.all(
+                            color: Colors.blueAccent,
+                          ),
+                        ),
+                        child: Row(
+                          children: [
+                            Icon(Icons.phone),
+                            Text("Call owner"),
+                          ],
+                        ),
                       ),
                     ),
-                    child: Row(
-                      children: [
-                        Icon(Icons.phone),
-                        Text("Call owner"),
-                      ],
+                    SizedBox(
+                      width: 16,
                     ),
-                  ),
+                    Expanded(child: Container()),
+                  ],
                 ),
-                SizedBox(
-                  width: 16,
-                ),
-                Expanded(child: Container()),
-              ],
-            ),
+              ),
+            ],
           ),
           Divider(
             color: Colors.grey,
