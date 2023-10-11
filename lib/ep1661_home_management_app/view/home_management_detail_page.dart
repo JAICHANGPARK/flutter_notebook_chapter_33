@@ -104,7 +104,7 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                       ),
                     ],
                   ),
-                ),Con
+                ),
               ],
             ),
           ),
@@ -113,12 +113,15 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
           ),
           Expanded(
             child: SingleChildScrollView(
-              child: Column(
-                children: [
-                  Text(
-                    "ROOM OVERVIEW",
-                  ),
-                ],
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
+                  children: [
+                    Text(
+                      "ROOM OVERVIEW",
+                    ),
+                  ],
+                ),
               ),
             ),
           )
