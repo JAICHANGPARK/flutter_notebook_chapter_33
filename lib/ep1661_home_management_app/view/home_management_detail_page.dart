@@ -104,7 +104,10 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                             color: Colors.blue,
                           ),
                           child: Center(
-                            child: Text("Book room"),
+                            child: Text(
+                              "Book room",
+                              style: TextStyle(color: Colors.white),
+                            ),
                           ),
                         ),
                       ),
@@ -128,6 +131,7 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                       "ROOM OVERVIEW",
                     ),
                     Container(
+                      margin: EdgeInsets.only(top: 8),
                       decoration: BoxDecoration(
                         border: Border.all(
                           color: Colors.grey[300]!,
@@ -138,7 +142,25 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                         children: [
                           Expanded(
                             child: Column(
-                              children: [],
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text("Rent"),
+                                    Text("\$500/month"),
+                                  ],
+                                ),
+                                SizedBox(height: 16,),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text("Rent"),
+                                    Text("\$500/month"),
+                                  ],
+                                )
+
+                              ],
                             ),
                           ),
                           Expanded(
