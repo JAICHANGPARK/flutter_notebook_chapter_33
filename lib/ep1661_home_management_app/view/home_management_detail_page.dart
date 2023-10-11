@@ -22,6 +22,13 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
             margin: EdgeInsets.symmetric(vertical: 8),
             height: 52,
             color: Colors.blue,
+          ),
+          Text("Single room in sunny apartment."),
+          Row(
+            children: [
+              Icon(Icons.location_on_outlined,),
+              Text("Seoul, Republic of korea")
+            ],
           )
         ],
       ),
