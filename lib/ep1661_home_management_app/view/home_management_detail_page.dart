@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class HomeManagementDetailPage extends StatefulWidget {
   const HomeManagementDetailPage({super.key});
 
@@ -27,7 +26,9 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
           Text("Single room in sunny apartment."),
           Row(
             children: [
-              Icon(Icons.location_on_outlined,),
+              Icon(
+                Icons.location_on_outlined,
+              ),
               Text("Seoul, Republic of korea")
             ],
           ),
@@ -36,10 +37,41 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
             height: 52,
             child: Row(
               children: [
-                Expanded(child: Container()),
-                SizedBox(width: 16,),
+                Expanded(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(4),
+                      border: Border.all(
+                        color: Colors.blueAccent,
+                      ),
+                    ),
+                    child: Row(
+                      children: [
+                        Icon(Icons.phone),
+                        Text("Call owner"),
+                      ],
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  width: 16,
+                ),
                 Expanded(child: Container()),
               ],
+            ),
+          ),
+          Divider(
+            color: Colors.grey,
+          ),
+          Expanded(
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  Text(
+                    "ROOM OVERVIEW",
+                  ),
+                ],
+              ),
             ),
           )
         ],
