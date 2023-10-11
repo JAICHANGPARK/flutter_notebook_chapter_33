@@ -90,7 +90,20 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                       SizedBox(
                         width: 16,
                       ),
-                      Expanded(child: Container()),
+                      Expanded(
+                        child: Container(
+                          padding: EdgeInsets.all(8),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(4),
+                            border: Border.all(
+                              color: Colors.blueAccent,
+                            ),
+                          ),
+                          child: Center(
+                            child: Text("Call owner"),
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 ),
