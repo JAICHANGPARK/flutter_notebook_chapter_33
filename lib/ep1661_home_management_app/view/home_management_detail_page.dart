@@ -98,7 +98,7 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                            color: Colors.blue
                           ),
                           child: Center(
-                            child: Text("Call owner"),
+                            child: Text("Book room"),
                           ),
                         ),
                       ),
