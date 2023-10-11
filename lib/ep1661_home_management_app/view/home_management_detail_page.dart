@@ -93,10 +93,7 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                       Expanded(
                         child: Container(
                           padding: EdgeInsets.all(8),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(4),
-                           color: Colors.blue
-                          ),
+                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(4), color: Colors.blue),
                           child: Center(
                             child: Text("Book room"),
                           ),
@@ -120,6 +117,24 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                     Text(
                       "ROOM OVERVIEW",
                     ),
+                    Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.grey[300]!,
+                        ),
+                        borderRadius: BorderRadius.circular(8)
+                      ),
+                      child: Row(
+                        children: [
+                          Expanded(child: Column(children: [
+
+                          ],)),
+                          Expanded(child: Column(children: [
+
+                          ],))
+                        ],
+                      ),
+                    )
                   ],
                 ),
               ),
