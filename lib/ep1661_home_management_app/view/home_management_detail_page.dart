@@ -17,6 +17,11 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
           Container(
             height: 400,
             color: Colors.blue,
+          ),
+          Container(
+            margin: EdgeInsets.symmetric(vertical: 8),
+            height: 42,
+            color: Colors.blue,
           )
         ],
       ),
