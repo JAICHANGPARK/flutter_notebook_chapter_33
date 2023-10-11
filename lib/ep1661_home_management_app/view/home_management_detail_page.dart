@@ -49,7 +49,9 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                   ],
                 ),
                 SizedBox(height: 8,),
-                Text("Posted 2 days ago"),
+                Text("Posted 2 days ago", style: TextStyle(
+                  color: Colors.grey[400],
+                ),),
                 SizedBox(height: 8,),
                 Container(
                   height: 52,
