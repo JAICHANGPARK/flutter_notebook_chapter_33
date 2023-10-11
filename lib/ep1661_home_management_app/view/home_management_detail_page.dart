@@ -32,21 +32,33 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                   "Single room in sunny apartment.",
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                 ),
+                SizedBox(height: 8,),
                 Row(
                   children: [
                     Icon(
                       Icons.location_on_outlined,
+                      size: 16,
+                      color: Colors.grey[400],
                     ),
-                    Text("Seoul, Republic of korea")
+                    Text(
+                      "Seoul, Republic of korea",
+                      style: TextStyle(
+                        color: Colors.grey[400],
+                      ),
+                    )
                   ],
                 ),
+                SizedBox(height: 8,),
                 Text("Posted 2 days ago"),
+                SizedBox(height: 8,),
                 Container(
                   height: 52,
+
                   child: Row(
                     children: [
                       Expanded(
                         child: Container(
+                          padding: EdgeInsets.all(8),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(4),
                             border: Border.all(
