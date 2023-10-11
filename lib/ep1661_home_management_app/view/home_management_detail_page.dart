@@ -99,7 +99,10 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                       Expanded(
                         child: Container(
                           padding: EdgeInsets.all(8),
-                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(4), color: Colors.blue),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(4),
+                            color: Colors.blue,
+                          ),
                           child: Center(
                             child: Text("Book room"),
                           ),
@@ -119,6 +122,7 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
                       "ROOM OVERVIEW",
