@@ -30,18 +30,14 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                   children: [
                     Container(
                       padding: EdgeInsets.all(8),
-                      decoration: BoxDecoration(
-                        color: Colors.white.withOpacity(0.4),
-                        borderRadius: BorderRadius.circular(2)
-                      ),
+                      decoration:
+                          BoxDecoration(color: Colors.white.withOpacity(0.4), borderRadius: BorderRadius.circular(2)),
                       child: Icon(Icons.keyboard_arrow_left),
                     ),
                     Container(
                       padding: EdgeInsets.all(8),
-                      decoration: BoxDecoration(
-                        color: Colors.white.withOpacity(0.4),
-                          borderRadius: BorderRadius.circular(2)
-                      ),
+                      decoration:
+                          BoxDecoration(color: Colors.white.withOpacity(0.4), borderRadius: BorderRadius.circular(2)),
                       child: Icon(Icons.favorite_border),
                     )
                   ],
@@ -61,7 +57,18 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                   margin: EdgeInsets.symmetric(vertical: 8),
                   height: 52,
                   color: Colors.blue,
-                  child: ListView.builder(itemBuilder: (context, index) {}),
+                  child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    itemBuilder: (context, index) {
+                      return Container(
+                        width: 84,
+                        
+                        decoration: BoxDecoration(
+                          color: Colors.orange
+                        ),
+                      );
+                    },
+                  ),
                 ),
                 Text(
                   "Single room in sunny apartment.",
