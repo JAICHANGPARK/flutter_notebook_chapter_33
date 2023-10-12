@@ -178,6 +178,176 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
+
+                    Text(
+                      "ABOUT ME",
+                    ),
+                    SizedBox(height: 8,),
+                    Container(
+                      margin: EdgeInsets.only(top: 8),
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.grey[300]!,
+                        ),
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      padding: EdgeInsets.all(12),
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text("Rent"),
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text(
+                                      "\$500/month",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                SizedBox(
+                                  height: 16,
+                                ),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text("Rent"),
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text(
+                                      "\$500/month",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                SizedBox(
+                                  height: 16,
+                                ),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text("Rent"),
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text(
+                                      "\$500/month",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                SizedBox(
+                                  height: 16,
+                                ),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text("Rent"),
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text(
+                                      "\$500/month",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
+                          Expanded(
+                            child: Column(
+                              children: [
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text("Rent"),
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text(
+                                      "\$500/month",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                SizedBox(
+                                  height: 16,
+                                ),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text("Rent"),
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text(
+                                      "\$500/month",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                SizedBox(
+                                  height: 16,
+                                ),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text("Rent"),
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text(
+                                      "\$500/month",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                SizedBox(
+                                  height: 16,
+                                ),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text("Rent"),
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text(
+                                      "\$500/month",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
                     Text(
                       "ROOM OVERVIEW",
                     ),
