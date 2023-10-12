@@ -974,6 +974,25 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                         borderRadius: BorderRadius.circular(8),
                         border: Border.all(),
                       ),
+                      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                      child: Row(
+                        children: [
+                          Container(height: 54, width: 54,),
+                          Expanded(child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                            Text("Sample Human"),
+                            Text("Earth")
+                          ],)),
+                          Container(
+                            padding: EdgeInsets.all(12),
+                            decoration: BoxDecoration(
+                              color: Colors.blueAccent
+                            ),
+                            child: Text("View profile"),
+                          )
+                        ],
+                      ),
                     )
                   ],
                 ),
