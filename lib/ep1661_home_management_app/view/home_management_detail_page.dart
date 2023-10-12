@@ -977,11 +977,14 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                       padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                       child: Row(
                         children: [
-                          Container(height: 54, width: 54,),
+                          Container(height: 42, width: 42,
+                          color: Colors.green,),
+                          SizedBox(width: 8,),
                           Expanded(child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                             Text("Sample Human"),
+                            SizedBox(height: 8,),
                             Text("Earth")
                           ],)),
                           Container(
