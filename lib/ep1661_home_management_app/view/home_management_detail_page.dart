@@ -55,14 +55,14 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
               children: [
                 Container(
                   margin: EdgeInsets.symmetric(vertical: 8),
-                  height: 52,
+                  height: 48,
                   color: Colors.blue,
                   child: ListView.builder(
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) {
                       return Container(
                         width: 84,
-                        
+                        margin: EdgeInsets.only(right: 8),
                         decoration: BoxDecoration(
                           color: Colors.orange
                         ),
