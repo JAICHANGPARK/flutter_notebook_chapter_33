@@ -32,6 +32,7 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                       padding: EdgeInsets.all(8),
                       decoration: BoxDecoration(
                         color: Colors.white.withOpacity(0.4),
+                        borderRadius: BorderRadius.circular(2)
                       ),
                       child: Icon(Icons.keyboard_arrow_left),
                     ),
@@ -39,6 +40,7 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                       padding: EdgeInsets.all(8),
                       decoration: BoxDecoration(
                         color: Colors.white.withOpacity(0.4),
+                          borderRadius: BorderRadius.circular(2)
                       ),
                       child: Icon(Icons.favorite_border),
                     )
