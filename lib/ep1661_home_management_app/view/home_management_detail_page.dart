@@ -56,7 +56,7 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                 Container(
                   margin: EdgeInsets.symmetric(vertical: 8),
                   height: 46,
-                  color: Colors.blue,
+                  // color: Colors.blue,
                   child: ListView.builder(
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) {
@@ -71,6 +71,7 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                     },
                   ),
                 ),
+                SizedBox(height: 16,),
                 Text(
                   "Single room in sunny apartment.",
                   style: TextStyle(
