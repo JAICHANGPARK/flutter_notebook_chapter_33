@@ -24,12 +24,21 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
             child: Column(
               children: [
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
+                      padding: EdgeInsets.all(8),
                       decoration: BoxDecoration(
                         color: Colors.white.withOpacity(0.3),
                       ),
                       child: Icon(Icons.keyboard_arrow_left),
+                    ),
+                    Container(
+                      padding: EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                        color: Colors.white.withOpacity(0.3),
+                      ),
+                      child: Icon(Icons.favorite_border),
                     )
                   ],
                 ),
