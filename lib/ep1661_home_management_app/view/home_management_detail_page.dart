@@ -17,6 +17,15 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
           Container(
             height: 360,
             color: Colors.blue,
+            decoration: BoxDecoration(
+
+            ),
+            padding: EdgeInsets.only(top: 64, left: 16, right: 16),
+            child: Row(
+              children: [
+                
+              ],
+            ),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(
