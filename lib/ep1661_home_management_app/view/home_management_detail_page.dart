@@ -16,10 +16,12 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
         children: [
           Container(
             height: 360,
-
             decoration: BoxDecoration(
-              color: Colors.blue,
-            ),
+                color: Colors.blue,
+                image: DecorationImage(
+                  image: NetworkImage("https://cdn.pixabay.com/photo/2023/09/10/15/33/traditional-8245250_1280.jpg"),
+                  fit: BoxFit.cover,
+                )),
             padding: EdgeInsets.only(top: 64, left: 16, right: 16),
             child: Column(
               children: [
@@ -57,6 +59,7 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                   margin: EdgeInsets.symmetric(vertical: 8),
                   height: 52,
                   color: Colors.blue,
+                  child: ListView.builder(itemBuilder: (context, index) {}),
                 ),
                 Text(
                   "Single room in sunny apartment.",
@@ -179,7 +182,9 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                     Text("\$500/month"),
                                   ],
                                 ),
-                                SizedBox(height: 16,),
+                                SizedBox(
+                                  height: 16,
+                                ),
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -187,7 +192,9 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                     Text("\$500/month"),
                                   ],
                                 ),
-                                SizedBox(height: 16,),
+                                SizedBox(
+                                  height: 16,
+                                ),
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -195,7 +202,9 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                     Text("\$500/month"),
                                   ],
                                 ),
-                                SizedBox(height: 16,),
+                                SizedBox(
+                                  height: 16,
+                                ),
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -203,14 +212,15 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                     Text("\$500/month"),
                                   ],
                                 )
-
                               ],
                             ),
                           ),
                           Expanded(
                             child: Column(
                               children: [
-                                SizedBox(height: 16,),
+                                SizedBox(
+                                  height: 16,
+                                ),
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -218,7 +228,9 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                     Text("\$500/month"),
                                   ],
                                 ),
-                                SizedBox(height: 16,),
+                                SizedBox(
+                                  height: 16,
+                                ),
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -226,7 +238,9 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                     Text("\$500/month"),
                                   ],
                                 ),
-                                SizedBox(height: 16,),
+                                SizedBox(
+                                  height: 16,
+                                ),
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -234,14 +248,16 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                     Text("\$500/month"),
                                   ],
                                 ),
-                            SizedBox(height: 16,),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text("Rent"),
-                              Text("\$500/month"),
-                            ],
-                          ),
+                                SizedBox(
+                                  height: 16,
+                                ),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text("Rent"),
+                                    Text("\$500/month"),
+                                  ],
+                                ),
                               ],
                             ),
                           )
