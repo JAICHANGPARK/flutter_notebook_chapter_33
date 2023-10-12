@@ -520,7 +520,9 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                         ],
                       ),
                     ),
-                    SizedBox(height: 16,),
+                    SizedBox(
+                      height: 16,
+                    ),
                     Text("HOME AMENITIES"),
                     Container(
                       margin: EdgeInsets.only(top: 8),
@@ -538,7 +540,6 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Row(
-
                                   children: [
                                     Container(
                                       height: 32,
@@ -552,7 +553,6 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                     ),
                                     Text(
                                       "Wi-fi",
-
                                     ),
                                   ],
                                 ),
@@ -560,7 +560,6 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                   height: 16,
                                 ),
                                 Row(
-
                                   children: [
                                     Container(
                                       height: 32,
@@ -574,7 +573,6 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                     ),
                                     Text(
                                       "Wi-fi",
-
                                     ),
                                   ],
                                 ),
@@ -582,7 +580,6 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                   height: 16,
                                 ),
                                 Row(
-
                                   children: [
                                     Container(
                                       height: 32,
@@ -596,11 +593,9 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                     ),
                                     Text(
                                       "Wi-fi",
-
                                     ),
                                   ],
                                 ),
-
                               ],
                             ),
                           ),
@@ -608,7 +603,6 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                             child: Column(
                               children: [
                                 Row(
-
                                   children: [
                                     Container(
                                       height: 32,
@@ -622,7 +616,6 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                     ),
                                     Text(
                                       "Wi-fi",
-
                                     ),
                                   ],
                                 ),
@@ -630,7 +623,6 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                   height: 16,
                                 ),
                                 Row(
-
                                   children: [
                                     Container(
                                       height: 32,
@@ -644,7 +636,6 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                     ),
                                     Text(
                                       "Wi-fi",
-
                                     ),
                                   ],
                                 ),
@@ -652,7 +643,6 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                   height: 16,
                                 ),
                                 Row(
-
                                   children: [
                                     Container(
                                       height: 32,
@@ -666,18 +656,18 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                     ),
                                     Text(
                                       "Wi-fi",
-
                                     ),
                                   ],
                                 ),
-
                               ],
                             ),
                           )
                         ],
                       ),
                     ),
-                    SizedBox(height: 16,),
+                    SizedBox(
+                      height: 16,
+                    ),
                     Text("SUITABLE FOR"),
                     Container(
                       margin: EdgeInsets.only(top: 8),
@@ -695,7 +685,6 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Row(
-
                                   children: [
                                     Container(
                                       height: 32,
@@ -709,7 +698,6 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                     ),
                                     Text(
                                       "Wi-fi",
-
                                     ),
                                   ],
                                 ),
@@ -717,7 +705,6 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                   height: 16,
                                 ),
                                 Row(
-
                                   children: [
                                     Container(
                                       height: 32,
@@ -731,7 +718,6 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                     ),
                                     Text(
                                       "Wi-fi",
-
                                     ),
                                   ],
                                 ),
@@ -739,7 +725,6 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                   height: 16,
                                 ),
                                 Row(
-
                                   children: [
                                     Container(
                                       height: 32,
@@ -753,11 +738,9 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                     ),
                                     Text(
                                       "Wi-fi",
-
                                     ),
                                   ],
                                 ),
-
                               ],
                             ),
                           ),
@@ -765,7 +748,6 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                             child: Column(
                               children: [
                                 Row(
-
                                   children: [
                                     Container(
                                       height: 32,
@@ -779,7 +761,6 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                     ),
                                     Text(
                                       "Wi-fi",
-
                                     ),
                                   ],
                                 ),
@@ -787,7 +768,6 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                   height: 16,
                                 ),
                                 Row(
-
                                   children: [
                                     Container(
                                       height: 32,
@@ -801,7 +781,6 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                     ),
                                     Text(
                                       "Wi-fi",
-
                                     ),
                                   ],
                                 ),
@@ -809,7 +788,6 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                   height: 16,
                                 ),
                                 Row(
-
                                   children: [
                                     Container(
                                       height: 32,
@@ -823,18 +801,18 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                     ),
                                     Text(
                                       "Wi-fi",
-
                                     ),
                                   ],
                                 ),
-
                               ],
                             ),
                           )
                         ],
                       ),
                     ),
-                    SizedBox(height: 16,),
+                    SizedBox(
+                      height: 16,
+                    ),
                     Text("INTERESTED IN"),
                     Container(
                       margin: EdgeInsets.only(top: 8),
@@ -852,7 +830,6 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Row(
-
                                   children: [
                                     Container(
                                       height: 32,
@@ -866,7 +843,6 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                     ),
                                     Text(
                                       "Wi-fi",
-
                                     ),
                                   ],
                                 ),
@@ -874,7 +850,6 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                   height: 16,
                                 ),
                                 Row(
-
                                   children: [
                                     Container(
                                       height: 32,
@@ -888,7 +863,6 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                     ),
                                     Text(
                                       "Wi-fi",
-
                                     ),
                                   ],
                                 ),
@@ -896,7 +870,6 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                   height: 16,
                                 ),
                                 Row(
-
                                   children: [
                                     Container(
                                       height: 32,
@@ -910,11 +883,9 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                     ),
                                     Text(
                                       "Wi-fi",
-
                                     ),
                                   ],
                                 ),
-
                               ],
                             ),
                           ),
@@ -922,7 +893,6 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                             child: Column(
                               children: [
                                 Row(
-
                                   children: [
                                     Container(
                                       height: 32,
@@ -936,7 +906,6 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                     ),
                                     Text(
                                       "Wi-fi",
-
                                     ),
                                   ],
                                 ),
@@ -944,7 +913,6 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                   height: 16,
                                 ),
                                 Row(
-
                                   children: [
                                     Container(
                                       height: 32,
@@ -958,7 +926,6 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                     ),
                                     Text(
                                       "Wi-fi",
-
                                     ),
                                   ],
                                 ),
@@ -966,7 +933,6 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                   height: 16,
                                 ),
                                 Row(
-
                                   children: [
                                     Container(
                                       height: 32,
@@ -980,22 +946,34 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                     ),
                                     Text(
                                       "Wi-fi",
-
                                     ),
                                   ],
                                 ),
-
                               ],
                             ),
                           )
                         ],
                       ),
                     ),
-                    SizedBox(height: 16,),
+                    SizedBox(
+                      height: 16,
+                    ),
                     Text("VIEW LOCATION"),
                     Container(
-                      height: 72,
-                      decoration: BoxDecoration(),
+                      margin: EdgeInsets.symmetric(vertical: 8),
+                      height: 108,
+                      decoration: BoxDecoration(color: Colors.orange, borderRadius: BorderRadius.circular(8)),
+                    ),
+                    SizedBox(
+                      height: 16,
+                    ),
+                    Text("POSTED BY"),
+                    Container(
+                      margin: EdgeInsets.symmetric(vertical: 8),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(8),
+                        border: Border.all(),
+                      ),
                     )
                   ],
                 ),
