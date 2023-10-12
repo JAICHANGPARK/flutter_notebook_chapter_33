@@ -71,7 +71,9 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                     },
                   ),
                 ),
-                SizedBox(height: 16,),
+                SizedBox(
+                  height: 16,
+                ),
                 Text(
                   "Single room in sunny apartment.",
                   style: TextStyle(
@@ -125,11 +127,19 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Icon(Icons.phone),
+                              Icon(
+                                Icons.phone,
+                                color: Colors.blueAccent,
+                              ),
                               SizedBox(
                                 width: 8,
                               ),
-                              Text("Call owner"),
+                              Text(
+                                "Call owner",
+                                style: TextStyle(
+                                  color: Colors.blueAccent,
+                                ),
+                              ),
                             ],
                           ),
                         ),
@@ -190,7 +200,15 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text("Rent"),
-                                    Text("\$500/month"),
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text(
+                                      "\$500/month",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
                                   ],
                                 ),
                                 SizedBox(
@@ -200,7 +218,15 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text("Rent"),
-                                    Text("\$500/month"),
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text(
+                                      "\$500/month",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
                                   ],
                                 ),
                                 SizedBox(
@@ -210,7 +236,15 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text("Rent"),
-                                    Text("\$500/month"),
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text(
+                                      "\$500/month",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
                                   ],
                                 ),
                                 SizedBox(
@@ -220,23 +254,36 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text("Rent"),
-                                    Text("\$500/month"),
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text(
+                                      "\$500/month",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
                                   ],
-                                )
+                                ),
                               ],
                             ),
                           ),
                           Expanded(
                             child: Column(
                               children: [
-                                SizedBox(
-                                  height: 16,
-                                ),
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text("Rent"),
-                                    Text("\$500/month"),
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text(
+                                      "\$500/month",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
                                   ],
                                 ),
                                 SizedBox(
@@ -246,7 +293,15 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text("Rent"),
-                                    Text("\$500/month"),
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text(
+                                      "\$500/month",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
                                   ],
                                 ),
                                 SizedBox(
@@ -256,7 +311,15 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text("Rent"),
-                                    Text("\$500/month"),
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text(
+                                      "\$500/month",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
                                   ],
                                 ),
                                 SizedBox(
@@ -266,7 +329,15 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text("Rent"),
-                                    Text("\$500/month"),
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text(
+                                      "\$500/month",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
                                   ],
                                 ),
                               ],
