@@ -16,14 +16,23 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
         children: [
           Container(
             height: 360,
-            color: Colors.blue,
-            decoration: BoxDecoration(
 
+            decoration: BoxDecoration(
+              color: Colors.blue,
             ),
             padding: EdgeInsets.only(top: 64, left: 16, right: 16),
-            child: Row(
+            child: Column(
               children: [
-                
+                Row(
+                  children: [
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white.withOpacity(0.3),
+                      ),
+                      child: Icon(Icons.keyboard_arrow_left),
+                    )
+                  ],
+                ),
               ],
             ),
           ),
