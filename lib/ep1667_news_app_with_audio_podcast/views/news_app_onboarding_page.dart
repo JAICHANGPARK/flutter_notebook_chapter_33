@@ -30,10 +30,11 @@ class _NewsAppOnboardingPageState extends State<NewsAppOnboardingPage> {
                     decoration: BoxDecoration(
                       color: Colors.grey,
                       borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(8),
+                        topLeft: Radius.circular(12),
+                        bottomRight: Radius.circular(12)
                       ),
                     ),
-                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                     child: Text(
                       "THE NEWS",
                       style: TextStyle(color: Colors.white, fontSize: 24),
