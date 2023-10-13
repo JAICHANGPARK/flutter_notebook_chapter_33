@@ -66,6 +66,7 @@ class _NewsAppOnboardingPageState extends State<NewsAppOnboardingPage> {
                   padding: EdgeInsets.symmetric(vertical: 16),
                   decoration: BoxDecoration(
                     color: Colors.white.withOpacity(0.2),
+                    borderRadius: BorderRadius.circular(32)
                   ),
                   child: Center(
                     child: Text(
