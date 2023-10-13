@@ -56,7 +56,26 @@ class _NewsAppOnboardingPageState extends State<NewsAppOnboardingPage> {
                     decorator: DotsDecorator(
                       size: Size(16, 16),
                       activeSize: Size(16, 16),
+                      color: Colors.grey,
+                      activeColor: Colors.white,
                     )),
+                SizedBox(
+                  height: 24,
+                ),
+                Container(
+                  padding: EdgeInsets.symmetric(vertical: 16),
+                  decoration: BoxDecoration(
+                    color: Colors.white.withOpacity(0.2),
+                  ),
+                  child: Center(
+                    child: Text(
+                      "Continue",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                )
               ],
             ),
           )
