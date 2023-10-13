@@ -6,7 +6,7 @@
 - Asiq M. for Netro Creative
 - https://dribbble.com/shots/22810684-News-App-with-audio-podcast
 
-<img src="https://cdn.dribbble.com/userupload/10560106/file/original-dd79e44d9116be3b0297c4dbcca36494.png?resize=1600x1200"/>
+<img src="https://cdn.dribbble.com/userupload/10735521/file/original-cbf22b1d4a3b690f11912274723c10fd.jpg?resize=1600x1200"/>
 
 ## EP1661-1666
 
