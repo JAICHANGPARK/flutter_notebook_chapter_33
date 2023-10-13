@@ -60,7 +60,7 @@ class _NewsAppOnboardingPageState extends State<NewsAppOnboardingPage> {
                       activeColor: Colors.white,
                     )),
                 SizedBox(
-                  height: 24,
+                  height: 42,
                 ),
                 Container(
                   padding: EdgeInsets.symmetric(vertical: 16),
