@@ -16,8 +16,31 @@ class _NewsAppOnboardingPageState extends State<NewsAppOnboardingPage> {
           Positioned.fill(
             child: Image.network(
               "https://cdn.pixabay.com/photo/2014/12/27/16/38/planet-581239_1280.jpg",
+              fit: BoxFit.cover,
             ),
-          )
+          ),
+          Positioned(
+            left: 24,
+              right: 24,
+              bottom: 24,
+              top: 100,
+              child: Column(
+            children: [
+              Container(
+                decoration: BoxDecoration(
+                  color: Colors.grey,
+                ),
+                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                child: Text(
+                  "THE NEWS",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24
+                  ),
+                ),
+              )
+            ],
+          ))
         ],
       ),
     );
