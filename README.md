@@ -1,6 +1,14 @@
 # flutter_notebook_chapter_33
 
-## EP1661
+## EP1661-1666
+
+- News App with audio podcast
+- Asiq M. for Netro Creative
+- https://dribbble.com/shots/22810684-News-App-with-audio-podcast
+
+<img src="https://cdn.dribbble.com/userupload/10560106/file/original-dd79e44d9116be3b0297c4dbcca36494.png?resize=1600x1200"/>
+
+## EP1661-1666
 
 - Home Management App
 - Peaky Design
