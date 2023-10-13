@@ -1,3 +1,4 @@
+import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 
 class NewsAppOnboardingPage extends StatefulWidget {
@@ -49,7 +50,13 @@ class _NewsAppOnboardingPageState extends State<NewsAppOnboardingPage> {
                   style: TextStyle(
                     color: Colors.white,
                   ),
-                )
+                ),
+                DotsIndicator(
+                    dotsCount: 3,
+                    decorator: DotsDecorator(
+                      size: Size(16, 16),
+                      activeSize: Size(16, 16),
+                    )),
               ],
             ),
           )
