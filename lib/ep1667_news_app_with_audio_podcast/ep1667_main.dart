@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 
 void main() {
-  
+  runApp(NewsAppWithPodcast());
 }
 
 class NewsAppWithPodcast extends StatelessWidget {
