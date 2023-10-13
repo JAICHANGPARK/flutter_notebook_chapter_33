@@ -20,27 +20,27 @@ class _NewsAppOnboardingPageState extends State<NewsAppOnboardingPage> {
             ),
           ),
           Positioned(
-            left: 24,
+              left: 24,
               right: 24,
               bottom: 24,
               top: 100,
               child: Column(
-            children: [
-              Container(
-                decoration: BoxDecoration(
-                  color: Colors.grey,
-                ),
-                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-                child: Text(
-                  "THE NEWS",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 24
-                  ),
-                ),
-              )
-            ],
-          ))
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.grey,
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(8),
+                      ),
+                    ),
+                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                    child: Text(
+                      "THE NEWS",
+                      style: TextStyle(color: Colors.white, fontSize: 24),
+                    ),
+                  )
+                ],
+              ))
         ],
       ),
     );
