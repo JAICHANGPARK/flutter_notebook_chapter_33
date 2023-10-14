@@ -116,7 +116,13 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                                     icon: Icon(
                                       Icons.more_horiz,
                                     ),
-                                  )
+                                  ),
+                                  IconButton(
+                                    onPressed: () {},
+                                    icon: Icon(
+                                      Icons.play_circle,
+                                    ),
+                                  ),
                                 ],
                               )
                             ],
