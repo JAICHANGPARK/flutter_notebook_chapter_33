@@ -19,22 +19,22 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
               child: Row(
 
                 children: [
-                  CircleAvatar(),
+                  const CircleAvatar(),
                   Expanded(
                     child: Center(
                       child: Container(
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Colors.black,
                           borderRadius: BorderRadius.only(
                             topLeft: Radius.circular(8),
                             bottomRight: Radius.circular(8),
                           ),
                         ),
-                        padding: EdgeInsets.symmetric(
+                        padding: const EdgeInsets.symmetric(
                           vertical: 4,
                           horizontal: 12,
                         ),
-                        child: Text(
+                        child: const Text(
                           "THE NEWS",
                           style: TextStyle(
                             color: Colors.white,
@@ -46,9 +46,9 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                   ),
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(Icons.search),
+                    icon: const Icon(Icons.search),
                   ),
-                  Badge(
+                  const Badge(
                     child: Icon(
                       Icons.notifications,
                     ),
