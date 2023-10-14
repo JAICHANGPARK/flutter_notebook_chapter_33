@@ -1,5 +1,6 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_33/ep1667_news_app_with_audio_podcast/views/news_app_main_page.dart';
 
 class NewsAppOnboardingPage extends StatefulWidget {
   const NewsAppOnboardingPage({super.key});
