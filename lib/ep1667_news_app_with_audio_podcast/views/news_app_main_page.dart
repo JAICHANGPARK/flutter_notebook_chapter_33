@@ -15,6 +15,7 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
         child: Column(
           children: [
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 CircleAvatar(),
                 Container(
