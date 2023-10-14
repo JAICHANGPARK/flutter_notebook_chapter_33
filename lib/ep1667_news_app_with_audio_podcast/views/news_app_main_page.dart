@@ -22,9 +22,13 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                     color: Colors.black,
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(8),
-                      bottomRight: Radius.circular(8)
-                    )
+                      bottomRight: Radius.circular(8),
+                    ),
                   ),
+                  padding: EdgeInsets.symmetric(vertical: 4, horizontal: 12),
+                  child: Text("THE NEWS",style: TextStyle(
+                    color: Colors.white,
+                  ),),
                 )
               ],
             )
