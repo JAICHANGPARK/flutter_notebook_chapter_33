@@ -28,15 +28,15 @@ class _NewsAppOnboardingPageState extends State<NewsAppOnboardingPage> {
             child: Column(
               children: [
                 Container(
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Colors.grey,
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(12),
                       bottomRight: Radius.circular(12),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                  child: Text(
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                  child: const Text(
                     "THE NEWS",
                     style: TextStyle(
                       color: Colors.white,
@@ -44,8 +44,8 @@ class _NewsAppOnboardingPageState extends State<NewsAppOnboardingPage> {
                     ),
                   ),
                 ),
-                Spacer(),
-                Text(
+                const Spacer(),
+                const Text(
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
                   style: TextStyle(
                     color: Colors.white,
@@ -53,22 +53,22 @@ class _NewsAppOnboardingPageState extends State<NewsAppOnboardingPage> {
                 ),
                 DotsIndicator(
                     dotsCount: 3,
-                    decorator: DotsDecorator(
+                    decorator: const DotsDecorator(
                       size: Size(16, 16),
                       activeSize: Size(16, 16),
                       color: Colors.grey,
                       activeColor: Colors.white,
                     )),
-                SizedBox(
+                const SizedBox(
                   height: 42,
                 ),
                 Container(
-                  padding: EdgeInsets.symmetric(vertical: 16),
+                  padding: const EdgeInsets.symmetric(vertical: 16),
                   decoration: BoxDecoration(
                     color: Colors.white.withOpacity(0.2),
                     borderRadius: BorderRadius.circular(32),
                   ),
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Continue",
                       style: TextStyle(
