@@ -68,10 +68,21 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
             DotsIndicator(
               dotsCount: 4,
               decorator: DotsDecorator(
-                  size: const Size(16, 16),
-                  activeSize: const Size(16, 16),
-                  activeColor: Colors.black,
-                  color: Colors.grey[400]!),
+                size: const Size(16, 16),
+                activeSize: const Size(16, 16),
+                activeColor: Colors.black,
+                color: Colors.grey[400]!,
+              ),
+            ),
+            Container(
+              height: 52,
+              color: Colors.blueAccent,
+            ),
+            Row(
+              children: [
+                Text("Recommendation"),
+                TextButton(onPressed: (){}, child: Text("View All"))
+              ],
             )
           ],
         ),
