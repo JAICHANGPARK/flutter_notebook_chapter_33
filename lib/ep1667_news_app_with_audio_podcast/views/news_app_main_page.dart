@@ -79,11 +79,22 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
               color: Colors.blueAccent,
             ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text("Recommendation"),
-                TextButton(onPressed: (){}, child: Text("View All"))
+                TextButton(
+                  onPressed: () {},
+                  child: Text("View All"),
+                )
               ],
-            )
+            ),
+          ],
+        ),
+      ),
+      bottomNavigationBar: BottomAppBar(
+        child: Row(
+          children: [
+            
           ],
         ),
       ),
