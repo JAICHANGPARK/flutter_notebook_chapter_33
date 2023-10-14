@@ -11,6 +11,8 @@ class NewAppMainPage extends StatefulWidget {
 class _NewAppMainPageState extends State<NewAppMainPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+
+    );
   }
 }
