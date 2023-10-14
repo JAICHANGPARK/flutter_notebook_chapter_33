@@ -1,3 +1,4 @@
+import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 
 class NewAppMainPage extends StatefulWidget {
@@ -17,7 +18,6 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Row(
-
                 children: [
                   const CircleAvatar(),
                   Expanded(
@@ -55,6 +55,18 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                   )
                 ],
               ),
+            ),
+            Container(
+              height: 120,
+              color: Colors.blue,
+            ),
+            Container(
+              margin: EdgeInsets.all(8),
+              height: 200,
+              color: Colors.blue,
+            ),
+            DotsIndicator(
+              dotsCount: 4,
             )
           ],
         ),
