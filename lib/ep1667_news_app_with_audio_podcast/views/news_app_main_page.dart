@@ -60,40 +60,51 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
               height: 120,
               color: Colors.blue,
             ),
-            Expanded(child: SingleChildScrollView(child:Column(
-              children: [
-                Container(
-                  margin: const EdgeInsets.all(8),
-                  height: 200,
-                  color: Colors.blue,
-                ),
-                DotsIndicator(
-                  dotsCount: 4,
-                  decorator: DotsDecorator(
-                    size: const Size(16, 16),
-                    activeSize: const Size(16, 16),
-                    activeColor: Colors.black,
-                    color: Colors.grey[400]!,
-                  ),
-                ),
-                Container(
-                  height: 52,
-                  color: Colors.blueAccent,
-                  margin: EdgeInsets.only(left: 8, top: 8, bottom: 8),
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            Expanded(
+              child: SingleChildScrollView(
+                child: Column(
                   children: [
-                    Text("Recommendation"),
-                    TextButton(
-                      onPressed: () {},
-                      child: Text("View All"),
-                    )
+                    Container(
+                      margin: const EdgeInsets.all(8),
+                      height: 200,
+                      color: Colors.blue,
+                    ),
+                    DotsIndicator(
+                      dotsCount: 4,
+                      decorator: DotsDecorator(
+                        size: const Size(16, 16),
+                        activeSize: const Size(16, 16),
+                        activeColor: Colors.black,
+                        color: Colors.grey[400]!,
+                      ),
+                    ),
+                    Container(
+                      height: 52,
+                      color: Colors.blueAccent,
+                      margin: EdgeInsets.only(left: 8, top: 8, bottom: 8),
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text("Recommendation"),
+                        TextButton(
+                          onPressed: () {},
+                          child: Text("View All"),
+                        )
+                      ],
+                    ),
+                    ...List.generate(
+                      10,
+                      (index) => Card(
+                        child: Row(
+                          children: [],
+                        ),
+                      ),
+                    ).toList(),
                   ],
                 ),
-              ],
-            ),))
-
+              ),
+            )
           ],
         ),
       ),
@@ -102,9 +113,7 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
           children: [
             Container(
               child: Row(
-                children: [
-
-                ],
+                children: [],
               ),
             )
           ],
