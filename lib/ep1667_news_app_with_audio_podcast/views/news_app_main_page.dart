@@ -61,18 +61,17 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
               color: Colors.blue,
             ),
             Container(
-              margin: EdgeInsets.all(8),
+              margin: const EdgeInsets.all(8),
               height: 200,
               color: Colors.blue,
             ),
             DotsIndicator(
               dotsCount: 4,
               decorator: DotsDecorator(
-                size: Size(16,16),
-                activeSize: Size(16,16),
-                activeColor: Colors.black,
-                color: Colors.grey[400]
-              ),
+                  size: const Size(16, 16),
+                  activeSize: const Size(16, 16),
+                  activeColor: Colors.black,
+                  color: Colors.grey[400]!),
             )
           ],
         ),
