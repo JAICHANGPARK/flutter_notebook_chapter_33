@@ -25,13 +25,18 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                       bottomRight: Radius.circular(8),
                     ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 4, horizontal: 12),
+                  padding: EdgeInsets.symmetric(
+                    vertical: 4,
+                    horizontal: 12,
+                  ),
                   child: Text(
                     "THE NEWS",
-                    style: TextStyle(color: Colors.white, fontSize: 20),
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                    ),
                   ),
                 ),
-                
               ],
             )
           ],
