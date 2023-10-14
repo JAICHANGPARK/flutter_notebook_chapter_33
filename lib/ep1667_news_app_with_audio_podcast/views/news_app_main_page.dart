@@ -37,6 +37,12 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                     ),
                   ),
                 ),
+                IconButton(onPressed: () {}, icon: Icon(Icons.search)),
+                Badge(
+                  child: Icon(
+                    Icons.notifications,
+                  ),
+                )
               ],
             )
           ],
