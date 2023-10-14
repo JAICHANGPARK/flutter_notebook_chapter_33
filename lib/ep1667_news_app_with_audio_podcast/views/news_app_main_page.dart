@@ -12,7 +12,18 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
+      body: SafeArea(
+        child: Column(
+          children: [
+            Row(
+              children: [
 
+              ],
+            )
+          ],
+        ),
+      ),
     );
   }
 }
