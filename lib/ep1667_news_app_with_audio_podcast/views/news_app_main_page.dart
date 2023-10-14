@@ -67,6 +67,12 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
             ),
             DotsIndicator(
               dotsCount: 4,
+              decorator: DotsDecorator(
+                size: Size(16,16),
+                activeSize: Size(16,16),
+                activeColor: Colors.black,
+                color: Colors.grey[400]
+              ),
             )
           ],
         ),
