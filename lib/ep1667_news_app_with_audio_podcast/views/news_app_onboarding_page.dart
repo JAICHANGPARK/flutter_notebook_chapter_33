@@ -67,7 +67,7 @@ class _NewsAppOnboardingPageState extends State<NewsAppOnboardingPage> {
                   onTap: () {
                     Navigator.of(context).push(
                       MaterialPageRoute(
-                        builder: (context) => NewAppMainPage(),
+                        builder: (context) => const NewAppMainPage(),
                       ),
                     );
                   },
