@@ -77,6 +77,7 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
             Container(
               height: 52,
               color: Colors.blueAccent,
+              margin: EdgeInsets.only(left: 8, top: 8, bottom: 8),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -94,7 +95,7 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
       bottomNavigationBar: BottomAppBar(
         child: Row(
           children: [
-            
+
           ],
         ),
       ),
