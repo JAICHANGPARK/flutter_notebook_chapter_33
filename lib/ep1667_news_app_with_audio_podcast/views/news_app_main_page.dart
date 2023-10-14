@@ -26,10 +26,12 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                     ),
                   ),
                   padding: EdgeInsets.symmetric(vertical: 4, horizontal: 12),
-                  child: Text("THE NEWS",style: TextStyle(
-                    color: Colors.white,
-                  ),),
-                )
+                  child: Text(
+                    "THE NEWS",
+                    style: TextStyle(color: Colors.white, fontSize: 20),
+                  ),
+                ),
+                
               ],
             )
           ],
