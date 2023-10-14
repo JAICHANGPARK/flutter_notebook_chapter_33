@@ -95,7 +95,13 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
       bottomNavigationBar: BottomAppBar(
         child: Row(
           children: [
-
+            Container(
+              child: Row(
+                children: [
+                  
+                ],
+              ),
+            )
           ],
         ),
       ),
