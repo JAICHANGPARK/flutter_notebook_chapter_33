@@ -83,21 +83,44 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                       color: Colors.blueAccent,
                       margin: EdgeInsets.only(left: 8, top: 8, bottom: 8),
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text("Recommendation"),
-                        TextButton(
-                          onPressed: () {},
-                          child: Text("View All"),
-                        )
-                      ],
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text("Recommendation"),
+                          TextButton(
+                            onPressed: () {},
+                            child: Text("View All"),
+                          )
+                        ],
+                      ),
                     ),
                     ...List.generate(
                       10,
                       (index) => Card(
-                        child: Row(
-                          children: [],
+                        child: Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Row(
+                            children: [
+                              Container(
+                                height: 84,
+                                width: 120,
+                                color: Colors.blue,
+                              ),
+                              Expanded(child: Column()),
+                              Column(
+                                children: [
+                                  IconButton(
+                                    onPressed: () {},
+                                    icon: Icon(
+                                      Icons.more_horiz,
+                                    ),
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
                         ),
                       ),
                     ).toList(),
