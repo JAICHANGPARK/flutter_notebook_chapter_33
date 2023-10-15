@@ -75,26 +75,30 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                               children: [
                                 Positioned.fill(
                                   child: CircleAvatar(
-                                    // radius: 32,
-                                  ),
+                                      // radius: 32,
+                                      ),
                                 ),
                                 Positioned(
-                                  bottom: 0,
-                                    left: 0,
-                                    right: 0,
-                                    child: Center(
-                                      child: Container(
-                                  decoration: BoxDecoration(
-                                      color: Colors.red,
-                                  ),
-                                  child: Text(
-                                      "LIVE",
-                                      style: TextStyle(
-                                        color: Colors.white,
+                                  bottom: 4,
+                                  left: 0,
+                                  right: 0,
+                                  child: Center(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.red,
+                                        borderRadius: BorderRadius.circular(24)
                                       ),
+                                      padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                                      child: Text(
+                                        "LIVE",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 11,
+                                        ),
+                                      ),
+                                    ),
                                   ),
-                                ),
-                                    ))
+                                )
                               ],
                             )),
                             SizedBox(
