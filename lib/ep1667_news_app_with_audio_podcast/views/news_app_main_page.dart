@@ -131,6 +131,7 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                               children: [
                                 Text(
                                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "),
+                                
 
                               ],
                             ),
@@ -143,6 +144,7 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                                   Icons.play_circle,
                                 ),
                                 onPressed: () {},
+                                iconSize: 72,
                               ))
                         ],
                       ),
