@@ -84,10 +84,8 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                                   right: 0,
                                   child: Center(
                                     child: Container(
-                                      decoration: BoxDecoration(
-                                        color: Colors.red,
-                                        borderRadius: BorderRadius.circular(24)
-                                      ),
+                                      decoration:
+                                          BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(24)),
                                       padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
                                       child: Text(
                                         "LIVE",
@@ -118,7 +116,30 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                     Container(
                       margin: const EdgeInsets.all(8),
                       height: 200,
-                      color: Colors.blue,
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            child: Column(
+                              children: [
+                                Text()
+                              ],
+                            ),
+                          ),
+                          Positioned(
+                            right: 8,
+                              bottom: 8,
+                              child: IconButton(
+                            icon: Icon(
+                              Icons.play_circle,
+                            ),
+                            onPressed: () {},
+                          ))
+                        ],
+                      ),
                     ),
                     DotsIndicator(
                       dotsCount: 4,
