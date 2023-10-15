@@ -169,7 +169,7 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                       ),
                     ),
                     Container(
-                      height: 52,
+                      height: 42,
                       color: Colors.blueAccent,
                       margin: EdgeInsets.only(left: 8, top: 8, bottom: 8),
                       child: ListView.builder(
@@ -180,7 +180,7 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                             decoration: BoxDecoration(
                               color: Colors.grey[300],
                             ),
-                            child: Text("Politics"),
+                            child: Center(child: Text("Politics")),
                           );
                         },
                         scrollDirection: Axis.horizontal,
