@@ -109,6 +109,7 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                     );
                   }),
             ),
+            SizedBox(height: 16,),
             Expanded(
               child: SingleChildScrollView(
                 child: Column(
@@ -124,10 +125,12 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                         children: [
                           Positioned(
                             left: 16,
-                            top: 16,
-                            bottom: 16,
+                            top: 24,
+                            bottom: 24,
                             right: 200,
                             child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Text(
                                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, ",
