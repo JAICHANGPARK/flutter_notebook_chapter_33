@@ -75,9 +75,9 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                               children: [
                                 Positioned.fill(
                                   child: CircleAvatar(
-                                      // radius: 32,
+                                    // radius: 32,
                                     child: Icon(Icons.play_circle),
-                                      ),
+                                  ),
                                 ),
                                 Positioned(
                                   bottom: 4,
@@ -192,10 +192,7 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                         children: [
                           Text(
                             "Recommendation",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 18
-                            ),
+                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                           ),
                           TextButton(
                             onPressed: () {},
