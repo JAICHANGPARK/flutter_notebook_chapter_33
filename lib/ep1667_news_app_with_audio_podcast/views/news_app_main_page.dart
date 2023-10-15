@@ -153,7 +153,9 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                     Icons.home,
                     color: Colors.white,
                   ),
-                  SizedBox(width: 8,),
+                  SizedBox(
+                    width: 8,
+                  ),
                   Text(
                     "Home",
                     style: TextStyle(
@@ -163,8 +165,24 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                 ],
               ),
             ),
-            IconButton(onPressed: (){}, icon: Icon(Icons.public)),
-            IconButton(onPressed: (){}, icon: Icon(Icons.bookmarks))
+            IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.public,
+              ),
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.bookmarks,
+              ),
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.person,
+              ),
+            )
           ],
         ),
       ),
