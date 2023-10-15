@@ -66,31 +66,43 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                   itemBuilder: (context, index) {
                     return Padding(
                       padding: const EdgeInsets.only(right: 16),
-                      child: Column(
-                        children: [
-                          Expanded(
-                              child: Stack(
-                            children: [
-                              Positioned(child: CircleAvatar()),
-                              Positioned(
-                                  child: Container(
-                                decoration: BoxDecoration(
-                                  color: Colors.red,
-                                ),
-                                child: Text(
-                                  "LIVE",
-                                  style: TextStyle(
-                                    color: Colors.white,
+                      child: SizedBox(
+                        width: 72,
+                        child: Column(
+                          children: [
+                            Expanded(
+                                child: Stack(
+                              children: [
+                                Positioned.fill(
+                                  child: CircleAvatar(
+                                    // radius: 32,
                                   ),
                                 ),
-                              ))
-                            ],
-                          )),
-                          SizedBox(
-                            height: 8,
-                          ),
-                          Text("Conference")
-                        ],
+                                Positioned(
+                                  bottom: 0,
+                                    left: 0,
+                                    right: 0,
+                                    child: Center(
+                                      child: Container(
+                                  decoration: BoxDecoration(
+                                      color: Colors.red,
+                                  ),
+                                  child: Text(
+                                      "LIVE",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                      ),
+                                  ),
+                                ),
+                                    ))
+                              ],
+                            )),
+                            SizedBox(
+                              height: 8,
+                            ),
+                            Text("Conference")
+                          ],
+                        ),
                       ),
                     );
                   }),
