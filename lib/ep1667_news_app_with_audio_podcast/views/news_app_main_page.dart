@@ -64,21 +64,36 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                   scrollDirection: Axis.horizontal,
                   itemCount: 10,
                   itemBuilder: (context, index) {
-                return Padding(
-                  padding: const EdgeInsets.only(right: 16),
-                  child: Column(
-                    children: [
-                      Expanded(child: Stack(
+                    return Padding(
+                      padding: const EdgeInsets.only(right: 16),
+                      child: Column(
                         children: [
-                          
+                          Expanded(
+                              child: Stack(
+                            children: [
+                              Positioned(child: CircleAvatar()),
+                              Positioned(
+                                  child: Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.red,
+                                ),
+                                child: Text(
+                                  "LIVE",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ))
+                            ],
+                          )),
+                          SizedBox(
+                            height: 8,
+                          ),
+                          Text("Conference")
                         ],
-                      )),
-                      SizedBox(height: 8,),
-                      Text("Conference")
-                    ],
-                  ),
-                );
-              }),
+                      ),
+                    );
+                  }),
             ),
             Expanded(
               child: SingleChildScrollView(
