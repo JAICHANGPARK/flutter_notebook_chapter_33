@@ -169,9 +169,10 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                       ),
                     ),
                     Container(
+
                       height: 42,
-                      color: Colors.blueAccent,
-                      margin: EdgeInsets.only(left: 8, top: 8, bottom: 8),
+                      // color: Colors.blueAccent,
+                      margin: EdgeInsets.only(left: 8, top: 12, bottom: 8),
                       child: ListView.builder(
                         itemBuilder: (context, index) {
                           return Container(
@@ -179,6 +180,7 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                             margin: EdgeInsets.only(right:8),
                             decoration: BoxDecoration(
                               color: Colors.grey[300],
+                              borderRadius: BorderRadius.circular(32)
                             ),
                             child: Center(child: Text("Politics")),
                           );
