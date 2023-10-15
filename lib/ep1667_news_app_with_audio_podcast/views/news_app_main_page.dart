@@ -174,9 +174,14 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                       margin: EdgeInsets.only(left: 8, top: 8, bottom: 8),
                       child: ListView.builder(
                         itemBuilder: (context, index) {
-                          return Container();
+                          return Container(
+                            decoration: BoxDecoration(
+                              color: Colors.grey[300],
+                            ),
+                            child: Text("Politics"),
+                          );
                         },
-                        
+                        scrollDirection: Axis.horizontal,
                       ),
                     ),
                     Padding(
