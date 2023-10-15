@@ -59,7 +59,7 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
             Container(
               height: 120,
               // color: Colors.blue,
-              padding: EdgeInsets.only(left: 16),
+              padding: const EdgeInsets.only(left: 16),
               child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemCount: 10,
@@ -73,7 +73,7 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                             Expanded(
                                 child: Stack(
                               children: [
-                                Positioned.fill(
+                                const Positioned.fill(
                                   child: CircleAvatar(
                                     // radius: 32,
                                     child: Icon(Icons.play_circle),
@@ -87,8 +87,8 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                                     child: Container(
                                       decoration:
                                           BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(24)),
-                                      padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
-                                      child: Text(
+                                      padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                                      child: const Text(
                                         "LIVE",
                                         style: TextStyle(
                                           color: Colors.white,
@@ -100,17 +100,17 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                                 )
                               ],
                             )),
-                            SizedBox(
+                            const SizedBox(
                               height: 8,
                             ),
-                            Text("Conference")
+                            const Text("Conference")
                           ],
                         ),
                       ),
                     );
                   }),
             ),
-            SizedBox(
+            const SizedBox(
               height: 16,
             ),
             Expanded(
@@ -126,7 +126,7 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                       ),
                       child: Stack(
                         children: [
-                          Positioned(
+                          const Positioned(
                             left: 16,
                             top: 24,
                             bottom: 24,
@@ -151,7 +151,7 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                               right: 8,
                               bottom: 8,
                               child: IconButton(
-                                icon: Icon(
+                                icon: const Icon(
                                   Icons.play_circle,
                                 ),
                                 onPressed: () {},
@@ -172,14 +172,14 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                     Container(
                       height: 42,
                       // color: Colors.blueAccent,
-                      margin: EdgeInsets.only(left: 8, top: 12, bottom: 8),
+                      margin: const EdgeInsets.only(left: 8, top: 12, bottom: 8),
                       child: ListView.builder(
                         itemBuilder: (context, index) {
                           return Container(
-                            padding: EdgeInsets.symmetric(horizontal: 16),
-                            margin: EdgeInsets.only(right: 8),
+                            padding: const EdgeInsets.symmetric(horizontal: 16),
+                            margin: const EdgeInsets.only(right: 8),
                             decoration: BoxDecoration(color: Colors.grey[300], borderRadius: BorderRadius.circular(32)),
-                            child: Center(child: Text("Politics")),
+                            child: const Center(child: Text("Politics")),
                           );
                         },
                         scrollDirection: Axis.horizontal,
@@ -190,13 +190,13 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text(
+                          const Text(
                             "Recommendation",
                             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                           ),
                           TextButton(
                             onPressed: () {},
-                            child: Text("View All"),
+                            child: const Text("View All"),
                           )
                         ],
                       ),
@@ -213,18 +213,18 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                                 width: 120,
                                 color: Colors.blue,
                               ),
-                              Expanded(child: Column()),
+                              const Expanded(child: Column()),
                               Column(
                                 children: [
                                   IconButton(
                                     onPressed: () {},
-                                    icon: Icon(
+                                    icon: const Icon(
                                       Icons.more_horiz,
                                     ),
                                   ),
                                   IconButton(
                                     onPressed: () {},
-                                    icon: Icon(
+                                    icon: const Icon(
                                       Icons.play_circle,
                                     ),
                                   ),
@@ -243,7 +243,7 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
         ),
       ),
       bottomNavigationBar: BottomAppBar(
-        padding: EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+        padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -252,8 +252,8 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                 color: Colors.black,
                 borderRadius: BorderRadius.circular(32),
               ),
-              padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-              child: Row(
+              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+              child: const Row(
                 children: [
                   Icon(
                     Icons.home,
@@ -273,19 +273,19 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
             ),
             IconButton(
               onPressed: () {},
-              icon: Icon(
+              icon: const Icon(
                 Icons.public,
               ),
             ),
             IconButton(
               onPressed: () {},
-              icon: Icon(
+              icon: const Icon(
                 Icons.bookmarks,
               ),
             ),
             IconButton(
               onPressed: () {},
-              icon: Icon(
+              icon: const Icon(
                 Icons.person,
               ),
             )
