@@ -163,6 +163,8 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                 ],
               ),
             ),
+            IconButton(onPressed: (){}, icon: Icon(Icons.public)),
+            IconButton(onPressed: (){}, icon: Icon(Icons.bookmarks))
           ],
         ),
       ),
