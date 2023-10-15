@@ -125,19 +125,21 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                           Positioned(
                             child: Column(
                               children: [
-                                Text()
+                                Text(
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "),
+                                
                               ],
                             ),
                           ),
                           Positioned(
-                            right: 8,
+                              right: 8,
                               bottom: 8,
                               child: IconButton(
-                            icon: Icon(
-                              Icons.play_circle,
-                            ),
-                            onPressed: () {},
-                          ))
+                                icon: Icon(
+                                  Icons.play_circle,
+                                ),
+                                onPressed: () {},
+                              ))
                         ],
                       ),
                     ),
