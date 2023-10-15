@@ -76,6 +76,7 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                                 Positioned.fill(
                                   child: CircleAvatar(
                                       // radius: 32,
+                                    child: Icon(Icons.play_circle),
                                       ),
                                 ),
                                 Positioned(
@@ -169,7 +170,6 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                       ),
                     ),
                     Container(
-
                       height: 42,
                       // color: Colors.blueAccent,
                       margin: EdgeInsets.only(left: 8, top: 12, bottom: 8),
@@ -177,11 +177,8 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                         itemBuilder: (context, index) {
                           return Container(
                             padding: EdgeInsets.symmetric(horizontal: 16),
-                            margin: EdgeInsets.only(right:8),
-                            decoration: BoxDecoration(
-                              color: Colors.grey[300],
-                              borderRadius: BorderRadius.circular(32)
-                            ),
+                            margin: EdgeInsets.only(right: 8),
+                            decoration: BoxDecoration(color: Colors.grey[300], borderRadius: BorderRadius.circular(32)),
                             child: Center(child: Text("Politics")),
                           );
                         },
@@ -193,7 +190,13 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text("Recommendation"),
+                          Text(
+                            "Recommendation",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18
+                            ),
+                          ),
                           TextButton(
                             onPressed: () {},
                             child: Text("View All"),
