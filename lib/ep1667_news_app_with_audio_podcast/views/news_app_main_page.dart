@@ -59,6 +59,26 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
             Container(
               height: 120,
               color: Colors.blue,
+              padding: EdgeInsets.only(left: 16),
+              child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: 10,
+                  itemBuilder: (context, index) {
+                return Padding(
+                  padding: const EdgeInsets.only(right: 16),
+                  child: Column(
+                    children: [
+                      Expanded(child: Stack(
+                        children: [
+                          
+                        ],
+                      )),
+                      SizedBox(height: 8,),
+                      Text("Conference")
+                    ],
+                  ),
+                );
+              }),
             ),
             Expanded(
               child: SingleChildScrollView(
@@ -138,7 +158,7 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
         ),
       ),
       bottomNavigationBar: BottomAppBar(
-        padding: EdgeInsets.symmetric(horizontal: 24,vertical: 16),
+        padding: EdgeInsets.symmetric(horizontal: 24, vertical: 16),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
