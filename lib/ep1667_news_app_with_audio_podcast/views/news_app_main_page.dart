@@ -123,11 +123,15 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                       child: Stack(
                         children: [
                           Positioned(
+                            left: 16,
+                            top: 16,
+                            bottom: 16,
+                            right: 200,
                             child: Column(
                               children: [
                                 Text(
                                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "),
-                                
+
                               ],
                             ),
                           ),
