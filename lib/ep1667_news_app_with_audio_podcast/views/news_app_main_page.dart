@@ -175,6 +175,8 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                       child: ListView.builder(
                         itemBuilder: (context, index) {
                           return Container(
+                            padding: EdgeInsets.symmetric(horizontal: 16),
+                            margin: EdgeInsets.only(right:8),
                             decoration: BoxDecoration(
                               color: Colors.grey[300],
                             ),
