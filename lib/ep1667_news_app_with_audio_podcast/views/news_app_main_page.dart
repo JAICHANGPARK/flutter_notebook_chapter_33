@@ -109,7 +109,9 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                     );
                   }),
             ),
-            SizedBox(height: 16,),
+            SizedBox(
+              height: 16,
+            ),
             Expanded(
               child: SingleChildScrollView(
                 child: Column(
@@ -133,11 +135,13 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Text(
-                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, ",
-                                maxLines: 5,),
+                                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, ",
+                                  maxLines: 5,
+                                ),
                                 Text(
-                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor",
-                                maxLines: 2,),
+                                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor",
+                                  maxLines: 2,
+                                ),
                                 Text("1 hour ago")
                               ],
                             ),
@@ -168,6 +172,12 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                       height: 52,
                       color: Colors.blueAccent,
                       margin: EdgeInsets.only(left: 8, top: 8, bottom: 8),
+                      child: ListView.builder(
+                        itemBuilder: (context, index) {
+                          return Container();
+                        },
+                        
+                      ),
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 16),
