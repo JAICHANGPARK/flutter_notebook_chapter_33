@@ -120,9 +120,6 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                                   IconButton(
                                     onPressed: () {},
                                     icon: Icon(
-
-
-
                                       Icons.play_circle,
                                     ),
                                   ),
@@ -141,13 +138,31 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
         ),
       ),
       bottomNavigationBar: BottomAppBar(
+        padding: EdgeInsets.all(16),
         child: Row(
           children: [
             Container(
-              child: Row(
-                children: [],
+              decoration: BoxDecoration(
+                color: Colors.black,
+                borderRadius: BorderRadius.circular(32),
               ),
-            )
+              padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.home,
+                    color: Colors.white,
+                  ),
+                  SizedBox(width: 8,),
+                  Text(
+                    "Home",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  )
+                ],
+              ),
+            ),
           ],
         ),
       ),
