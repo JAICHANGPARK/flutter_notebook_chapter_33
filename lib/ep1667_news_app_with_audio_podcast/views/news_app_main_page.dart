@@ -58,7 +58,7 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
             ),
             Container(
               height: 120,
-              color: Colors.blue,
+              // color: Colors.blue,
               padding: EdgeInsets.only(left: 16),
               child: ListView.builder(
                   scrollDirection: Axis.horizontal,
