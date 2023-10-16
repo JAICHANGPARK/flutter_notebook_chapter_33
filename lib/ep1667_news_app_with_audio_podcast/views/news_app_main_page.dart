@@ -192,7 +192,10 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                         children: [
                           const Text(
                             "Recommendation",
-                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                            ),
                           ),
                           TextButton(
                             onPressed: () {},
