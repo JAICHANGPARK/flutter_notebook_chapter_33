@@ -217,7 +217,7 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                                 color: Colors.blue,
                               ),
                               SizedBox(
-                                width: 8,
+                                width: 12,
                               ),
                               Expanded(
                                   child: Column(
@@ -229,7 +229,18 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
-                                  Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit,"),
+                                  SizedBox(
+                                    height: 8,
+                                  ),
+                                  Text(
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+                                    style: TextStyle(
+                                      color: Colors.grey,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 8,
+                                  ),
                                   Text("1 hour ago")
                                 ],
                               )),
