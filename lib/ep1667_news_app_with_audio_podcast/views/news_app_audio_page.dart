@@ -10,6 +10,18 @@ class NewsAppAudioPage extends StatefulWidget {
 class _NewsAppAudioPageState extends State<NewsAppAudioPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Icons.more_horiz,
+            ),
+          )
+        ],
+        title: Text("Politics"),
+      ),
+    );
   }
 }
