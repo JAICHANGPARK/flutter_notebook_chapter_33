@@ -13,7 +13,8 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
     "All",
     "Politics",
     "Technology",
-    "Sports"
+    "Sports",
+    "Enter",
   ];
   @override
   Widget build(BuildContext context) {
@@ -190,15 +191,16 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                         bottom: 8,
                       ),
                       child: ListView.builder(
+                        itemCount: tabItems.length,
                         itemBuilder: (context, index) {
                           return Container(
-                            padding: const EdgeInsets.symmetric(horizontal: 16),
+                            padding: const EdgeInsets.symmetric(horizontal: 20),
                             margin: const EdgeInsets.only(right: 8),
                             decoration: BoxDecoration(
                               color: Colors.grey[300],
                               borderRadius: BorderRadius.circular(32),
                             ),
-                            child: const Center(child: Text("Politics")),
+                            child:  Center(child: Text(tabItems[index])),
                           );
                         },
                         scrollDirection: Axis.horizontal,
