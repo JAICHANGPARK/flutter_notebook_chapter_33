@@ -1,5 +1,6 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_33/ep1667_news_app_with_audio_podcast/views/news_app_audio_page.dart';
 
 class NewAppMainPage extends StatefulWidget {
   const NewAppMainPage({super.key});
@@ -16,6 +17,7 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
     "Sports",
     "Enter",
   ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -166,7 +168,13 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                               icon: const Icon(
                                 Icons.play_circle,
                               ),
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (context) => NewsAppAudioPage(),
+                                  ),
+                                );
+                              },
                               iconSize: 72,
                             ),
                           )
@@ -200,7 +208,7 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                               color: Colors.grey[300],
                               borderRadius: BorderRadius.circular(32),
                             ),
-                            child:  Center(child: Text(tabItems[index])),
+                            child: Center(child: Text(tabItems[index])),
                           );
                         },
                         scrollDirection: Axis.horizontal,
