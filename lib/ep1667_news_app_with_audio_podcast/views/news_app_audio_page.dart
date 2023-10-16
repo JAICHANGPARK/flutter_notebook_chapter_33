@@ -12,6 +12,9 @@ class _NewsAppAudioPageState extends State<NewsAppAudioPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.white,
+        foregroundColor: Colors.black,
         actions: [
           IconButton(
             onPressed: () {},
