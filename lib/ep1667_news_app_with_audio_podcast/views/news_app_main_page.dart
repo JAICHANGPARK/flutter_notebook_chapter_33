@@ -171,7 +171,7 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                               onPressed: () {
                                 Navigator.of(context).push(
                                   MaterialPageRoute(
-                                    builder: (context) => NewsAppAudioPage(),
+                                    builder: (context) => const NewsAppAudioPage(),
                                   ),
                                 );
                               },
@@ -245,10 +245,10 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                                 width: 120,
                                 decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(8)),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 12,
                               ),
-                              Expanded(
+                              const Expanded(
                                   child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
