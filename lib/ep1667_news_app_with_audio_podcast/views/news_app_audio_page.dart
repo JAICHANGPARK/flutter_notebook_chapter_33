@@ -21,6 +21,7 @@ class _NewsAppAudioPageState extends State<NewsAppAudioPage> {
           )
         ],
         title: Text("Politics"),
+        centerTitle: true,
       ),
     );
   }
