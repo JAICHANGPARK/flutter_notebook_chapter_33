@@ -32,19 +32,35 @@ class _NewsAppAudioPageState extends State<NewsAppAudioPage> {
           children: [
             Container(
               height: 360,
-              decoration: BoxDecoration(
-                color: Colors.pink,
-                borderRadius: BorderRadius.circular(16)
+              decoration: BoxDecoration(color: Colors.pink, borderRadius: BorderRadius.circular(16)),
+            ),
+            SizedBox(
+              height: 48,
+            ),
+            Text(
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 16,
               ),
             ),
-            SizedBox(height: 48,),
-            Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit"),
-            Text("Lorem ipsum"),
-            SizedBox(height: 72,),
+            SizedBox(
+              height: 8,
+            ),
+            Text(
+              "Lorem ipsum",
+              style: TextStyle(
+                color: Colors.grey,
+              ),
+            ),
+            SizedBox(
+              height: 72,
+            ),
             Container(
               height: 64,
               color: Colors.purple,
             ),
+            SizedBox(height: 8,),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
