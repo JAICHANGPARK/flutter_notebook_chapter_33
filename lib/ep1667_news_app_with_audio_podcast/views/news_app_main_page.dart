@@ -9,6 +9,12 @@ class NewAppMainPage extends StatefulWidget {
 }
 
 class _NewAppMainPageState extends State<NewAppMainPage> {
+  List<String> tabItems = [
+    "All",
+    "Politics",
+    "Technology",
+    "Sports"
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -85,9 +91,14 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                                   right: 0,
                                   child: Center(
                                     child: Container(
-                                      decoration:
-                                          BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(24)),
-                                      padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                                      decoration: BoxDecoration(
+                                        color: Colors.red,
+                                        borderRadius: BorderRadius.circular(24),
+                                      ),
+                                      padding: const EdgeInsets.symmetric(
+                                        horizontal: 4,
+                                        vertical: 2,
+                                      ),
                                       child: const Text(
                                         "LIVE",
                                         style: TextStyle(
@@ -148,15 +159,16 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                             ),
                           ),
                           Positioned(
-                              right: 8,
-                              bottom: 8,
-                              child: IconButton(
-                                icon: const Icon(
-                                  Icons.play_circle,
-                                ),
-                                onPressed: () {},
-                                iconSize: 72,
-                              ))
+                            right: 8,
+                            bottom: 8,
+                            child: IconButton(
+                              icon: const Icon(
+                                Icons.play_circle,
+                              ),
+                              onPressed: () {},
+                              iconSize: 72,
+                            ),
+                          )
                         ],
                       ),
                     ),
@@ -172,13 +184,20 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                     Container(
                       height: 42,
                       // color: Colors.blueAccent,
-                      margin: const EdgeInsets.only(left: 8, top: 12, bottom: 8),
+                      margin: const EdgeInsets.only(
+                        left: 8,
+                        top: 12,
+                        bottom: 8,
+                      ),
                       child: ListView.builder(
                         itemBuilder: (context, index) {
                           return Container(
                             padding: const EdgeInsets.symmetric(horizontal: 16),
                             margin: const EdgeInsets.only(right: 8),
-                            decoration: BoxDecoration(color: Colors.grey[300], borderRadius: BorderRadius.circular(32)),
+                            decoration: BoxDecoration(
+                              color: Colors.grey[300],
+                              borderRadius: BorderRadius.circular(32),
+                            ),
                             child: const Center(child: Text("Politics")),
                           );
                         },
@@ -214,10 +233,7 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                               Container(
                                 height: 94,
                                 width: 120,
-                                decoration: BoxDecoration(
-                                  color: Colors.blue,
-                                  borderRadius: BorderRadius.circular(8)
-                                ),
+                                decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(8)),
                               ),
                               SizedBox(
                                 width: 12,
