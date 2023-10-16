@@ -216,7 +216,14 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                                 width: 120,
                                 color: Colors.blue,
                               ),
-                              const Expanded(child: Column()),
+                              Expanded(
+                                  child: Column(
+                                children: [
+                                  Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit,"),
+                                  Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit,"),
+                                  Text("1 hour ago")
+                                ],
+                              )),
                               Column(
                                 children: [
                                   IconButton(
