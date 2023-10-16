@@ -212,9 +212,12 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                           child: Row(
                             children: [
                               Container(
-                                height: 84,
+                                height: 94,
                                 width: 120,
-                                color: Colors.blue,
+                                decoration: BoxDecoration(
+                                  color: Colors.blue,
+                                  borderRadius: BorderRadius.circular(8)
+                                ),
                               ),
                               SizedBox(
                                 width: 12,
