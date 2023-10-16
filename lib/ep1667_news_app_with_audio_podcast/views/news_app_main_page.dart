@@ -216,10 +216,19 @@ class _NewAppMainPageState extends State<NewAppMainPage> {
                                 width: 120,
                                 color: Colors.blue,
                               ),
+                              SizedBox(
+                                width: 8,
+                              ),
                               Expanded(
                                   child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit,"),
+                                  Text(
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
                                   Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit,"),
                                   Text("1 hour ago")
                                 ],
