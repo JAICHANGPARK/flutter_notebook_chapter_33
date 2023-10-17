@@ -23,6 +23,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                   bottomLeft: Radius.circular(16),
                 ),
               ),
+              padding: EdgeInsets.all(16),
               child: Row(
                 children: [
                   CircleAvatar(
