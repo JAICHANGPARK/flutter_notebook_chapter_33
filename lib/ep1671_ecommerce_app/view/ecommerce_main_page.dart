@@ -35,7 +35,13 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                         child: Column(
                           children: [
                             Text("Delivery address"),
-                            Text("92 High Street, London"),
+                            Text(
+                              "92 High Street, London",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.black,
+                              ),
+                            ),
                           ],
                         ),
                       ),
