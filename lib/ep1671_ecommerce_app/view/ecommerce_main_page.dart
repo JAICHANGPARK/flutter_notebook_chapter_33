@@ -83,10 +83,11 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                         Text("Delivery is "),
                         Container(
                           margin: EdgeInsets.symmetric(horizontal: 8),
-                          decoration: BoxDecoration(
-                            color: Colors.white,
+                          decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(4)),
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 8,
+                            vertical: 4,
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                           child: Text("50%"),
                         ),
                         Text("Cheaper")
@@ -96,6 +97,10 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                 ],
               ),
             ),
+            SizedBox(
+              height: 16,
+            ),
+            Expanded(child: Container()),
           ],
         ),
       ),
