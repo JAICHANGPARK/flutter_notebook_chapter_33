@@ -100,7 +100,18 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
             SizedBox(
               height: 16,
             ),
-            Expanded(child: Container()),
+            Expanded(
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                ),
+                child: Column(
+                  children: [
+
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),
