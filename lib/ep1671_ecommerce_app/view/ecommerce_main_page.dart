@@ -54,10 +54,13 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                     ),
                     padding: EdgeInsets.symmetric(horizontal: 16),
                     child: Center(
-                      child: TextField(
-                        decoration: InputDecoration(
-                          border: InputBorder.none,
-                          hintText: "Search the entire shop",
+                      child: SizedBox(
+                        width: 160,
+                        child: TextField(
+                          decoration: InputDecoration(
+                            border: InputBorder.none,
+                            hintText: "Search the entire shop",
+                          ),
                         ),
                       ),
                     ),
