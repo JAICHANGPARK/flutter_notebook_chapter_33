@@ -77,6 +77,20 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                       borderRadius: BorderRadius.circular(12),
                       color: Colors.green,
                     ),
+                    child: Row(
+                      children: [
+                        Text("Delivery is "),
+                        Container(
+                          margin: EdgeInsets.symmetric(horizontal: 8),
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                          child: Text("50%"),
+                        ),
+                        Text("Cheaper")
+                      ],
+                    ),
                   )
                 ],
               ),
