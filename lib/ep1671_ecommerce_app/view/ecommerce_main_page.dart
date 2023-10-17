@@ -49,7 +49,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                   Container(
                     margin: EdgeInsets.symmetric(vertical: 16),
                     decoration: BoxDecoration(
-                      color: Colors.grey[400],
+                      color: Colors.grey[300],
                       borderRadius: BorderRadius.circular(12),
                     ),
                     padding: EdgeInsets.symmetric(horizontal: 16),
