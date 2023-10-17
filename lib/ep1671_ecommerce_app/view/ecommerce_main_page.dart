@@ -49,16 +49,29 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                   Container(
                     margin: EdgeInsets.symmetric(vertical: 16),
                     decoration: BoxDecoration(
-                        color: Colors.grey[400]
+                      color: Colors.grey[400],
+                      borderRadius: BorderRadius.circular(12),
                     ),
-                    child: TextField(
-                      decoration: InputDecoration(),
+                    padding: EdgeInsets.symmetric(horizontal: 16),
+                    child: Center(
+                      child: TextField(
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                          hintText: "Search the entire shop",
+                        ),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    height: 52,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(12),
+                      color: Colors.green,
                     ),
                   )
                 ],
               ),
             ),
-
           ],
         ),
       ),
