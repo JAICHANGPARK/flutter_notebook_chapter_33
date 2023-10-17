@@ -24,27 +24,40 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                 ),
               ),
               padding: EdgeInsets.all(16),
-              child: Row(
+              child: Column(
                 children: [
-                  CircleAvatar(
-                    child: Icon(Icons.percent),
+                  Row(
+                    children: [
+                      CircleAvatar(
+                        child: Icon(Icons.percent),
+                      ),
+                      Expanded(
+                        child: Column(
+                          children: [
+                            Text("Delivery address"),
+                            Text("92 High Street, London"),
+                          ],
+                        ),
+                      ),
+                      CircleAvatar(
+                        child: Icon(
+                          Icons.notifications_none,
+                        ),
+                      )
+                    ],
                   ),
-                  Expanded(
-                    child: Column(
-                      children: [
-                        Text("Delivery address"),
-                        Text("92 High Street, London"),
-                      ],
+                  Container(
+                    decoration: BoxDecoration(
+                        color: Colors.grey[400]
                     ),
-                  ),
-                  CircleAvatar(
-                    child: Icon(
-                      Icons.notifications_none,
+                    child: TextField(
+                      decoration: InputDecoration(),
                     ),
                   )
                 ],
               ),
-            )
+            ),
+
           ],
         ),
       ),
