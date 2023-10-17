@@ -12,18 +12,32 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[300],
-      body: Column(
-        children: [
-          Container(
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.only(
-                bottomRight: Radius.circular(16),
-                bottomLeft: Radius.circular(16),
+      body: SafeArea(
+        child: Column(
+          children: [
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                  bottomRight: Radius.circular(16),
+                  bottomLeft: Radius.circular(16),
+                ),
               ),
-            ),
-          )
-        ],
+              child: Row(
+                children: [
+                  CircleAvatar(),
+                  Expanded(
+                      child: Column(
+                    children: [
+                      Text("Delivery address"),
+                      Text("92 High Street, London"),
+                    ],
+                  ))
+                ],
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
