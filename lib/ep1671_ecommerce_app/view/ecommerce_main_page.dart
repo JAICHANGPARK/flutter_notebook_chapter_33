@@ -25,14 +25,22 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
               ),
               child: Row(
                 children: [
-                  CircleAvatar(),
+                  CircleAvatar(
+                    child: Icon(Icons.percent),
+                  ),
                   Expanded(
-                      child: Column(
-                    children: [
-                      Text("Delivery address"),
-                      Text("92 High Street, London"),
-                    ],
-                  ))
+                    child: Column(
+                      children: [
+                        Text("Delivery address"),
+                        Text("92 High Street, London"),
+                      ],
+                    ),
+                  ),
+                  CircleAvatar(
+                    child: Icon(
+                      Icons.notifications_none,
+                    ),
+                  )
                 ],
               ),
             )
