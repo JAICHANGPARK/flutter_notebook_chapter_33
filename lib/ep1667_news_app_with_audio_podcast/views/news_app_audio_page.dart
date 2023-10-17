@@ -56,6 +56,7 @@ class _NewsAppAudioPageState extends State<NewsAppAudioPage> {
             SizedBox(
               height: 72,
             ),
+            
             Container(
               height: 64,
               color: Colors.purple,
