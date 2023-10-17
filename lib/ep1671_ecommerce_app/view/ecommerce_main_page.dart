@@ -73,6 +73,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                   ),
                   Container(
                     height: 52,
+                    padding: EdgeInsets.symmetric(horizontal: 16),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
                       color: Colors.green,
