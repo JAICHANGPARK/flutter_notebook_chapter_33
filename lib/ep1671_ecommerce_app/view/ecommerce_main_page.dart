@@ -200,6 +200,21 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                         ),
                       ],
                     ),
+                    Expanded(
+                      child: Padding(
+                        padding: const EdgeInsets.only(right: 16),
+                        child: GridView.builder(
+                          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: 2,
+                          ),
+                          itemBuilder: (context, index) {
+                            return Container(
+                                color: Colors.blue,
+                                child: Column());
+                          },
+                        ),
+                      ),
+                    )
                   ],
                 ),
               ),
@@ -209,8 +224,8 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home_filled),label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.home_filled),label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
         ],
       ),
     );
