@@ -171,12 +171,26 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                           ),
                         ),
                         Container(
+                          margin: EdgeInsets.symmetric(horizontal: 8),
                           decoration: BoxDecoration(
                             color: Colors.lightGreenAccent,
                             borderRadius: BorderRadius.circular(4),
                           ),
                           padding: EdgeInsets.all(8),
                           child: const Text('02:59:23'),
+                        ),
+                        Spacer(),
+                        const Text("See all"),
+                        const SizedBox(
+                          width: 12,
+                        ),
+                        CircleAvatar(
+                          radius: 16,
+                          backgroundColor: Colors.grey[400]!,
+                          foregroundColor: Colors.black,
+                          child: const Icon(
+                            Icons.arrow_right,
+                          ),
                         )
                       ],
                     )
