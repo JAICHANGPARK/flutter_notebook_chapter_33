@@ -16,17 +16,17 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
         child: Column(
           children: [
             Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
                   bottomRight: Radius.circular(16),
                   bottomLeft: Radius.circular(16),
                 ),
               ),
-              padding: EdgeInsets.all(16),
+              padding: const EdgeInsets.all(16),
               child: Column(
                 children: [
-                  Row(
+                  const Row(
                     children: [
                       CircleAvatar(
                         child: Icon(Icons.percent),
@@ -53,13 +53,13 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                     ],
                   ),
                   Container(
-                    margin: EdgeInsets.symmetric(vertical: 16),
+                    margin: const EdgeInsets.symmetric(vertical: 16),
                     decoration: BoxDecoration(
                       color: Colors.grey[300],
                       borderRadius: BorderRadius.circular(12),
                     ),
-                    padding: EdgeInsets.symmetric(horizontal: 16),
-                    child: Center(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: const Center(
                       child: SizedBox(
                         width: 160,
                         child: TextField(
@@ -73,39 +73,39 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                   ),
                   Container(
                     height: 52,
-                    padding: EdgeInsets.symmetric(horizontal: 16),
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
                       color: Colors.green,
                     ),
                     child: Row(
                       children: [
-                        Text("Delivery is "),
+                        const Text("Delivery is "),
                         Container(
-                          margin: EdgeInsets.symmetric(horizontal: 8),
+                          margin: const EdgeInsets.symmetric(horizontal: 8),
                           decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(4)),
-                          padding: EdgeInsets.symmetric(
+                          padding: const EdgeInsets.symmetric(
                             horizontal: 8,
                             vertical: 4,
                           ),
-                          child: Text("50%"),
+                          child: const Text("50%"),
                         ),
-                        Text("Cheaper")
+                        const Text("Cheaper")
                       ],
                     ),
                   )
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 16,
             ),
             Expanded(
               child: Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Colors.white,
                 ),
-                child: Column(
+                child: const Column(
                   children: [
 
                   ],
