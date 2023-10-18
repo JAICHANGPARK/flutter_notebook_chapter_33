@@ -202,7 +202,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                     ),
                     Expanded(
                       child: Padding(
-                        padding: const EdgeInsets.only(right: 16),
+                        padding: const EdgeInsets.only(right: 16, top: 16),
                         child: GridView.builder(
                           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                             crossAxisCount: 2,
