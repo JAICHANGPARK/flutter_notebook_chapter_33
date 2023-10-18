@@ -161,6 +161,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                         },
                       ),
                     ),
+                    SizedBox(height: 16,),
                     Row(
                       children: [
                         const Text(
@@ -191,9 +192,11 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                           child: const Icon(
                             Icons.arrow_right,
                           ),
-                        )
+                        ),
+                        SizedBox(width: 16,),
                       ],
-                    )
+                    ),
+                    
                   ],
                 ),
               ),
