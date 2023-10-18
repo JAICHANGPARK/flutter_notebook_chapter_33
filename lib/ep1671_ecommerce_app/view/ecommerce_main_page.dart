@@ -161,7 +161,9 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                         },
                       ),
                     ),
-                    SizedBox(height: 16,),
+                    SizedBox(
+                      height: 16,
+                    ),
                     Row(
                       children: [
                         const Text(
@@ -193,16 +195,23 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                             Icons.arrow_right,
                           ),
                         ),
-                        SizedBox(width: 16,),
+                        SizedBox(
+                          width: 16,
+                        ),
                       ],
                     ),
-                    
                   ],
                 ),
               ),
             ),
           ],
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.home_filled),label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.home_filled),label: "Home"),
+        ],
       ),
     );
   }
