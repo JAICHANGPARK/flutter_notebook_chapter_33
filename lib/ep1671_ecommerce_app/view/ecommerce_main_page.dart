@@ -140,8 +140,9 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                       ),
                     ),
                     Container(
-                      height: 120,
+                      height: 110,
                       color: Colors.blue,
+                      margin: EdgeInsets.symmetric(vertical: 16),
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
@@ -150,7 +151,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                             child: Column(
                               children: [
                                 Expanded(child: CircleAvatar(
-                                  radius: 36,
+                                  radius: 38,
                                 )),
                                 Text("Phones"),
                               ],
