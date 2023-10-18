@@ -125,7 +125,9 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                           ),
                           Spacer(),
                           Text("See all"),
-                          SizedBox(width: 12,),
+                          SizedBox(
+                            width: 12,
+                          ),
                           CircleAvatar(
                             radius: 16,
                             backgroundColor: Colors.grey[400]!,
@@ -135,6 +137,21 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                             ),
                           )
                         ],
+                      ),
+                    ),
+                    Container(
+                      height: 72,
+                      color: Colors.blue,
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemBuilder: (context, index) {
+                          return Column(
+                            children: [
+                              Expanded(child: CircleAvatar()),
+                              Text("Phones"),
+                            ],
+                          );
+                        },
                       ),
                     )
                   ],
