@@ -140,19 +140,35 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                       ),
                     ),
                     Container(
-                      height: 72,
+                      height: 120,
                       color: Colors.blue,
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
-                          return Column(
-                            children: [
-                              Expanded(child: CircleAvatar()),
-                              Text("Phones"),
-                            ],
+                          return Padding(
+                            padding: const EdgeInsets.only(right: 16),
+                            child: Column(
+                              children: [
+                                Expanded(child: CircleAvatar(
+                                  radius: 36,
+                                )),
+                                Text("Phones"),
+                              ],
+                            ),
                           );
                         },
                       ),
+                    ),
+                    Row(
+                      children: [
+                        Text("Flash Sale"),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.lightGreenAccent,
+                          ),
+                          child: Text('02:59:23'),
+                        )
+                      ],
                     )
                   ],
                 ),
