@@ -112,24 +112,29 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                 padding: EdgeInsets.only(top: 16, left: 16),
                 child: Column(
                   children: [
-                    Row(
-                      children: [
-                        Text(
-                          "Categories",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 18,
+                    Padding(
+                      padding: const EdgeInsets.only(right: 16),
+                      child: Row(
+                        children: [
+                          Text(
+                            "Categories",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                            ),
                           ),
-                        ),
-                        Text("See all"),
-                        CircleAvatar(
-                          radius: 12,
-                          backgroundColor: Colors.grey[400]!,
-                          child: Icon(
-                            Icons.arrow_right,
-                          ),
-                        )
-                      ],
+                          Spacer(),
+                          Text("See all"),
+                          SizedBox(width: 12,),
+                          CircleAvatar(
+                            radius: 12,
+                            backgroundColor: Colors.grey[400]!,
+                            child: Icon(
+                              Icons.arrow_right,
+                            ),
+                          )
+                        ],
+                      ),
                     )
                   ],
                 ),
