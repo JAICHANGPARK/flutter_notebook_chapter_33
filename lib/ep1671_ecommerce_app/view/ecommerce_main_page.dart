@@ -104,11 +104,12 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
               child: Container(
                 decoration: const BoxDecoration(
                   color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(16),
+                    topRight: Radius.circular(16),
+                  ),
                 ),
-                padding: EdgeInsets.only(
-                  top: 16,
-                  left: 16
-                ),
+                padding: EdgeInsets.only(top: 16, left: 16),
                 child: Column(
                   children: [
                     Row(
