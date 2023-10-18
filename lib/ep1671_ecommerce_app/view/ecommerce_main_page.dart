@@ -120,7 +120,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                             "Categories",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
-                              fontSize: 18,
+                              fontSize: 24,
                             ),
                           ),
                           Spacer(),
