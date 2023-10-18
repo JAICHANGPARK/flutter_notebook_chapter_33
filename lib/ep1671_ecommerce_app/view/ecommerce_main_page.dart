@@ -127,8 +127,9 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                           Text("See all"),
                           SizedBox(width: 12,),
                           CircleAvatar(
-                            radius: 12,
+                            radius: 16,
                             backgroundColor: Colors.grey[400]!,
+                            foregroundColor: Colors.black,
                             child: Icon(
                               Icons.arrow_right,
                             ),
