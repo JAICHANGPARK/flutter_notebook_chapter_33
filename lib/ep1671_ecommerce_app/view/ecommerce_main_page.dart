@@ -167,13 +167,15 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                           "Flash Sale",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
-                            fontSize: 24
+                            fontSize: 24,
                           ),
                         ),
                         Container(
-                          decoration: const BoxDecoration(
+                          decoration: BoxDecoration(
                             color: Colors.lightGreenAccent,
+                            borderRadius: BorderRadius.circular(4),
                           ),
+                          padding: EdgeInsets.all(8),
                           child: const Text('02:59:23'),
                         )
                       ],
