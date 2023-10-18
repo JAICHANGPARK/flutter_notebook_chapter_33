@@ -109,30 +109,30 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                     topRight: Radius.circular(16),
                   ),
                 ),
-                padding: EdgeInsets.only(top: 16, left: 16),
+                padding: const EdgeInsets.only(top: 16, left: 16),
                 child: Column(
                   children: [
                     Padding(
                       padding: const EdgeInsets.only(right: 16),
                       child: Row(
                         children: [
-                          Text(
+                          const Text(
                             "Categories",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 24,
                             ),
                           ),
-                          Spacer(),
-                          Text("See all"),
-                          SizedBox(
+                          const Spacer(),
+                          const Text("See all"),
+                          const SizedBox(
                             width: 12,
                           ),
                           CircleAvatar(
                             radius: 16,
                             backgroundColor: Colors.grey[400]!,
                             foregroundColor: Colors.black,
-                            child: Icon(
+                            child: const Icon(
                               Icons.arrow_right,
                             ),
                           )
@@ -141,18 +141,19 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                     ),
                     Container(
                       height: 110,
-                      color: Colors.blue,
-                      margin: EdgeInsets.symmetric(vertical: 16),
+                      margin: const EdgeInsets.symmetric(vertical: 16),
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
-                          return Padding(
-                            padding: const EdgeInsets.only(right: 16),
+                          return const Padding(
+                            padding: EdgeInsets.only(right: 16),
                             child: Column(
                               children: [
-                                Expanded(child: CircleAvatar(
-                                  radius: 38,
-                                )),
+                                Expanded(
+                                  child: CircleAvatar(
+                                    radius: 38,
+                                  ),
+                                ),
                                 Text("Phones"),
                               ],
                             ),
@@ -162,12 +163,18 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                     ),
                     Row(
                       children: [
-                        Text("Flash Sale"),
+                        const Text(
+                          "Flash Sale",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 24
+                          ),
+                        ),
                         Container(
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Colors.lightGreenAccent,
                           ),
-                          child: Text('02:59:23'),
+                          child: const Text('02:59:23'),
                         )
                       ],
                     )
