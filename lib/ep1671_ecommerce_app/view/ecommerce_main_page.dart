@@ -105,11 +105,21 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                 decoration: const BoxDecoration(
                   color: Colors.white,
                 ),
+                padding: EdgeInsets.only(
+                  top: 16,
+                  left: 16
+                ),
                 child: Column(
                   children: [
                     Row(
                       children: [
-                        Text("Categories"),
+                        Text(
+                          "Categories",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
+                        ),
                         Text("See all"),
                         CircleAvatar(
                           radius: 12,
