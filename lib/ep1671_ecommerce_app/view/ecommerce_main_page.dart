@@ -243,6 +243,10 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                                       children: [
                                         TextSpan(
                                           text: "\$999.00 ",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 18,
+                                          ),
                                         ),
                                         TextSpan(
                                           text: "\$1000.00",
