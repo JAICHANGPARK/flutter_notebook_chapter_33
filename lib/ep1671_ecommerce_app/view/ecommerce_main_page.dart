@@ -225,9 +225,11 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                                       child: Stack(
                                         children: [
                                           Positioned(
+                                            right: 24,
+                                            top: 24,
                                             child: CircleAvatar(
                                               backgroundColor: Colors.white,
-                                              
+                                              foregroundColor: Colors.black,
                                               child: Icon(
                                                 Icons.favorite_border,
                                               ),
