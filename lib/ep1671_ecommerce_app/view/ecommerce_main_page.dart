@@ -299,14 +299,18 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
           ],
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: [
-          const BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
-          const BottomNavigationBarItem(icon: Icon(Icons.search_outlined), label: "Catalog",),
-          const BottomNavigationBarItem(icon: Icon(Icons.shopping_cart_outlined), label: "Cart",),
-          const BottomNavigationBarItem(icon: Icon(Icons.favorite_border), label: "Favorite",),
-          const BottomNavigationBarItem(icon: Icon(Icons.account_circle_outlined), label: "Profile",),
-        ],
+      bottomNavigationBar: SizedBox(
+        height: 72,
+        child: BottomNavigationBar(
+
+          items: [
+            const BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
+            const BottomNavigationBarItem(icon: Icon(Icons.search_outlined), label: "Catalog",),
+            const BottomNavigationBarItem(icon: Icon(Icons.shopping_cart_outlined), label: "Cart",),
+            const BottomNavigationBarItem(icon: Icon(Icons.favorite_border), label: "Favorite",),
+            const BottomNavigationBarItem(icon: Icon(Icons.account_circle_outlined), label: "Profile",),
+          ],
+        ),
       ),
     );
   }
