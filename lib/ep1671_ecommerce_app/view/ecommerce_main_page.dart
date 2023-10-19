@@ -223,6 +223,10 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                                 children: [
                                   Expanded(
                                     child: Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.grey[200]!,
+                                        borderRadius: BorderRadius.circular(8)
+                                      ),
                                       child: const Stack(
                                         children: [],
                                       ),
