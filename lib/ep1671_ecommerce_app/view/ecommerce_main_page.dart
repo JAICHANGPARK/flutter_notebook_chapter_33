@@ -145,7 +145,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
-                          return  Padding(
+                          return Padding(
                             padding: const EdgeInsets.only(right: 16),
                             child: Column(
                               children: [
@@ -155,7 +155,12 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                                     backgroundColor: Colors.grey[200]!,
                                   ),
                                 ),
-                                const Text("Phones"),
+                                const Text(
+                                  "Phones",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
                               ],
                             ),
                           );
@@ -214,6 +219,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                             return Container(
                               color: Colors.blue,
                               child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Expanded(
                                     child: Container(
@@ -221,7 +227,9 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                                         children: [],
                                       ),
                                     ),
-                                  )
+                                  ),
+                                  Text("Mobile Phone XX Pro"),
+                                  Text('128GB Metal Frame')
                                 ],
                               ),
                             );
