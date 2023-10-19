@@ -221,7 +221,9 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                                   Expanded(
                                     child: Container(
                                       decoration: BoxDecoration(
-                                          color: Colors.grey[200]!, borderRadius: BorderRadius.circular(8)),
+                                        color: Colors.grey[200]!,
+                                        borderRadius: BorderRadius.circular(8),
+                                      ),
                                       child: Stack(
                                         children: [
                                           Positioned(
