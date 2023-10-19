@@ -224,16 +224,28 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                                   Expanded(
                                     child: Container(
                                       decoration: BoxDecoration(
-                                        color: Colors.grey[200]!,
-                                        borderRadius: BorderRadius.circular(8)
-                                      ),
+                                          color: Colors.grey[200]!, borderRadius: BorderRadius.circular(8)),
                                       child: const Stack(
                                         children: [],
                                       ),
                                     ),
                                   ),
+                                  SizedBox(
+                                    height: 8,
+                                  ),
                                   Text("Mobile Phone XX Pro"),
-                                  Text('128GB Metal Frame')
+                                  Text('128GB Metal Frame'),
+                                  SizedBox(
+                                    height: 16,
+                                  ),
+                                  Text.rich(TextSpan(children: [
+                                    TextSpan(
+                                      text: "\$999.00",
+                                    ),
+                                    TextSpan(
+                                      text: "\$1000.00",
+                                    )
+                                  ]))
                                 ],
                               ),
                             );
