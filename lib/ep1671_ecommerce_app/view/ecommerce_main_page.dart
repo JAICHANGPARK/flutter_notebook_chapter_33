@@ -145,13 +145,14 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
-                          return const Padding(
+                          return  Padding(
                             padding: EdgeInsets.only(right: 16),
                             child: Column(
                               children: [
                                 Expanded(
                                   child: CircleAvatar(
                                     radius: 38,
+                                    backgroundColor: Colors.grey[200]!,
                                   ),
                                 ),
                                 Text("Phones"),
