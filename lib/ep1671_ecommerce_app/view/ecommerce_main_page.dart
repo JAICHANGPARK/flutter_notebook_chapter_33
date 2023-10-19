@@ -302,7 +302,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
       bottomNavigationBar: SizedBox(
         height: 72,
         child: BottomNavigationBar(
-
+          type: BottomNavigationBarType.fixed,
           items: [
             const BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
             const BottomNavigationBarItem(icon: Icon(Icons.search_outlined), label: "Catalog",),
