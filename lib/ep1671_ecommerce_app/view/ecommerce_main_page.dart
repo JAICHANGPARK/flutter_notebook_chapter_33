@@ -214,7 +214,13 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                               color: Colors.blue,
                               child: Column(
                                 children: [
-
+                                  Expanded(
+                                    child: Container(
+                                      child: Stack(
+                                        children: [],
+                                      ),
+                                    ),
+                                  )
                                 ],
                               ),
                             );
