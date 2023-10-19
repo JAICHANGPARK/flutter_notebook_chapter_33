@@ -211,11 +211,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                         padding: const EdgeInsets.only(right: 16, top: 16),
                         child: GridView.builder(
                           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                            crossAxisCount: 2,
-                            mainAxisSpacing: 12,
-                            crossAxisSpacing: 12,
-                            childAspectRatio: 0.65
-                          ),
+                              crossAxisCount: 2, mainAxisSpacing: 12, crossAxisSpacing: 12, childAspectRatio: 0.65),
                           itemBuilder: (context, index) {
                             return Container(
                               color: Colors.blue,
@@ -226,8 +222,18 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                                     child: Container(
                                       decoration: BoxDecoration(
                                           color: Colors.grey[200]!, borderRadius: BorderRadius.circular(8)),
-                                      child: const Stack(
-                                        children: [],
+                                      child: Stack(
+                                        children: [
+                                          Positioned(
+                                            child: CircleAvatar(
+                                              backgroundColor: Colors.white,
+                                              
+                                              child: Icon(
+                                                Icons.favorite_border,
+                                              ),
+                                            ),
+                                          ),
+                                        ],
                                       ),
                                     ),
                                   ),
