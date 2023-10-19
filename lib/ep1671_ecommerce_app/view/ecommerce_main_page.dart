@@ -238,14 +238,22 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                                   SizedBox(
                                     height: 16,
                                   ),
-                                  Text.rich(TextSpan(children: [
+                                  Text.rich(
                                     TextSpan(
-                                      text: "\$999.00",
+                                      children: [
+                                        TextSpan(
+                                          text: "\$999.00 ",
+                                        ),
+                                        TextSpan(
+                                          text: "\$1000.00",
+                                          style: TextStyle(
+                                            decoration: TextDecoration.lineThrough,
+                                            color: Colors.grey,
+                                          ),
+                                        )
+                                      ],
                                     ),
-                                    TextSpan(
-                                      text: "\$1000.00",
-                                    )
-                                  ]))
+                                  )
                                 ],
                               ),
                             );
