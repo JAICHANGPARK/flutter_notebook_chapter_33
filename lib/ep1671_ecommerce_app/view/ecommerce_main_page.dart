@@ -146,7 +146,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
                           return  Padding(
-                            padding: EdgeInsets.only(right: 16),
+                            padding: const EdgeInsets.only(right: 16),
                             child: Column(
                               children: [
                                 Expanded(
@@ -155,14 +155,14 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                                     backgroundColor: Colors.grey[200]!,
                                   ),
                                 ),
-                                Text("Phones"),
+                                const Text("Phones"),
                               ],
                             ),
                           );
                         },
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 16,
                     ),
                     Row(
@@ -175,15 +175,15 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.symmetric(horizontal: 8),
+                          margin: const EdgeInsets.symmetric(horizontal: 8),
                           decoration: BoxDecoration(
                             color: Colors.lightGreenAccent,
                             borderRadius: BorderRadius.circular(4),
                           ),
-                          padding: EdgeInsets.all(8),
+                          padding: const EdgeInsets.all(8),
                           child: const Text('02:59:23'),
                         ),
-                        Spacer(),
+                        const Spacer(),
                         const Text("See all"),
                         const SizedBox(
                           width: 12,
@@ -196,7 +196,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                             Icons.arrow_right,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 16,
                         ),
                       ],
@@ -205,7 +205,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                       child: Padding(
                         padding: const EdgeInsets.only(right: 16, top: 16),
                         child: GridView.builder(
-                          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                             crossAxisCount: 2,
                             mainAxisSpacing: 12,
                             crossAxisSpacing: 12,
@@ -217,7 +217,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                                 children: [
                                   Expanded(
                                     child: Container(
-                                      child: Stack(
+                                      child: const Stack(
                                         children: [],
                                       ),
                                     ),
@@ -238,8 +238,8 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
+          const BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
+          const BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
         ],
       ),
     );
