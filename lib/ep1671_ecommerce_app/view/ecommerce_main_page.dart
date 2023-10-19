@@ -247,6 +247,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                                     "Mobile Phone XX Pro",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
+                                      fontSize: 16
                                     ),
                                   ),
                                   SizedBox(
@@ -256,6 +257,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                                     '128GB Metal Frame',
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
+                                      fontSize: 16
                                     ),
                                   ),
                                   SizedBox(
