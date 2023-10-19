@@ -214,7 +214,6 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                               crossAxisCount: 2, mainAxisSpacing: 12, crossAxisSpacing: 12, childAspectRatio: 0.65),
                           itemBuilder: (context, index) {
                             return Container(
-                              color: Colors.blue,
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
@@ -244,8 +243,21 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                                   SizedBox(
                                     height: 8,
                                   ),
-                                  Text("Mobile Phone XX Pro"),
-                                  Text('128GB Metal Frame'),
+                                  Text(
+                                    "Mobile Phone XX Pro",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 4,
+                                  ),
+                                  Text(
+                                    '128GB Metal Frame',
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
                                   SizedBox(
                                     height: 16,
                                   ),
