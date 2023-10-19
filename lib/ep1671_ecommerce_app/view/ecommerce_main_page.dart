@@ -207,13 +207,17 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                             crossAxisCount: 2,
                             mainAxisSpacing: 12,
-                            crossAxisSpacing: 12
-
+                            crossAxisSpacing: 12,
                           ),
                           itemBuilder: (context, index) {
                             return Container(
-                                color: Colors.blue,
-                                child: Column());
+                              color: Colors.blue,
+                              child: Column(
+                                children: [
+                                  
+                                ],
+                              ),
+                            );
                           },
                         ),
                       ),
