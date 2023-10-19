@@ -223,7 +223,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                                         color: Colors.grey[200]!,
                                         borderRadius: BorderRadius.circular(8),
                                       ),
-                                      child: Stack(
+                                      child: const Stack(
                                         children: [
                                           Positioned(
                                             right: 24,
@@ -240,30 +240,30 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                                       ),
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 8,
                                   ),
-                                  Text(
+                                  const Text(
                                     "Mobile Phone XX Pro",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 16
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 4,
                                   ),
-                                  Text(
+                                  const Text(
                                     '128GB Metal Frame',
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 16
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 16,
                                   ),
-                                  Text.rich(
+                                  const Text.rich(
                                     TextSpan(
                                       children: [
                                         TextSpan(
