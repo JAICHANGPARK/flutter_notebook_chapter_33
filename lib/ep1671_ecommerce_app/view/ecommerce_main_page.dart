@@ -130,7 +130,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                           ),
                           CircleAvatar(
                             radius: 16,
-                            backgroundColor: Colors.grey[400]!,
+                            backgroundColor: Colors.grey[200]!,
                             foregroundColor: Colors.black,
                             child: const Icon(
                               Icons.arrow_right,
@@ -189,7 +189,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                         ),
                         CircleAvatar(
                           radius: 16,
-                          backgroundColor: Colors.grey[400]!,
+                          backgroundColor: Colors.grey[200]!,
                           foregroundColor: Colors.black,
                           child: const Icon(
                             Icons.arrow_right,
@@ -214,7 +214,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                               color: Colors.blue,
                               child: Column(
                                 children: [
-                                  
+
                                 ],
                               ),
                             );
