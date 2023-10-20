@@ -11,6 +11,7 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[200],
       body: Column(
         children: [
           Expanded(
@@ -18,7 +19,11 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
               children: [],
             ),
           ),
-          
+          Expanded(
+            child: Column(
+              children: [],
+            ),
+          )
         ],
       ),
     );
