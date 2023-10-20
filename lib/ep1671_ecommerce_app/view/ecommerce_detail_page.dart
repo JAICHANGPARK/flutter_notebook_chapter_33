@@ -77,6 +77,7 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
               ),
               padding: EdgeInsets.all(16),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
                     "Gaming Device, Gray",
@@ -97,6 +98,14 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.grey[300],
+                    ),
+                    child: Row(
+                      children: [
+                        Text("\$168.00"),
+                        Text("from \$14 per month"),
+                        Spacer(),
+                        Icon(Icons.info_outline),
+                      ],
                     ),
                   )
                 ],
