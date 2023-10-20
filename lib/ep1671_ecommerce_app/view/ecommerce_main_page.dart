@@ -30,6 +30,8 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                     children: [
                       CircleAvatar(
                         child: Icon(Icons.percent),
+                        backgroundColor: Color.fromRGBO(195, 231, 3, 1),
+                        foregroundColor: Colors.black,
                       ),
                       Expanded(
                         child: Column(
