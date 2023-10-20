@@ -1,3 +1,4 @@
+import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 
 class ECommerceDetailPage extends StatefulWidget {
@@ -28,7 +29,6 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                         backgroundColor: Colors.white,
                         foregroundColor: Colors.black,
                         child: Icon(Icons.keyboard_arrow_left),
-
                       ),
                       Spacer(),
                       CircleAvatar(
@@ -37,13 +37,23 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                         child: Icon(Icons.favorite),
                         foregroundColor: Colors.red,
                       ),
-                      SizedBox(width: 16,),
+                      SizedBox(
+                        width: 16,
+                      ),
                       CircleAvatar(
                         radius: 24,
                         backgroundColor: Colors.white,
                         foregroundColor: Colors.black,
                         child: Icon(Icons.ios_share),
                       ),
+                    ],
+                  ),
+                ),
+                Positioned(
+                  child: Column(
+                    children: [
+                      Expanded(child: PageView(children: [],)),
+                      DotsIndicator(dotsCount: 4)
                     ],
                   ),
                 )
