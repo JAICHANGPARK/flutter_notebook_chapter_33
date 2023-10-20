@@ -29,7 +29,8 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                   const Row(
                     children: [
                       CircleAvatar(
-                        child: Icon(Icons.percent),
+                        child: Icon(Icons.percent, size: 18,),
+                        radius: 22,
                         backgroundColor: Color.fromRGBO(195, 231, 3, 1),
                         foregroundColor: Colors.black,
                       ),
