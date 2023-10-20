@@ -302,6 +302,8 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
       bottomNavigationBar: SizedBox(
         height: 72,
         child: BottomNavigationBar(
+          unselectedItemColor: Colors.grey,
+          selectedItemColor: Color.fromRGBO(195, 231, 3, 1),
           type: BottomNavigationBarType.fixed,
           items: [
             const BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
