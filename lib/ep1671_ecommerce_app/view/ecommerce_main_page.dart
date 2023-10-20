@@ -52,10 +52,12 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                         ),
                       ),
                       CircleAvatar(
+                        radius: 22,
                         backgroundColor: Colors.grey[200]!,
                         foregroundColor: Colors.black,
                         child: Icon(
                           Icons.notifications_none,
+                          size: 18,
                         ),
                       )
                     ],
@@ -63,7 +65,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                   Container(
                     margin: const EdgeInsets.symmetric(vertical: 16),
                     decoration: BoxDecoration(
-                      color: Colors.grey[300],
+                      color: Colors.grey[200],
                       borderRadius: BorderRadius.circular(12),
                     ),
                     padding: const EdgeInsets.symmetric(horizontal: 16),
