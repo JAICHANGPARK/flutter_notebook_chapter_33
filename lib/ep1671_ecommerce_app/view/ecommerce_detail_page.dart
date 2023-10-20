@@ -127,10 +127,13 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                       ),
                     ),
                   ),
-                  Text(
-                    "Delivery on 26 October",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
+                  SizedBox(height: 8,),
+                  Center(
+                    child: Text(
+                      "Delivery on 26 October",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   )
                 ],
