@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
 
-class EcommerceDetailPage extends StatefulWidget {
-  const EcommerceDetailPage({super.key});
+class ECommerceDetailPage extends StatefulWidget {
+  const ECommerceDetailPage({super.key});
 
   @override
-  State<EcommerceDetailPage> createState() => _EcommerceDetailPageState();
+  State<ECommerceDetailPage> createState() => _EcommerceDetailPageState();
 }
 
-class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
+class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold();
