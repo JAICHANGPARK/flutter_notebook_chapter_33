@@ -63,13 +63,18 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
               ],
             ),
           ),
+          SizedBox(
+            height: 16,
+          ),
           Expanded(
             child: Container(
               decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.only(
-                    topRight: Radius.circular(18),
-                  )),
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                  topRight: Radius.circular(18),
+                  topLeft: Radius.circular(18),
+                ),
+              ),
               padding: EdgeInsets.all(16),
               child: Column(
                 children: [
@@ -77,6 +82,21 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                     "Gaming Device, Gray",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(6),
+                          border: Border.all(),
+                        ),
+                      )
+                    ],
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.grey[300],
                     ),
                   )
                 ],
