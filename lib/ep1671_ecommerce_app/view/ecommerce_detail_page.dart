@@ -16,7 +16,31 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
         children: [
           Expanded(
             child: Stack(
-              children: [],
+              children: [
+                Positioned(
+                  left: 16,
+                  top: 16,
+                  right: 16,
+                  child: Row(
+                    children: [
+                      CircleAvatar(
+                        backgroundColor: Colors.white,
+                      ),
+                      Spacer(),
+                      CircleAvatar(
+                        backgroundColor: Colors.white,
+                        child: Icon(Icons.favorite),
+                        foregroundColor: Colors.red,
+                      ),
+                      CircleAvatar(
+                        backgroundColor: Colors.white,
+                        foregroundColor: Colors.black,
+                        child: Icon(Icons.ios_share),
+                      ),
+                    ],
+                  ),
+                )
+              ],
             ),
           ),
           Expanded(
