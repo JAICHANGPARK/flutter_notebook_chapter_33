@@ -28,7 +28,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                 children: [
                    Row(
                     children: [
-                      CircleAvatar(
+                      const CircleAvatar(
                         radius: 22,
                         backgroundColor: Color.fromRGBO(195, 231, 3, 1),
                         foregroundColor: Colors.black,
@@ -37,7 +37,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                           size: 18,
                         ),
                       ),
-                      Expanded(
+                      const Expanded(
                         child: Column(
                           children: [
                             Text("Delivery address"),
@@ -55,7 +55,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                         radius: 22,
                         backgroundColor: Colors.grey[200]!,
                         foregroundColor: Colors.black,
-                        child: Icon(
+                        child: const Icon(
                           Icons.notifications_none,
                           size: 18,
                         ),
@@ -307,7 +307,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
         height: 72,
         child: BottomNavigationBar(
           unselectedItemColor: Colors.grey,
-          selectedItemColor: Color.fromRGBO(195, 231, 3, 1),
+          selectedItemColor: const Color.fromRGBO(195, 231, 3, 1),
           type: BottomNavigationBarType.fixed,
           items: [
             const BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
