@@ -192,7 +192,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                         Container(
                           margin: const EdgeInsets.symmetric(horizontal: 8),
                           decoration: BoxDecoration(
-                            color: Colors.lightGreenAccent,
+                            color:  Color.fromRGBO(195, 231, 3, 1),
                             borderRadius: BorderRadius.circular(4),
                           ),
                           padding: const EdgeInsets.all(8),
