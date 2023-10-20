@@ -75,7 +75,7 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                   topLeft: Radius.circular(18),
                 ),
               ),
-              padding: EdgeInsets.all(16),
+              padding: EdgeInsets.fromLTRB(16, 24, 16, 24),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -83,6 +83,7 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                     "Gaming Device, Gray",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
+                      fontSize: 24
                     ),
                   ),
                   Row(
