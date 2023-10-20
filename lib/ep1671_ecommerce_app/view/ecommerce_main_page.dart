@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_33/ep1655_e_commerce_app/view/e_commerce_detail_page.dart';
+import 'package:flutter_notebook_chapter_33/ep1671_ecommerce_app/view/ecommerce_detail_page.dart';
 
 class EcommerceMainPage extends StatefulWidget {
   const EcommerceMainPage({super.key});
@@ -227,12 +228,16 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                         padding: const EdgeInsets.only(right: 16, top: 16),
                         child: GridView.builder(
                           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                              crossAxisCount: 2, mainAxisSpacing: 12, crossAxisSpacing: 12, childAspectRatio: 0.65),
+                            crossAxisCount: 2,
+                            mainAxisSpacing: 12,
+                            crossAxisSpacing: 12,
+                            childAspectRatio: 0.65,
+                          ),
                           itemBuilder: (context, index) {
                             return GestureDetector(
                               onTap: () => Navigator.of(context).push(
                                 MaterialPageRoute(
-                                  builder: (context) => EcommerceDetailPage(),
+                                  builder: (context) => ECommerceDetailPage(),
                                 ),
                               ),
                               child: Column(
