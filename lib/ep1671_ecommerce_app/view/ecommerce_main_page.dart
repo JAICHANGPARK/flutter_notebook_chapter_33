@@ -192,7 +192,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                         Container(
                           margin: const EdgeInsets.symmetric(horizontal: 8),
                           decoration: BoxDecoration(
-                            color: Color.fromRGBO(195, 231, 3, 1),
+                            color: const Color.fromRGBO(195, 231, 3, 1),
                             borderRadius: BorderRadius.circular(4),
                           ),
                           padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
@@ -319,28 +319,28 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
         child: BottomNavigationBar(
           unselectedItemColor: Colors.grey,
           selectedItemColor: const Color.fromRGBO(195, 231, 3, 1),
-          selectedLabelStyle: TextStyle(
+          selectedLabelStyle: const TextStyle(
             color: Colors.black
           ),
           type: BottomNavigationBarType.fixed,
-          items: [
-            const BottomNavigationBarItem(
+          items: const [
+            BottomNavigationBarItem(
               icon: Icon(Icons.home_filled),
               label: "Home",
             ),
-            const BottomNavigationBarItem(
+            BottomNavigationBarItem(
               icon: Icon(Icons.search_outlined),
               label: "Catalog",
             ),
-            const BottomNavigationBarItem(
+            BottomNavigationBarItem(
               icon: Icon(Icons.shopping_cart_outlined),
               label: "Cart",
             ),
-            const BottomNavigationBarItem(
+            BottomNavigationBarItem(
               icon: Icon(Icons.favorite_border),
               label: "Favorite",
             ),
-            const BottomNavigationBarItem(
+            BottomNavigationBarItem(
               icon: Icon(Icons.account_circle_outlined),
               label: "Profile",
             ),
