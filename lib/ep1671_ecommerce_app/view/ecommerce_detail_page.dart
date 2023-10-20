@@ -19,20 +19,27 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
               children: [
                 Positioned(
                   left: 16,
-                  top: 16,
+                  top: 64,
                   right: 16,
                   child: Row(
                     children: [
                       CircleAvatar(
+                        radius: 24,
                         backgroundColor: Colors.white,
+                        foregroundColor: Colors.black,
+                        child: Icon(Icons.keyboard_arrow_left),
+
                       ),
                       Spacer(),
                       CircleAvatar(
+                        radius: 24,
                         backgroundColor: Colors.white,
                         child: Icon(Icons.favorite),
                         foregroundColor: Colors.red,
                       ),
+                      SizedBox(width: 16,),
                       CircleAvatar(
+                        radius: 24,
                         backgroundColor: Colors.white,
                         foregroundColor: Colors.black,
                         child: Icon(Icons.ios_share),
