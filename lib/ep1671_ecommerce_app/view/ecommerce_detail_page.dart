@@ -52,7 +52,10 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                 Positioned(
                   child: Column(
                     children: [
-                      Expanded(child: PageView(children: [],)),
+                      Expanded(
+                          child: PageView(
+                        children: [],
+                      )),
                       DotsIndicator(dotsCount: 4)
                     ],
                   ),
@@ -61,8 +64,23 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
             ),
           ),
           Expanded(
-            child: Column(
-              children: [],
+            child: Container(
+              decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                    topRight: Radius.circular(18),
+                  )),
+              padding: EdgeInsets.all(16),
+              child: Column(
+                children: [
+                  Text(
+                    "Gaming Device, Gray",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  )
+                ],
+              ),
             ),
           )
         ],
