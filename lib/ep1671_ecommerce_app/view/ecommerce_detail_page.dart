@@ -81,10 +81,7 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                 children: [
                   Text(
                     "Gaming Device, Gray",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 24
-                    ),
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
                   ),
                   Row(
                     children: [
@@ -128,6 +125,12 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                           color: Colors.black,
                         ),
                       ),
+                    ),
+                  ),
+                  Text(
+                    "Delivery on 26 October",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
                     ),
                   )
                 ],
