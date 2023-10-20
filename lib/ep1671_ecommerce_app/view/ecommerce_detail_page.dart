@@ -99,6 +99,7 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                     decoration: BoxDecoration(
                       color: Colors.grey[300],
                     ),
+                    margin: EdgeInsets.symmetric(vertical: 16),
                     child: Row(
                       children: [
                         Text("\$168.00"),
@@ -106,6 +107,26 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                         Spacer(),
                         Icon(Icons.info_outline),
                       ],
+                    ),
+                  ),
+                  Text(
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                    maxLines: 3,
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: const Color.fromRGBO(195, 231, 3, 1),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    padding: EdgeInsets.symmetric(vertical: 14),
+                    child: Center(
+                      child: Text(
+                        "Add to cart",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black,
+                        ),
+                      ),
                     ),
                   )
                 ],
