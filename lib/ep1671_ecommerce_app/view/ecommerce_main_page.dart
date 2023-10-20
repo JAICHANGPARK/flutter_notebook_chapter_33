@@ -26,13 +26,16 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
               padding: const EdgeInsets.all(16),
               child: Column(
                 children: [
-                  const Row(
+                   Row(
                     children: [
                       CircleAvatar(
-                        child: Icon(Icons.percent, size: 18,),
                         radius: 22,
                         backgroundColor: Color.fromRGBO(195, 231, 3, 1),
                         foregroundColor: Colors.black,
+                        child: Icon(
+                          Icons.percent,
+                          size: 18,
+                        ),
                       ),
                       Expanded(
                         child: Column(
@@ -49,6 +52,8 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                         ),
                       ),
                       CircleAvatar(
+                        backgroundColor: Colors.grey[200]!,
+                        foregroundColor: Colors.black,
                         child: Icon(
                           Icons.notifications_none,
                         ),
@@ -250,20 +255,14 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                                   ),
                                   const Text(
                                     "Mobile Phone XX Pro",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 16
-                                    ),
+                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                                   ),
                                   const SizedBox(
                                     height: 4,
                                   ),
                                   const Text(
                                     '128GB Metal Frame',
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 16
-                                    ),
+                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                                   ),
                                   const SizedBox(
                                     height: 16,
@@ -310,10 +309,22 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
           type: BottomNavigationBarType.fixed,
           items: [
             const BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
-            const BottomNavigationBarItem(icon: Icon(Icons.search_outlined), label: "Catalog",),
-            const BottomNavigationBarItem(icon: Icon(Icons.shopping_cart_outlined), label: "Cart",),
-            const BottomNavigationBarItem(icon: Icon(Icons.favorite_border), label: "Favorite",),
-            const BottomNavigationBarItem(icon: Icon(Icons.account_circle_outlined), label: "Profile",),
+            const BottomNavigationBarItem(
+              icon: Icon(Icons.search_outlined),
+              label: "Catalog",
+            ),
+            const BottomNavigationBarItem(
+              icon: Icon(Icons.shopping_cart_outlined),
+              label: "Cart",
+            ),
+            const BottomNavigationBarItem(
+              icon: Icon(Icons.favorite_border),
+              label: "Favorite",
+            ),
+            const BottomNavigationBarItem(
+              icon: Icon(Icons.account_circle_outlined),
+              label: "Profile",
+            ),
           ],
         ),
       ),
