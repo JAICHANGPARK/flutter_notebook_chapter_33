@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class ECommerceDetailPage extends StatefulWidget {
   const ECommerceDetailPage({super.key});
 
@@ -11,6 +10,17 @@ class ECommerceDetailPage extends StatefulWidget {
 class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [
+          Expanded(
+            child: Stack(
+              children: [],
+            ),
+          ),
+          
+        ],
+      ),
+    );
   }
 }
