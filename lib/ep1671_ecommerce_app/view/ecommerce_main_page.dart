@@ -26,7 +26,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
               padding: const EdgeInsets.all(16),
               child: Column(
                 children: [
-                   Row(
+                  Row(
                     children: [
                       const CircleAvatar(
                         radius: 22,
@@ -192,11 +192,16 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                         Container(
                           margin: const EdgeInsets.symmetric(horizontal: 8),
                           decoration: BoxDecoration(
-                            color:  Color.fromRGBO(195, 231, 3, 1),
+                            color: Color.fromRGBO(195, 231, 3, 1),
                             borderRadius: BorderRadius.circular(4),
                           ),
-                          padding: const EdgeInsets.all(8),
-                          child: const Text('02:59:23'),
+                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                          child: const Text(
+                            '02:59:23',
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                         ),
                         const Spacer(),
                         const Text("See all"),
