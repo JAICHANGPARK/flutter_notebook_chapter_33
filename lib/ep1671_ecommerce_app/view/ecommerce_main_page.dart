@@ -262,14 +262,20 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                                   ),
                                   const Text(
                                     "Mobile Phone XX Pro",
-                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16,
+                                    ),
                                   ),
                                   const SizedBox(
                                     height: 4,
                                   ),
                                   const Text(
                                     '128GB Metal Frame',
-                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16,
+                                    ),
                                   ),
                                   const SizedBox(
                                     height: 16,
@@ -313,9 +319,15 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
         child: BottomNavigationBar(
           unselectedItemColor: Colors.grey,
           selectedItemColor: const Color.fromRGBO(195, 231, 3, 1),
+          selectedLabelStyle: TextStyle(
+            color: Colors.black
+          ),
           type: BottomNavigationBarType.fixed,
           items: [
-            const BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
+            const BottomNavigationBarItem(
+              icon: Icon(Icons.home_filled),
+              label: "Home",
+            ),
             const BottomNavigationBarItem(
               icon: Icon(Icons.search_outlined),
               label: "Catalog",
