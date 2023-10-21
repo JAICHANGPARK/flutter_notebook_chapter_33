@@ -97,6 +97,7 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                     decoration: BoxDecoration(
                       color: Colors.grey[300],
                     ),
+                    padding: EdgeInsets.all(8),
                     margin: EdgeInsets.symmetric(vertical: 16),
                     child: Row(
                       children: [
