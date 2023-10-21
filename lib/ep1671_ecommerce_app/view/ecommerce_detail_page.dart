@@ -18,14 +18,14 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
           Expanded(
             child: Stack(
               children: [
-                 Positioned(
+                Positioned(
                   left: 16,
                   top: 64,
                   right: 16,
                   child: Row(
                     children: [
                       GestureDetector(
-                        onTap: (){
+                        onTap: () {
                           Navigator.of(context).pop();
                         },
                         child: CircleAvatar(
@@ -33,7 +33,6 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                           backgroundColor: Colors.white,
                           foregroundColor: Colors.black,
                           child: Icon(Icons.keyboard_arrow_left),
-
                         ),
                       ),
                       Spacer(),
@@ -59,9 +58,20 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                   child: Column(
                     children: [
                       Expanded(
-                          child: PageView(
-                        children: [],
-                      )),
+                        child: PageView(
+                          children: [
+                            Container(
+                              color: Colors.blue,
+                            ),
+                            Container(
+                              color: Colors.red,
+                            ),
+                            Container(
+                              color: Colors.green,
+                            )
+                          ],
+                        ),
+                      ),
                       DotsIndicator(dotsCount: 4)
                     ],
                   ),
