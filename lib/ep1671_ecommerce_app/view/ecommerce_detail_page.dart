@@ -28,24 +28,24 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                         onTap: () {
                           Navigator.of(context).pop();
                         },
-                        child: CircleAvatar(
+                        child: const CircleAvatar(
                           radius: 24,
                           backgroundColor: Colors.white,
                           foregroundColor: Colors.black,
                           child: Icon(Icons.keyboard_arrow_left),
                         ),
                       ),
-                      Spacer(),
-                      CircleAvatar(
+                      const Spacer(),
+                      const CircleAvatar(
                         radius: 24,
                         backgroundColor: Colors.white,
                         child: Icon(Icons.favorite),
                         foregroundColor: Colors.red,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 16,
                       ),
-                      CircleAvatar(
+                      const CircleAvatar(
                         radius: 24,
                         backgroundColor: Colors.white,
                         foregroundColor: Colors.black,
@@ -72,7 +72,8 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                           ],
                         ),
                       ),
-                      DotsIndicator(dotsCount: 4)
+                      DotsIndicator(dotsCount: 4,
+                      )
                     ],
                   ),
                 )
@@ -144,7 +145,7 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 8,
                     ),
                     Container(
@@ -177,7 +178,7 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 8,
                     ),
                     Container(
@@ -234,9 +235,9 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                     ],
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 16),
-                  child: const Text(
+                const Padding(
+                  padding: EdgeInsets.symmetric(vertical: 16),
+                  child: Text(
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
                     maxLines: 3,
                     style: TextStyle(
@@ -244,7 +245,7 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 16,
                 ),
                 Container(
