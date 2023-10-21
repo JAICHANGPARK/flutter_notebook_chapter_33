@@ -9,6 +9,7 @@ class ECommerceDetailPage extends StatefulWidget {
 }
 
 class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
+  PageController pageController = PageController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -59,6 +60,10 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                     children: [
                       Expanded(
                         child: PageView(
+                          controller: pageController,
+                          onPageChanged: (idx){
+
+                          },
                           children: [
                             Container(
                               color: Colors.blue,
@@ -73,6 +78,7 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                         ),
                       ),
                       DotsIndicator(dotsCount: 4,
+                        position: pageController.page!.toInt(),
                       )
                     ],
                   ),
