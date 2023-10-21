@@ -18,17 +18,23 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
           Expanded(
             child: Stack(
               children: [
-                const Positioned(
+                 Positioned(
                   left: 16,
                   top: 64,
                   right: 16,
                   child: Row(
                     children: [
-                      CircleAvatar(
-                        radius: 24,
-                        backgroundColor: Colors.white,
-                        foregroundColor: Colors.black,
-                        child: Icon(Icons.keyboard_arrow_left),
+                      GestureDetector(
+                        onTap: (){
+                          Navigator.of(context).pop();
+                        },
+                        child: CircleAvatar(
+                          radius: 24,
+                          backgroundColor: Colors.white,
+                          foregroundColor: Colors.black,
+                          child: Icon(Icons.keyboard_arrow_left),
+
+                        ),
                       ),
                       Spacer(),
                       CircleAvatar(
