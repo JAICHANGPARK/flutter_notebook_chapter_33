@@ -154,6 +154,9 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                           ],
                         ),
                       ),
+                      SizedBox(
+                        width: 8,
+                      ),
                       Container(
                         padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                         decoration: BoxDecoration(
