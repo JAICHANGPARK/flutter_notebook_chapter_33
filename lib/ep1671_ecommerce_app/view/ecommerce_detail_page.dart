@@ -66,181 +66,183 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
           const SizedBox(
             height: 16,
           ),
-          Expanded(
-            child: Container(
-              decoration: const BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.only(
-                  topRight: Radius.circular(18),
-                  topLeft: Radius.circular(18),
-                ),
+          Container(
+            decoration: const BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.only(
+                topRight: Radius.circular(18),
+                topLeft: Radius.circular(18),
               ),
-              padding: const EdgeInsets.fromLTRB(16, 24, 16, 24),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const Text(
-                    "Gaming Device, Gray",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 24,
-                    ),
+            ),
+            padding: const EdgeInsets.fromLTRB(16, 24, 16, 24),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text(
+                  "Gaming Device, Gray",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 24,
                   ),
-                  const SizedBox(
-                    height: 16,
-                  ),
-                  Row(
-                    children: [
-                      Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(6),
-                          border: Border.all(
-                            color: Colors.grey[300]!,
-                          ),
+                ),
+                const SizedBox(
+                  height: 16,
+                ),
+                Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(6),
+                        border: Border.all(
+                          color: Colors.grey[300]!,
                         ),
-                        child: const Row(
-                          children: [
-                            Icon(
-                              Icons.star,
-                              color: Colors.lightBlue,
-                              size: 18,
-                            ),
-                            Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 4),
-                              child: Text(
-                                "4.8",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                            ),
-                            Text(
-                              "117 reviews",
+                      ),
+                      child: const Row(
+                        children: [
+                          Icon(
+                            Icons.star,
+                            color: Colors.lightBlue,
+                            size: 18,
+                          ),
+                          Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 4),
+                            child: Text(
+                              "4.8",
                               style: TextStyle(
-                                color: Colors.grey,
+                                fontWeight: FontWeight.bold,
                               ),
                             ),
-                          ],
-                        ),
-                      ),
-                      SizedBox(
-                        width: 8,
-                      ),
-                      Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(6),
-                          border: Border.all(
-                            color: Colors.grey[300]!,
                           ),
-                        ),
-                        child: const Row(
-                          children: [
-                            Icon(
-                              Icons.star,
-                              color: Colors.lightGreenAccent,
-                              size: 18,
-                            ),
-                            Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 4),
-                              child: Text(
-                                "94%",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      SizedBox(
-                        width: 8,
-                      ),
-                      Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(6),
-                          border: Border.all(
-                            color: Colors.grey[300]!,
-                          ),
-                        ),
-                        child: const Row(
-                          children: [
-                            Icon(
-                              Icons.chat_outlined,
+                          Text(
+                            "117 reviews",
+                            style: TextStyle(
                               color: Colors.grey,
-                              size: 18,
                             ),
-                            Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 4),
-                              child: Text(
-                                "8",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: 8,
+                    ),
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(6),
+                        border: Border.all(
+                          color: Colors.grey[300]!,
+                        ),
+                      ),
+                      child: const Row(
+                        children: [
+                          Icon(
+                            Icons.star,
+                            color: Colors.lightGreenAccent,
+                            size: 18,
+                          ),
+                          Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 4),
+                            child: Text(
+                              "94%",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
                               ),
                             ),
-                          ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: 8,
+                    ),
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(6),
+                        border: Border.all(
+                          color: Colors.grey[300]!,
                         ),
-                      )
+                      ),
+                      child: const Row(
+                        children: [
+                          Icon(
+                            Icons.chat_outlined,
+                            color: Colors.grey,
+                            size: 18,
+                          ),
+                          Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 4),
+                            child: Text(
+                              "8",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.grey[300],
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  padding: const EdgeInsets.all(8),
+                  margin: const EdgeInsets.symmetric(vertical: 16),
+                  child: const Row(
+                    children: [
+                      Text(
+                        "\$168.00",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                        ),
+                      ),
+                      Text(" from \$14 per month"),
+                      Spacer(),
+                      Icon(Icons.info_outline),
                     ],
                   ),
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.grey[300],
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    padding: const EdgeInsets.all(8),
-                    margin: const EdgeInsets.symmetric(vertical: 16),
-                    child: const Row(
-                      children: [
-                        Text(
-                          "\$168.00",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 16,
-                          ),
-                        ),
-                        Text(" from \$14 per month"),
-                        Spacer(),
-                        Icon(Icons.info_outline),
-                      ],
-                    ),
-                  ),
-                  const Text(
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 16),
+                  child: const Text(
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
                     maxLines: 3,
                   ),
-                  Container(
-                    decoration: BoxDecoration(
-                      color: const Color.fromRGBO(195, 231, 3, 1),
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    padding: const EdgeInsets.symmetric(vertical: 14),
-                    child: const Center(
-                      child: Text(
-                        "Add to cart",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black,
-                        ),
-                      ),
-                    ),
+                ),
+                SizedBox(height: 16,),
+                Container(
+                  decoration: BoxDecoration(
+                    color: const Color.fromRGBO(195, 231, 3, 1),
+                    borderRadius: BorderRadius.circular(8),
                   ),
-                  const SizedBox(
-                    height: 8,
-                  ),
-                  const Center(
+                  padding: const EdgeInsets.symmetric(vertical: 14),
+                  child: const Center(
                     child: Text(
-                      "Delivery on 26 October",
+                      "Add to cart",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
+                        color: Colors.black,
                       ),
                     ),
-                  )
-                ],
-              ),
+                  ),
+                ),
+                const SizedBox(
+                  height: 8,
+                ),
+                const Center(
+                  child: Text(
+                    "Delivery on 26 October",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                )
+              ],
             ),
           )
         ],
