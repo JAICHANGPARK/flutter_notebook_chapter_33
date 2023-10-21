@@ -83,7 +83,9 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                     "Gaming Device, Gray",
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
                   ),
-                  SizedBox(height: 16,),
+                  SizedBox(
+                    height: 16,
+                  ),
                   Row(
                     children: [
                       Container(
@@ -96,14 +98,26 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                         padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                         child: Row(
                           children: [
-                            Icon(Icons.star, color: Colors.lightBlue,
-                            size: 18,),
+                            Icon(
+                              Icons.star,
+                              color: Colors.lightBlue,
+                              size: 18,
+                            ),
                             Padding(
                               padding: const EdgeInsets.symmetric(horizontal: 4),
-                              child: Text("4.8"),
+                              child: Text(
+                                "4.8",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                             ),
-
-                            Text("117 reviews"),
+                            Text(
+                              "117 reviews",
+                              style: TextStyle(
+                                color: Colors.grey,
+                              ),
+                            ),
                           ],
                         ),
                       )
@@ -144,7 +158,9 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                       ),
                     ),
                   ),
-                  SizedBox(height: 8,),
+                  SizedBox(
+                    height: 8,
+                  ),
                   Center(
                     child: Text(
                       "Delivery on 26 October",
