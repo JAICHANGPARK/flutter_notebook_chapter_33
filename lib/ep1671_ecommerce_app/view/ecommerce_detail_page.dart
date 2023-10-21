@@ -83,12 +83,28 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                     "Gaming Device, Gray",
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
                   ),
+                  SizedBox(height: 16,),
                   Row(
                     children: [
                       Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(6),
-                          border: Border.all(),
+                          border: Border.all(
+                            color: Colors.grey[300]!,
+                          ),
+                        ),
+                        padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                        child: Row(
+                          children: [
+                            Icon(Icons.star, color: Colors.lightBlue,
+                            size: 18,),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 4),
+                              child: Text("4.8"),
+                            ),
+
+                            Text("117 reviews"),
+                          ],
                         ),
                       )
                     ],
