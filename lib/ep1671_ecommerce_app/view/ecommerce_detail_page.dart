@@ -187,10 +187,13 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                 ),
                 Container(
                   decoration: BoxDecoration(
-                    color: Colors.grey[300],
+                    color: Colors.grey[200],
                     borderRadius: BorderRadius.circular(8),
                   ),
-                  padding: const EdgeInsets.all(8),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 16,
+                    vertical: 12,
+                  ),
                   margin: const EdgeInsets.symmetric(vertical: 16),
                   child: const Row(
                     children: [
@@ -212,9 +215,14 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                   child: const Text(
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
                     maxLines: 3,
+                    style: TextStyle(
+                      color: Colors.grey,
+                    ),
                   ),
                 ),
-                SizedBox(height: 16,),
+                SizedBox(
+                  height: 16,
+                ),
                 Container(
                   decoration: BoxDecoration(
                     color: const Color.fromRGBO(195, 231, 3, 1),
@@ -232,14 +240,12 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                   ),
                 ),
                 const SizedBox(
-                  height: 8,
+                  height: 12,
                 ),
                 const Center(
                   child: Text(
                     "Delivery on 26 October",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                    ),
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
                   ),
                 )
               ],
