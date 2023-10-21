@@ -189,13 +189,20 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.grey[300],
+                      borderRadius: BorderRadius.circular(8),
                     ),
                     padding: const EdgeInsets.all(8),
                     margin: const EdgeInsets.symmetric(vertical: 16),
                     child: const Row(
                       children: [
-                        Text("\$168.00"),
-                        Text("from \$14 per month"),
+                        Text(
+                          "\$168.00",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
+                        ),
+                        Text(" from \$14 per month"),
                         Spacer(),
                         Icon(Icons.info_outline),
                       ],
