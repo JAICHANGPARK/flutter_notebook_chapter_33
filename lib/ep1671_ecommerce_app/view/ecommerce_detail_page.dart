@@ -74,7 +74,12 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                 topLeft: Radius.circular(18),
               ),
             ),
-            padding: const EdgeInsets.fromLTRB(16, 24, 16, 24),
+            padding: const EdgeInsets.fromLTRB(
+              16,
+              24,
+              16,
+              24,
+            ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -127,7 +132,10 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                       width: 8,
                     ),
                     Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 8,
+                        vertical: 4,
+                      ),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(6),
                         border: Border.all(
@@ -232,11 +240,7 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                   child: const Center(
                     child: Text(
                       "Add to cart",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Colors.black,
-                        fontSize: 16
-                      ),
+                      style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black, fontSize: 16),
                     ),
                   ),
                 ),
