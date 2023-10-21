@@ -18,7 +18,7 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
           Expanded(
             child: Stack(
               children: [
-                Positioned(
+                const Positioned(
                   left: 16,
                   top: 64,
                   right: 16,
@@ -63,40 +63,43 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 16,
           ),
           Expanded(
             child: Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
                   topRight: Radius.circular(18),
                   topLeft: Radius.circular(18),
                 ),
               ),
-              padding: EdgeInsets.fromLTRB(16, 24, 16, 24),
+              padding: const EdgeInsets.fromLTRB(16, 24, 16, 24),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  const Text(
                     "Gaming Device, Gray",
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 24,
+                    ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 16,
                   ),
                   Row(
                     children: [
                       Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(6),
                           border: Border.all(
                             color: Colors.grey[300]!,
                           ),
                         ),
-                        padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                        child: Row(
+                        child: const Row(
                           children: [
                             Icon(
                               Icons.star,
@@ -104,7 +107,7 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                               size: 18,
                             ),
                             Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 4),
+                              padding: EdgeInsets.symmetric(horizontal: 4),
                               child: Text(
                                 "4.8",
                                 style: TextStyle(
@@ -127,9 +130,9 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                     decoration: BoxDecoration(
                       color: Colors.grey[300],
                     ),
-                    padding: EdgeInsets.all(8),
-                    margin: EdgeInsets.symmetric(vertical: 16),
-                    child: Row(
+                    padding: const EdgeInsets.all(8),
+                    margin: const EdgeInsets.symmetric(vertical: 16),
+                    child: const Row(
                       children: [
                         Text("\$168.00"),
                         Text("from \$14 per month"),
@@ -138,7 +141,7 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                       ],
                     ),
                   ),
-                  Text(
+                  const Text(
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
                     maxLines: 3,
                   ),
@@ -147,8 +150,8 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                       color: const Color.fromRGBO(195, 231, 3, 1),
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    padding: EdgeInsets.symmetric(vertical: 14),
-                    child: Center(
+                    padding: const EdgeInsets.symmetric(vertical: 14),
+                    child: const Center(
                       child: Text(
                         "Add to cart",
                         style: TextStyle(
@@ -158,10 +161,10 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 8,
                   ),
-                  Center(
+                  const Center(
                     child: Text(
                       "Delivery on 26 October",
                       style: TextStyle(
