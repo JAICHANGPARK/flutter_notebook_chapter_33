@@ -235,6 +235,7 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Colors.black,
+                        fontSize: 16
                       ),
                     ),
                   ),
