@@ -17,7 +17,7 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
       body: SafeArea(
         child: Stack(
           children: [
-            Positioned(
+            const Positioned(
                 top: 24,
                 bottom: 0,
                 left: 0,
@@ -40,7 +40,7 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                       color: Colors.grey[400]!,
                       blurRadius: 12,
                       spreadRadius: 2,
-                      offset: Offset(0, 4),
+                      offset: const Offset(0, 4),
                     ),
                   ],
                 ),
@@ -53,11 +53,11 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                               color: Colors.green[50],
                               borderRadius: BorderRadius.circular(32),
                             ),
-                            padding: EdgeInsets.symmetric(
+                            padding: const EdgeInsets.symmetric(
                               horizontal: 32,
                               vertical: 16,
                             ),
-                            child: Center(
+                            child: const Center(
                               child: Text(
                                 "HOME",
                                 style: TextStyle(
@@ -76,6 +76,27 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                             },
                             icon: const Icon(Icons.home_filled),
                           ),
+                    menuIndex == 1 ?
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.green[50],
+                        borderRadius: BorderRadius.circular(32),
+                      ),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 32,
+                        vertical: 16,
+                      ),
+                      child: const Center(
+                        child: Text(
+                          "Categories",
+                          style: TextStyle(
+                            fontWeight: FontWeight.w900,
+                            fontSize: 18,
+                            color: Colors.green,
+                          ),
+                        ),
+                      ),
+                    ):
                     IconButton(
                       onPressed: () {
                         setState(() {
