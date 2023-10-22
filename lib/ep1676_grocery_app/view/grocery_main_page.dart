@@ -11,9 +11,13 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromRGBO(244, 246, 246, 1),
       body: Stack(
         children: [
           Positioned(
+            left: 24,
+            right: 24,
+            bottom: 24,
             child: Container(
               child: Row(
                 children: [
