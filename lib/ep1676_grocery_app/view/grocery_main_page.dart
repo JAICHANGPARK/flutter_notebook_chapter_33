@@ -17,13 +17,44 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
       body: SafeArea(
         child: Stack(
           children: [
-            const Positioned(
+            Positioned(
                 top: 24,
                 bottom: 0,
                 left: 0,
                 right: 0,
                 child: Column(
-                  children: [Card()],
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 8),
+                      child: Card(
+                        child: Padding(
+                          padding: const EdgeInsets.all(4.0),
+                          child: Row(
+                            children: [
+                              Expanded(
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text("2464 Royal Ln, Mesa"),
+                                      SizedBox(height: 8,),
+                                      Text("Your address"),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                              Container(
+                                child: Row(
+                                  children: [],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                    )
+                  ],
                 )),
             Positioned(
               left: 24,
@@ -76,35 +107,35 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                             },
                             icon: const Icon(Icons.home_filled),
                           ),
-                    menuIndex == 1 ?
-                    Container(
-                      decoration: BoxDecoration(
-                        color: Colors.green[50],
-                        borderRadius: BorderRadius.circular(32),
-                      ),
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 32,
-                        vertical: 16,
-                      ),
-                      child: const Center(
-                        child: Text(
-                          "Categories",
-                          style: TextStyle(
-                            fontWeight: FontWeight.w900,
-                            fontSize: 18,
-                            color: Colors.green,
+                    menuIndex == 1
+                        ? Container(
+                            decoration: BoxDecoration(
+                              color: Colors.green[50],
+                              borderRadius: BorderRadius.circular(32),
+                            ),
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 32,
+                              vertical: 16,
+                            ),
+                            child: const Center(
+                              child: Text(
+                                "Categories",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.w900,
+                                  fontSize: 18,
+                                  color: Colors.green,
+                                ),
+                              ),
+                            ),
+                          )
+                        : IconButton(
+                            onPressed: () {
+                              setState(() {
+                                menuIndex = 1;
+                              });
+                            },
+                            icon: const Icon(Icons.apps),
                           ),
-                        ),
-                      ),
-                    ):
-                    IconButton(
-                      onPressed: () {
-                        setState(() {
-                          menuIndex = 1;
-                        });
-                      },
-                      icon: const Icon(Icons.apps),
-                    ),
                     IconButton(
                       onPressed: () {
                         setState(() {
