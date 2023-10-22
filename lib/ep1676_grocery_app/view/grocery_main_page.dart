@@ -18,13 +18,13 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
         child: Stack(
           children: [
             Positioned(
-              top: 24,
+                top: 24,
                 bottom: 0,
                 left: 0,
                 right: 0,
                 child: Column(
-              children: [Card()],
-            )),
+                  children: [Card()],
+                )),
             Positioned(
               left: 24,
               right: 24,
@@ -36,11 +36,11 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(32),
                   boxShadow: [
-                    const BoxShadow(
-                      color: Colors.grey,
-                      blurRadius: 8,
+                    BoxShadow(
+                      color: Colors.grey[400]!,
+                      blurRadius: 12,
                       spreadRadius: 2,
-                      offset: Offset(0, 2),
+                      offset: Offset(0, 4),
                     ),
                   ],
                 ),
@@ -49,7 +49,10 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                   children: [
                     menuIndex == 0
                         ? Container(
-                            decoration: BoxDecoration(color: Colors.green[50], borderRadius: BorderRadius.circular(32)),
+                            decoration: BoxDecoration(
+                              color: Colors.green[50],
+                              borderRadius: BorderRadius.circular(32),
+                            ),
                             padding: EdgeInsets.symmetric(
                               horizontal: 32,
                               vertical: 16,
