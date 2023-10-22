@@ -102,37 +102,58 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                     ),
                   ),
                   Expanded(
-                    child: SingleChildScrollView(
-                      child: DefaultTabController(
-                        length: 4,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                const Text("Categories"),
-                                TextButton(
-                                  onPressed: () {},
-                                  child: const Text("View All"),
-                                )
-                              ],
-                            ),
-                            Container(
-                              height: 100,
-                              color: Colors.blueAccent,
-                            ),
-                            TabBar(
-                              tabs: [
-                                Tab(text: "Flash Sale",),
-                                Tab(text: "Popular",),
-                                Tab(text: "New Arrival",),
-                                Tab(text: "Snacks",),
-                              ],
-                            ),
-
-                          ],
-                        ),
+                    child: DefaultTabController(
+                      length: 4,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              const Text("Categories"),
+                              TextButton(
+                                onPressed: () {},
+                                child: const Text("View All"),
+                              )
+                            ],
+                          ),
+                          Container(
+                            height: 100,
+                            color: Colors.blueAccent,
+                          ),
+                          TabBar(
+                            tabs: [
+                              Tab(
+                                text: "Flash Sale",
+                              ),
+                              Tab(
+                                text: "Popular",
+                              ),
+                              Tab(
+                                text: "New Arrival",
+                              ),
+                              Tab(
+                                text: "Snacks",
+                              ),
+                            ],
+                          ),
+                          Expanded(
+                            child: TabBarView(children: [
+                              Container(
+                                color: Colors.blue,
+                              ),
+                              Container(
+                                color: Colors.blue,
+                              ),
+                              Container(
+                                color: Colors.blue,
+                              ),
+                              Container(
+                                color: Colors.blue,
+                              ),
+                            ]),
+                          )
+                        ],
                       ),
                     ),
                   ),
