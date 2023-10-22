@@ -19,8 +19,10 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
             right: 24,
             bottom: 24,
             child: Container(
+              padding: EdgeInsets.all(8),
               decoration: BoxDecoration(
                 color: Colors.white,
+                borderRadius: BorderRadius.circular(32),
                 boxShadow: [
                   BoxShadow(
                     color: Colors.grey,
