@@ -19,12 +19,34 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
             right: 24,
             bottom: 24,
             child: Container(
+              decoration: BoxDecoration(
+                color: Colors.white,
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey,
+                    blurRadius: 8,
+                    spreadRadius: 2
+                  ),
+                ],
+              ),
               child: Row(
                 children: [
-                  IconButton(onPressed: (){}, icon: Icon(Icons.home_filled),),
-                  IconButton(onPressed: (){}, icon: Icon(Icons.apps),),
-                  IconButton(onPressed: (){}, icon: Icon(Icons.folder),),
-                  IconButton(onPressed: (){}, icon: Icon(Icons.person_outline),),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.home_filled),
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.apps),
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.folder),
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.person_outline),
+                  ),
                 ],
               ),
             ),
