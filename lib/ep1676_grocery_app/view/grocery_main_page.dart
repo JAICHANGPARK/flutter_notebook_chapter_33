@@ -8,6 +8,8 @@ class GroceryMainPage extends StatefulWidget {
 }
 
 class _GroceryMainPageState extends State<GroceryMainPage> {
+  int menuIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,11 +26,7 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(32),
                 boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey,
-                    blurRadius: 8,
-                    spreadRadius: 2
-                  ),
+                  BoxShadow(color: Colors.grey, blurRadius: 8, spreadRadius: 2),
                 ],
               ),
               child: Row(
