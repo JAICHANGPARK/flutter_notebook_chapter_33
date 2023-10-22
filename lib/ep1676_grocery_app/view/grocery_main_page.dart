@@ -21,6 +21,7 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
             right: 24,
             bottom: 24,
             child: Container(
+              height: 72,
               padding: const EdgeInsets.all(8),
               decoration: BoxDecoration(
                 color: Colors.white,
@@ -43,7 +44,7 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                             borderRadius: BorderRadius.circular(32)
                           ),
                           padding: EdgeInsets.symmetric(
-                            horizontal: 24,
+                            horizontal: 32,
                             vertical: 16,
                           ),
                           child: Center(
