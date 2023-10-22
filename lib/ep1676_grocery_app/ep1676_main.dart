@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_33/ep1676_grocery_app/view/grocery_main_page.dart';
 
 void main() {
   runApp(GroceryApp());
@@ -9,6 +10,8 @@ class GroceryApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      home: GroceryMainPage(),
+    );
   }
 }
