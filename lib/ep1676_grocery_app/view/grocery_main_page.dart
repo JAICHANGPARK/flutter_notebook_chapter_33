@@ -28,7 +28,7 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                       padding: const EdgeInsets.symmetric(horizontal: 8),
                       child: Card(
                         child: Padding(
-                          padding: const EdgeInsets.all(4.0),
+                          padding: const EdgeInsets.all(2.0),
                           child: Row(
                             children: [
                               Expanded(
@@ -37,23 +37,57 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Text("2464 Royal Ln, Mesa"),
-                                      SizedBox(height: 8,),
-                                      Text("Your address"),
+                                      Text(
+                                        "2464 Royal Ln, Mesa",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 8,
+                                      ),
+                                      Text(
+                                        "Your address",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.grey,
+                                        ),
+                                      ),
                                     ],
                                   ),
                                 ),
                               ),
                               Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.green[50],
+                                  borderRadius: BorderRadius.circular(32)
+                                ),
+                                padding: EdgeInsets.symmetric(horizontal: 16,
+                                vertical: 16),
                                 child: Row(
-                                  children: [],
+                                  children: [
+                                    Icon(
+                                      Icons.shopping_bag_outlined,
+                                      color: Colors.green,
+                                    ),
+                                    SizedBox(width: 8,),
+                                    Text(
+                                      "02",
+                                      style: TextStyle(
+                                        color: Colors.green,
+                                        fontSize: 24,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    )
+                                  ],
                                 ),
                               )
                             ],
                           ),
                         ),
                       ),
-                    )
+                    ),
+                    
                   ],
                 )),
             Positioned(
