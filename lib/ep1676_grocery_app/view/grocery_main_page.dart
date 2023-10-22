@@ -60,17 +60,21 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                               Container(
                                 decoration: BoxDecoration(
                                   color: Colors.green[50],
-                                  borderRadius: BorderRadius.circular(32)
+                                  borderRadius: BorderRadius.circular(32),
                                 ),
-                                padding: EdgeInsets.symmetric(horizontal: 16,
-                                vertical: 16),
+                                padding: EdgeInsets.symmetric(
+                                  horizontal: 16,
+                                  vertical: 16,
+                                ),
                                 child: Row(
                                   children: [
                                     Icon(
                                       Icons.shopping_bag_outlined,
                                       color: Colors.green,
                                     ),
-                                    SizedBox(width: 8,),
+                                    SizedBox(
+                                      width: 8,
+                                    ),
                                     Text(
                                       "02",
                                       style: TextStyle(
@@ -87,7 +91,6 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                         ),
                       ),
                     ),
-                    
                   ],
                 )),
             Positioned(
