@@ -13,7 +13,7 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(244, 246, 246, 1),
+      backgroundColor: const Color.fromRGBO(244, 246, 246, 1),
       body: Stack(
         children: [
           Positioned(
@@ -21,31 +21,72 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
             right: 24,
             bottom: 24,
             child: Container(
-              padding: EdgeInsets.all(8),
+              padding: const EdgeInsets.all(8),
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(32),
                 boxShadow: [
-                  BoxShadow(color: Colors.grey, blurRadius: 8, spreadRadius: 2),
+                  const BoxShadow(
+                    color: Colors.grey,
+                    blurRadius: 8,
+                    spreadRadius: 2,
+                  ),
                 ],
               ),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
+                  menuIndex == 0
+                      ? Container(
+                          decoration: BoxDecoration(
+                            color: Colors.green[50],
+                          ),
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 16,
+                            vertical: 16,
+                          ),
+                          child: Center(
+                            child: Text(
+                              "HOME",
+                              style: TextStyle(
+                                fontWeight: FontWeight.w900,
+                                fontSize: 18,
+                                color: Colors.green,
+                              ),
+                            ),
+                          ),
+                        )
+                      : IconButton(
+                          onPressed: () {
+                            setState(() {
+                              menuIndex = 0;
+                            });
+                          },
+                          icon: const Icon(Icons.home_filled),
+                        ),
                   IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.home_filled),
+                    onPressed: () {
+                      setState(() {
+                        menuIndex = 1;
+                      });
+                    },
+                    icon: const Icon(Icons.apps),
                   ),
                   IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.apps),
+                    onPressed: () {
+                      setState(() {
+                        menuIndex = 2;
+                      });
+                    },
+                    icon: const Icon(Icons.folder),
                   ),
                   IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.folder),
-                  ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.person_outline),
+                    onPressed: () {
+                      setState(() {
+                        menuIndex = 3;
+                      });
+                    },
+                    icon: const Icon(Icons.person_outline),
                   ),
                 ],
               ),
