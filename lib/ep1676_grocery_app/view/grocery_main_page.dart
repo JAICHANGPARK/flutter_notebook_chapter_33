@@ -114,9 +114,7 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                               children: [
                                 const Text(
                                   "Categories",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                  ),
+                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                                 ),
                                 TextButton(
                                   onPressed: () {},
@@ -131,6 +129,13 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                           Container(
                             height: 100,
                             color: Colors.blueAccent,
+                            padding: EdgeInsets.symmetric(horizontal: 16),
+                            child: ListView.builder(
+                              scrollDirection: Axis.horizontal,
+                              itemBuilder: (context, index) {
+                                return Card();
+                              },
+                            ),
                           ),
                           TabBar(
                             tabs: [
