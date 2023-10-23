@@ -107,15 +107,26 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              const Text("Categories"),
-                              TextButton(
-                                onPressed: () {},
-                                child: const Text("View All"),
-                              )
-                            ],
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 16),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                const Text(
+                                  "Categories",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                TextButton(
+                                  onPressed: () {},
+                                  child: const Text("View All"),
+                                  style: TextButton.styleFrom(
+                                    primary: Colors.grey,
+                                  ),
+                                )
+                              ],
+                            ),
                           ),
                           Container(
                             height: 100,
