@@ -133,7 +133,20 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                             child: ListView.builder(
                               scrollDirection: Axis.horizontal,
                               itemBuilder: (context, index) {
-                                return Card();
+                                return Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.blue,
+                                  ),
+                                  child: Stack(
+                                    children: [
+                                      Positioned(
+                                        child: Text(
+                                          "Snacks",
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                );
                               },
                             ),
                           ),
