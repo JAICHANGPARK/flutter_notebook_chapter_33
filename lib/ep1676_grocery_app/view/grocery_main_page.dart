@@ -199,7 +199,7 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                   child: Column(
                                     children: [
                                       Container(
-                                        margin: EdgeInsets.symmetric(horizontal: 8),
+                                        margin: const EdgeInsets.symmetric(horizontal: 8),
                                         height: 240,
                                         child: Row(
                                           children: [
@@ -211,8 +211,8 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                                   crossAxisAlignment: CrossAxisAlignment.start,
                                                   children: [
                                                     Expanded(child: Container()),
-                                                    Text("Mushroom Sauce"),
-                                                    Row(
+                                                    const Text("Mushroom Sauce"),
+                                                    const Row(
                                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                       children: [
                                                         Column(
@@ -237,8 +237,8 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                                     crossAxisAlignment: CrossAxisAlignment.start,
                                                     children: [
                                                       Expanded(child: Container()),
-                                                      Text("Mushroom Sauce"),
-                                                      Row(
+                                                      const Text("Mushroom Sauce"),
+                                                      const Row(
                                                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                         children: [
                                                           Column(
@@ -262,12 +262,12 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                       Container(
                                         height: 240,
                                         color: Colors.pink,
-                                        margin: EdgeInsets.only(left: 12, top: 12),
+                                        margin: const EdgeInsets.only(left: 12, top: 12),
                                         child: ListView.builder(
                                           itemBuilder: (context, index) {
                                             return Container(
                                               width: 180,
-                                              decoration: BoxDecoration(
+                                              decoration: const BoxDecoration(
                                                 color: Colors.green,
                                               ),
                                             );
