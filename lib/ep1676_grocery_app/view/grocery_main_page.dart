@@ -194,7 +194,6 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                           Expanded(
                             child: TabBarView(children: [
                               Container(
-                                color: Colors.blue,
                                 child: SingleChildScrollView(
                                   child: Column(
                                     children: [
@@ -261,7 +260,6 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                       ),
                                       Container(
                                         height: 240,
-                                        color: Colors.pink,
                                         margin: const EdgeInsets.only(left: 12, top: 12),
                                         child: ListView.builder(
                                           scrollDirection: Axis.horizontal,
@@ -269,8 +267,9 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                             return Container(
                                               width: 240,
                                               margin: EdgeInsets.only(right: 8),
-                                              decoration: const BoxDecoration(
+                                              decoration:  BoxDecoration(
                                                 color: Colors.green,
+                                                borderRadius: BorderRadius.circular(16)
                                               ),
                                             );
                                           },
