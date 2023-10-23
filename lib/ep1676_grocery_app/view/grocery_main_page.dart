@@ -27,6 +27,9 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 8),
                     child: Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(32)
+                      ),
                       child: Padding(
                         padding: const EdgeInsets.all(2.0),
                         child: Row(
