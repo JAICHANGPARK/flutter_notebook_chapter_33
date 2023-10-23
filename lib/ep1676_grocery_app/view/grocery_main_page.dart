@@ -87,7 +87,7 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                     ),
                   ),
                   const Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 16),
+                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                     child: Card(
                       child: Padding(
                         padding: EdgeInsets.symmetric(vertical: 4, horizontal: 16),
