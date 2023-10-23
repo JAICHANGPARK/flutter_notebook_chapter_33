@@ -192,7 +192,9 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                             ),
                           ),
                           Expanded(
-                            child: TabBarView(children: [
+                            child: TabBarView(
+                                physics: NeverScrollableScrollPhysics(),
+                                children: [
                               Container(
                                 child: SingleChildScrollView(
                                   child: Column(
