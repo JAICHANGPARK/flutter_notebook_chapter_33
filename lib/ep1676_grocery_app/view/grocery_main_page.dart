@@ -264,9 +264,11 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                         color: Colors.pink,
                                         margin: const EdgeInsets.only(left: 12, top: 12),
                                         child: ListView.builder(
+                                          scrollDirection: Axis.horizontal,
                                           itemBuilder: (context, index) {
                                             return Container(
-                                              width: 180,
+                                              width: 240,
+                                              margin: EdgeInsets.only(right: 8),
                                               decoration: const BoxDecoration(
                                                 color: Colors.green,
                                               ),
