@@ -164,11 +164,13 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                 fontSize: 32,
                                 fontWeight: FontWeight.w900,
                               ),
+                              labelColor: Colors.black,
                               unselectedLabelStyle: TextStyle(
                                 fontSize: 32,
                                 fontWeight: FontWeight.w900,
                                 color: Colors.grey,
                               ),
+                              unselectedLabelColor: Colors.grey,
                               indicatorColor: Colors.transparent,
                               tabs: [
                                 Tab(
