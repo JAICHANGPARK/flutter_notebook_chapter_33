@@ -127,14 +127,15 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                             ),
                           ),
                           Container(
-                            height: 100,
-                            color: Colors.blueAccent,
+                            height: 84,
+                            // color: Colors.blueAccent,
                             padding: EdgeInsets.symmetric(horizontal: 16),
                             child: ListView.builder(
                               scrollDirection: Axis.horizontal,
                               itemBuilder: (context, index) {
                                 return Container(
-                                  width: 72,
+                                  width: 84,
+                                  margin: EdgeInsets.only(right: 12),
                                   decoration: BoxDecoration(
                                     color: Colors.white,
                                     borderRadius: BorderRadius.circular(8)
@@ -142,11 +143,13 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                   child: Stack(
                                     children: [
                                       Positioned(
-                                        bottom: 0,
-                                        left: 16,
-                                        right: 16,
-                                        child: Text(
-                                          "Snacks",
+                                        bottom: 4,
+                                        left: 0,
+                                        right: 0,
+                                        child: Center(
+                                          child: Text(
+                                            "Snacks",
+                                          ),
                                         ),
                                       )
                                     ],
