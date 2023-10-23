@@ -195,6 +195,47 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                             child: TabBarView(children: [
                               Container(
                                 color: Colors.blue,
+                                child: Column(
+                                  children: [
+                                    Container(
+                                      margin: EdgeInsets.symmetric(horizontal: 8),
+                                      height: 240,
+                                      color: Colors.orange,
+                                      child: Row(
+                                        children: [
+                                          Expanded(
+                                              child: Card(
+                                            child: Padding(
+                                              padding: const EdgeInsets.all(12.0),
+                                              child: Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  Expanded(child: Container()),
+                                                  Text("Mushroom Sauce"),
+                                                  Row(
+                                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                    children: [
+                                                      Column(
+                                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                                        children: [
+                                                          Text("24Oz"),
+                                                          Text("\$8.92"),
+                                                        ],
+                                                      ),
+                                                      CircleAvatar()
+                                                    ],
+                                                  )
+
+                                                ],
+                                              ),
+                                            ),
+                                          )),
+                                          Expanded(child: Card()),
+                                        ],
+                                      ),
+                                    )
+                                  ],
+                                ),
                               ),
                               Container(
                                 color: Colors.blue,
