@@ -136,10 +136,8 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                 return Container(
                                   width: 84,
                                   margin: EdgeInsets.only(right: 12),
-                                  decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius: BorderRadius.circular(8)
-                                  ),
+                                  decoration:
+                                      BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
                                   child: Stack(
                                     children: [
                                       Positioned(
@@ -164,7 +162,12 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                               isScrollable: true,
                               labelStyle: TextStyle(
                                 fontSize: 32,
-                                fontWeight: FontWeight.w900
+                                fontWeight: FontWeight.w900,
+                              ),
+                              unselectedLabelStyle: TextStyle(
+                                fontSize: 32,
+                                fontWeight: FontWeight.w900,
+                                color: Colors.grey,
                               ),
                               indicatorColor: Colors.transparent,
                               tabs: [
