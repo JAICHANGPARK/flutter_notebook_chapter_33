@@ -195,41 +195,16 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                             child: TabBarView(children: [
                               Container(
                                 color: Colors.blue,
-                                child: Column(
-                                  children: [
-                                    Container(
-                                      margin: EdgeInsets.symmetric(horizontal: 8),
-                                      height: 240,
-                                      child: Row(
-                                        children: [
-                                          Expanded(
-                                              child: Card(
-                                            child: Padding(
-                                              padding: const EdgeInsets.all(12.0),
-                                              child: Column(
-                                                crossAxisAlignment: CrossAxisAlignment.start,
-                                                children: [
-                                                  Expanded(child: Container()),
-                                                  Text("Mushroom Sauce"),
-                                                  Row(
-                                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                    children: [
-                                                      Column(
-                                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                                        children: [
-                                                          Text("24Oz"),
-                                                          Text("\$8.92"),
-                                                        ],
-                                                      ),
-                                                      CircleAvatar()
-                                                    ],
-                                                  )
-                                                ],
-                                              ),
-                                            ),
-                                          )),
-                                          Expanded(
-                                            child: Card(
+                                child: SingleChildScrollView(
+                                  child: Column(
+                                    children: [
+                                      Container(
+                                        margin: EdgeInsets.symmetric(horizontal: 8),
+                                        height: 240,
+                                        child: Row(
+                                          children: [
+                                            Expanded(
+                                                child: Card(
                                               child: Padding(
                                                 padding: const EdgeInsets.all(12.0),
                                                 child: Column(
@@ -253,12 +228,45 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                                   ],
                                                 ),
                                               ),
+                                            )),
+                                            Expanded(
+                                              child: Card(
+                                                child: Padding(
+                                                  padding: const EdgeInsets.all(12.0),
+                                                  child: Column(
+                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                    children: [
+                                                      Expanded(child: Container()),
+                                                      Text("Mushroom Sauce"),
+                                                      Row(
+                                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                        children: [
+                                                          Column(
+                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                            children: [
+                                                              Text("24Oz"),
+                                                              Text("\$8.92"),
+                                                            ],
+                                                          ),
+                                                          CircleAvatar()
+                                                        ],
+                                                      )
+                                                    ],
+                                                  ),
+                                                ),
+                                              ),
                                             ),
-                                          ),
-                                        ],
+                                          ],
+                                        ),
                                       ),
-                                    )
-                                  ],
+                                      Container(
+                                        height: 240,
+                                        color: Colors.pink,
+                                        margin: EdgeInsets.only(left: 12, top: 12),
+                                        
+                                      )
+                                    ],
+                                  ),
                                 ),
                               ),
                               Container(
