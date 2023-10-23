@@ -263,7 +263,16 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                         height: 240,
                                         color: Colors.pink,
                                         margin: EdgeInsets.only(left: 12, top: 12),
-                                        
+                                        child: ListView.builder(
+                                          itemBuilder: (context, index) {
+                                            return Container(
+                                              width: 180,
+                                              decoration: BoxDecoration(
+                                                color: Colors.green,
+                                              ),
+                                            );
+                                          },
+                                        ),
                                       )
                                     ],
                                   ),
