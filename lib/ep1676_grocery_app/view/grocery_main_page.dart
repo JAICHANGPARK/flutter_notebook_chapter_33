@@ -27,12 +27,9 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 8),
                     child: Card(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(32)
-                      ),
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(32)),
                       child: Padding(
-                        padding: const EdgeInsets.only(left: 12,
-                        right: 2, top: 2,bottom: 2),
+                        padding: const EdgeInsets.only(left: 12, right: 2, top: 2, bottom: 2),
                         child: Row(
                           children: [
                             const Expanded(
@@ -62,8 +59,10 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                               ),
                             ),
                             Container(
-                              decoration:
-                                  BoxDecoration(color: Colors.green[50], borderRadius: BorderRadius.circular(32)),
+                              decoration: BoxDecoration(
+                                color: Colors.green[50],
+                                borderRadius: BorderRadius.circular(32),
+                              ),
                               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
                               child: const Row(
                                 children: [
@@ -133,16 +132,16 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                           Container(
                             height: 84,
                             // color: Colors.blueAccent,
-                            padding: EdgeInsets.symmetric(horizontal: 16),
+                            padding: const EdgeInsets.symmetric(horizontal: 16),
                             child: ListView.builder(
                               scrollDirection: Axis.horizontal,
                               itemBuilder: (context, index) {
                                 return Container(
                                   width: 84,
-                                  margin: EdgeInsets.only(right: 12),
+                                  margin: const EdgeInsets.only(right: 12),
                                   decoration:
                                       BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
-                                  child: Stack(
+                                  child: const Stack(
                                     children: [
                                       Positioned(
                                         bottom: 4,
@@ -160,8 +159,8 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                               },
                             ),
                           ),
-                          Padding(
-                            padding: const EdgeInsets.symmetric(vertical: 16),
+                          const Padding(
+                            padding: EdgeInsets.symmetric(vertical: 16),
                             child: TabBar(
                               isScrollable: true,
                               labelStyle: TextStyle(
