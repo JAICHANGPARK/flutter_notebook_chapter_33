@@ -134,12 +134,17 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                               scrollDirection: Axis.horizontal,
                               itemBuilder: (context, index) {
                                 return Container(
+                                  width: 72,
                                   decoration: BoxDecoration(
-                                    color: Colors.blue,
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(8)
                                   ),
                                   child: Stack(
                                     children: [
                                       Positioned(
+                                        bottom: 0,
+                                        left: 16,
+                                        right: 16,
                                         child: Text(
                                           "Snacks",
                                         ),
@@ -151,6 +156,10 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                             ),
                           ),
                           TabBar(
+                            labelStyle: TextStyle(
+                              fontSize: 32,
+                              fontWeight: FontWeight.w900
+                            ),
                             tabs: [
                               Tab(
                                 text: "Flash Sale",
