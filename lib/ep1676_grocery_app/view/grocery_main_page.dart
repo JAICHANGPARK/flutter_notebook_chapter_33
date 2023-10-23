@@ -31,7 +31,8 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                         borderRadius: BorderRadius.circular(32)
                       ),
                       child: Padding(
-                        padding: const EdgeInsets.all(2.0),
+                        padding: const EdgeInsets.only(left: 12,
+                        right: 2, top: 2,bottom: 2),
                         child: Row(
                           children: [
                             const Expanded(
