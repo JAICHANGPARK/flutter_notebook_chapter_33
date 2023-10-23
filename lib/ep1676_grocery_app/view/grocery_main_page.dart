@@ -158,25 +158,30 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                               },
                             ),
                           ),
-                          TabBar(
-                            labelStyle: TextStyle(
-                              fontSize: 32,
-                              fontWeight: FontWeight.w900
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 16),
+                            child: TabBar(
+                              isScrollable: true,
+                              labelStyle: TextStyle(
+                                fontSize: 32,
+                                fontWeight: FontWeight.w900
+                              ),
+                              indicatorColor: Colors.transparent,
+                              tabs: [
+                                Tab(
+                                  text: "Flash Sale",
+                                ),
+                                Tab(
+                                  text: "Popular",
+                                ),
+                                Tab(
+                                  text: "New Arrival",
+                                ),
+                                Tab(
+                                  text: "Snacks",
+                                ),
+                              ],
                             ),
-                            tabs: [
-                              Tab(
-                                text: "Flash Sale",
-                              ),
-                              Tab(
-                                text: "Popular",
-                              ),
-                              Tab(
-                                text: "New Arrival",
-                              ),
-                              Tab(
-                                text: "Snacks",
-                              ),
-                            ],
                           ),
                           Expanded(
                             child: TabBarView(children: [
