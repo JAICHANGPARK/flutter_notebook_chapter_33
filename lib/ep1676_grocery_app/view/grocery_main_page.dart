@@ -195,7 +195,7 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                 ),
                               ),
                               Expanded(
-                                child: TabBarView(physics: NeverScrollableScrollPhysics(), children: [
+                                child: TabBarView(physics: const NeverScrollableScrollPhysics(), children: [
                                   Container(
                                     child: SingleChildScrollView(
                                       child: Column(
@@ -269,11 +269,11 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                               itemBuilder: (context, index) {
                                                 return Container(
                                                   width: 240,
-                                                  margin: EdgeInsets.only(right: 8),
+                                                  margin: const EdgeInsets.only(right: 8),
                                                   decoration: BoxDecoration(
                                                       color: Colors.green, borderRadius: BorderRadius.circular(16)),
-                                                  padding: EdgeInsets.all(16),
-                                                  child: Column(
+                                                  padding: const EdgeInsets.all(16),
+                                                  child: const Column(
                                                     crossAxisAlignment: CrossAxisAlignment.start,
                                                     children: [
                                                       Text(
@@ -312,17 +312,17 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text(
+                              const Text(
                                 "Categories",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 24,
                                 ),
                               ),
-                              SizedBox(height: 8,),
+                              const SizedBox(height: 8,),
                               Expanded(
                                 child: GridView.builder(
-                                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                                       crossAxisCount: 3,
                                       crossAxisSpacing: 8,
                                       mainAxisSpacing: 8,
@@ -380,7 +380,7 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                 "HOME",
                                 style: TextStyle(
                                   fontWeight: FontWeight.w900,
-                                  fontSize: 18,
+                                  fontSize: 20,
                                   color: Colors.green,
                                 ),
                               ),
@@ -409,7 +409,7 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                 "Categories",
                                 style: TextStyle(
                                   fontWeight: FontWeight.w900,
-                                  fontSize: 18,
+                                  fontSize: 20,
                                   color: Colors.green,
                                 ),
                               ),
