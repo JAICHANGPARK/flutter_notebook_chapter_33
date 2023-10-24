@@ -319,6 +319,7 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                   fontSize: 24,
                                 ),
                               ),
+                              SizedBox(height: 8,),
                               Expanded(
                                 child: GridView.builder(
                                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
