@@ -192,9 +192,7 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                             ),
                           ),
                           Expanded(
-                            child: TabBarView(
-                                physics: NeverScrollableScrollPhysics(),
-                                children: [
+                            child: TabBarView(physics: NeverScrollableScrollPhysics(), children: [
                               Container(
                                 child: SingleChildScrollView(
                                   child: Column(
@@ -269,9 +267,19 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                             return Container(
                                               width: 240,
                                               margin: EdgeInsets.only(right: 8),
-                                              decoration:  BoxDecoration(
-                                                color: Colors.green,
-                                                borderRadius: BorderRadius.circular(16)
+                                              decoration: BoxDecoration(
+                                                  color: Colors.green, borderRadius: BorderRadius.circular(16)),
+                                              padding: EdgeInsets.all(16),
+                                              child: Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  Text(
+                                                    "MEAL PLAN\nWITH GROCERY\nSTAY ",
+                                                    style: TextStyle(
+                                                      fontWeight: FontWeight.bold,
+                                                    ),
+                                                  )
+                                                ],
                                               ),
                                             );
                                           },
