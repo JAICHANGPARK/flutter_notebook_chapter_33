@@ -46,11 +46,7 @@
 - Saidul Islam
 - https://dribbble.com/shots/22639443-Movie-Steaming-Mobile-App
 
-
-
 ## Getting Started
-
-A new Flutter project.
 
 This project is a starting point for a Flutter application.
 
