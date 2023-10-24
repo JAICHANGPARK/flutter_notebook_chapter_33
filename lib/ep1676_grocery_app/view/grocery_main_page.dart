@@ -307,15 +307,34 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                             ],
                           ),
                         ),
-                        Column(
-                          children: [
-                            Text(
-                              "Categories",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
+                        Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Categories",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 24,
+                                ),
                               ),
-                            )
-                          ],
+                              Expanded(
+                                child: GridView.builder(
+                                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                                      crossAxisCount: 3,
+                                      crossAxisSpacing: 8,
+                                      mainAxisSpacing: 8,
+                                    ),
+                                    itemBuilder: (context, index) {
+                                      return Container(
+                                        decoration:
+                                            BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(8)),
+                                      );
+                                    }),
+                              )
+                            ],
+                          ),
                         )
                       ],
                     ),
