@@ -123,7 +123,7 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                   onPressed: () {},
                                   child: const Text("View All"),
                                   style: TextButton.styleFrom(
-                                    primary: Colors.grey,
+                                    foregroundColor: Colors.grey,
                                   ),
                                 )
                               ],
@@ -293,6 +293,7 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                               ),
                               Container(
                                 color: Colors.blue,
+
                               ),
                               Container(
                                 color: Colors.blue,
