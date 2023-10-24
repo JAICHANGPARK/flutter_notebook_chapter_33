@@ -105,206 +105,219 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                     ),
                   ),
                   Expanded(
-                    child: DefaultTabController(
-                      length: 4,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 16),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                const Text(
-                                  "Categories",
-                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                    child: IndexedStack(
+                      index: menuIndex,
+                      children: [
+                        DefaultTabController(
+                          length: 4,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.symmetric(horizontal: 16),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    const Text(
+                                      "Categories",
+                                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                                    ),
+                                    TextButton(
+                                      onPressed: () {},
+                                      child: const Text("View All"),
+                                      style: TextButton.styleFrom(
+                                        foregroundColor: Colors.grey,
+                                      ),
+                                    )
+                                  ],
                                 ),
-                                TextButton(
-                                  onPressed: () {},
-                                  child: const Text("View All"),
-                                  style: TextButton.styleFrom(
-                                    foregroundColor: Colors.grey,
-                                  ),
-                                )
-                              ],
-                            ),
-                          ),
-                          Container(
-                            height: 84,
-                            // color: Colors.blueAccent,
-                            padding: const EdgeInsets.symmetric(horizontal: 16),
-                            child: ListView.builder(
-                              scrollDirection: Axis.horizontal,
-                              itemBuilder: (context, index) {
-                                return Container(
-                                  width: 84,
-                                  margin: const EdgeInsets.only(right: 12),
-                                  decoration:
-                                      BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
-                                  child: const Stack(
-                                    children: [
-                                      Positioned(
-                                        bottom: 4,
-                                        left: 0,
-                                        right: 0,
-                                        child: Center(
-                                          child: Text(
-                                            "Snacks",
-                                          ),
-                                        ),
-                                      )
-                                    ],
-                                  ),
-                                );
-                              },
-                            ),
-                          ),
-                          const Padding(
-                            padding: EdgeInsets.symmetric(vertical: 16),
-                            child: TabBar(
-                              isScrollable: true,
-                              labelStyle: TextStyle(
-                                fontSize: 32,
-                                fontWeight: FontWeight.w900,
                               ),
-                              labelColor: Colors.black,
-                              unselectedLabelStyle: TextStyle(
-                                fontSize: 32,
-                                fontWeight: FontWeight.w900,
-                                color: Colors.grey,
-                              ),
-                              unselectedLabelColor: Colors.grey,
-                              indicatorColor: Colors.transparent,
-                              tabs: [
-                                Tab(
-                                  text: "Flash Sale",
-                                ),
-                                Tab(
-                                  text: "Popular",
-                                ),
-                                Tab(
-                                  text: "New Arrival",
-                                ),
-                                Tab(
-                                  text: "Snacks",
-                                ),
-                              ],
-                            ),
-                          ),
-                          Expanded(
-                            child: TabBarView(physics: NeverScrollableScrollPhysics(), children: [
                               Container(
-                                child: SingleChildScrollView(
-                                  child: Column(
-                                    children: [
-                                      Container(
-                                        margin: const EdgeInsets.symmetric(horizontal: 8),
-                                        height: 240,
-                                        child: Row(
-                                          children: [
-                                            Expanded(
-                                                child: Card(
-                                              child: Padding(
-                                                padding: const EdgeInsets.all(12.0),
-                                                child: Column(
-                                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                                  children: [
-                                                    Expanded(child: Container()),
-                                                    const Text("Mushroom Sauce"),
-                                                    const Row(
-                                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                      children: [
-                                                        Column(
-                                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                                          children: [
-                                                            Text("24Oz"),
-                                                            Text("\$8.92"),
-                                                          ],
-                                                        ),
-                                                        CircleAvatar()
-                                                      ],
-                                                    )
-                                                  ],
-                                                ),
+                                height: 84,
+                                // color: Colors.blueAccent,
+                                padding: const EdgeInsets.symmetric(horizontal: 16),
+                                child: ListView.builder(
+                                  scrollDirection: Axis.horizontal,
+                                  itemBuilder: (context, index) {
+                                    return Container(
+                                      width: 84,
+                                      margin: const EdgeInsets.only(right: 12),
+                                      decoration:
+                                          BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
+                                      child: const Stack(
+                                        children: [
+                                          Positioned(
+                                            bottom: 4,
+                                            left: 0,
+                                            right: 0,
+                                            child: Center(
+                                              child: Text(
+                                                "Snacks",
                                               ),
-                                            )),
-                                            Expanded(
-                                              child: Card(
-                                                child: Padding(
-                                                  padding: const EdgeInsets.all(12.0),
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    );
+                                  },
+                                ),
+                              ),
+                              const Padding(
+                                padding: EdgeInsets.symmetric(vertical: 16),
+                                child: TabBar(
+                                  isScrollable: true,
+                                  labelStyle: TextStyle(
+                                    fontSize: 32,
+                                    fontWeight: FontWeight.w900,
+                                  ),
+                                  labelColor: Colors.black,
+                                  unselectedLabelStyle: TextStyle(
+                                    fontSize: 32,
+                                    fontWeight: FontWeight.w900,
+                                    color: Colors.grey,
+                                  ),
+                                  unselectedLabelColor: Colors.grey,
+                                  indicatorColor: Colors.transparent,
+                                  tabs: [
+                                    Tab(
+                                      text: "Flash Sale",
+                                    ),
+                                    Tab(
+                                      text: "Popular",
+                                    ),
+                                    Tab(
+                                      text: "New Arrival",
+                                    ),
+                                    Tab(
+                                      text: "Snacks",
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Expanded(
+                                child: TabBarView(physics: NeverScrollableScrollPhysics(), children: [
+                                  Container(
+                                    child: SingleChildScrollView(
+                                      child: Column(
+                                        children: [
+                                          Container(
+                                            margin: const EdgeInsets.symmetric(horizontal: 8),
+                                            height: 240,
+                                            child: Row(
+                                              children: [
+                                                Expanded(
+                                                    child: Card(
+                                                  child: Padding(
+                                                    padding: const EdgeInsets.all(12.0),
+                                                    child: Column(
+                                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                                      children: [
+                                                        Expanded(child: Container()),
+                                                        const Text("Mushroom Sauce"),
+                                                        const Row(
+                                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                          children: [
+                                                            Column(
+                                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                                              children: [
+                                                                Text("24Oz"),
+                                                                Text("\$8.92"),
+                                                              ],
+                                                            ),
+                                                            CircleAvatar()
+                                                          ],
+                                                        )
+                                                      ],
+                                                    ),
+                                                  ),
+                                                )),
+                                                Expanded(
+                                                  child: Card(
+                                                    child: Padding(
+                                                      padding: const EdgeInsets.all(12.0),
+                                                      child: Column(
+                                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                                        children: [
+                                                          Expanded(child: Container()),
+                                                          const Text("Mushroom Sauce"),
+                                                          const Row(
+                                                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                            children: [
+                                                              Column(
+                                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                                children: [
+                                                                  Text("24Oz"),
+                                                                  Text("\$8.92"),
+                                                                ],
+                                                              ),
+                                                              CircleAvatar()
+                                                            ],
+                                                          )
+                                                        ],
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+                                          Container(
+                                            height: 240,
+                                            margin: const EdgeInsets.only(left: 12, top: 12),
+                                            child: ListView.builder(
+                                              scrollDirection: Axis.horizontal,
+                                              itemBuilder: (context, index) {
+                                                return Container(
+                                                  width: 240,
+                                                  margin: EdgeInsets.only(right: 8),
+                                                  decoration: BoxDecoration(
+                                                      color: Colors.green, borderRadius: BorderRadius.circular(16)),
+                                                  padding: EdgeInsets.all(16),
                                                   child: Column(
                                                     crossAxisAlignment: CrossAxisAlignment.start,
                                                     children: [
-                                                      Expanded(child: Container()),
-                                                      const Text("Mushroom Sauce"),
-                                                      const Row(
-                                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                        children: [
-                                                          Column(
-                                                            crossAxisAlignment: CrossAxisAlignment.start,
-                                                            children: [
-                                                              Text("24Oz"),
-                                                              Text("\$8.92"),
-                                                            ],
-                                                          ),
-                                                          CircleAvatar()
-                                                        ],
+                                                      Text(
+                                                        "MEAL PLAN\nWITH GROCERY\nSTAY ",
+                                                        style: TextStyle(
+                                                            fontWeight: FontWeight.bold,
+                                                            fontSize: 24,
+                                                            color: Colors.white),
                                                       )
                                                     ],
                                                   ),
-                                                ),
-                                              ),
+                                                );
+                                              },
                                             ),
-                                          ],
-                                        ),
+                                          )
+                                        ],
                                       ),
-                                      Container(
-                                        height: 240,
-                                        margin: const EdgeInsets.only(left: 12, top: 12),
-                                        child: ListView.builder(
-                                          scrollDirection: Axis.horizontal,
-                                          itemBuilder: (context, index) {
-                                            return Container(
-                                              width: 240,
-                                              margin: EdgeInsets.only(right: 8),
-                                              decoration: BoxDecoration(
-                                                  color: Colors.green, borderRadius: BorderRadius.circular(16)),
-                                              padding: EdgeInsets.all(16),
-                                              child: Column(
-                                                crossAxisAlignment: CrossAxisAlignment.start,
-                                                children: [
-                                                  Text(
-                                                    "MEAL PLAN\nWITH GROCERY\nSTAY ",
-                                                    style: TextStyle(
-                                                      fontWeight: FontWeight.bold,
-                                                      fontSize: 24,
-                                                      color: Colors.white
-                                                    ),
-                                                  )
-                                                ],
-                                              ),
-                                            );
-                                          },
-                                        ),
-                                      )
-                                    ],
+                                    ),
                                   ),
-                                ),
+                                  Container(
+                                    color: Colors.blue,
+                                  ),
+                                  Container(
+                                    color: Colors.blue,
+                                  ),
+                                  Container(
+                                    color: Colors.blue,
+                                  ),
+                                ]),
+                              )
+                            ],
+                          ),
+                        ),
+                        Column(
+                          children: [
+                            Text(
+                              "Categories",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
                               ),
-                              Container(
-                                color: Colors.blue,
-
-                              ),
-                              Container(
-                                color: Colors.blue,
-                              ),
-                              Container(
-                                color: Colors.blue,
-                              ),
-                            ]),
-                          )
-                        ],
-                      ),
+                            )
+                          ],
+                        )
+                      ],
                     ),
                   ),
                 ],
