@@ -277,6 +277,8 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                                     "MEAL PLAN\nWITH GROCERY\nSTAY ",
                                                     style: TextStyle(
                                                       fontWeight: FontWeight.bold,
+                                                      fontSize: 24,
+                                                      color: Colors.white
                                                     ),
                                                   )
                                                 ],
