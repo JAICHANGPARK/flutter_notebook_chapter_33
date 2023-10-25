@@ -14,7 +14,23 @@ class _GroceryDetailPageState extends State<GroceryDetailPage> {
       body: SafeArea(
         child: Column(
           children: [
-
+            Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(32),
+                border: Border.all(
+                  color: Colors.white,
+                ),
+                color: Colors.green[50],
+              ),
+              child: Text(
+                "Back",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.green,
+                  fontSize: 24
+                ),
+              ),
+            )
           ],
         ),
       ),
