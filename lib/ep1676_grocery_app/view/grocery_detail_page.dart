@@ -19,9 +19,11 @@ class _GroceryDetailPageState extends State<GroceryDetailPage> {
                 borderRadius: BorderRadius.circular(32),
                 border: Border.all(
                   color: Colors.white,
+                  width: 1.5
                 ),
                 color: Colors.green[50],
               ),
+              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
               child: Text(
                 "Back",
                 style: TextStyle(
