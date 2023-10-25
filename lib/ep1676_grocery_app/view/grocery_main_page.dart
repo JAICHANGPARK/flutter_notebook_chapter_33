@@ -199,39 +199,17 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                   SingleChildScrollView(
                                     child: Column(
                                       children: [
-                                        Container(
-                                          margin: const EdgeInsets.symmetric(horizontal: 8),
-                                          height: 240,
-                                          child: Row(
-                                            children: [
-                                              Expanded(
-                                                  child: Card(
-                                                child: Padding(
-                                                  padding: const EdgeInsets.all(12.0),
-                                                  child: Column(
-                                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                                    children: [
-                                                      Expanded(child: Container()),
-                                                      const Text("Mushroom Sauce"),
-                                                      const Row(
-                                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                        children: [
-                                                          Column(
-                                                            crossAxisAlignment: CrossAxisAlignment.start,
-                                                            children: [
-                                                              Text("24Oz"),
-                                                              Text("\$8.92"),
-                                                            ],
-                                                          ),
-                                                          CircleAvatar()
-                                                        ],
-                                                      )
-                                                    ],
-                                                  ),
-                                                ),
-                                              )),
-                                              Expanded(
-                                                child: Card(
+                                        GestureDetector(
+                                          onTap: (){
+                                            
+                                          },
+                                          child: Container(
+                                            margin: const EdgeInsets.symmetric(horizontal: 8),
+                                            height: 240,
+                                            child: Row(
+                                              children: [
+                                                Expanded(
+                                                    child: Card(
                                                   child: Padding(
                                                     padding: const EdgeInsets.all(12.0),
                                                     child: Column(
@@ -255,9 +233,36 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                                       ],
                                                     ),
                                                   ),
+                                                )),
+                                                Expanded(
+                                                  child: Card(
+                                                    child: Padding(
+                                                      padding: const EdgeInsets.all(12.0),
+                                                      child: Column(
+                                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                                        children: [
+                                                          Expanded(child: Container()),
+                                                          const Text("Mushroom Sauce"),
+                                                          const Row(
+                                                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                            children: [
+                                                              Column(
+                                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                                children: [
+                                                                  Text("24Oz"),
+                                                                  Text("\$8.92"),
+                                                                ],
+                                                              ),
+                                                              CircleAvatar()
+                                                            ],
+                                                          )
+                                                        ],
+                                                      ),
+                                                    ),
+                                                  ),
                                                 ),
-                                              ),
-                                            ],
+                                              ],
+                                            ),
                                           ),
                                         ),
                                         Container(
