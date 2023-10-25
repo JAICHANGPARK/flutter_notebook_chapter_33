@@ -39,10 +39,7 @@ class _GroceryDetailPageState extends State<GroceryDetailPage> {
                     child: Center(
                       child: Text(
                         "Items",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18
-                        ),
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                       ),
                     ),
                   ),
@@ -50,7 +47,6 @@ class _GroceryDetailPageState extends State<GroceryDetailPage> {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(32),
                       border: Border.all(color: Colors.white, width: 1.5),
-
                     ),
                     padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                     child: Row(
@@ -71,7 +67,25 @@ class _GroceryDetailPageState extends State<GroceryDetailPage> {
                   ),
                 ],
               ),
-            )
+            ),
+            Expanded(
+              child: DefaultTabController(
+                length: 4,
+                child: Column(
+                  children: [
+                    TabBar(tabs: [
+                      Tab()
+                    ]),
+                    Expanded(child: TabBarView(children: [
+                      Container(),
+                      Container(),
+                      Container(),
+                      Container(),
+                    ],))
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),
