@@ -11,6 +11,7 @@ class _GroceryDetailPageState extends State<GroceryDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[100],
       body: SafeArea(
         child: Column(
           children: [
@@ -35,10 +36,13 @@ class _GroceryDetailPageState extends State<GroceryDetailPage> {
                     ),
                   ),
                   Expanded(
-                    child: Text(
-                      "Items",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
+                    child: Center(
+                      child: Text(
+                        "Items",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18
+                        ),
                       ),
                     ),
                   ),
@@ -46,7 +50,7 @@ class _GroceryDetailPageState extends State<GroceryDetailPage> {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(32),
                       border: Border.all(color: Colors.white, width: 1.5),
-                      
+
                     ),
                     padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                     child: Row(
