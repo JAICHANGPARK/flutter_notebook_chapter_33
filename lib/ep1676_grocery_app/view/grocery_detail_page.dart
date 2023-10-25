@@ -39,7 +39,10 @@ class _GroceryDetailPageState extends State<GroceryDetailPage> {
                     child: Center(
                       child: Text(
                         "Items",
-                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                        ),
                       ),
                     ),
                   ),
