@@ -106,13 +106,12 @@ class _GroceryDetailPageState extends State<GroceryDetailPage> {
                         child: TabBarView(
                       children: [
                         Container(
+                          padding: EdgeInsets.all(8),
                           child: GridView.builder(
-                            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                              crossAxisCount: 2,
-                              childAspectRatio: 0.8
-                            ),
+                            gridDelegate:
+                                SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2, childAspectRatio: 0.8),
                             itemBuilder: (context, index) {
-                              return  Card(
+                              return Card(
                                 child: Padding(
                                   padding: const EdgeInsets.all(12.0),
                                   child: Column(
@@ -130,7 +129,11 @@ class _GroceryDetailPageState extends State<GroceryDetailPage> {
                                               Text("\$8.92"),
                                             ],
                                           ),
-                                          CircleAvatar()
+                                          CircleAvatar(
+                                            foregroundColor: Colors.white,
+                                            backgroundColor: Colors.black,
+                                            child: Icon(Icons.add),
+                                          )
                                         ],
                                       )
                                     ],
