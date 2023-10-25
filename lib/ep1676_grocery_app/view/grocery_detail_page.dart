@@ -20,8 +20,8 @@ class _GroceryDetailPageState extends State<GroceryDetailPage> {
               child: Row(
                 children: [
                   InkWell(
-                    onTap: (){
-                      
+                    onTap: () {
+                      Navigator.of(context).pop();
                     },
                     child: Container(
                       decoration: BoxDecoration(
