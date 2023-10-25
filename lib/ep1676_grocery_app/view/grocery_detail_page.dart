@@ -73,15 +73,77 @@ class _GroceryDetailPageState extends State<GroceryDetailPage> {
                 length: 4,
                 child: Column(
                   children: [
-                    TabBar(tabs: [
-                      Tab()
-                    ]),
-                    Expanded(child: TabBarView(children: [
-                      Container(),
-                      Container(),
-                      Container(),
-                      Container(),
-                    ],))
+                    TabBar(
+                      isScrollable: true,
+                      labelStyle: TextStyle(
+                        fontSize: 32,
+                        fontWeight: FontWeight.w900,
+                      ),
+                      labelColor: Colors.black,
+                      unselectedLabelStyle: TextStyle(
+                        fontSize: 32,
+                        fontWeight: FontWeight.w900,
+                        color: Colors.grey,
+                      ),
+                      unselectedLabelColor: Colors.grey,
+                      indicatorColor: Colors.transparent,
+                      tabs: [
+                        Tab(
+                          text: "Flash Sale",
+                        ),
+                        Tab(
+                          text: "Popular",
+                        ),
+                        Tab(
+                          text: "New Arrival",
+                        ),
+                        Tab(
+                          text: "Snacks",
+                        ),
+                      ],
+                    ),
+                    Expanded(
+                        child: TabBarView(
+                      children: [
+                        Container(
+                          child: GridView.builder(
+                            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                              crossAxisCount: 2,
+                            ),
+                            itemBuilder: (context, index) {
+                              return  Card(
+                                child: Padding(
+                                  padding: const EdgeInsets.all(12.0),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Expanded(child: Container()),
+                                      const Text("Mushroom Sauce"),
+                                      const Row(
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Text("24Oz"),
+                                              Text("\$8.92"),
+                                            ],
+                                          ),
+                                          CircleAvatar()
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              );
+                            },
+                          ),
+                        ),
+                        Container(),
+                        Container(),
+                        Container(),
+                      ],
+                    ))
                   ],
                 ),
               ),
