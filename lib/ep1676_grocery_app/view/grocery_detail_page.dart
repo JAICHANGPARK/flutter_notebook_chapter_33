@@ -14,7 +14,7 @@ class _GroceryDetailPageState extends State<GroceryDetailPage> {
       body: SafeArea(
         child: Column(
           children: [
-            
+
           ],
         ),
       ),
