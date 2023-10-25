@@ -27,7 +27,11 @@ class _GroceryDetailPageState extends State<GroceryDetailPage> {
                     padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                     child: Text(
                       "Back",
-                      style: TextStyle(fontWeight: FontWeight.bold, color: Colors.green, fontSize: 24),
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.green,
+                        fontSize: 24,
+                      ),
                     ),
                   ),
                   Expanded(
@@ -38,7 +42,29 @@ class _GroceryDetailPageState extends State<GroceryDetailPage> {
                       ),
                     ),
                   ),
-
+                  Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(32),
+                      border: Border.all(color: Colors.white, width: 1.5),
+                      
+                    ),
+                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.shopping_bag_outlined,
+                        ),
+                        Text(
+                          "02",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black,
+                            fontSize: 24,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
             )
