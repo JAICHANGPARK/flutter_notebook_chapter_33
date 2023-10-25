@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_33/ep1676_grocery_app/view/grocery_detail_page.dart';
 
 class GroceryMainPage extends StatefulWidget {
   const GroceryMainPage({super.key});
@@ -200,8 +201,12 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                     child: Column(
                                       children: [
                                         GestureDetector(
-                                          onTap: (){
-                                            
+                                          onTap: () {
+                                            Navigator.of(context).push(
+                                              MaterialPageRoute(
+                                                builder: (context) => GroceryDetailPage(),
+                                              ),
+                                            );
                                           },
                                           child: Container(
                                             margin: const EdgeInsets.symmetric(horizontal: 8),
@@ -322,7 +327,9 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                   fontSize: 24,
                                 ),
                               ),
-                              const SizedBox(height: 8,),
+                              const SizedBox(
+                                height: 8,
+                              ),
                               Expanded(
                                 child: GridView.builder(
                                     gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
