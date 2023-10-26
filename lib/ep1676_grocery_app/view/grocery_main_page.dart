@@ -392,9 +392,7 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                             itemBuilder: (context, index) {
                                               return Container(
                                                 decoration: BoxDecoration(
-                                                  color: Colors.blue,
-                                                  borderRadius: BorderRadius.circular(4)
-                                                ),
+                                                    color: Colors.blue, borderRadius: BorderRadius.circular(4)),
                                               );
                                             },
                                           ),
@@ -432,9 +430,7 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                             itemBuilder: (context, index) {
                                               return Container(
                                                 decoration: BoxDecoration(
-                                                    color: Colors.blue,
-                                                    borderRadius: BorderRadius.circular(4)
-                                                ),
+                                                    color: Colors.blue, borderRadius: BorderRadius.circular(4)),
                                               );
                                             },
                                           ),
@@ -472,9 +468,7 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                             itemBuilder: (context, index) {
                                               return Container(
                                                 decoration: BoxDecoration(
-                                                    color: Colors.blue,
-                                                    borderRadius: BorderRadius.circular(4)
-                                                ),
+                                                    color: Colors.blue, borderRadius: BorderRadius.circular(4)),
                                               );
                                             },
                                           ),
@@ -503,14 +497,24 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         Expanded(
-                                          child:Container(),
-
+                                          child: Container(
+                                            decoration: BoxDecoration(
+                                              color: Colors.green[50],
+                                              borderRadius: BorderRadius.circular(4),
+                                            ),
+                                            child: Center(
+                                              child: Icon(
+                                                Icons.add,
+                                                color: Colors.green,
+                                              ),
+                                            ),
+                                          ),
                                         ),
                                         SizedBox(
                                           height: 8,
                                         ),
                                         Text(
-                                          "Daily Meal",
+                                          "Create Collection",
                                           style: TextStyle(
                                             fontWeight: FontWeight.bold,
                                           ),
@@ -518,7 +522,9 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                         SizedBox(
                                           height: 8,
                                         ),
-                                        Text("18 products")
+                                        Text(
+                                          "Today",
+                                        )
                                       ],
                                     ),
                                   ),
