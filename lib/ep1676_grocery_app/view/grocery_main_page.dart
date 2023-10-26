@@ -374,7 +374,7 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                               crossAxisCount: 2,
                               crossAxisSpacing: 8,
                               mainAxisSpacing: 8,
-                              childAspectRatio: 0.80,
+                              childAspectRatio: 0.79,
                               children: [
                                 Card(
                                   child: Padding(
