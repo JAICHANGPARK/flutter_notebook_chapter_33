@@ -374,29 +374,65 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                               crossAxisCount: 2,
                               crossAxisSpacing: 8,
                               mainAxisSpacing: 8,
+                              childAspectRatio: 0.7,
                               children: [
                                 Card(
-                                  child: Column(
-                                    children: [
-                                      Expanded(
-                                        child: GridView.builder(
-                                          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                                            crossAxisCount: 2,
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Expanded(
+                                          child: GridView.builder(
+                                            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                                              crossAxisCount: 2,
+                                              mainAxisSpacing: 4,
+                                              crossAxisSpacing: 4
+
+                                            ),
+                                            itemBuilder: (context, index) {
+                                              return Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.blue,
+                                                ),
+                                              );
+                                            },
                                           ),
-                                          itemBuilder: (context, index) {
-                                            return Container(
-                                              decoration: BoxDecoration(
-                                                color: Colors.blue,
-                                              ),
-                                            );
-                                          },
                                         ),
-                                      ),
-                                      Text("Daily Meal",style: TextStyle(
-                                        fontWeight: FontWeight.bold
-                                      ),),
-                                      Text("18 products")
-                                    ],
+                                        Text("Daily Meal",style: TextStyle(
+                                          fontWeight: FontWeight.bold
+                                        ),),
+                                        Text("18 products")
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                                Card(
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Expanded(
+                                          child: GridView.builder(
+                                            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                                              crossAxisCount: 2,
+                                            ),
+                                            itemBuilder: (context, index) {
+                                              return Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.blue,
+                                                ),
+                                              );
+                                            },
+                                          ),
+                                        ),
+                                        Text("Daily Meal",style: TextStyle(
+                                            fontWeight: FontWeight.bold
+                                        ),),
+                                        Text("18 products")
+                                      ],
+                                    ),
                                   ),
                                 )
                               ],
