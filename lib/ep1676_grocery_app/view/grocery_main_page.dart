@@ -378,7 +378,20 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                 Card(
                                   child: Column(
                                     children: [
-
+                                      Expanded(
+                                        child: GridView.builder(
+                                          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                                            crossAxisCount: 2,
+                                          ),
+                                          itemBuilder: (context, index) {
+                                            return Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.blue,
+                                              ),
+                                            );
+                                          },
+                                        ),
+                                      )
                                     ],
                                   ),
                                 )
@@ -474,34 +487,33 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                           ),
                     menuIndex == 2
                         ? Container(
-                      decoration: BoxDecoration(
-                        color: Colors.green[50],
-                        borderRadius: BorderRadius.circular(32),
-                      ),
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 32,
-                        vertical: 16,
-                      ),
-                      child: const Center(
-                        child: Text(
-                          "Collections",
-                          style: TextStyle(
-                            fontWeight: FontWeight.w900,
-                            fontSize: 20,
-                            color: Colors.green,
+                            decoration: BoxDecoration(
+                              color: Colors.green[50],
+                              borderRadius: BorderRadius.circular(32),
+                            ),
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 32,
+                              vertical: 16,
+                            ),
+                            child: const Center(
+                              child: Text(
+                                "Collections",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.w900,
+                                  fontSize: 20,
+                                  color: Colors.green,
+                                ),
+                              ),
+                            ),
+                          )
+                        : IconButton(
+                            onPressed: () {
+                              setState(() {
+                                menuIndex = 2;
+                              });
+                            },
+                            icon: const Icon(Icons.folder),
                           ),
-                        ),
-                      ),
-                    )
-                        :
-                    IconButton(
-                      onPressed: () {
-                        setState(() {
-                          menuIndex = 2;
-                        });
-                      },
-                      icon: const Icon(Icons.folder),
-                    ),
                     IconButton(
                       onPressed: () {
                         setState(() {
