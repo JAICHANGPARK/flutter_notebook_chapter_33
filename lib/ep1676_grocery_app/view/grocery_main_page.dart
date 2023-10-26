@@ -324,17 +324,14 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              const Padding(
-                                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
-                                child: Card(
-                                  child: Padding(
-                                    padding: EdgeInsets.symmetric(vertical: 4, horizontal: 16),
-                                    child: TextField(
-                                      decoration: InputDecoration(
-                                        hintText: "Search",
-                                        suffixIcon: Icon(Icons.search_outlined),
-                                        border: InputBorder.none,
-                                      ),
+                              Card(
+                                child: Padding(
+                                  padding: EdgeInsets.symmetric(vertical: 4, horizontal: 16),
+                                  child: TextField(
+                                    decoration: InputDecoration(
+                                      hintText: "Search",
+                                      suffixIcon: Icon(Icons.search_outlined),
+                                      border: InputBorder.none,
                                     ),
                                   ),
                                 ),
