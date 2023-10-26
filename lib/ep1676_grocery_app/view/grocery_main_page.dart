@@ -205,7 +205,7 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                           onTap: () {
                                             Navigator.of(context).push(
                                               MaterialPageRoute(
-                                                builder: (context) => GroceryDetailPage(),
+                                                builder: (context) => const GroceryDetailPage(),
                                               ),
                                             );
                                           },
@@ -323,7 +323,7 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Card(
+                              const Card(
                                 child: Padding(
                                   padding: EdgeInsets.symmetric(vertical: 4, horizontal: 16),
                                   child: TextField(
@@ -335,7 +335,7 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                   ),
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 16,
                               ),
                               const Text(
@@ -384,7 +384,7 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                       children: [
                                         Expanded(
                                           child: GridView.builder(
-                                            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                                            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                                               crossAxisCount: 2,
                                               mainAxisSpacing: 4,
                                               crossAxisSpacing: 4,
@@ -397,19 +397,19 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                             },
                                           ),
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           height: 8,
                                         ),
-                                        Text(
+                                        const Text(
                                           "Daily Meal",
                                           style: TextStyle(
                                             fontWeight: FontWeight.bold,
                                           ),
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           height: 8,
                                         ),
-                                        Text("18 products")
+                                        const Text("18 products")
                                       ],
                                     ),
                                   ),
@@ -422,7 +422,7 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                       children: [
                                         Expanded(
                                           child: GridView.builder(
-                                            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                                            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                                               crossAxisCount: 2,
                                               mainAxisSpacing: 4,
                                               crossAxisSpacing: 4,
@@ -435,19 +435,19 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                             },
                                           ),
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           height: 8,
                                         ),
-                                        Text(
+                                        const Text(
                                           "Daily Meal",
                                           style: TextStyle(
                                             fontWeight: FontWeight.bold,
                                           ),
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           height: 8,
                                         ),
-                                        Text("18 products")
+                                        const Text("18 products")
                                       ],
                                     ),
                                   ),
@@ -460,7 +460,7 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                       children: [
                                         Expanded(
                                           child: GridView.builder(
-                                            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                                            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                                               crossAxisCount: 2,
                                               mainAxisSpacing: 4,
                                               crossAxisSpacing: 4,
@@ -473,19 +473,19 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                             },
                                           ),
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           height: 8,
                                         ),
-                                        Text(
+                                        const Text(
                                           "Daily Meal",
                                           style: TextStyle(
                                             fontWeight: FontWeight.bold,
                                           ),
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           height: 8,
                                         ),
-                                        Text("18 products")
+                                        const Text("18 products")
                                       ],
                                     ),
                                   ),
@@ -502,7 +502,7 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                               color: Colors.green[50],
                                               borderRadius: BorderRadius.circular(4),
                                             ),
-                                            child: Center(
+                                            child: const Center(
                                               child: Icon(
                                                 Icons.add,
                                                 color: Colors.green,
@@ -510,19 +510,19 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                             ),
                                           ),
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           height: 8,
                                         ),
-                                        Text(
+                                        const Text(
                                           "Create Collection",
                                           style: TextStyle(
                                             fontWeight: FontWeight.bold,
                                           ),
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           height: 8,
                                         ),
-                                        Text(
+                                        const Text(
                                           "Today",
                                         )
                                       ],
