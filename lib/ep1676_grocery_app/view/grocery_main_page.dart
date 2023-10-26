@@ -90,21 +90,7 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                       ),
                     ),
                   ),
-                  const Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
-                    child: Card(
-                      child: Padding(
-                        padding: EdgeInsets.symmetric(vertical: 4, horizontal: 16),
-                        child: TextField(
-                          decoration: InputDecoration(
-                            hintText: "Search",
-                            suffixIcon: Icon(Icons.search_outlined),
-                            border: InputBorder.none,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
+
                   Expanded(
                     child: IndexedStack(
                       index: menuIndex,
@@ -115,6 +101,21 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
+                              const Padding(
+                                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                                child: Card(
+                                  child: Padding(
+                                    padding: EdgeInsets.symmetric(vertical: 4, horizontal: 16),
+                                    child: TextField(
+                                      decoration: InputDecoration(
+                                        hintText: "Search",
+                                        suffixIcon: Icon(Icons.search_outlined),
+                                        border: InputBorder.none,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
                               Padding(
                                 padding: const EdgeInsets.symmetric(horizontal: 16),
                                 child: Row(
@@ -323,6 +324,21 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
+                              const Padding(
+                                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                                child: Card(
+                                  child: Padding(
+                                    padding: EdgeInsets.symmetric(vertical: 4, horizontal: 16),
+                                    child: TextField(
+                                      decoration: InputDecoration(
+                                        hintText: "Search",
+                                        suffixIcon: Icon(Icons.search_outlined),
+                                        border: InputBorder.none,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
                               const Text(
                                 "Categories",
                                 style: TextStyle(
