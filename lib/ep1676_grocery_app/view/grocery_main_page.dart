@@ -426,25 +426,103 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                           child: GridView.builder(
                                             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                                               crossAxisCount: 2,
+                                              mainAxisSpacing: 4,
+                                              crossAxisSpacing: 4,
                                             ),
                                             itemBuilder: (context, index) {
                                               return Container(
                                                 decoration: BoxDecoration(
-                                                  color: Colors.blue,
+                                                    color: Colors.blue,
+                                                    borderRadius: BorderRadius.circular(4)
                                                 ),
                                               );
                                             },
                                           ),
                                         ),
+                                        SizedBox(
+                                          height: 8,
+                                        ),
                                         Text(
                                           "Daily Meal",
-                                          style: TextStyle(fontWeight: FontWeight.bold),
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          height: 8,
                                         ),
                                         Text("18 products")
                                       ],
                                     ),
                                   ),
-                                )
+                                ),
+                                Card(
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Expanded(
+                                          child: GridView.builder(
+                                            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                                              crossAxisCount: 2,
+                                              mainAxisSpacing: 4,
+                                              crossAxisSpacing: 4,
+                                            ),
+                                            itemBuilder: (context, index) {
+                                              return Container(
+                                                decoration: BoxDecoration(
+                                                    color: Colors.blue,
+                                                    borderRadius: BorderRadius.circular(4)
+                                                ),
+                                              );
+                                            },
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          height: 8,
+                                        ),
+                                        Text(
+                                          "Daily Meal",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          height: 8,
+                                        ),
+                                        Text("18 products")
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                                Card(
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Expanded(
+                                          child:Container(),
+
+                                        ),
+                                        SizedBox(
+                                          height: 8,
+                                        ),
+                                        Text(
+                                          "Daily Meal",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          height: 8,
+                                        ),
+                                        Text("18 products")
+                                      ],
+                                    ),
+                                  ),
+                                ),
                               ],
                             ),
                           ),
