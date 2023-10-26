@@ -388,12 +388,12 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                               crossAxisCount: 2,
                                               mainAxisSpacing: 4,
                                               crossAxisSpacing: 4,
-
                                             ),
                                             itemBuilder: (context, index) {
                                               return Container(
                                                 decoration: BoxDecoration(
                                                   color: Colors.blue,
+                                                  borderRadius: BorderRadius.circular(4)
                                                 ),
                                               );
                                             },
@@ -402,9 +402,12 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                         SizedBox(
                                           height: 8,
                                         ),
-                                        Text("Daily Meal",style: TextStyle(
-                                          fontWeight: FontWeight.bold
-                                        ),),
+                                        Text(
+                                          "Daily Meal",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
                                         SizedBox(
                                           height: 8,
                                         ),
@@ -433,9 +436,10 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                             },
                                           ),
                                         ),
-                                        Text("Daily Meal",style: TextStyle(
-                                            fontWeight: FontWeight.bold
-                                        ),),
+                                        Text(
+                                          "Daily Meal",
+                                          style: TextStyle(fontWeight: FontWeight.bold),
+                                        ),
                                         Text("18 products")
                                       ],
                                     ),
