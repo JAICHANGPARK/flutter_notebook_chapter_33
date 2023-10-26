@@ -369,9 +369,11 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                         /// Collections
                         Expanded(
                           child: Padding(
-                            padding: const EdgeInsets.all(8.0),
+                            padding: const EdgeInsets.all(12.0),
                             child: GridView.count(
                               crossAxisCount: 2,
+                              crossAxisSpacing: 8,
+                              mainAxisSpacing: 8,
                               children: [
                                 Card(
                                   child: Column(
