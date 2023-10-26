@@ -90,7 +90,6 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                       ),
                     ),
                   ),
-
                   Expanded(
                     child: IndexedStack(
                       index: menuIndex,
@@ -336,7 +335,9 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                   ),
                                 ),
                               ),
-                              SizedBox(height: 16,),
+                              SizedBox(
+                                height: 16,
+                              ),
                               const Text(
                                 "Categories",
                                 style: TextStyle(
@@ -364,6 +365,13 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                             ],
                           ),
                         ),
+
+                        /// Collections
+                        Expanded(
+                          child: GridView.count(
+                            crossAxisCount: 2,
+                          ),
+                        )
                       ],
                     ),
                   ),
