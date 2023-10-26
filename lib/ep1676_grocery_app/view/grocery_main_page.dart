@@ -391,7 +391,11 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                             );
                                           },
                                         ),
-                                      )
+                                      ),
+                                      Text("Daily Meal",style: TextStyle(
+                                        fontWeight: FontWeight.bold
+                                      ),),
+                                      Text("18 products")
                                     ],
                                   ),
                                 )
