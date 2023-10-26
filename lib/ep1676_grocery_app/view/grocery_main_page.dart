@@ -336,6 +336,7 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                   ),
                                 ),
                               ),
+                              SizedBox(height: 16,),
                               const Text(
                                 "Categories",
                                 style: TextStyle(
