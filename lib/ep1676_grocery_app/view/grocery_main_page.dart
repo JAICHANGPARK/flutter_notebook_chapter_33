@@ -458,6 +458,28 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                             },
                             icon: const Icon(Icons.apps),
                           ),
+                    menuIndex == 2
+                        ? Container(
+                      decoration: BoxDecoration(
+                        color: Colors.green[50],
+                        borderRadius: BorderRadius.circular(32),
+                      ),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 32,
+                        vertical: 16,
+                      ),
+                      child: const Center(
+                        child: Text(
+                          "Collections",
+                          style: TextStyle(
+                            fontWeight: FontWeight.w900,
+                            fontSize: 20,
+                            color: Colors.green,
+                          ),
+                        ),
+                      ),
+                    )
+                        :
                     IconButton(
                       onPressed: () {
                         setState(() {
