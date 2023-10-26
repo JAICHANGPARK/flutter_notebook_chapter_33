@@ -109,6 +109,7 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                     child: IndexedStack(
                       index: menuIndex,
                       children: [
+                        /// Home
                         DefaultTabController(
                           length: 4,
                           child: Column(
@@ -315,6 +316,8 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                             ],
                           ),
                         ),
+
+                        /// Categories
                         Padding(
                           padding: const EdgeInsets.all(16.0),
                           child: Column(
@@ -346,7 +349,7 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                               )
                             ],
                           ),
-                        )
+                        ),
                       ],
                     ),
                   ),
