@@ -65,8 +65,15 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
                 ),
               ),
               TabBar(
-                tabs: [],
+                tabs: menuTabItems
+                    .map(
+                      (e) => Tab(
+                        text: e,
+                      ),
+                    )
+                    .toList(),
               ),
+              
             ],
           ),
         ),
