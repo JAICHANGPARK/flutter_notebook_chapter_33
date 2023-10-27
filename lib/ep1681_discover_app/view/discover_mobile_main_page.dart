@@ -11,6 +11,14 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          "Discover",
+        ),
+        centerTitle: true,
+        backgroundColor: Colors.white,
+        foregroundColor: Colors.black,
+      ),
       bottomNavigationBar: BottomAppBar(
         height: 92,
         child: Padding(
