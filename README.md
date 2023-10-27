@@ -1,6 +1,14 @@
 # flutter_notebook_chapter_33
 
-## EP1676
+## EP1676-1680
+
+- Rumble Discover
+- Shane Helm for Heyo
+- https://dribbble.com/shots/16322990-Rumble-Discover
+
+<img src="https://cdn.dribbble.com/users/37585/screenshots/16322990/media/3582ea647e7141f04186741ea32a00b0.png"/>
+
+## EP1676-1680
 
 - Grocery App Design
 - Orix Creative
