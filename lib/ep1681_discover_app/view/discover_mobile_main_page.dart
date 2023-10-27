@@ -8,6 +8,7 @@ class DiscoverMobileMainPage extends StatefulWidget {
 }
 
 class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
+  int homeMenuIndex = 0;
   List<String> menuTabItems = [
     "TRENDING",
     "ENTERTAINMENT",
