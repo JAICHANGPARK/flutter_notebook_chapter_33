@@ -37,45 +37,54 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
           )
         ],
       ),
-      body: SingleChildScrollView(
-        child: DefaultTabController(
-          length: menuTabItems.length,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Padding(
-                padding: const EdgeInsets.only(left: 16),
-                child: Row(
-                  children: [
-                    CircleAvatar(
-                      radius: 6,
-                      backgroundColor: Colors.red,
+      body: DefaultTabController(
+        length: menuTabItems.length,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(left: 16),
+              child: Row(
+                children: [
+                  CircleAvatar(
+                    radius: 6,
+                    backgroundColor: Colors.red,
+                  ),
+                  SizedBox(
+                    width: 6,
+                  ),
+                  Text(
+                    "LIVE NOW",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 24,
                     ),
-                    SizedBox(
-                      width: 6,
+                  )
+                ],
+              ),
+            ),
+            TabBar(
+              tabs: menuTabItems
+                  .map(
+                    (e) => Tab(
+                      text: e,
                     ),
-                    Text(
-                      "LIVE NOW",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 24,
-                      ),
-                    )
-                  ],
-                ),
+                  )
+                  .toList(),
+            ),
+            Expanded(
+              child: TabBarView(
+                children: [
+                  SingleChildScrollView(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [],
+                    ),
+                  )
+                ],
               ),
-              TabBar(
-                tabs: menuTabItems
-                    .map(
-                      (e) => Tab(
-                        text: e,
-                      ),
-                    )
-                    .toList(),
-              ),
-              
-            ],
-          ),
+            )
+          ],
         ),
       ),
       bottomNavigationBar: BottomAppBar(
