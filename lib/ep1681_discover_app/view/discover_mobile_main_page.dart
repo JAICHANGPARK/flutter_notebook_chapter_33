@@ -12,40 +12,45 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomAppBar(
-        height: 80,
+        height: 92,
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+          padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.home_filled,
                     ),
+                    iconSize: 28,
                   ),
-                  CircleAvatar(
+                  const CircleAvatar(
                     radius: 4,
                     backgroundColor: Colors.transparent,
                   )
                 ],
               ),
               Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   IconButton(
+                    iconSize: 28,
                     onPressed: () {},
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.flash_on,
                     ),
                   ),
-                  CircleAvatar(
+                  const CircleAvatar(
                     radius: 4,
                     backgroundColor: Colors.green,
                   )
                 ],
               ),
-              CircleAvatar(
+              const CircleAvatar(
                 radius: 26,
                 backgroundColor: Colors.red,
                 foregroundColor: Colors.white,
@@ -56,18 +61,19 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
               Column(
                 children: [
                   IconButton(
+                    iconSize: 28,
                     onPressed: () {},
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.layers,
                     ),
                   ),
-                  CircleAvatar(
+                  const CircleAvatar(
                     radius: 4,
                     backgroundColor: Colors.transparent,
                   )
                 ],
               ),
-              CircleAvatar(),
+              const CircleAvatar(),
             ],
           ),
         ),
