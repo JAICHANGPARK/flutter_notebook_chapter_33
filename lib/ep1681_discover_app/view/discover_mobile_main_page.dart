@@ -80,7 +80,11 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [],
                     ),
-                  )
+                  ),
+                  Container(),
+                  Container(),
+                  Container(),
+                  Container(),
                 ],
               ),
             )
