@@ -27,10 +27,47 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
                   ),
                   CircleAvatar(
                     radius: 4,
+                    backgroundColor: Colors.transparent,
+                  )
+                ],
+              ),
+              Column(
+                children: [
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.flash_on,
+                    ),
+                  ),
+                  CircleAvatar(
+                    radius: 4,
                     backgroundColor: Colors.green,
                   )
                 ],
               ),
+              CircleAvatar(
+                radius: 26,
+                backgroundColor: Colors.red,
+                foregroundColor: Colors.white,
+                child: Icon(
+                  Icons.circle,
+                ),
+              ),
+              Column(
+                children: [
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.layers,
+                    ),
+                  ),
+                  CircleAvatar(
+                    radius: 4,
+                    backgroundColor: Colors.transparent,
+                  )
+                ],
+              ),
+              CircleAvatar(),
             ],
           ),
         ),
