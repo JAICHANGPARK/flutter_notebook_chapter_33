@@ -10,6 +10,15 @@ class DiscoverMobileMainPage extends StatefulWidget {
 class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      bottomNavigationBar: BottomAppBar(
+        height: 80,
+        child: Row(
+          children: [
+
+          ],
+        ),
+      ),
+    );
   }
 }
