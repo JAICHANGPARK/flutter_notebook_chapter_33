@@ -18,6 +18,15 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
         centerTitle: true,
         backgroundColor: Colors.white,
         foregroundColor: Colors.black,
+        elevation: 0,
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Icons.search,
+            ),
+          )
+        ],
       ),
       bottomNavigationBar: BottomAppBar(
         height: 92,
