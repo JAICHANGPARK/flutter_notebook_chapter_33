@@ -15,7 +15,23 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
         height: 80,
         child: Row(
           children: [
-
+            Column(
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.home_filled,
+                  ),
+                ),
+                SizedBox(
+                  height: 2,
+                ),
+                CircleAvatar(
+                  radius: 4,
+                  backgroundColor: Colors.green,
+                )
+              ],
+            ),
           ],
         ),
       ),
