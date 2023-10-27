@@ -8,9 +8,18 @@ class DiscoverMobileMainPage extends StatefulWidget {
 }
 
 class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
+  List<String> menuTabItems = [
+    "TRENDING",
+    "ENTERTAINMENT",
+    "TECHNOLOGY",
+    "MUSIC",
+    "SPORTS",
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text(
           "Discover",
@@ -27,6 +36,40 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
             ),
           )
         ],
+      ),
+      body: SingleChildScrollView(
+        child: DefaultTabController(
+          length: menuTabItems.length,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(left: 16),
+                child: Row(
+                  children: [
+                    CircleAvatar(
+                      radius: 6,
+                      backgroundColor: Colors.red,
+                    ),
+                    SizedBox(
+                      width: 6,
+                    ),
+                    Text(
+                      "LIVE NOW",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 24,
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              TabBar(
+                tabs: [],
+              ),
+            ],
+          ),
+        ),
       ),
       bottomNavigationBar: BottomAppBar(
         height: 92,
