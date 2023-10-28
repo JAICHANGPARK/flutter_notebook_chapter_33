@@ -80,6 +80,7 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
             ),
             Expanded(
               child: TabBarView(
+                physics: NeverScrollableScrollPhysics(),
                 children: [
                   SingleChildScrollView(
                     child: Column(
@@ -300,7 +301,6 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
                                 margin: EdgeInsets.only(right: 16),
                                 decoration: BoxDecoration(
                                   color: Colors.orange,
-
                                 ),
                               );
                             },
