@@ -90,57 +90,77 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
                           margin: EdgeInsets.only(
                             left: 16,
                           ),
-                          color: Colors.blueAccent,
                           child: ListView.builder(
-                              scrollDirection: Axis.horizontal,
-                              itemBuilder: (context, index) {
-                                return Container(
-                                  margin: EdgeInsets.only(right: 12),
-                                  width: 300,
-                                  child: Stack(
-                                    children: [
-                                      Positioned(
-                                        left: 0,
-                                        right: 0,
-                                        bottom: 24,
-                                        top: 0,
+                            scrollDirection: Axis.horizontal,
+                            itemBuilder: (context, index) {
+                              return Container(
+                                margin: EdgeInsets.only(right: 12),
+                                width: 300,
+                                child: Stack(
+                                  children: [
+                                    Positioned(
+                                      left: 0,
+                                      right: 0,
+                                      bottom: 24,
+                                      top: 0,
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.grey,
+                                          border: Border.all(
+                                            color: Colors.red,
+                                            width: 3,
+                                          ),
+                                          borderRadius: BorderRadius.circular(8),
+                                        ),
+                                      ),
+                                    ),
+                                    Positioned(
+                                      left: 0,
+                                      right: 0,
+                                      bottom: 0,
+                                      child: Container(
+                                        height: 68,
+                                        width: 68,
+                                        decoration: BoxDecoration(
+                                          shape: BoxShape.circle,
+                                          border: Border.all(
+                                            color: Colors.white,
+                                            width: 8,
+                                          ),
+                                        ),
                                         child: Container(
                                           decoration: BoxDecoration(
-                                            color: Colors.grey,
-                                            border: Border.all(
-                                              color: Colors.red,
-                                              width: 3,
-                                            ),
-                                            borderRadius: BorderRadius.circular(8),
+                                            shape: BoxShape.circle,
+                                            color: Colors.black,
                                           ),
                                         ),
                                       ),
-                                      Positioned(
-                                        left: 0,
-                                        right: 0,
-                                        bottom: 0,
-                                        child: Container(
-                                          height: 68,
-                                          width: 68,
-                                          decoration: BoxDecoration(
-                                            shape: BoxShape.circle,
-                                            border: Border.all(
-                                              color: Colors.white,
-                                              width: 8,
-                                            ),
-                                          ),
-                                          child: Container(
-                                            decoration: BoxDecoration(
-                                              shape: BoxShape.circle,
-                                              color: Colors.black,
-                                            ),
-                                          ),
-                                        ),
-                                      )
-                                    ],
-                                  ),
-                                );
-                              }),
+                                    )
+                                  ],
+                                ),
+                              );
+                            },
+                          ),
+                        ),
+                        Text("TOP VIDEOS"),
+                        Container(
+                          height: 92,
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                          ),
+                          child: Row(
+                            children: [
+                              Container(
+                                width: 160,
+                                decoration: BoxDecoration(
+                                  color: Colors.blue,
+                                ),
+                              ),
+                              Expanded(child: Column(children: [
+                                
+                              ],))
+                            ],
+                          ),
                         )
                       ],
                     ),
