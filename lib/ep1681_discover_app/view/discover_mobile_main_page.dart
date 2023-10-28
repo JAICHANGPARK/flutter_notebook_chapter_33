@@ -156,9 +156,36 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
                                   color: Colors.blue,
                                 ),
                               ),
-                              Expanded(child: Column(children: [
-                                
-                              ],))
+                              Expanded(
+                                child: Column(
+                                  children: [
+                                    Row(
+                                      children: [
+                                        CircleAvatar(
+                                          radius: 8,
+                                        ),
+                                        Text("D. Walker"),
+                                        Text("4h ago"),
+                                      ],
+                                    ),
+                                    Text("Title Title Title Title Title Title Title Title Title Title Title "),
+                                    Row(
+                                      children: [
+                                        Container(
+                                          height: 4,
+                                          width: 120,
+                                          decoration: BoxDecoration(
+                                            color: Colors.green,
+                                          ),
+                                        ),
+                                        Spacer(),
+                                        Icon(Icons.visibility),
+                                        Text("289K"),
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              )
                             ],
                           ),
                         )
