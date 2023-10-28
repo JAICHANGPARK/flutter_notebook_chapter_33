@@ -106,7 +106,7 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
                                         top: 0,
                                         child: Container(
                                           decoration: BoxDecoration(
-                                            color: Colors.orange,
+                                            color: Colors.grey,
                                             border: Border.all(
                                               color: Colors.red,
                                               width: 3,
@@ -130,10 +130,9 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
                                             ),
                                           ),
                                           child: Container(
-
                                             decoration: BoxDecoration(
                                               shape: BoxShape.circle,
-                                              color: Colors.blueAccent,
+                                              color: Colors.black,
                                             ),
                                           ),
                                         ),
