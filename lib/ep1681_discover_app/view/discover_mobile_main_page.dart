@@ -112,6 +112,10 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
                                             width: 3,
                                           ),
                                           borderRadius: BorderRadius.circular(8),
+                                          image: DecorationImage(
+                                              image: NetworkImage(
+                                                  "https://cdn.pixabay.com/photo/2017/03/09/20/53/microphone-2130806_1280.jpg"),
+                                              fit: BoxFit.cover),
                                         ),
                                       ),
                                     ),
