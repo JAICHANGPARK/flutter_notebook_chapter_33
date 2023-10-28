@@ -22,7 +22,7 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           "Discover",
         ),
         centerTitle: true,
@@ -32,7 +32,7 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Icons.search,
             ),
           )
@@ -43,8 +43,8 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Padding(
-              padding: const EdgeInsets.only(left: 16),
+            const Padding(
+              padding: EdgeInsets.only(left: 16),
               child: Row(
                 children: [
                   CircleAvatar(
@@ -87,14 +87,14 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
                       children: [
                         Container(
                           height: 220,
-                          margin: EdgeInsets.only(
+                          margin: const EdgeInsets.only(
                             left: 16,
                           ),
                           child: ListView.builder(
                             scrollDirection: Axis.horizontal,
                             itemBuilder: (context, index) {
                               return Container(
-                                margin: EdgeInsets.only(right: 12),
+                                margin: const EdgeInsets.only(right: 12),
                                 width: 300,
                                 child: Stack(
                                   children: [
@@ -129,7 +129,7 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
                                           ),
                                         ),
                                         child: Container(
-                                          decoration: BoxDecoration(
+                                          decoration: const BoxDecoration(
                                             shape: BoxShape.circle,
                                             color: Colors.black,
                                           ),
@@ -142,8 +142,8 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
                             },
                           ),
                         ),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 16),
+                        const Padding(
+                          padding: EdgeInsets.only(left: 16, top: 32),
                           child: Text(
                             "TOP VIDEOS",
                             style: TextStyle(
@@ -153,7 +153,10 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
                         ),
                         Container(
                           height: 92,
-                          margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                          margin: const EdgeInsets.symmetric(
+                            horizontal: 16,
+                            vertical: 8,
+                          ),
                           // decoration: BoxDecoration(
                           //   color: Colors.grey,
                           // ),
@@ -161,16 +164,19 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
                             children: [
                               Container(
                                 width: 160,
-                                decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(8)),
+                                decoration: BoxDecoration(
+                                  color: Colors.blue,
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 8,
                               ),
                               Expanded(
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
-                                    Row(
+                                    const Row(
                                       children: [
                                         CircleAvatar(
                                           radius: 8,
@@ -185,7 +191,7 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
                                         Text("4h ago"),
                                       ],
                                     ),
-                                    Text(
+                                    const Text(
                                       "Title Title Title Title Title Title Title Title Title Title Title ",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
@@ -196,13 +202,13 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
                                         Container(
                                           height: 4,
                                           width: 120,
-                                          decoration: BoxDecoration(
+                                          decoration: const BoxDecoration(
                                             color: Colors.green,
                                           ),
                                         ),
-                                        Spacer(),
-                                        Icon(Icons.visibility),
-                                        Text("289K"),
+                                        const Spacer(),
+                                        const Icon(Icons.visibility),
+                                        const Text("289K"),
                                       ],
                                     )
                                   ],
@@ -213,7 +219,7 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
                         ),
                         Container(
                           height: 92,
-                          margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                          margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                           // decoration: BoxDecoration(
                           //   color: Colors.grey,
                           // ),
@@ -223,14 +229,14 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
                                 width: 160,
                                 decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(8)),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 8,
                               ),
                               Expanded(
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
-                                    Row(
+                                    const Row(
                                       children: [
                                         CircleAvatar(
                                           radius: 8,
@@ -245,7 +251,7 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
                                         Text("4h ago"),
                                       ],
                                     ),
-                                    Text(
+                                    const Text(
                                       "Title Title Title Title Title Title Title Title Title Title Title ",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
@@ -256,13 +262,13 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
                                         Container(
                                           height: 4,
                                           width: 120,
-                                          decoration: BoxDecoration(
+                                          decoration: const BoxDecoration(
                                             color: Colors.green,
                                           ),
                                         ),
-                                        Spacer(),
-                                        Icon(Icons.visibility),
-                                        Text("289K"),
+                                        const Spacer(),
+                                        const Icon(Icons.visibility),
+                                        const Text("289K"),
                                       ],
                                     )
                                   ],
