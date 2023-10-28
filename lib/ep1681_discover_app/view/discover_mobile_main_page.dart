@@ -294,9 +294,6 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
                         Container(
                           height: 200,
                           margin: EdgeInsets.only(left: 16),
-                          decoration: BoxDecoration(
-                            color: Colors.blue,
-                          ),
                           child: ListView.builder(
                             scrollDirection: Axis.horizontal,
                             itemBuilder: (context, index) {
