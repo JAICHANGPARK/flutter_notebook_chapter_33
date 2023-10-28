@@ -86,7 +86,7 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                          height: 240,
+                          height: 220,
                           margin: EdgeInsets.only(
                             left: 16,
                           ),
@@ -116,11 +116,24 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
                                         ),
                                       ),
                                       Positioned(
+                                        left: 0,
+                                        right: 0,
+                                        bottom: 0,
                                         child: Container(
+                                          height: 68,
+                                          width: 68,
                                           decoration: BoxDecoration(
+                                            shape: BoxShape.circle,
                                             border: Border.all(
                                               color: Colors.white,
-                                              width: 4,
+                                              width: 8,
+                                            ),
+                                          ),
+                                          child: Container(
+
+                                            decoration: BoxDecoration(
+                                              shape: BoxShape.circle,
+                                              color: Colors.blueAccent,
                                             ),
                                           ),
                                         ),
