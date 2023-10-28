@@ -144,10 +144,12 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
                         ),
                         Padding(
                           padding: const EdgeInsets.only(left: 16),
-                          child: Text("TOP VIDEOS",style: TextStyle(
-                            fontWeight: FontWeight.bold,
-
-                          ),),
+                          child: Text(
+                            "TOP VIDEOS",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                         ),
                         Container(
                           height: 92,
@@ -159,12 +161,11 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
                             children: [
                               Container(
                                 width: 160,
-                                decoration: BoxDecoration(
-                                  color: Colors.blue,
-                                  borderRadius: BorderRadius.circular(8)
-                                ),
+                                decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(8)),
                               ),
-                              SizedBox(width: 8,),
+                              SizedBox(
+                                width: 8,
+                              ),
                               Expanded(
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -174,9 +175,13 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
                                         CircleAvatar(
                                           radius: 8,
                                         ),
-                                        SizedBox(width: 4,),
+                                        SizedBox(
+                                          width: 4,
+                                        ),
                                         Text("D. Walker"),
-                                        SizedBox(width: 4,),
+                                        SizedBox(
+                                          width: 4,
+                                        ),
                                         Text("4h ago"),
                                       ],
                                     ),
@@ -205,7 +210,67 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
                               )
                             ],
                           ),
-                        )
+                        ),
+                        Container(
+                          height: 92,
+                          margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                          // decoration: BoxDecoration(
+                          //   color: Colors.grey,
+                          // ),
+                          child: Row(
+                            children: [
+                              Container(
+                                width: 160,
+                                decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(8)),
+                              ),
+                              SizedBox(
+                                width: 8,
+                              ),
+                              Expanded(
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Row(
+                                      children: [
+                                        CircleAvatar(
+                                          radius: 8,
+                                        ),
+                                        SizedBox(
+                                          width: 4,
+                                        ),
+                                        Text("D. Walker"),
+                                        SizedBox(
+                                          width: 4,
+                                        ),
+                                        Text("4h ago"),
+                                      ],
+                                    ),
+                                    Text(
+                                      "Title Title Title Title Title Title Title Title Title Title Title ",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    Row(
+                                      children: [
+                                        Container(
+                                          height: 4,
+                                          width: 120,
+                                          decoration: BoxDecoration(
+                                            color: Colors.green,
+                                          ),
+                                        ),
+                                        Spacer(),
+                                        Icon(Icons.visibility),
+                                        Text("289K"),
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
                       ],
                     ),
                   ),
