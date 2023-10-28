@@ -86,26 +86,49 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                          height: 280,
+                          height: 240,
+                          margin: EdgeInsets.only(
+                            left: 16,
+                          ),
                           color: Colors.blueAccent,
-                          child: ListView.builder(itemBuilder: (context, index) {
-                            return Stack(
-                              children: [
-                                Positioned(
-                                  left: 0,
-                                  right: 0,
-                                  bottom: 24,
-                                  top: 0,
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                      border: Border.all(color: Colors.red, width: 2),
-                                      borderRadius: BorderRadius.circular(8),
-                                    ),
+                          child: ListView.builder(
+                              scrollDirection: Axis.horizontal,
+                              itemBuilder: (context, index) {
+                                return Container(
+                                  margin: EdgeInsets.only(right: 12),
+                                  width: 300,
+                                  child: Stack(
+                                    children: [
+                                      Positioned(
+                                        left: 0,
+                                        right: 0,
+                                        bottom: 24,
+                                        top: 0,
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                            color: Colors.orange,
+                                            border: Border.all(
+                                              color: Colors.red,
+                                              width: 3,
+                                            ),
+                                            borderRadius: BorderRadius.circular(8),
+                                          ),
+                                        ),
+                                      ),
+                                      Positioned(
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                            border: Border.all(
+                                              color: Colors.white,
+                                              width: 4,
+                                            ),
+                                          ),
+                                        ),
+                                      )
+                                    ],
                                   ),
-                                )
-                              ],
-                            );
-                          }),
+                                );
+                              }),
                         )
                       ],
                     ),
