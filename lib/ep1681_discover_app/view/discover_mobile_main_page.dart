@@ -277,6 +277,15 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
                             ],
                           ),
                         ),
+                        const Padding(
+                          padding: EdgeInsets.only(left: 16, top: 16, bottom: 8),
+                          child: Text(
+                            "TOP CHANNELS",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
                       ],
                     ),
                   ),
