@@ -305,6 +305,12 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
                                 margin: EdgeInsets.only(right: 16),
                                 decoration: BoxDecoration(
                                   color: Colors.orange,
+                                  image: DecorationImage(
+                                    image: NetworkImage(
+                                      "https://cdn.pixabay.com/photo/2016/11/23/00/58/record-player-1851576_1280.jpg",
+                                    ),
+                                    fit: BoxFit.cover,
+                                  ),
                                 ),
                               );
                             },
