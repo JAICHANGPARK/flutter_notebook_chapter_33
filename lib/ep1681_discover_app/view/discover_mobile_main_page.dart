@@ -65,6 +65,11 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
               ),
             ),
             TabBar(
+              isScrollable: true,
+              indicatorColor: Colors.transparent,
+              // indicatorWeight: 0,
+              unselectedLabelColor: Colors.grey,
+              labelColor: Colors.black,
               tabs: menuTabItems
                   .map(
                     (e) => Tab(
@@ -79,7 +84,30 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
                   SingleChildScrollView(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [],
+                      children: [
+                        Container(
+                          height: 280,
+                          color: Colors.blueAccent,
+                          child: ListView.builder(itemBuilder: (context, index) {
+                            return Stack(
+                              children: [
+                                Positioned(
+                                  left: 0,
+                                  right: 0,
+                                  bottom: 24,
+                                  top: 0,
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      border: Border.all(color: Colors.red, width: 2),
+                                      borderRadius: BorderRadius.circular(8),
+                                    ),
+                                  ),
+                                )
+                              ],
+                            );
+                          }),
+                        )
+                      ],
                     ),
                   ),
                   Container(),
