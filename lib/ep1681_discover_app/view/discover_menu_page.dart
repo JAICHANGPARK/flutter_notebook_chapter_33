@@ -73,29 +73,35 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
                       child: Column(
                         children: [
                           Expanded(child: Container()),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Row(
-                                children: [
-                                  Text("Just for You"),
-                                  Container(
-                                    decoration: BoxDecoration(
-                                      border: Border.all(
-                                        color: Colors.green,
-                                        width: 2,
+                          Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  children: [
+                                    Text("Just for You"),
+                                    Container(
+                                      decoration: BoxDecoration(
+                                        border: Border.all(
+                                          color: Colors.green,
+                                          width: 2,
+                                        ),
                                       ),
-                                    ),
-                                    child: Text(
-                                      "#RELLS",
-                                    ),
-                                  )
-                                ],
-                              ),
-                              Text(
-                                "Videos from channels we think you might like",
-                              )
-                            ],
+                                      child: Text(
+                                        "#RELLS",
+                                      ),
+                                    )
+                                  ],
+                                ),
+                                SizedBox(
+                                  height: 8,
+                                ),
+                                Text(
+                                  "Videos from channels we think you might like",
+                                )
+                              ],
+                            ),
                           )
                         ],
                       ),
