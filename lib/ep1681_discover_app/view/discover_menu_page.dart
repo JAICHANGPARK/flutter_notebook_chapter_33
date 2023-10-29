@@ -116,7 +116,12 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
           ),
           Padding(
             padding: const EdgeInsets.all(16.0),
-            child: Text("CATEGORIES"),
+            child: Text(
+              "CATEGORIES",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           ),
           Expanded(
             child: ListView.builder(
@@ -134,14 +139,10 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
                   child: Align(
                     alignment: Alignment.topRight,
                     child: RotatedBox(
-
                       quarterTurns: -1,
                       child: Text(
                         "Technology",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 24
-                        ),
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
                       ),
                     ),
                   ),
