@@ -85,7 +85,6 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
                                     Container(
                                       padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                                       decoration: BoxDecoration(
-
                                         borderRadius: BorderRadius.circular(16),
                                         border: Border.all(
                                           color: Colors.green,
@@ -126,8 +125,25 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
               itemBuilder: (context, index) {
                 return Container(
                   width: 100,
+                  margin: EdgeInsets.only(left: 16),
                   decoration: BoxDecoration(
                     color: Colors.blue,
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  padding: EdgeInsets.all(12),
+                  child: Align(
+                    alignment: Alignment.topRight,
+                    child: RotatedBox(
+
+                      quarterTurns: -1,
+                      child: Text(
+                        "Technology",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 24
+                        ),
+                      ),
+                    ),
                   ),
                 );
               },
