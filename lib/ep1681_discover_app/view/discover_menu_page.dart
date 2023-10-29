@@ -124,30 +124,33 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
             ),
           ),
           Expanded(
-            child: ListView.builder(
-              scrollDirection: Axis.horizontal,
-              itemCount: 10,
-              itemBuilder: (context, index) {
-                return Container(
-                  width: 100,
-                  margin: EdgeInsets.only(left: 16),
-                  decoration: BoxDecoration(
-                    color: Colors.blue,
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                  padding: EdgeInsets.all(12),
-                  child: Align(
-                    alignment: Alignment.topRight,
-                    child: RotatedBox(
-                      quarterTurns: -1,
-                      child: Text(
-                        "Technology",
-                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+            child: Padding(
+              padding: const EdgeInsets.only(bottom: 16),
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: 10,
+                itemBuilder: (context, index) {
+                  return Container(
+                    width: 100,
+                    margin: EdgeInsets.only(left: 16),
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    padding: EdgeInsets.all(12),
+                    child: Align(
+                      alignment: Alignment.topRight,
+                      child: RotatedBox(
+                        quarterTurns: -1,
+                        child: Text(
+                          "Technology",
+                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+                        ),
                       ),
                     ),
-                  ),
-                );
-              },
+                  );
+                },
+              ),
             ),
           )
         ],
