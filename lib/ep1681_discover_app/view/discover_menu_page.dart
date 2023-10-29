@@ -81,10 +81,11 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
                                   Text("Just for You"),
                                   Container(
                                     decoration: BoxDecoration(
-                                        border: Border.all(
-                                      color: Colors.green,
-                                      width: 2,
-                                    )),
+                                      border: Border.all(
+                                        color: Colors.green,
+                                        width: 2,
+                                      ),
+                                    ),
                                     child: Text(
                                       "#RELLS",
                                     ),
