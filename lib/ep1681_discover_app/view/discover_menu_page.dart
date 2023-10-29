@@ -81,6 +81,7 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
                                 Row(
                                   children: [
                                     Text("Just for You"),
+                                    Spacer(),
                                     Container(
                                       decoration: BoxDecoration(
                                         border: Border.all(
