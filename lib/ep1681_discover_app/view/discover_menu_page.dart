@@ -83,7 +83,10 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
                                     Text("Just for You"),
                                     Spacer(),
                                     Container(
+                                      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                                       decoration: BoxDecoration(
+
+                                        borderRadius: BorderRadius.circular(16),
                                         border: Border.all(
                                           color: Colors.green,
                                           width: 2,
