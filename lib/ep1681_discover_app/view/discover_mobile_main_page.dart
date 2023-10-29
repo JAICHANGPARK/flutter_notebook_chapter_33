@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_33/ep1681_discover_app/view/discover_menu_page.dart';
 
 class DiscoverMobileMainPage extends StatefulWidget {
   const DiscoverMobileMainPage({super.key});
@@ -365,12 +366,21 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
                   )
                 ],
               ),
-              const CircleAvatar(
-                radius: 26,
-                backgroundColor: Colors.red,
-                foregroundColor: Colors.white,
-                child: Icon(
-                  Icons.circle,
+              GestureDetector(
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => DiscoverMenuPage(),
+                    ),
+                  );
+                },
+                child: const CircleAvatar(
+                  radius: 26,
+                  backgroundColor: Colors.red,
+                  foregroundColor: Colors.white,
+                  child: Icon(
+                    Icons.circle,
+                  ),
                 ),
               ),
               Column(
