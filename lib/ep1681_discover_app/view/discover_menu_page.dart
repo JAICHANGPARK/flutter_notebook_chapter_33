@@ -29,9 +29,8 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-            height: 400,
+            height: 420,
             margin: EdgeInsets.all(16),
-            color: Colors.green,
             child: Stack(
               children: [
                 Positioned(
@@ -41,6 +40,9 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
                   bottom: 0,
                   child: Card(
                     elevation: 8,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16),
+                    ),
                     child: Center(),
                   ),
                 ),
@@ -51,6 +53,9 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
                   bottom: 16,
                   child: Card(
                     elevation: 8,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16),
+                    ),
                     child: Center(),
                   ),
                 ),
@@ -61,13 +66,62 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
                   bottom: 32,
                   child: Card(
                     elevation: 8,
-                    child: Center(),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                    child: Center(
+                      child: Column(
+                        children: [
+                          Expanded(child: Container()),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                children: [
+                                  Text("Just for You"),
+                                  Container(
+                                    decoration: BoxDecoration(
+                                        border: Border.all(
+                                      color: Colors.green,
+                                      width: 2,
+                                    )),
+                                    child: Text(
+                                      "#RELLS",
+                                    ),
+                                  )
+                                ],
+                              ),
+                              Text(
+                                "Videos from channels we think you might like",
+                              )
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
                   ),
                 )
               ],
             ),
           ),
-          Text("CATEGORIES"),
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Text("CATEGORIES"),
+          ),
+          Expanded(
+            child: ListView.builder(
+              scrollDirection: Axis.horizontal,
+              itemCount: 10,
+              itemBuilder: (context, index) {
+                return Container(
+                  width: 100,
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
+                  ),
+                );
+              },
+            ),
+          )
         ],
       ),
     );
