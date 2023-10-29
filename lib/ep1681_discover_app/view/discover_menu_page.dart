@@ -10,6 +10,16 @@ class DiscoverMenuPage extends StatefulWidget {
 class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Discover"),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.search),
+          ),
+        ],
+      ),
+    );
   }
 }
