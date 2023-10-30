@@ -72,7 +72,14 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
                     child: Center(
                       child: Column(
                         children: [
-                          Expanded(child: Container()),
+                          Expanded(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                image: NetworkImage(),
+                              )),
+                            ),
+                          ),
                           Padding(
                             padding: const EdgeInsets.all(16.0),
                             child: Column(
