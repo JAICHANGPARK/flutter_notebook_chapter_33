@@ -83,7 +83,9 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
                               ),
                               child: Center(
                                 child: Container(
+                                  padding: EdgeInsets.all(16),
                                   decoration: BoxDecoration(
+                                    shape: BoxShape.circle,
                                     color: Colors.green[300]!.withOpacity(0.8),
                                   ),
                                   child: Icon(
