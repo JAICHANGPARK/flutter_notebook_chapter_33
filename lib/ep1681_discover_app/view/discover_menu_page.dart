@@ -136,6 +136,9 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
                                 ),
                                 const Text(
                                   "Videos from channels we think you might like",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
                                 )
                               ],
                             ),
