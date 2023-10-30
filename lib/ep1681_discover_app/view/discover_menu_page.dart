@@ -81,6 +81,18 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
                                       "https://cdn.pixabay.com/photo/2017/04/08/10/23/surfing-2212948_1280.jpg"),
                                 ),
                               ),
+                              child: Center(
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.green[300]!.withOpacity(0.8),
+                                  ),
+                                  child: Icon(
+                                    Icons.qr_code_scanner,
+                                    color: Colors.white,
+                                    size: 48,
+                                  ),
+                                ),
+                              ),
                             ),
                           ),
                           Padding(
@@ -92,10 +104,7 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
                                   children: [
                                     Text(
                                       "Just for You",
-                                      style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 24
-                                      ),
+                                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
                                     ),
                                     Spacer(),
                                     Container(
@@ -109,11 +118,8 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
                                       ),
                                       child: Text(
                                         "#RELLS",
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 12,
-                                          color: Colors.green
-                                        ),
+                                        style:
+                                            TextStyle(fontWeight: FontWeight.bold, fontSize: 12, color: Colors.green),
                                       ),
                                     )
                                   ],
