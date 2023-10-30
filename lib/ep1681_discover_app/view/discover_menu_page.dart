@@ -29,7 +29,7 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-            height: 420,
+            height: 440,
             margin: EdgeInsets.all(16),
             child: Stack(
               children: [
