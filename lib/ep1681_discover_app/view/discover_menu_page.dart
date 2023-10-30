@@ -75,6 +75,10 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
                           Expanded(
                             child: Container(
                               decoration: BoxDecoration(
+                                borderRadius: BorderRadius.only(
+                                  topLeft: Radius.circular(12),
+                                  topRight: Radius.circular(12),
+                                ),
                                 image: DecorationImage(
                                   fit: BoxFit.cover,
                                   image: NetworkImage(
