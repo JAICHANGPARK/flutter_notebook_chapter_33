@@ -75,9 +75,12 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
                           Expanded(
                             child: Container(
                               decoration: BoxDecoration(
-                                  image: DecorationImage(
-                                image: NetworkImage(),
-                              )),
+                                image: DecorationImage(
+                                  fit: BoxFit.cover,
+                                  image: NetworkImage(
+                                      "https://cdn.pixabay.com/photo/2017/04/08/10/23/surfing-2212948_1280.jpg"),
+                                ),
+                              ),
                             ),
                           ),
                           Padding(
@@ -87,7 +90,13 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
                               children: [
                                 Row(
                                   children: [
-                                    Text("Just for You"),
+                                    Text(
+                                      "Just for You",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 24
+                                      ),
+                                    ),
                                     Spacer(),
                                     Container(
                                       padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
@@ -100,6 +109,11 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
                                       ),
                                       child: Text(
                                         "#RELLS",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 12,
+                                          color: Colors.green
+                                        ),
                                       ),
                                     )
                                   ],
