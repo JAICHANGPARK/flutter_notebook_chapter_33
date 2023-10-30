@@ -175,14 +175,18 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
                       color: Colors.blue,
                       borderRadius: BorderRadius.circular(12),
                     ),
-                    padding: const EdgeInsets.all(12),
+                    padding: const EdgeInsets.all(16),
                     child: const Align(
                       alignment: Alignment.topRight,
                       child: RotatedBox(
                         quarterTurns: -1,
                         child: Text(
                           "Technology",
-                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 24,
+                            color: Colors.white,
+                          ),
                         ),
                       ),
                     ),
