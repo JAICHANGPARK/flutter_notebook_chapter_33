@@ -13,7 +13,7 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text("Discover"),
+        title: const Text("Discover"),
         centerTitle: true,
         backgroundColor: Colors.white,
         foregroundColor: Colors.black,
@@ -21,7 +21,7 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.search),
+            icon: const Icon(Icons.search),
           ),
         ],
       ),
@@ -30,7 +30,7 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
         children: [
           Container(
             height: 440,
-            margin: EdgeInsets.all(16),
+            margin: const EdgeInsets.all(16),
             child: Stack(
               children: [
                 Positioned(
@@ -43,7 +43,7 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(16),
                     ),
-                    child: Center(),
+                    child: const Center(),
                   ),
                 ),
                 Positioned(
@@ -56,7 +56,7 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(16),
                     ),
-                    child: Center(),
+                    child: const Center(),
                   ),
                 ),
                 Positioned(
@@ -74,7 +74,7 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
                         children: [
                           Expanded(
                             child: Container(
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 borderRadius: BorderRadius.only(
                                   topLeft: Radius.circular(12),
                                   topRight: Radius.circular(12),
@@ -82,17 +82,18 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
                                 image: DecorationImage(
                                   fit: BoxFit.cover,
                                   image: NetworkImage(
-                                      "https://cdn.pixabay.com/photo/2017/04/08/10/23/surfing-2212948_1280.jpg"),
+                                    "https://cdn.pixabay.com/photo/2017/04/08/10/23/surfing-2212948_1280.jpg",
+                                  ),
                                 ),
                               ),
                               child: Center(
                                 child: Container(
-                                  padding: EdgeInsets.all(16),
+                                  padding: const EdgeInsets.all(16),
                                   decoration: BoxDecoration(
                                     shape: BoxShape.circle,
                                     color: Colors.green[300]!.withOpacity(0.8),
                                   ),
-                                  child: Icon(
+                                  child: const Icon(
                                     Icons.qr_code_scanner,
                                     color: Colors.white,
                                     size: 48,
@@ -108,13 +109,13 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
                               children: [
                                 Row(
                                   children: [
-                                    Text(
+                                    const Text(
                                       "Just for You",
                                       style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
                                     ),
-                                    Spacer(),
+                                    const Spacer(),
                                     Container(
-                                      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                                       decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(16),
                                         border: Border.all(
@@ -122,7 +123,7 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
                                           width: 2,
                                         ),
                                       ),
-                                      child: Text(
+                                      child: const Text(
                                         "#RELLS",
                                         style:
                                             TextStyle(fontWeight: FontWeight.bold, fontSize: 12, color: Colors.green),
@@ -130,10 +131,10 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
                                     )
                                   ],
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 8,
                                 ),
-                                Text(
+                                const Text(
                                   "Videos from channels we think you might like",
                                 )
                               ],
@@ -147,8 +148,8 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
               ],
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.all(16.0),
+          const Padding(
+            padding: EdgeInsets.all(16.0),
             child: Text(
               "CATEGORIES",
               style: TextStyle(
@@ -165,13 +166,13 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
                 itemBuilder: (context, index) {
                   return Container(
                     width: 100,
-                    margin: EdgeInsets.only(left: 16),
+                    margin: const EdgeInsets.only(left: 16),
                     decoration: BoxDecoration(
                       color: Colors.blue,
                       borderRadius: BorderRadius.circular(12),
                     ),
-                    padding: EdgeInsets.all(12),
-                    child: Align(
+                    padding: const EdgeInsets.all(12),
+                    child: const Align(
                       alignment: Alignment.topRight,
                       child: RotatedBox(
                         quarterTurns: -1,
