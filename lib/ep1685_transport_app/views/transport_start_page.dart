@@ -69,6 +69,9 @@ class _TransportStartPageState extends State<TransportStartPage> {
                                     child: Text("T"),
                                     foregroundColor: Colors.white,
                                   ),
+                                  SizedBox(
+                                    width: 8,
+                                  ),
                                   Text("Train"),
                                 ],
                               )
@@ -77,7 +80,9 @@ class _TransportStartPageState extends State<TransportStartPage> {
                         ),
                       ),
                     ),
-                    SizedBox(width: 4,),
+                    SizedBox(
+                      width: 4,
+                    ),
                     Expanded(
                       child: Card(
                         child: Padding(
@@ -91,12 +96,15 @@ class _TransportStartPageState extends State<TransportStartPage> {
                               Row(
                                 children: [
                                   CircleAvatar(
-                                    backgroundColor: Colors.orange,
+                                    backgroundColor: Colors.red,
                                     radius: 8,
-                                    child: Text("T"),
+                                    child: Text("L"),
                                     foregroundColor: Colors.white,
                                   ),
-                                  Text("Train"),
+                                  SizedBox(
+                                    width: 8,
+                                  ),
+                                  Text("Lightrail"),
                                 ],
                               )
                             ],
@@ -104,7 +112,9 @@ class _TransportStartPageState extends State<TransportStartPage> {
                         ),
                       ),
                     ),
-                    SizedBox(width: 4,),
+                    SizedBox(
+                      width: 4,
+                    ),
                     Expanded(
                       child: Card(
                         child: Padding(
