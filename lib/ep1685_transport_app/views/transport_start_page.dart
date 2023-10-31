@@ -150,8 +150,9 @@ class _TransportStartPageState extends State<TransportStartPage> {
               SizedBox(
                 height: 24,
               ),
-              const Text(
+              Text(
                 "Get notified about major disruptions\nand service changes.",
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               const Spacer(),
             ],
