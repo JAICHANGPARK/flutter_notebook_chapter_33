@@ -15,6 +15,7 @@ class _TransportStartPageState extends State<TransportStartPage> {
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
                 children: [
@@ -31,7 +32,19 @@ class _TransportStartPageState extends State<TransportStartPage> {
                     ),
                   )
                 ],
-              )
+              ),
+              Spacer(),
+              Text(
+                "How do you want\ntravel today?",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 24,
+                ),
+              ),
+              Text(
+                "Choose your preferred\nmode of transport below",
+              ),
+              Spacer(),
             ],
           ),
         ),
