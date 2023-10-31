@@ -3,7 +3,7 @@
 ## EP1685
 
 - Transport App Concept pt 22
-- Shane Helm for Heyo
+- Monty Hayton
 - https://dribbble.com/shots/10145408-Transport-App-Concept-pt-22
 
 <img src="https://cdn.dribbble.com/users/37585/screenshots/16322990/media/3582ea647e7141f04186741ea32a00b0.png"/>
