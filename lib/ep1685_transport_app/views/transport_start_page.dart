@@ -45,9 +45,63 @@ class _TransportStartPageState extends State<TransportStartPage> {
                 "Choose your preferred\nmode of transport below",
               ),
               SizedBox(
-                height: 100,
+                height: 140,
                 child: Row(
                   children: [
+                    Expanded(
+                      child: Card(
+                        child: Padding(
+                          padding: const EdgeInsets.only(
+                            top: 12,
+                            left: 12,
+                            right: 12,
+                          ),
+                          child: Column(
+                            children: [
+                              Row(
+                                children: [
+                                  CircleAvatar(
+                                    backgroundColor: Colors.orange,
+                                    radius: 8,
+                                    child: Text("T"),
+                                    foregroundColor: Colors.white,
+                                  ),
+                                  Text("Train"),
+                                ],
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(width: 4,),
+                    Expanded(
+                      child: Card(
+                        child: Padding(
+                          padding: const EdgeInsets.only(
+                            top: 12,
+                            left: 12,
+                            right: 12,
+                          ),
+                          child: Column(
+                            children: [
+                              Row(
+                                children: [
+                                  CircleAvatar(
+                                    backgroundColor: Colors.orange,
+                                    radius: 8,
+                                    child: Text("T"),
+                                    foregroundColor: Colors.white,
+                                  ),
+                                  Text("Train"),
+                                ],
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(width: 4,),
                     Expanded(
                       child: Card(
                         child: Padding(
