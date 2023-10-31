@@ -130,7 +130,7 @@ class _TransportStartPageState extends State<TransportStartPage> {
                                 children: [
                                   CircleAvatar(
                                     backgroundColor: Colors.lightBlue,
-                                    radius: 8,
+                                    radius: 10,
                                     child: Text("B"),
                                     foregroundColor: Colors.white,
                                   ),
