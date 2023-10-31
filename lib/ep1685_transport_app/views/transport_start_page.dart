@@ -19,42 +19,42 @@ class _TransportStartPageState extends State<TransportStartPage> {
             children: [
               Row(
                 children: [
-                  Spacer(),
+                  const Spacer(),
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.grey[400],
                       borderRadius: BorderRadius.circular(6),
                     ),
-                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-                    child: Text(
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                    child: const Text(
                       "Skip",
                       style: TextStyle(),
                     ),
                   )
                 ],
               ),
-              Spacer(),
-              Text(
+              const Spacer(),
+              const Text(
                 "How do you want\ntravel today?",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 24,
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 24),
+              const Padding(
+                padding: EdgeInsets.symmetric(vertical: 24),
                 child: Text(
                   "Choose your preferred\nmode of transport below",
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 140,
                 child: Row(
                   children: [
                     Expanded(
                       child: Card(
                         child: Padding(
-                          padding: const EdgeInsets.only(
+                          padding: EdgeInsets.only(
                             top: 12,
                             left: 12,
                             right: 12,
@@ -86,7 +86,7 @@ class _TransportStartPageState extends State<TransportStartPage> {
                     Expanded(
                       child: Card(
                         child: Padding(
-                          padding: const EdgeInsets.only(
+                          padding: EdgeInsets.only(
                             top: 12,
                             left: 12,
                             right: 12,
@@ -118,7 +118,7 @@ class _TransportStartPageState extends State<TransportStartPage> {
                     Expanded(
                       child: Card(
                         child: Padding(
-                          padding: const EdgeInsets.only(
+                          padding: EdgeInsets.only(
                             top: 12,
                             left: 12,
                             right: 12,
@@ -128,12 +128,15 @@ class _TransportStartPageState extends State<TransportStartPage> {
                               Row(
                                 children: [
                                   CircleAvatar(
-                                    backgroundColor: Colors.orange,
+                                    backgroundColor: Colors.lightBlue,
                                     radius: 8,
-                                    child: Text("T"),
+                                    child: Text("B"),
                                     foregroundColor: Colors.white,
                                   ),
-                                  Text("Train"),
+                                  SizedBox(
+                                    width: 8,
+                                  ),
+                                  Text("Buses"),
                                 ],
                               )
                             ],
@@ -144,7 +147,13 @@ class _TransportStartPageState extends State<TransportStartPage> {
                   ],
                 ),
               ),
-              Spacer(),
+              SizedBox(
+                height: 24,
+              ),
+              const Text(
+                "Get notified about major disruptions\nand service changes.",
+              ),
+              const Spacer(),
             ],
           ),
         ),
