@@ -49,19 +49,26 @@ class _TransportStartPageState extends State<TransportStartPage> {
                 child: Row(
                   children: [
                     Card(
-                      child: Column(
-                        children: [
-                          Row(
-                            children: [
-                              CircleAvatar(
-                                backgroundColor: Colors.orange,
-                                radius: 8,
-                                child: Text("T"),
-                                foregroundColor: Colors.white,
-                              )
-                            ],
-                          )
-                        ],
+                      child: Padding(
+                        padding: const EdgeInsets.only(
+                          top: 12,
+                          left: 12,
+                          right: 12.
+                        ),
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                CircleAvatar(
+                                  backgroundColor: Colors.orange,
+                                  radius: 8,
+                                  child: Text("T"),
+                                  foregroundColor: Colors.white,
+                                )
+                              ],
+                            )
+                          ],
+                        ),
                       ),
                     )
                   ],
