@@ -44,6 +44,29 @@ class _TransportStartPageState extends State<TransportStartPage> {
               Text(
                 "Choose your preferred\nmode of transport below",
               ),
+              SizedBox(
+                height: 100,
+                child: Row(
+                  children: [
+                    Card(
+                      child: Column(
+                        children: [
+                          Row(
+                            children: [
+                              CircleAvatar(
+                                backgroundColor: Colors.orange,
+                                radius: 8,
+                                child: Text("T"),
+                                foregroundColor: Colors.white,
+                              )
+                            ],
+                          )
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ),
               Spacer(),
             ],
           ),
