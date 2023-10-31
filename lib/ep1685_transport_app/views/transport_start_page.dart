@@ -12,23 +12,28 @@ class _TransportStartPageState extends State<TransportStartPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [
-            Row(
-              children: [
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.grey[400],
-                    borderRadius: BorderRadius.circular(6),
-                  ),
-                  padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-                  child: Text("Skip",style: TextStyle(
-                    
-                  ),),
-                )
-              ],
-            )
-          ],
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  Spacer(),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.grey[400],
+                      borderRadius: BorderRadius.circular(6),
+                    ),
+                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                    child: Text(
+                      "Skip",
+                      style: TextStyle(),
+                    ),
+                  )
+                ],
+              )
+            ],
+          ),
         ),
       ),
     );
