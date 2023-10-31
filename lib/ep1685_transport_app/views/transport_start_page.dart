@@ -48,26 +48,29 @@ class _TransportStartPageState extends State<TransportStartPage> {
                 height: 100,
                 child: Row(
                   children: [
-                    Card(
-                      child: Padding(
-                        padding: const EdgeInsets.only(
-                          top: 12,
-                          left: 12,
-                          right: 12.
-                        ),
-                        child: Column(
-                          children: [
-                            Row(
-                              children: [
-                                CircleAvatar(
-                                  backgroundColor: Colors.orange,
-                                  radius: 8,
-                                  child: Text("T"),
-                                  foregroundColor: Colors.white,
-                                )
-                              ],
-                            )
-                          ],
+                    Expanded(
+                      child: Card(
+                        child: Padding(
+                          padding: const EdgeInsets.only(
+                            top: 12,
+                            left: 12,
+                            right: 12,
+                          ),
+                          child: Column(
+                            children: [
+                              Row(
+                                children: [
+                                  CircleAvatar(
+                                    backgroundColor: Colors.orange,
+                                    radius: 8,
+                                    child: Text("T"),
+                                    foregroundColor: Colors.white,
+                                  ),
+                                  Text("Train"),
+                                ],
+                              )
+                            ],
+                          ),
                         ),
                       ),
                     )
