@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(TransportApp());
-}
+void main() => runApp(TransportApp());
 
 class TransportApp extends StatelessWidget {
   const TransportApp({super.key});
