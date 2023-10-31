@@ -41,8 +41,11 @@ class _TransportStartPageState extends State<TransportStartPage> {
                   fontSize: 24,
                 ),
               ),
-              Text(
-                "Choose your preferred\nmode of transport below",
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 24),
+                child: Text(
+                  "Choose your preferred\nmode of transport below",
+                ),
               ),
               SizedBox(
                 height: 140,
