@@ -51,14 +51,23 @@ class _TransportMainPageState extends State<TransportMainPage> {
                       ),
                       Gap(6),
                       Text("Type"),
-                      VerticalDivider(),
+                      VerticalDivider(
+                        width: 24,
+                      ),
                       CircleAvatar(
-                        backgroundColor: Colors.yellow,
+                        radius: 12,
+                        backgroundColor: Colors.orange,
                         foregroundColor: Colors.white,
                         child: Text(
                           "T",
                         ),
-                      )
+                      ),
+                      Gap(6),
+                      Text("Train"),
+
+                      VerticalDivider(
+                        width: 24,
+                      ),
                     ],
                   ),
                 ),
