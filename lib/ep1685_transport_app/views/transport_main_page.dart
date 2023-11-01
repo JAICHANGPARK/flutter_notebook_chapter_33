@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class TransportMainPage extends StatefulWidget {
   const TransportMainPage({super.key});
@@ -33,6 +34,19 @@ class _TransportMainPageState extends State<TransportMainPage> {
 
                 ),
               ),
+              Gap(16),
+              Container(
+                decoration: BoxDecoration(
+                  color: Colors.white
+                ),
+                child: IntrinsicHeight(
+                  child: Row(
+                    children: [
+
+                    ],
+                  ),
+                ),
+              )
 
             ],
           ),
