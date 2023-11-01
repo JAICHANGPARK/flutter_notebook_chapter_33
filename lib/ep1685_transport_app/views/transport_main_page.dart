@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class TransportMainPage extends StatefulWidget {
   const TransportMainPage({super.key});
 
@@ -11,6 +10,6 @@ class TransportMainPage extends StatefulWidget {
 class _TransportMainPageState extends State<TransportMainPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold();
   }
 }
