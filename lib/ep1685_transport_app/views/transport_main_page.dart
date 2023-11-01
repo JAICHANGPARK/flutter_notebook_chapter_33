@@ -10,6 +10,22 @@ class TransportMainPage extends StatefulWidget {
 class _TransportMainPageState extends State<TransportMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+        bottomNavigationBar: BottomNavigationBar(
+      items: [
+        const BottomNavigationBarItem(
+          icon: Icon(Icons.upload),
+          label: "Departing",
+        ),
+        const BottomNavigationBarItem(
+          icon: Icon(Icons.download),
+          label: "Arriving",
+        ),
+        const BottomNavigationBarItem(
+          icon: Icon(Icons.explore_outlined),
+          label: "Map",
+        ),
+      ],
+    ));
   }
 }
