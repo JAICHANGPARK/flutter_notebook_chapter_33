@@ -31,23 +31,38 @@ class _TransportMainPageState extends State<TransportMainPage> {
                     suffixIcon: Icon(Icons.tune),
                     hintText: "Search",
                   ),
-
                 ),
               ),
-              Gap(16),
+              Gap(8),
               Container(
-                decoration: BoxDecoration(
-                  color: Colors.white
-                ),
+                height: 52,
+                margin: EdgeInsets.symmetric(horizontal: 16),
+                decoration: BoxDecoration(color: Colors.white),
+                padding: EdgeInsets.symmetric(horizontal: 8),
                 child: IntrinsicHeight(
                   child: Row(
                     children: [
-
+                      Card(
+                        elevation: 6,
+                        child: SizedBox(
+                          height: 28,
+                          width: 28,
+                        ),
+                      ),
+                      Gap(6),
+                      Text("Type"),
+                      VerticalDivider(),
+                      CircleAvatar(
+                        backgroundColor: Colors.yellow,
+                        foregroundColor: Colors.white,
+                        child: Text(
+                          "T",
+                        ),
+                      )
                     ],
                   ),
                 ),
               )
-
             ],
           ),
         ),
