@@ -33,11 +33,14 @@ class _TransportMainPageState extends State<TransportMainPage> {
                   ),
                 ),
               ),
-              Gap(8),
+              Gap(6),
               Container(
                 height: 52,
                 margin: EdgeInsets.symmetric(horizontal: 16),
-                decoration: BoxDecoration(color: Colors.white),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(8)
+                ),
                 padding: EdgeInsets.symmetric(horizontal: 8),
                 child: IntrinsicHeight(
                   child: Row(
