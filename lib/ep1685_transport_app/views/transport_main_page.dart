@@ -41,6 +41,7 @@ class _TransportMainPageState extends State<TransportMainPage> {
                 padding: EdgeInsets.symmetric(horizontal: 8),
                 child: IntrinsicHeight(
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       Card(
                         elevation: 6,
@@ -64,10 +65,32 @@ class _TransportMainPageState extends State<TransportMainPage> {
                       ),
                       Gap(6),
                       Text("Train"),
-
                       VerticalDivider(
                         width: 24,
                       ),
+                      CircleAvatar(
+                        radius: 12,
+                        backgroundColor: Colors.red,
+                        foregroundColor: Colors.white,
+                        child: Text(
+                          "T",
+                        ),
+                      ),
+                      Gap(6),
+                      Text("Light"),
+                      VerticalDivider(
+                        width: 24,
+                      ),
+                      CircleAvatar(
+                        radius: 12,
+                        backgroundColor: Colors.blue,
+                        foregroundColor: Colors.white,
+                        child: Text(
+                          "T",
+                        ),
+                      ),
+                      Gap(6),
+                      Text("Buses"),
                     ],
                   ),
                 ),
