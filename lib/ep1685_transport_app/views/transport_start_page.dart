@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_33/ep1685_transport_app/views/transport_main_page.dart';
 
 class TransportStartPage extends StatefulWidget {
   const TransportStartPage({super.key});
@@ -20,15 +21,24 @@ class _TransportStartPageState extends State<TransportStartPage> {
               Row(
                 children: [
                   const Spacer(),
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.grey[400],
-                      borderRadius: BorderRadius.circular(6),
-                    ),
-                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-                    child: const Text(
-                      "Skip",
-                      style: TextStyle(),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => TransportMainPage(),
+                        ),
+                      );
+                    },
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.grey[400],
+                        borderRadius: BorderRadius.circular(6),
+                      ),
+                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                      child: const Text(
+                        "Skip",
+                        style: TextStyle(),
+                      ),
                     ),
                   )
                 ],
@@ -41,7 +51,7 @@ class _TransportStartPageState extends State<TransportStartPage> {
                   fontSize: 24,
                 ),
               ),
-               Padding(
+              Padding(
                 padding: EdgeInsets.symmetric(vertical: 24),
                 child: Text(
                   "Choose your preferred\nmode of transport below",
