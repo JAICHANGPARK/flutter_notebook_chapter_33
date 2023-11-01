@@ -46,8 +46,8 @@ class _TransportMainPageState extends State<TransportMainPage> {
                       Card(
                         elevation: 6,
                         child: SizedBox(
-                          height: 28,
-                          width: 28,
+                          height: 32,
+                          width: 32,
                         ),
                       ),
                       Gap(6),
