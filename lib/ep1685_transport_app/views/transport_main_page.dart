@@ -41,7 +41,7 @@ class _TransportMainPageState extends State<TransportMainPage> {
                 padding: EdgeInsets.symmetric(horizontal: 8),
                 child: IntrinsicHeight(
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Card(
                         elevation: 6,
