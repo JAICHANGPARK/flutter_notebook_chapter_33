@@ -185,49 +185,56 @@ class _TransportMainPageState extends State<TransportMainPage> {
                         child: ListView.builder(
                           scrollDirection: Axis.horizontal,
                           itemBuilder: (context, index) {
-                            return SizedBox(
-                              width: 200,
-                              child: Card(
-                                elevation: 8,
-                                child: Padding(
-                                  padding: const EdgeInsets.all(16.0),
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Row(
-                                        children: [
-                                          Icon(Icons.train),
-                                          Container(
-                                            decoration: BoxDecoration(
-                                              border: Border.all(
-                                                color: Colors.grey[300]!,
+                            return Padding(
+                              padding: const EdgeInsets.only(right: 8),
+                              child: SizedBox(
+                                width: 200,
+                                child: Card(
+                                  elevation: 10,
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(16.0),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Row(
+                                          children: [
+                                            Icon(Icons.train),
+                                            Container(
+                                              decoration: BoxDecoration(
+                                                border: Border.all(
+                                                  color: Colors.grey[300]!,
+                                                ),
+                                                borderRadius: BorderRadius.circular(4),
                                               ),
-                                              borderRadius: BorderRadius.circular(4),
+                                              padding: EdgeInsets.all(2),
+                                              child: Text("T4"),
                                             ),
-                                            padding: EdgeInsets.all(2),
-                                            child: Text("T4"),
-                                          ),
-                                          Container(
-                                            decoration: BoxDecoration(
-                                              border: Border.all(
-                                                color: Colors.grey[300]!,
+                                            Container(
+                                              decoration: BoxDecoration(
+                                                border: Border.all(
+                                                  color: Colors.grey[300]!,
+                                                ),
+                                                borderRadius: BorderRadius.circular(4),
                                               ),
-                                              borderRadius: BorderRadius.circular(4),
-                                            ),
-                                            padding: EdgeInsets.all(2),
-                                            child: Text("T3"),
-                                          )
-                                        ],
-                                      ),
-                                      Text("Due"),
-                                      Text(
-                                        "03 Mins",
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 32
+                                              padding: EdgeInsets.all(2),
+                                              child: Text("T3"),
+                                            )
+                                          ],
                                         ),
-                                      )
-                                    ],
+                                        Text("Due"),
+                                        Text(
+                                          "03 Mins",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 32,
+                                          ),
+                                        ),
+                                        Text(
+                                          "Kings Cross Platform 1",
+                                        )
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ),
