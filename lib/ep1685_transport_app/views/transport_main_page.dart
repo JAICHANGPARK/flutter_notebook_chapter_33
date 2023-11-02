@@ -129,23 +129,34 @@ class _TransportMainPageState extends State<TransportMainPage> {
                           )
                         ],
                       ),
+                      SizedBox(
+                        height: 8,
+                      ),
                       Row(
                         children: [
                           CircleAvatar(
                             radius: 14,
                             backgroundColor: Colors.grey,
                           ),
-                          SizedBox(width: 4,),
+                          SizedBox(
+                            width: 4,
+                          ),
                           CircleAvatar(
                             radius: 14,
                             backgroundColor: Colors.grey,
                           ),
-                          SizedBox(width: 4,),
+                          SizedBox(
+                            width: 4,
+                          ),
                           CircleAvatar(
                             radius: 14,
                             backgroundColor: Colors.grey,
                           )
                         ],
+                      ),
+                      Text("Lines:"),
+                      Text(
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                       )
                     ],
                   ),
