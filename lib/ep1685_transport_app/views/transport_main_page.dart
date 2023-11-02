@@ -173,12 +173,15 @@ class _TransportMainPageState extends State<TransportMainPage> {
                       SizedBox(
                         height: 16,
                       ),
-                      Text("Departing in:",
+                      Text(
+                        "Departing in:",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
-                        ),),
+                        ),
+                      ),
                       Container(
-                        height: 200,
+                        margin: EdgeInsets.only(top: 16),
+                        height: 180,
                         child: ListView.builder(
                           scrollDirection: Axis.horizontal,
                           itemBuilder: (context, index) {
@@ -196,7 +199,19 @@ class _TransportMainPageState extends State<TransportMainPage> {
                                             border: Border.all(
                                               color: Colors.grey[300]!,
                                             ),
+                                            borderRadius: BorderRadius.circular(4),
                                           ),
+                                          padding: EdgeInsets.all(2),
+                                          child: Text("T4"),
+                                        ),
+                                        Container(
+                                          decoration: BoxDecoration(
+                                            border: Border.all(
+                                              color: Colors.grey[300]!,
+                                            ),
+                                            borderRadius: BorderRadius.circular(4),
+                                          ),
+                                          padding: EdgeInsets.all(2),
                                           child: Text("T4"),
                                         )
                                       ],
