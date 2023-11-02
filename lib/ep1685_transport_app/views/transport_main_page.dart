@@ -125,6 +125,25 @@ class _TransportMainPageState extends State<TransportMainPage> {
                           ),
                           Text(
                             "Kings Cross Station",
+                            style: TextStyle(fontSize: 20),
+                          )
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          CircleAvatar(
+                            radius: 14,
+                            backgroundColor: Colors.grey,
+                          ),
+                          SizedBox(width: 4,),
+                          CircleAvatar(
+                            radius: 14,
+                            backgroundColor: Colors.grey,
+                          ),
+                          SizedBox(width: 4,),
+                          CircleAvatar(
+                            radius: 14,
+                            backgroundColor: Colors.grey,
                           )
                         ],
                       )
