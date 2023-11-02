@@ -120,6 +120,9 @@ class _TransportMainPageState extends State<TransportMainPage> {
                               color: Colors.black,
                             ),
                           ),
+                          SizedBox(
+                            width: 8,
+                          ),
                           Text(
                             "Kings Cross Station",
                           )
