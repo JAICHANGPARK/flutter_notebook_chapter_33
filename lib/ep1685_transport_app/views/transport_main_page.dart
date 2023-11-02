@@ -100,6 +100,7 @@ class _TransportMainPageState extends State<TransportMainPage> {
               ),
               Expanded(
                 child: Container(
+                  padding: EdgeInsets.all(24),
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.vertical(
