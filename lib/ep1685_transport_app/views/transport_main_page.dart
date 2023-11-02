@@ -192,6 +192,7 @@ class _TransportMainPageState extends State<TransportMainPage> {
                                 child: Padding(
                                   padding: const EdgeInsets.all(16.0),
                                   child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Row(
                                         children: [
@@ -214,9 +215,17 @@ class _TransportMainPageState extends State<TransportMainPage> {
                                               borderRadius: BorderRadius.circular(4),
                                             ),
                                             padding: EdgeInsets.all(2),
-                                            child: Text("T4"),
+                                            child: Text("T3"),
                                           )
                                         ],
+                                      ),
+                                      Text("Due"),
+                                      Text(
+                                        "03 Mins",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 32
+                                        ),
                                       )
                                     ],
                                   ),
