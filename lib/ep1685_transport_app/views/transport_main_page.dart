@@ -100,12 +100,14 @@ class _TransportMainPageState extends State<TransportMainPage> {
                 child: Container(
                   decoration: BoxDecoration(
                     color: Colors.white,
-                    borderRadius: BorderRadius.vertical(top: Radius.circular(16))
+                    borderRadius: BorderRadius.vertical(
+                      top: Radius.circular(
+                        16,
+                      ),
+                    ),
                   ),
                   child: Column(
-                    children: [
-                      
-                    ],
+                    children: [],
                   ),
                 ),
               )
