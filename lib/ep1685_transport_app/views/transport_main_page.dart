@@ -95,7 +95,9 @@ class _TransportMainPageState extends State<TransportMainPage> {
                   ),
                 ),
               ),
-              Spacer(),
+              SizedBox(
+                height: 180,
+              ),
               Expanded(
                 child: Container(
                   decoration: BoxDecoration(
@@ -107,7 +109,22 @@ class _TransportMainPageState extends State<TransportMainPage> {
                     ),
                   ),
                   child: Column(
-                    children: [],
+                    children: [
+                      Row(
+                        children: [
+                          Container(
+                            height: 32,
+                            width: 32,
+                            decoration: BoxDecoration(
+                              color: Colors.black,
+                            ),
+                          ),
+                          Text(
+                            "Kings Cross Station",
+                          )
+                        ],
+                      )
+                    ],
                   ),
                 ),
               )
