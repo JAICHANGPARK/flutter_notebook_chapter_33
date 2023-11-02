@@ -110,6 +110,7 @@ class _TransportMainPageState extends State<TransportMainPage> {
                     ),
                   ),
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Row(
                         children: [
