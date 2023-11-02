@@ -165,7 +165,29 @@ class _TransportMainPageState extends State<TransportMainPage> {
                         child: ListView.builder(
                           scrollDirection: Axis.horizontal,
                           itemBuilder: (context, index) {
-                            return Card();
+                            return SizedBox(
+                              width: 200,
+                              child: Card(
+                                elevation: 8,
+                                child: Column(
+                                  children: [
+                                    Row(
+                                      children: [
+                                        Icon(Icons.train),
+                                        Container(
+                                          decoration: BoxDecoration(
+                                            border: Border.all(
+                                              color: Colors.grey[300]!,
+                                            ),
+                                          ),
+                                          child: Text("T4"),
+                                        )
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              ),
+                            );
                           },
                         ),
                       )
