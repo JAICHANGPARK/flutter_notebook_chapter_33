@@ -159,8 +159,16 @@ class _TransportMainPageState extends State<TransportMainPage> {
                       Text(
                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                       ),
-                      Text("Departing in:")
-                      ,
+                      Text("Departing in:"),
+                      Container(
+                        height: 200,
+                        child: ListView.builder(
+                          scrollDirection: Axis.horizontal,
+                          itemBuilder: (context, index) {
+                            return Card();
+                          },
+                        ),
+                      )
                     ],
                   ),
                 ),
