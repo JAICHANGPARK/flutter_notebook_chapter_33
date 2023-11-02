@@ -97,6 +97,11 @@ class _TransportMainPageState extends State<TransportMainPage> {
                     ],
                   ),
                 ),
+              ),
+              Spacer(),
+              Expanded(
+                child: Container(
+                ),
               )
             ],
           ),
