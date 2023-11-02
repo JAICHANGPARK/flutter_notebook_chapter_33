@@ -155,9 +155,20 @@ class _TransportMainPageState extends State<TransportMainPage> {
                           )
                         ],
                       ),
-                      Text("Lines:"),
+                      SizedBox(
+                        height: 16,
+                      ),
                       Text(
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                        "Lines:",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 12),
+                        child: Text(
+                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                        ),
                       ),
                       Text("Departing in:"),
                       Container(
