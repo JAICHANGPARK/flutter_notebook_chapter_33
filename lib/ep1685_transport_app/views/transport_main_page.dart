@@ -37,10 +37,7 @@ class _TransportMainPageState extends State<TransportMainPage> {
               Container(
                 height: 52,
                 margin: EdgeInsets.symmetric(horizontal: 16),
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(8)
-                ),
+                decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
                 padding: EdgeInsets.symmetric(horizontal: 8),
                 child: IntrinsicHeight(
                   child: Row(
@@ -101,6 +98,15 @@ class _TransportMainPageState extends State<TransportMainPage> {
               Spacer(),
               Expanded(
                 child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.vertical(top: Radius.circular(16))
+                  ),
+                  child: Column(
+                    children: [
+                      
+                    ],
+                  ),
                 ),
               )
             ],
