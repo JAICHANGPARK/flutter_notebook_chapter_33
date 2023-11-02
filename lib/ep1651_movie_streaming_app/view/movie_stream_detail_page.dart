@@ -21,7 +21,9 @@ class MovieStreamDetailPage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
-                      decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(32)),
+                      decoration: BoxDecoration(
+                          color: Colors.grey,
+                          borderRadius: BorderRadius.circular(32)),
                       padding: EdgeInsets.all(24),
                       margin: EdgeInsets.all(24),
                       child: Row(

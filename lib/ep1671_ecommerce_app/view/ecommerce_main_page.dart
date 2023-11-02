@@ -95,7 +95,9 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                         const Text("Delivery is "),
                         Container(
                           margin: const EdgeInsets.symmetric(horizontal: 8),
-                          decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(4)),
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(4)),
                           padding: const EdgeInsets.symmetric(
                             horizontal: 8,
                             vertical: 4,
@@ -197,7 +199,8 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                             color: const Color.fromRGBO(195, 231, 3, 1),
                             borderRadius: BorderRadius.circular(4),
                           ),
-                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 8, vertical: 4),
                           child: const Text(
                             '02:59:23',
                             style: TextStyle(
@@ -227,7 +230,8 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                       child: Padding(
                         padding: const EdgeInsets.only(right: 16, top: 16),
                         child: GridView.builder(
-                          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                          gridDelegate:
+                              const SliverGridDelegateWithFixedCrossAxisCount(
                             crossAxisCount: 2,
                             mainAxisSpacing: 12,
                             crossAxisSpacing: 12,
@@ -304,7 +308,8 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                                         TextSpan(
                                           text: "\$1000.00",
                                           style: TextStyle(
-                                            decoration: TextDecoration.lineThrough,
+                                            decoration:
+                                                TextDecoration.lineThrough,
                                             color: Colors.grey,
                                           ),
                                         )

@@ -38,7 +38,8 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                             Container(
                               height: 32,
                               width: 32,
-                              decoration: const BoxDecoration(color: Colors.blue),
+                              decoration:
+                                  const BoxDecoration(color: Colors.blue),
                             ),
                             SizedBox(
                               width: 8,
@@ -85,13 +86,16 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
               ),
               Container(
                 height: 84,
-                decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(12)),
+                decoration: BoxDecoration(
+                    color: Colors.blue,
+                    borderRadius: BorderRadius.circular(12)),
                 margin: const EdgeInsets.symmetric(vertical: 16),
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: Center(
                   child: Card(
                     child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 4, vertical: 4),
                       child: Row(
                         children: [
                           const Icon(Icons.location_on_outlined),
@@ -178,7 +182,8 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                                 onTap: () {
                                   Navigator.of(context).push(
                                     MaterialPageRoute(
-                                      builder: (context) => HomeManagementProfilePage(),
+                                      builder: (context) =>
+                                          HomeManagementProfilePage(),
                                     ),
                                   );
                                 },
@@ -237,9 +242,11 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                             children: [
                               Expanded(
                                 child: InkWell(
-                                  onTap: (){
-                                    Navigator.of(context).push(MaterialPageRoute(builder: (context)=>
-                                    HomeManagementDetailPage()));
+                                  onTap: () {
+                                    Navigator.of(context).push(
+                                        MaterialPageRoute(
+                                            builder: (context) =>
+                                                HomeManagementDetailPage()));
                                   },
                                   child: Container(
                                     height: 42,
@@ -247,7 +254,8 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                                       border: Border.all(),
                                       borderRadius: BorderRadius.circular(4),
                                     ),
-                                    padding: EdgeInsets.symmetric(horizontal: 8),
+                                    padding:
+                                        EdgeInsets.symmetric(horizontal: 8),
                                     child: Row(
                                       children: [
                                         Text("View details"),

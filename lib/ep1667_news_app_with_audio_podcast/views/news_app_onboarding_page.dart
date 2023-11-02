@@ -36,7 +36,8 @@ class _NewsAppOnboardingPageState extends State<NewsAppOnboardingPage> {
                       bottomRight: Radius.circular(12),
                     ),
                   ),
-                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                   child: const Text(
                     "THE NEWS",
                     style: TextStyle(

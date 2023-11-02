@@ -32,7 +32,8 @@ class _NewsAppAudioPageState extends State<NewsAppAudioPage> {
           children: [
             Container(
               height: 360,
-              decoration: BoxDecoration(color: Colors.pink, borderRadius: BorderRadius.circular(16)),
+              decoration: BoxDecoration(
+                  color: Colors.pink, borderRadius: BorderRadius.circular(16)),
             ),
             SizedBox(
               height: 48,
@@ -56,12 +57,13 @@ class _NewsAppAudioPageState extends State<NewsAppAudioPage> {
             SizedBox(
               height: 72,
             ),
-            
             Container(
               height: 64,
               color: Colors.purple,
             ),
-            SizedBox(height: 8,),
+            SizedBox(
+              height: 8,
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [

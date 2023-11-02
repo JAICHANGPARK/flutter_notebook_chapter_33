@@ -112,7 +112,8 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
                                             color: Colors.red,
                                             width: 3,
                                           ),
-                                          borderRadius: BorderRadius.circular(8),
+                                          borderRadius:
+                                              BorderRadius.circular(8),
                                           image: DecorationImage(
                                               image: NetworkImage(
                                                   "https://cdn.pixabay.com/photo/2017/03/09/20/53/microphone-2130806_1280.jpg"),
@@ -180,7 +181,8 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
                               ),
                               Expanded(
                                 child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
                                   children: [
                                     const Row(
                                       children: [
@@ -225,7 +227,8 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
                         ),
                         Container(
                           height: 92,
-                          margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                          margin: const EdgeInsets.symmetric(
+                              horizontal: 16, vertical: 8),
                           // decoration: BoxDecoration(
                           //   color: Colors.grey,
                           // ),
@@ -233,14 +236,17 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
                             children: [
                               Container(
                                 width: 160,
-                                decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(8)),
+                                decoration: BoxDecoration(
+                                    color: Colors.blue,
+                                    borderRadius: BorderRadius.circular(8)),
                               ),
                               const SizedBox(
                                 width: 8,
                               ),
                               Expanded(
                                 child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
                                   children: [
                                     const Row(
                                       children: [
@@ -284,7 +290,8 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
                           ),
                         ),
                         const Padding(
-                          padding: EdgeInsets.only(left: 16, top: 16, bottom: 8),
+                          padding:
+                              EdgeInsets.only(left: 16, top: 16, bottom: 8),
                           child: Text(
                             "TOP CHANNELS",
                             style: TextStyle(

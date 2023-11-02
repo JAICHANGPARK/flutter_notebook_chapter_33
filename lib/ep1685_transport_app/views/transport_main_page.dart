@@ -37,7 +37,9 @@ class _TransportMainPageState extends State<TransportMainPage> {
               Container(
                 height: 52,
                 margin: EdgeInsets.symmetric(horizontal: 16),
-                decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(8)),
                 padding: EdgeInsets.symmetric(horizontal: 8),
                 child: IntrinsicHeight(
                   child: Row(
@@ -194,8 +196,10 @@ class _TransportMainPageState extends State<TransportMainPage> {
                                   child: Padding(
                                     padding: const EdgeInsets.all(16.0),
                                     child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
                                       children: [
                                         Row(
                                           children: [
@@ -205,7 +209,8 @@ class _TransportMainPageState extends State<TransportMainPage> {
                                                 border: Border.all(
                                                   color: Colors.grey[300]!,
                                                 ),
-                                                borderRadius: BorderRadius.circular(4),
+                                                borderRadius:
+                                                    BorderRadius.circular(4),
                                               ),
                                               padding: EdgeInsets.all(2),
                                               child: Text("T4"),
@@ -215,7 +220,8 @@ class _TransportMainPageState extends State<TransportMainPage> {
                                                 border: Border.all(
                                                   color: Colors.grey[300]!,
                                                 ),
-                                                borderRadius: BorderRadius.circular(4),
+                                                borderRadius:
+                                                    BorderRadius.circular(4),
                                               ),
                                               padding: EdgeInsets.all(2),
                                               child: Text("T3"),

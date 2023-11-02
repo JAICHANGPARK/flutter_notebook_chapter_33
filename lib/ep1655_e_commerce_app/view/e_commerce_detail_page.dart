@@ -65,7 +65,9 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                         decoration: BoxDecoration(
                           color: Colors.grey,
                           border: Border.all(
-                            color: selectedIndex == 0 ? Colors.deepOrange : Colors.transparent,
+                            color: selectedIndex == 0
+                                ? Colors.deepOrange
+                                : Colors.transparent,
                           ),
                           borderRadius: BorderRadius.circular(8),
                         ),
@@ -125,8 +127,11 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                          padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-                          decoration: BoxDecoration(color: Colors.deepOrange, borderRadius: BorderRadius.circular(8)),
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 6, vertical: 2),
+                          decoration: BoxDecoration(
+                              color: Colors.deepOrange,
+                              borderRadius: BorderRadius.circular(8)),
                           child: const Text(
                             "Hoodie",
                             style: TextStyle(
@@ -319,7 +324,8 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                             decoration: const BoxDecoration(
                               color: Colors.deepOrange,
                             ),
-                            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 16, vertical: 8),
                             child: const Center(
                               child: Icon(
                                 Icons.add_shopping_cart,

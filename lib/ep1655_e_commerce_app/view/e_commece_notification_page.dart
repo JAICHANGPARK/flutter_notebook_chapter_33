@@ -4,7 +4,8 @@ class EcommerceNotificationPage extends StatefulWidget {
   const EcommerceNotificationPage({super.key});
 
   @override
-  State<EcommerceNotificationPage> createState() => _EcommerceNotificationPageState();
+  State<EcommerceNotificationPage> createState() =>
+      _EcommerceNotificationPageState();
 }
 
 class _EcommerceNotificationPageState extends State<EcommerceNotificationPage> {
@@ -65,7 +66,6 @@ class _EcommerceNotificationPageState extends State<EcommerceNotificationPage> {
                           borderRadius: BorderRadius.circular(8),
                         ),
                       ),
-
                       const SizedBox(
                         width: 8,
                       ),
@@ -74,7 +74,8 @@ class _EcommerceNotificationPageState extends State<EcommerceNotificationPage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
-                            padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 6, vertical: 2),
                             decoration: BoxDecoration(
                               color: Colors.deepOrange,
                               borderRadius: BorderRadius.circular(16),
@@ -87,16 +88,23 @@ class _EcommerceNotificationPageState extends State<EcommerceNotificationPage> {
                               ),
                             ),
                           ),
-                          SizedBox(height: 4,),
+                          SizedBox(
+                            height: 4,
+                          ),
                           const Text(
                             "Package received",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          SizedBox(height: 4,),
-                          const Text("Package 123456789 from message 12345789 has been received,"),
-                          SizedBox(height: 4,),
+                          SizedBox(
+                            height: 4,
+                          ),
+                          const Text(
+                              "Package 123456789 from message 12345789 has been received,"),
+                          SizedBox(
+                            height: 4,
+                          ),
                           const Text("01 - 08 - 2023 ")
                         ],
                       )),

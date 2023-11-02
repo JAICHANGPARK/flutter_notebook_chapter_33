@@ -4,7 +4,8 @@ class HomeManagementProfilePage extends StatefulWidget {
   const HomeManagementProfilePage({super.key});
 
   @override
-  State<HomeManagementProfilePage> createState() => _HomeManagementProfilePageState();
+  State<HomeManagementProfilePage> createState() =>
+      _HomeManagementProfilePageState();
 }
 
 class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
@@ -22,7 +23,7 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     GestureDetector(
-                      onTap: (){
+                      onTap: () {
                         Navigator.of(context).pop();
                       },
                       child: Container(
@@ -61,7 +62,8 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                             children: [
                               const Text(
                                 "Dream Walker",
-                                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold, fontSize: 24),
                               ),
                               const Padding(
                                 padding: EdgeInsets.symmetric(vertical: 8),
@@ -346,7 +348,8 @@ class _HomeManagementProfilePageState extends State<HomeManagementProfilePage> {
                                 onTap: () {
                                   Navigator.of(context).push(
                                     MaterialPageRoute(
-                                      builder: (context) => const HomeManagementProfilePage(),
+                                      builder: (context) =>
+                                          const HomeManagementProfilePage(),
                                     ),
                                   );
                                 },

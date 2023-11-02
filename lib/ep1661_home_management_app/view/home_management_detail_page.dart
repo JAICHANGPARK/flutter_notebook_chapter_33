@@ -4,7 +4,8 @@ class HomeManagementDetailPage extends StatefulWidget {
   const HomeManagementDetailPage({super.key});
 
   @override
-  State<HomeManagementDetailPage> createState() => _HomeManagementDetailPageState();
+  State<HomeManagementDetailPage> createState() =>
+      _HomeManagementDetailPageState();
 }
 
 class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
@@ -19,7 +20,8 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
             decoration: BoxDecoration(
                 color: Colors.blue,
                 image: DecorationImage(
-                  image: NetworkImage("https://cdn.pixabay.com/photo/2023/09/10/15/33/traditional-8245250_1280.jpg"),
+                  image: NetworkImage(
+                      "https://cdn.pixabay.com/photo/2023/09/10/15/33/traditional-8245250_1280.jpg"),
                   fit: BoxFit.cover,
                 )),
             padding: EdgeInsets.only(top: 64, left: 16, right: 16),
@@ -30,14 +32,16 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                   children: [
                     Container(
                       padding: EdgeInsets.all(8),
-                      decoration:
-                          BoxDecoration(color: Colors.white.withOpacity(0.4), borderRadius: BorderRadius.circular(2)),
+                      decoration: BoxDecoration(
+                          color: Colors.white.withOpacity(0.4),
+                          borderRadius: BorderRadius.circular(2)),
                       child: Icon(Icons.keyboard_arrow_left),
                     ),
                     Container(
                       padding: EdgeInsets.all(8),
-                      decoration:
-                          BoxDecoration(color: Colors.white.withOpacity(0.4), borderRadius: BorderRadius.circular(2)),
+                      decoration: BoxDecoration(
+                          color: Colors.white.withOpacity(0.4),
+                          borderRadius: BorderRadius.circular(2)),
                       child: Icon(Icons.favorite_border),
                     )
                   ],
@@ -962,7 +966,9 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                     Container(
                       margin: EdgeInsets.symmetric(vertical: 8),
                       height: 108,
-                      decoration: BoxDecoration(color: Colors.orange, borderRadius: BorderRadius.circular(8)),
+                      decoration: BoxDecoration(
+                          color: Colors.orange,
+                          borderRadius: BorderRadius.circular(8)),
                     ),
                     SizedBox(
                       height: 16,
@@ -974,24 +980,32 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                         borderRadius: BorderRadius.circular(8),
                         border: Border.all(),
                       ),
-                      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                       child: Row(
                         children: [
-                          Container(height: 42, width: 42,
-                          color: Colors.green,),
-                          SizedBox(width: 8,),
-                          Expanded(child: Column(
+                          Container(
+                            height: 42,
+                            width: 42,
+                            color: Colors.green,
+                          ),
+                          SizedBox(
+                            width: 8,
+                          ),
+                          Expanded(
+                              child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                            Text("Sample Human"),
-                            SizedBox(height: 8,),
-                            Text("Earth")
-                          ],)),
+                              Text("Sample Human"),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Text("Earth")
+                            ],
+                          )),
                           Container(
                             padding: EdgeInsets.all(12),
-                            decoration: BoxDecoration(
-                              color: Colors.blueAccent
-                            ),
+                            decoration: BoxDecoration(color: Colors.blueAccent),
                             child: Text("View profile"),
                           )
                         ],

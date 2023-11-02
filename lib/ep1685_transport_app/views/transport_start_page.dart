@@ -34,7 +34,8 @@ class _TransportStartPageState extends State<TransportStartPage> {
                         color: Colors.grey[400],
                         borderRadius: BorderRadius.circular(6),
                       ),
-                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 16, vertical: 12),
                       child: const Text(
                         "Skip",
                         style: TextStyle(),

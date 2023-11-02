@@ -283,13 +283,16 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
                 itemBuilder: (context, index) {
                   return Container(
                     height: 120,
-                    margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                    margin:
+                        const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                     child: Row(
                       children: [
                         Container(
                           height: 100,
                           width: 100,
-                          decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(8)),
+                          decoration: BoxDecoration(
+                              color: Colors.grey,
+                              borderRadius: BorderRadius.circular(8)),
                         ),
                         const Expanded(
                           child: Padding(

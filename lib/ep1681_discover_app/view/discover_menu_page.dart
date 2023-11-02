@@ -111,11 +111,14 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
                                   children: [
                                     const Text(
                                       "Just for You",
-                                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 24),
                                     ),
                                     const Spacer(),
                                     Container(
-                                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 8, vertical: 2),
                                       decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(16),
                                         border: Border.all(
@@ -125,8 +128,10 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
                                       ),
                                       child: const Text(
                                         "#RELLS",
-                                        style:
-                                            TextStyle(fontWeight: FontWeight.bold, fontSize: 12, color: Colors.green),
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 12,
+                                            color: Colors.green),
                                       ),
                                     )
                                   ],
@@ -172,7 +177,8 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
                     margin: const EdgeInsets.only(left: 16),
                     decoration: BoxDecoration(
                       image: DecorationImage(
-                        image: NetworkImage("https://cdn.pixabay.com/photo/2013/07/18/10/55/dna-163466_1280.jpg"),
+                        image: NetworkImage(
+                            "https://cdn.pixabay.com/photo/2013/07/18/10/55/dna-163466_1280.jpg"),
                         fit: BoxFit.cover,
                       ),
                       color: Colors.blue,

@@ -28,9 +28,11 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 8),
                     child: Card(
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(32)),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(32)),
                       child: Padding(
-                        padding: const EdgeInsets.only(left: 12, right: 2, top: 2, bottom: 2),
+                        padding: const EdgeInsets.only(
+                            left: 12, right: 2, top: 2, bottom: 2),
                         child: Row(
                           children: [
                             const Expanded(
@@ -64,7 +66,8 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                 color: Colors.green[50],
                                 borderRadius: BorderRadius.circular(32),
                               ),
-                              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 16, vertical: 16),
                               child: const Row(
                                 children: [
                                   Icon(
@@ -101,10 +104,12 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               const Padding(
-                                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                                padding: EdgeInsets.symmetric(
+                                    horizontal: 8, vertical: 8),
                                 child: Card(
                                   child: Padding(
-                                    padding: EdgeInsets.symmetric(vertical: 4, horizontal: 16),
+                                    padding: EdgeInsets.symmetric(
+                                        vertical: 4, horizontal: 16),
                                     child: TextField(
                                       decoration: InputDecoration(
                                         hintText: "Search",
@@ -116,13 +121,17 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                 ),
                               ),
                               Padding(
-                                padding: const EdgeInsets.symmetric(horizontal: 16),
+                                padding:
+                                    const EdgeInsets.symmetric(horizontal: 16),
                                 child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
                                   children: [
                                     const Text(
                                       "Categories",
-                                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 18),
                                     ),
                                     TextButton(
                                       onPressed: () {},
@@ -137,15 +146,18 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                               Container(
                                 height: 84,
                                 // color: Colors.blueAccent,
-                                padding: const EdgeInsets.symmetric(horizontal: 16),
+                                padding:
+                                    const EdgeInsets.symmetric(horizontal: 16),
                                 child: ListView.builder(
                                   scrollDirection: Axis.horizontal,
                                   itemBuilder: (context, index) {
                                     return Container(
                                       width: 84,
                                       margin: const EdgeInsets.only(right: 12),
-                                      decoration:
-                                          BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
+                                      decoration: BoxDecoration(
+                                          color: Colors.white,
+                                          borderRadius:
+                                              BorderRadius.circular(8)),
                                       child: const Stack(
                                         children: [
                                           Positioned(
@@ -197,121 +209,167 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                 ),
                               ),
                               Expanded(
-                                child: TabBarView(physics: const NeverScrollableScrollPhysics(), children: [
-                                  SingleChildScrollView(
-                                    child: Column(
-                                      children: [
-                                        GestureDetector(
-                                          onTap: () {
-                                            Navigator.of(context).push(
-                                              MaterialPageRoute(
-                                                builder: (context) => const GroceryDetailPage(),
-                                              ),
-                                            );
-                                          },
-                                          child: Container(
-                                            margin: const EdgeInsets.symmetric(horizontal: 8),
-                                            height: 240,
-                                            child: Row(
-                                              children: [
-                                                Expanded(
-                                                    child: Card(
-                                                  child: Padding(
-                                                    padding: const EdgeInsets.all(12.0),
-                                                    child: Column(
-                                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                                      children: [
-                                                        Expanded(child: Container()),
-                                                        const Text("Mushroom Sauce"),
-                                                        const Row(
-                                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                child: TabBarView(
+                                    physics:
+                                        const NeverScrollableScrollPhysics(),
+                                    children: [
+                                      SingleChildScrollView(
+                                        child: Column(
+                                          children: [
+                                            GestureDetector(
+                                              onTap: () {
+                                                Navigator.of(context).push(
+                                                  MaterialPageRoute(
+                                                    builder: (context) =>
+                                                        const GroceryDetailPage(),
+                                                  ),
+                                                );
+                                              },
+                                              child: Container(
+                                                margin:
+                                                    const EdgeInsets.symmetric(
+                                                        horizontal: 8),
+                                                height: 240,
+                                                child: Row(
+                                                  children: [
+                                                    Expanded(
+                                                        child: Card(
+                                                      child: Padding(
+                                                        padding:
+                                                            const EdgeInsets
+                                                                .all(12.0),
+                                                        child: Column(
+                                                          crossAxisAlignment:
+                                                              CrossAxisAlignment
+                                                                  .start,
                                                           children: [
-                                                            Column(
-                                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                                            Expanded(
+                                                                child:
+                                                                    Container()),
+                                                            const Text(
+                                                                "Mushroom Sauce"),
+                                                            const Row(
+                                                              mainAxisAlignment:
+                                                                  MainAxisAlignment
+                                                                      .spaceBetween,
                                                               children: [
-                                                                Text("24Oz"),
-                                                                Text("\$8.92"),
+                                                                Column(
+                                                                  crossAxisAlignment:
+                                                                      CrossAxisAlignment
+                                                                          .start,
+                                                                  children: [
+                                                                    Text(
+                                                                        "24Oz"),
+                                                                    Text(
+                                                                        "\$8.92"),
+                                                                  ],
+                                                                ),
+                                                                CircleAvatar()
                                                               ],
-                                                            ),
-                                                            CircleAvatar()
+                                                            )
                                                           ],
+                                                        ),
+                                                      ),
+                                                    )),
+                                                    Expanded(
+                                                      child: Card(
+                                                        child: Padding(
+                                                          padding:
+                                                              const EdgeInsets
+                                                                  .all(12.0),
+                                                          child: Column(
+                                                            crossAxisAlignment:
+                                                                CrossAxisAlignment
+                                                                    .start,
+                                                            children: [
+                                                              Expanded(
+                                                                  child:
+                                                                      Container()),
+                                                              const Text(
+                                                                  "Mushroom Sauce"),
+                                                              const Row(
+                                                                mainAxisAlignment:
+                                                                    MainAxisAlignment
+                                                                        .spaceBetween,
+                                                                children: [
+                                                                  Column(
+                                                                    crossAxisAlignment:
+                                                                        CrossAxisAlignment
+                                                                            .start,
+                                                                    children: [
+                                                                      Text(
+                                                                          "24Oz"),
+                                                                      Text(
+                                                                          "\$8.92"),
+                                                                    ],
+                                                                  ),
+                                                                  CircleAvatar()
+                                                                ],
+                                                              )
+                                                            ],
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
+                                              ),
+                                            ),
+                                            Container(
+                                              height: 240,
+                                              margin: const EdgeInsets.only(
+                                                  left: 12, top: 12),
+                                              child: ListView.builder(
+                                                scrollDirection:
+                                                    Axis.horizontal,
+                                                itemBuilder: (context, index) {
+                                                  return Container(
+                                                    width: 240,
+                                                    margin:
+                                                        const EdgeInsets.only(
+                                                            right: 8),
+                                                    decoration: BoxDecoration(
+                                                        color: Colors.green,
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(16)),
+                                                    padding:
+                                                        const EdgeInsets.all(
+                                                            16),
+                                                    child: const Column(
+                                                      crossAxisAlignment:
+                                                          CrossAxisAlignment
+                                                              .start,
+                                                      children: [
+                                                        Text(
+                                                          "MEAL PLAN\nWITH GROCERY\nSTAY ",
+                                                          style: TextStyle(
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .bold,
+                                                              fontSize: 24,
+                                                              color:
+                                                                  Colors.white),
                                                         )
                                                       ],
                                                     ),
-                                                  ),
-                                                )),
-                                                Expanded(
-                                                  child: Card(
-                                                    child: Padding(
-                                                      padding: const EdgeInsets.all(12.0),
-                                                      child: Column(
-                                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                                        children: [
-                                                          Expanded(child: Container()),
-                                                          const Text("Mushroom Sauce"),
-                                                          const Row(
-                                                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                            children: [
-                                                              Column(
-                                                                crossAxisAlignment: CrossAxisAlignment.start,
-                                                                children: [
-                                                                  Text("24Oz"),
-                                                                  Text("\$8.92"),
-                                                                ],
-                                                              ),
-                                                              CircleAvatar()
-                                                            ],
-                                                          )
-                                                        ],
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ),
-                                              ],
-                                            ),
-                                          ),
+                                                  );
+                                                },
+                                              ),
+                                            )
+                                          ],
                                         ),
-                                        Container(
-                                          height: 240,
-                                          margin: const EdgeInsets.only(left: 12, top: 12),
-                                          child: ListView.builder(
-                                            scrollDirection: Axis.horizontal,
-                                            itemBuilder: (context, index) {
-                                              return Container(
-                                                width: 240,
-                                                margin: const EdgeInsets.only(right: 8),
-                                                decoration: BoxDecoration(
-                                                    color: Colors.green, borderRadius: BorderRadius.circular(16)),
-                                                padding: const EdgeInsets.all(16),
-                                                child: const Column(
-                                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                                  children: [
-                                                    Text(
-                                                      "MEAL PLAN\nWITH GROCERY\nSTAY ",
-                                                      style: TextStyle(
-                                                          fontWeight: FontWeight.bold,
-                                                          fontSize: 24,
-                                                          color: Colors.white),
-                                                    )
-                                                  ],
-                                                ),
-                                              );
-                                            },
-                                          ),
-                                        )
-                                      ],
-                                    ),
-                                  ),
-                                  Container(
-                                    color: Colors.blue,
-                                  ),
-                                  Container(
-                                    color: Colors.blue,
-                                  ),
-                                  Container(
-                                    color: Colors.blue,
-                                  ),
-                                ]),
+                                      ),
+                                      Container(
+                                        color: Colors.blue,
+                                      ),
+                                      Container(
+                                        color: Colors.blue,
+                                      ),
+                                      Container(
+                                        color: Colors.blue,
+                                      ),
+                                    ]),
                               )
                             ],
                           ),
@@ -325,7 +383,8 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                             children: [
                               const Card(
                                 child: Padding(
-                                  padding: EdgeInsets.symmetric(vertical: 4, horizontal: 16),
+                                  padding: EdgeInsets.symmetric(
+                                      vertical: 4, horizontal: 16),
                                   child: TextField(
                                     decoration: InputDecoration(
                                       hintText: "Search",
@@ -350,15 +409,18 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                               ),
                               Expanded(
                                 child: GridView.builder(
-                                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                                    gridDelegate:
+                                        const SliverGridDelegateWithFixedCrossAxisCount(
                                       crossAxisCount: 3,
                                       crossAxisSpacing: 8,
                                       mainAxisSpacing: 8,
                                     ),
                                     itemBuilder: (context, index) {
                                       return Container(
-                                        decoration:
-                                            BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(8)),
+                                        decoration: BoxDecoration(
+                                            color: Colors.red,
+                                            borderRadius:
+                                                BorderRadius.circular(8)),
                                       );
                                     }),
                               )
@@ -380,11 +442,13 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                   child: Padding(
                                     padding: const EdgeInsets.all(8.0),
                                     child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
                                       children: [
                                         Expanded(
                                           child: GridView.builder(
-                                            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                                            gridDelegate:
+                                                const SliverGridDelegateWithFixedCrossAxisCount(
                                               crossAxisCount: 2,
                                               mainAxisSpacing: 4,
                                               crossAxisSpacing: 4,
@@ -392,7 +456,10 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                             itemBuilder: (context, index) {
                                               return Container(
                                                 decoration: BoxDecoration(
-                                                    color: Colors.blue, borderRadius: BorderRadius.circular(4)),
+                                                    color: Colors.blue,
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            4)),
                                               );
                                             },
                                           ),
@@ -418,11 +485,13 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                   child: Padding(
                                     padding: const EdgeInsets.all(8.0),
                                     child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
                                       children: [
                                         Expanded(
                                           child: GridView.builder(
-                                            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                                            gridDelegate:
+                                                const SliverGridDelegateWithFixedCrossAxisCount(
                                               crossAxisCount: 2,
                                               mainAxisSpacing: 4,
                                               crossAxisSpacing: 4,
@@ -430,7 +499,10 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                             itemBuilder: (context, index) {
                                               return Container(
                                                 decoration: BoxDecoration(
-                                                    color: Colors.blue, borderRadius: BorderRadius.circular(4)),
+                                                    color: Colors.blue,
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            4)),
                                               );
                                             },
                                           ),
@@ -456,11 +528,13 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                   child: Padding(
                                     padding: const EdgeInsets.all(8.0),
                                     child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
                                       children: [
                                         Expanded(
                                           child: GridView.builder(
-                                            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                                            gridDelegate:
+                                                const SliverGridDelegateWithFixedCrossAxisCount(
                                               crossAxisCount: 2,
                                               mainAxisSpacing: 4,
                                               crossAxisSpacing: 4,
@@ -468,7 +542,10 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                             itemBuilder: (context, index) {
                                               return Container(
                                                 decoration: BoxDecoration(
-                                                    color: Colors.blue, borderRadius: BorderRadius.circular(4)),
+                                                    color: Colors.blue,
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            4)),
                                               );
                                             },
                                           ),
@@ -494,13 +571,15 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                   child: Padding(
                                     padding: const EdgeInsets.all(8.0),
                                     child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
                                       children: [
                                         Expanded(
                                           child: Container(
                                             decoration: BoxDecoration(
                                               color: Colors.green[50],
-                                              borderRadius: BorderRadius.circular(4),
+                                              borderRadius:
+                                                  BorderRadius.circular(4),
                                             ),
                                             child: const Center(
                                               child: Icon(

@@ -29,7 +29,8 @@ class _GroceryDetailPageState extends State<GroceryDetailPage> {
                         border: Border.all(color: Colors.white, width: 1.5),
                         color: Colors.green[50],
                       ),
-                      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                       child: Text(
                         "Back",
                         style: TextStyle(
@@ -117,21 +118,25 @@ class _GroceryDetailPageState extends State<GroceryDetailPage> {
                           padding: EdgeInsets.all(8),
                           child: GridView.builder(
                             gridDelegate:
-                                SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2, childAspectRatio: 0.8),
+                                SliverGridDelegateWithFixedCrossAxisCount(
+                                    crossAxisCount: 2, childAspectRatio: 0.8),
                             itemBuilder: (context, index) {
                               return Card(
                                 child: Padding(
                                   padding: const EdgeInsets.all(12.0),
                                   child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
                                     children: [
                                       Expanded(child: Container()),
                                       const Text("Mushroom Sauce"),
                                       const Row(
-                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
                                         children: [
                                           Column(
-                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
                                             children: [
                                               Text("24Oz"),
                                               Text("\$8.92"),

@@ -43,10 +43,13 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                                 color: Colors.grey[200],
                                 borderRadius: BorderRadius.circular(34),
                               ),
-                              padding: const EdgeInsets.symmetric(horizontal: 16),
+                              padding:
+                                  const EdgeInsets.symmetric(horizontal: 16),
                               child: const TextField(
                                 decoration: InputDecoration(
-                                    hintText: "Search", border: InputBorder.none, suffixIcon: Icon(Icons.search)),
+                                    hintText: "Search",
+                                    border: InputBorder.none,
+                                    suffixIcon: Icon(Icons.search)),
                               ),
                             ),
                           ),
@@ -60,7 +63,8 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                               onTap: () {
                                 Navigator.of(context).push(
                                   MaterialPageRoute(
-                                    builder: (context) => EcommerceNotificationPage(),
+                                    builder: (context) =>
+                                        EcommerceNotificationPage(),
                                   ),
                                 );
                               },
@@ -102,15 +106,18 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                               children: [
                                 const Text(
                                   "Get your special\nsale up to 50%",
-                                  style: TextStyle(color: Colors.white, fontSize: 18),
+                                  style: TextStyle(
+                                      color: Colors.white, fontSize: 18),
                                 ),
                                 const SizedBox(
                                   height: 8,
                                 ),
                                 Container(
-                                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
-                                  decoration:
-                                      BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(32)),
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 8, vertical: 8),
+                                  decoration: BoxDecoration(
+                                      color: Colors.black,
+                                      borderRadius: BorderRadius.circular(32)),
                                   child: const Text(
                                     "Shop Now",
                                     style: TextStyle(
@@ -147,16 +154,20 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                                 child: TabBarView(
                               children: [
                                 Padding(
-                                  padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
+                                  padding:
+                                      const EdgeInsets.fromLTRB(16, 8, 16, 0),
                                   child: GridView.builder(
-                                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                                        crossAxisCount: 2, childAspectRatio: 0.7),
+                                    gridDelegate:
+                                        const SliverGridDelegateWithFixedCrossAxisCount(
+                                            crossAxisCount: 2,
+                                            childAspectRatio: 0.7),
                                     itemBuilder: (context, index) {
                                       return InkWell(
                                         onTap: () {
                                           Navigator.of(context).push(
                                             MaterialPageRoute(
-                                              builder: (context) => const EcommerceDetailPage(),
+                                              builder: (context) =>
+                                                  const EcommerceDetailPage(),
                                             ),
                                           );
                                         },
@@ -165,7 +176,8 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                                             children: [
                                               Expanded(
                                                 child: Container(
-                                                  decoration: const BoxDecoration(
+                                                  decoration:
+                                                      const BoxDecoration(
                                                     color: Colors.grey,
                                                   ),
                                                   child: const Stack(
@@ -174,16 +186,24 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                                                 ),
                                               ),
                                               Padding(
-                                                padding: const EdgeInsets.all(8.0),
+                                                padding:
+                                                    const EdgeInsets.all(8.0),
                                                 child: Column(
-                                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.start,
                                                   children: [
                                                     Container(
                                                       decoration: BoxDecoration(
-                                                        color: Colors.deepOrange,
-                                                        borderRadius: BorderRadius.circular(16),
+                                                        color:
+                                                            Colors.deepOrange,
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(16),
                                                       ),
-                                                      padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                                                      padding: const EdgeInsets
+                                                          .symmetric(
+                                                          horizontal: 4,
+                                                          vertical: 2),
                                                       child: const Text(
                                                         "Hoodie",
                                                         style: TextStyle(
@@ -193,8 +213,11 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                                                       ),
                                                     ),
                                                     const Padding(
-                                                      padding: EdgeInsets.symmetric(vertical: 8),
-                                                      child: Text("Title Title Title Title Title Title Title Title"),
+                                                      padding:
+                                                          EdgeInsets.symmetric(
+                                                              vertical: 8),
+                                                      child: Text(
+                                                          "Title Title Title Title Title Title Title Title"),
                                                     ),
                                                     const Row(
                                                       children: [
@@ -207,8 +230,10 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                                                         Text(
                                                           "\$17.00",
                                                           style: TextStyle(
-                                                            fontWeight: FontWeight.bold,
-                                                            color: Colors.deepOrange,
+                                                            fontWeight:
+                                                                FontWeight.bold,
+                                                            color: Colors
+                                                                .deepOrange,
                                                           ),
                                                         )
                                                       ],
@@ -258,11 +283,14 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                     SizedBox(
                       height: 180,
                       child: PageView.builder(
-                        controller: PageController(viewportFraction: 0.8, initialPage: 1),
+                        controller: PageController(
+                            viewportFraction: 0.8, initialPage: 1),
                         itemBuilder: (context, index) {
                           return Container(
                             margin: const EdgeInsets.symmetric(horizontal: 8),
-                            decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(8)),
+                            decoration: BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius: BorderRadius.circular(8)),
                           );
                         },
                       ),
@@ -349,8 +377,11 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                                 horizontal: 16,
                               ),
                               child: GridView.builder(
-                                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                                    crossAxisCount: 2, crossAxisSpacing: 8, mainAxisSpacing: 8),
+                                gridDelegate:
+                                    const SliverGridDelegateWithFixedCrossAxisCount(
+                                        crossAxisCount: 2,
+                                        crossAxisSpacing: 8,
+                                        mainAxisSpacing: 8),
                                 itemBuilder: (context, index) {
                                   return Container(
                                     color: Colors.blue,
@@ -384,11 +415,16 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                   unselectedItemColor: Colors.grey,
                   selectedItemColor: Colors.deepOrange,
                   items: const [
-                    BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-                    BottomNavigationBarItem(icon: Icon(Icons.explore_outlined), label: "Discover"),
-                    BottomNavigationBarItem(icon: Icon(Icons.favorite_border), label: "Discover"),
-                    BottomNavigationBarItem(icon: Icon(Icons.chat_outlined), label: "Discover"),
-                    BottomNavigationBarItem(icon: Icon(Icons.person_outline), label: "Discover"),
+                    BottomNavigationBarItem(
+                        icon: Icon(Icons.home), label: "Home"),
+                    BottomNavigationBarItem(
+                        icon: Icon(Icons.explore_outlined), label: "Discover"),
+                    BottomNavigationBarItem(
+                        icon: Icon(Icons.favorite_border), label: "Discover"),
+                    BottomNavigationBarItem(
+                        icon: Icon(Icons.chat_outlined), label: "Discover"),
+                    BottomNavigationBarItem(
+                        icon: Icon(Icons.person_outline), label: "Discover"),
                   ],
                 ),
               ),
