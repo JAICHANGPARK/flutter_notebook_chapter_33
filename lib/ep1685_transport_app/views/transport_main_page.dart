@@ -186,7 +186,7 @@ class _TransportMainPageState extends State<TransportMainPage> {
                           scrollDirection: Axis.horizontal,
                           itemBuilder: (context, index) {
                             return Padding(
-                              padding: const EdgeInsets.only(right: 8),
+                              padding: const EdgeInsets.only(right: 12),
                               child: SizedBox(
                                 width: 200,
                                 child: Card(
