@@ -189,34 +189,37 @@ class _TransportMainPageState extends State<TransportMainPage> {
                               width: 200,
                               child: Card(
                                 elevation: 8,
-                                child: Column(
-                                  children: [
-                                    Row(
-                                      children: [
-                                        Icon(Icons.train),
-                                        Container(
-                                          decoration: BoxDecoration(
-                                            border: Border.all(
-                                              color: Colors.grey[300]!,
+                                child: Padding(
+                                  padding: const EdgeInsets.all(16.0),
+                                  child: Column(
+                                    children: [
+                                      Row(
+                                        children: [
+                                          Icon(Icons.train),
+                                          Container(
+                                            decoration: BoxDecoration(
+                                              border: Border.all(
+                                                color: Colors.grey[300]!,
+                                              ),
+                                              borderRadius: BorderRadius.circular(4),
                                             ),
-                                            borderRadius: BorderRadius.circular(4),
+                                            padding: EdgeInsets.all(2),
+                                            child: Text("T4"),
                                           ),
-                                          padding: EdgeInsets.all(2),
-                                          child: Text("T4"),
-                                        ),
-                                        Container(
-                                          decoration: BoxDecoration(
-                                            border: Border.all(
-                                              color: Colors.grey[300]!,
+                                          Container(
+                                            decoration: BoxDecoration(
+                                              border: Border.all(
+                                                color: Colors.grey[300]!,
+                                              ),
+                                              borderRadius: BorderRadius.circular(4),
                                             ),
-                                            borderRadius: BorderRadius.circular(4),
-                                          ),
-                                          padding: EdgeInsets.all(2),
-                                          child: Text("T4"),
-                                        )
-                                      ],
-                                    )
-                                  ],
+                                            padding: EdgeInsets.all(2),
+                                            child: Text("T4"),
+                                          )
+                                        ],
+                                      )
+                                    ],
+                                  ),
                                 ),
                               ),
                             );
