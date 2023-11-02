@@ -170,7 +170,13 @@ class _TransportMainPageState extends State<TransportMainPage> {
                           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                         ),
                       ),
-                      Text("Departing in:"),
+                      SizedBox(
+                        height: 16,
+                      ),
+                      Text("Departing in:",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),),
                       Container(
                         height: 200,
                         child: ListView.builder(
