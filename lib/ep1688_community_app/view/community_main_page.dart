@@ -11,7 +11,16 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      backgroundColor: Colors.black,
+      appBar: AppBar(
+        title: Text(
+          "FEED",
+        ),
+        backgroundColor: Colors.black,
+        foregroundColor: Colors.white,
+        elevation: 0,
+
+      ),
     );
   }
 }
