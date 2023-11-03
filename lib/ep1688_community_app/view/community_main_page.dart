@@ -13,13 +13,27 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
+        centerTitle: true,
         title: Text(
           "FEED",
         ),
         backgroundColor: Colors.black,
         foregroundColor: Colors.white,
         elevation: 0,
-
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Icons.tune,
+            ),
+          ),
+          Center(
+            child: Badge(
+              label: Text("2"),
+              child: Icon(Icons.notifications_none),
+            ),
+          )
+        ],
       ),
     );
   }
