@@ -14,7 +14,7 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
       backgroundColor: Colors.black,
       appBar: AppBar(
         centerTitle: true,
-        title: Text(
+        title: const Text(
           "FEED",
         ),
         backgroundColor: Colors.black,
@@ -23,11 +23,11 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Icons.tune,
             ),
           ),
-          Center(
+          const Center(
             child: Badge(
               label: Text("2"),
               child: Icon(Icons.notifications_none),
