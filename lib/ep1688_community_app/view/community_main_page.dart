@@ -39,11 +39,30 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
         ],
       ),
       body: Column(
-        children: [],
+        children: [
+          Divider(),
+          Expanded(
+            child: ListView.builder(
+              itemBuilder: (context, index) {
+                return Container();
+              },
+            ),
+          ),
+          Divider(),
+        ],
       ),
       bottomNavigationBar: BottomAppBar(
+        color: Colors.black,
         child: Row(
-          children: [],
+          children: [
+            IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.home_filled,
+              ),
+              color: Colors.grey,
+            )
+          ],
         ),
       ),
     );
