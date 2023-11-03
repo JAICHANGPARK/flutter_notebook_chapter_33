@@ -80,7 +80,20 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                 ),
                 onPressed: () {},
               ),
-            )
+            ),
+            Badge(
+              child: IconButton(
+                icon: Icon(
+                  Icons.chat,
+                ),
+                onPressed: () {},
+              ),
+            ),
+            IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.person,
+                ))
           ],
         ),
       ),
