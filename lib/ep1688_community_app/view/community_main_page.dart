@@ -32,8 +32,19 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
               label: Text("2"),
               child: Icon(Icons.notifications_none),
             ),
-          )
+          ),
+          SizedBox(
+            width: 16,
+          ),
         ],
+      ),
+      body: Column(
+        children: [],
+      ),
+      bottomNavigationBar: BottomAppBar(
+        child: Row(
+          children: [],
+        ),
       ),
     );
   }
