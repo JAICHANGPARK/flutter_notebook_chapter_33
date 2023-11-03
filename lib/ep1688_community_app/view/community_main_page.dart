@@ -10,6 +10,8 @@ class CommunityMainPage extends StatefulWidget {
 class _CommunityMainPageState extends State<CommunityMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(),
+    );
   }
 }
