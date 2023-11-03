@@ -57,7 +57,9 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
       ),
       bottomNavigationBar: BottomAppBar(
         color: Colors.black,
+        height: 80,
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             IconButton(
               onPressed: () {},
@@ -90,10 +92,11 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
               ),
             ),
             IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.person,
-                ))
+              onPressed: () {},
+              icon: Icon(
+                Icons.person,
+              ),
+            )
           ],
         ),
       ),
