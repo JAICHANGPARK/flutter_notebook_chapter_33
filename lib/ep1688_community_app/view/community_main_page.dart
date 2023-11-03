@@ -40,7 +40,9 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
       ),
       body: Column(
         children: [
-          Divider(),
+          Divider(
+            color: Colors.grey,
+          ),
           Expanded(
             child: ListView.builder(
               itemBuilder: (context, index) {
@@ -48,7 +50,9 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
               },
             ),
           ),
-          Divider(),
+          Divider(
+            color: Colors.grey,
+          ),
         ],
       ),
       bottomNavigationBar: BottomAppBar(
