@@ -65,6 +65,21 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                 Icons.home_filled,
               ),
               color: Colors.grey,
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.explore_outlined,
+              ),
+              color: Colors.grey,
+            ),
+            Badge(
+              child: IconButton(
+                icon: Icon(
+                  Icons.newspaper,
+                ),
+                onPressed: () {},
+              ),
             )
           ],
         ),
