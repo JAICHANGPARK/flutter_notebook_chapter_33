@@ -69,14 +69,22 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                setState(() {
+                  menuIndex = 0;
+                });
+              },
               icon: Icon(
                 Icons.home_filled,
               ),
               color: Colors.grey,
             ),
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                setState(() {
+                  menuIndex = 1;
+                });
+              },
               icon: Icon(
                 Icons.explore_outlined,
               ),
@@ -88,7 +96,11 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                 icon: Icon(
                   Icons.newspaper,
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  setState(() {
+                    menuIndex = 2;
+                  });
+                },
               ),
             ),
             Badge(
@@ -97,11 +109,17 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                 icon: Icon(
                   Icons.chat,
                 ),
-                onPressed: () {},
+                onPressed: () {setState(() {
+                  menuIndex = 3;
+                });},
               ),
             ),
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                setState(() {
+                  menuIndex = 4;
+                });
+              },
               icon: Icon(
                 Icons.person,
               ),
