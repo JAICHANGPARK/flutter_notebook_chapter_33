@@ -40,25 +40,37 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
           ),
         ],
       ),
-      body: IndexedStack(
-        index: menuIndex,
+      body: Column(
         children: [
-          Column(
-            children: [
-              const Divider(
-                color: Colors.grey,
-              ),
-              Expanded(
-                child: ListView.builder(
-                  itemBuilder: (context, index) {
-                    return Container();
-                  },
+          const Divider(
+            color: Colors.grey,
+          ),
+          Expanded(
+            child: IndexedStack(
+              index: menuIndex,
+              children: [
+                Container(),
+                Container(),
+                Column(
+                  children: [
+
+                    Expanded(
+                      child: ListView(
+                        children: [
+
+                        ],
+                      )
+                    ),
+
+                  ],
                 ),
-              ),
-              const Divider(
-                color: Colors.grey,
-              ),
-            ],
+                Container(),
+                Container(),
+              ],
+            ),
+          ),
+          const Divider(
+            color: Colors.grey,
           ),
         ],
       ),
@@ -105,7 +117,8 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
               ),
             ),
             Badge(
-              label: const Text(""),
+              label: const Text("1"),
+
               child: IconButton(
                 icon: const Icon(
                   Icons.chat,
