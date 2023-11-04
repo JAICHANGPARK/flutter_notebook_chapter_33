@@ -151,11 +151,11 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
                           const CircleAvatar(
                             radius: 28,
                             backgroundColor: Colors.white,
+                            foregroundColor: Colors.indigo,
                             child: Icon(
                               Icons.play_arrow,
                               size: 32,
                             ),
-                            foregroundColor: Colors.indigo,
                           )
                         ],
                       ),
@@ -352,8 +352,8 @@ class _MovieStreamingHomePageState extends State<MovieStreamingHomePage> {
               ),
               const CircleAvatar(
                 backgroundColor: Colors.indigo,
-                child: Icon(Icons.home_filled),
                 foregroundColor: Colors.white,
+                child: Icon(Icons.home_filled),
               ),
               IconButton(
                 onPressed: () {},

@@ -35,7 +35,7 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
               child: Icon(Icons.notifications_none),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             width: 16,
           ),
         ],
@@ -45,7 +45,7 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
         children: [
           Column(
             children: [
-              Divider(
+              const Divider(
                 color: Colors.grey,
               ),
               Expanded(
@@ -55,7 +55,7 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                   },
                 ),
               ),
-              Divider(
+              const Divider(
                 color: Colors.grey,
               ),
             ],
@@ -74,7 +74,7 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                   menuIndex = 0;
                 });
               },
-              icon: Icon(
+              icon: const Icon(
                 Icons.home_filled,
               ),
               color: menuIndex != 0 ? Colors.grey : Colors.orange,
@@ -85,15 +85,15 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                   menuIndex = 1;
                 });
               },
-              icon: Icon(
+              icon: const Icon(
                 Icons.explore_outlined,
               ),
               color: menuIndex != 1 ? Colors.grey : Colors.orange,
             ),
             Badge(
-              label: Text(""),
+              label: const Text(""),
               child: IconButton(
-                icon: Icon(
+                icon: const Icon(
                   Icons.newspaper,
                 ),
                 onPressed: () {
@@ -105,9 +105,9 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
               ),
             ),
             Badge(
-              label: Text(""),
+              label: const Text(""),
               child: IconButton(
-                icon: Icon(
+                icon: const Icon(
                   Icons.chat,
                 ),
                 onPressed: () {
@@ -124,7 +124,7 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                   menuIndex = 4;
                 });
               },
-              icon: Icon(
+              icon: const Icon(
                 Icons.person,
               ),
               color: menuIndex != 4 ? Colors.grey : Colors.orange,

@@ -88,7 +88,7 @@ class _EcommerceNotificationPageState extends State<EcommerceNotificationPage> {
                               ),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 4,
                           ),
                           const Text(
@@ -97,12 +97,12 @@ class _EcommerceNotificationPageState extends State<EcommerceNotificationPage> {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 4,
                           ),
                           const Text(
                               "Package 123456789 from message 12345789 has been received,"),
-                          SizedBox(
+                          const SizedBox(
                             height: 4,
                           ),
                           const Text("01 - 08 - 2023 ")

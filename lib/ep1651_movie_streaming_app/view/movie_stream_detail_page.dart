@@ -10,7 +10,7 @@ class MovieStreamDetailPage extends StatelessWidget {
         children: [
           Expanded(
               child: Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Colors.orange,
             ),
           )),
@@ -24,9 +24,9 @@ class MovieStreamDetailPage extends StatelessWidget {
                       decoration: BoxDecoration(
                           color: Colors.grey,
                           borderRadius: BorderRadius.circular(32)),
-                      padding: EdgeInsets.all(24),
-                      margin: EdgeInsets.all(24),
-                      child: Row(
+                      padding: const EdgeInsets.all(24),
+                      margin: const EdgeInsets.all(24),
+                      child: const Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Icon(Icons.calendar_month),
@@ -38,8 +38,8 @@ class MovieStreamDetailPage extends StatelessWidget {
                         ],
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                    const Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 16),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -52,13 +52,13 @@ class MovieStreamDetailPage extends StatelessWidget {
                         ],
                       ),
                     ),
-                    Text("Cast and Crew"),
-                    Container(
+                    const Text("Cast and Crew"),
+                    SizedBox(
                       height: 64,
                       child: ListView.builder(
                         itemCount: 10,
                         scrollDirection: Axis.horizontal,
-                        itemBuilder: (context, index) => Column(
+                        itemBuilder: (context, index) => const Column(
                           children: [
                             CircleAvatar(),
                             Text("Dreamwalker"),

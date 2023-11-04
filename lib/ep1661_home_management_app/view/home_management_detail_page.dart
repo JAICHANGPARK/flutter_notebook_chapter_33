@@ -17,32 +17,32 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
         children: [
           Container(
             height: 360,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
                 color: Colors.blue,
                 image: DecorationImage(
                   image: NetworkImage(
                       "https://cdn.pixabay.com/photo/2023/09/10/15/33/traditional-8245250_1280.jpg"),
                   fit: BoxFit.cover,
                 )),
-            padding: EdgeInsets.only(top: 64, left: 16, right: 16),
+            padding: const EdgeInsets.only(top: 64, left: 16, right: 16),
             child: Column(
               children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
-                      padding: EdgeInsets.all(8),
+                      padding: const EdgeInsets.all(8),
                       decoration: BoxDecoration(
                           color: Colors.white.withOpacity(0.4),
                           borderRadius: BorderRadius.circular(2)),
-                      child: Icon(Icons.keyboard_arrow_left),
+                      child: const Icon(Icons.keyboard_arrow_left),
                     ),
                     Container(
-                      padding: EdgeInsets.all(8),
+                      padding: const EdgeInsets.all(8),
                       decoration: BoxDecoration(
                           color: Colors.white.withOpacity(0.4),
                           borderRadius: BorderRadius.circular(2)),
-                      child: Icon(Icons.favorite_border),
+                      child: const Icon(Icons.favorite_border),
                     )
                   ],
                 ),
@@ -58,7 +58,7 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
-                  margin: EdgeInsets.symmetric(vertical: 8),
+                  margin: const EdgeInsets.symmetric(vertical: 8),
                   height: 46,
                   // color: Colors.blue,
                   child: ListView.builder(
@@ -66,7 +66,7 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                     itemBuilder: (context, index) {
                       return Container(
                         width: 72,
-                        margin: EdgeInsets.only(right: 8),
+                        margin: const EdgeInsets.only(right: 8),
                         decoration: BoxDecoration(
                           color: Colors.orange,
                           borderRadius: BorderRadius.circular(4),
@@ -75,17 +75,17 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                     },
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 16,
                 ),
-                Text(
+                const Text(
                   "Single room in sunny apartment.",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 18,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 12,
                 ),
                 Row(
@@ -103,7 +103,7 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                     )
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 12,
                 ),
                 Text(
@@ -112,23 +112,23 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                     color: Colors.grey[400],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 12,
                 ),
-                Container(
+                SizedBox(
                   height: 42,
                   child: Row(
                     children: [
                       Expanded(
                         child: Container(
-                          padding: EdgeInsets.all(8),
+                          padding: const EdgeInsets.all(8),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(4),
                             border: Border.all(
                               color: Colors.blueAccent,
                             ),
                           ),
-                          child: Row(
+                          child: const Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Icon(
@@ -148,17 +148,17 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 16,
                       ),
                       Expanded(
                         child: Container(
-                          padding: EdgeInsets.all(8),
+                          padding: const EdgeInsets.all(8),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(4),
                             color: Colors.blue,
                           ),
-                          child: Center(
+                          child: const Center(
                             child: Text(
                               "Book room",
                               style: TextStyle(color: Colors.white),
@@ -172,7 +172,7 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
               ],
             ),
           ),
-          Divider(
+          const Divider(
             color: Colors.grey,
           ),
           Expanded(
@@ -182,22 +182,22 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
+                    const Text(
                       "ABOUT ME",
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 8,
                     ),
                     Container(
-                      margin: EdgeInsets.only(top: 8),
+                      margin: const EdgeInsets.only(top: 8),
                       decoration: BoxDecoration(
                         border: Border.all(
                           color: Colors.grey[300]!,
                         ),
                         borderRadius: BorderRadius.circular(8),
                       ),
-                      padding: EdgeInsets.all(12),
-                      child: Row(
+                      padding: const EdgeInsets.all(12),
+                      child: const Row(
                         children: [
                           Expanded(
                             child: Column(
@@ -353,22 +353,22 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 16,
                     ),
-                    Text(
+                    const Text(
                       "ROOM OVERVIEW",
                     ),
                     Container(
-                      margin: EdgeInsets.only(top: 8),
+                      margin: const EdgeInsets.only(top: 8),
                       decoration: BoxDecoration(
                         border: Border.all(
                           color: Colors.grey[300]!,
                         ),
                         borderRadius: BorderRadius.circular(8),
                       ),
-                      padding: EdgeInsets.all(12),
-                      child: Row(
+                      padding: const EdgeInsets.all(12),
+                      child: const Row(
                         children: [
                           Expanded(
                             child: Column(
@@ -524,19 +524,19 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 16,
                     ),
-                    Text("HOME AMENITIES"),
+                    const Text("HOME AMENITIES"),
                     Container(
-                      margin: EdgeInsets.only(top: 8),
+                      margin: const EdgeInsets.only(top: 8),
                       decoration: BoxDecoration(
                         border: Border.all(
                           color: Colors.grey[300]!,
                         ),
                         borderRadius: BorderRadius.circular(8),
                       ),
-                      padding: EdgeInsets.all(12),
+                      padding: const EdgeInsets.all(12),
                       child: Row(
                         children: [
                           Expanded(
@@ -552,15 +552,15 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                         color: Colors.green[100],
                                       ),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       width: 8,
                                     ),
-                                    Text(
+                                    const Text(
                                       "Wi-fi",
                                     ),
                                   ],
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 16,
                                 ),
                                 Row(
@@ -572,15 +572,15 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                         color: Colors.green[100],
                                       ),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       width: 8,
                                     ),
-                                    Text(
+                                    const Text(
                                       "Wi-fi",
                                     ),
                                   ],
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 16,
                                 ),
                                 Row(
@@ -592,10 +592,10 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                         color: Colors.green[100],
                                       ),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       width: 8,
                                     ),
-                                    Text(
+                                    const Text(
                                       "Wi-fi",
                                     ),
                                   ],
@@ -615,15 +615,15 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                         color: Colors.green[100],
                                       ),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       width: 8,
                                     ),
-                                    Text(
+                                    const Text(
                                       "Wi-fi",
                                     ),
                                   ],
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 16,
                                 ),
                                 Row(
@@ -635,15 +635,15 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                         color: Colors.green[100],
                                       ),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       width: 8,
                                     ),
-                                    Text(
+                                    const Text(
                                       "Wi-fi",
                                     ),
                                   ],
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 16,
                                 ),
                                 Row(
@@ -655,10 +655,10 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                         color: Colors.green[100],
                                       ),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       width: 8,
                                     ),
-                                    Text(
+                                    const Text(
                                       "Wi-fi",
                                     ),
                                   ],
@@ -669,19 +669,19 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 16,
                     ),
-                    Text("SUITABLE FOR"),
+                    const Text("SUITABLE FOR"),
                     Container(
-                      margin: EdgeInsets.only(top: 8),
+                      margin: const EdgeInsets.only(top: 8),
                       decoration: BoxDecoration(
                         border: Border.all(
                           color: Colors.grey[300]!,
                         ),
                         borderRadius: BorderRadius.circular(8),
                       ),
-                      padding: EdgeInsets.all(12),
+                      padding: const EdgeInsets.all(12),
                       child: Row(
                         children: [
                           Expanded(
@@ -697,15 +697,15 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                         color: Colors.green[100],
                                       ),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       width: 8,
                                     ),
-                                    Text(
+                                    const Text(
                                       "Wi-fi",
                                     ),
                                   ],
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 16,
                                 ),
                                 Row(
@@ -717,15 +717,15 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                         color: Colors.green[100],
                                       ),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       width: 8,
                                     ),
-                                    Text(
+                                    const Text(
                                       "Wi-fi",
                                     ),
                                   ],
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 16,
                                 ),
                                 Row(
@@ -737,10 +737,10 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                         color: Colors.green[100],
                                       ),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       width: 8,
                                     ),
-                                    Text(
+                                    const Text(
                                       "Wi-fi",
                                     ),
                                   ],
@@ -760,15 +760,15 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                         color: Colors.green[100],
                                       ),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       width: 8,
                                     ),
-                                    Text(
+                                    const Text(
                                       "Wi-fi",
                                     ),
                                   ],
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 16,
                                 ),
                                 Row(
@@ -780,15 +780,15 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                         color: Colors.green[100],
                                       ),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       width: 8,
                                     ),
-                                    Text(
+                                    const Text(
                                       "Wi-fi",
                                     ),
                                   ],
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 16,
                                 ),
                                 Row(
@@ -800,10 +800,10 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                         color: Colors.green[100],
                                       ),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       width: 8,
                                     ),
-                                    Text(
+                                    const Text(
                                       "Wi-fi",
                                     ),
                                   ],
@@ -814,19 +814,19 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 16,
                     ),
-                    Text("INTERESTED IN"),
+                    const Text("INTERESTED IN"),
                     Container(
-                      margin: EdgeInsets.only(top: 8),
+                      margin: const EdgeInsets.only(top: 8),
                       decoration: BoxDecoration(
                         border: Border.all(
                           color: Colors.grey[300]!,
                         ),
                         borderRadius: BorderRadius.circular(8),
                       ),
-                      padding: EdgeInsets.all(12),
+                      padding: const EdgeInsets.all(12),
                       child: Row(
                         children: [
                           Expanded(
@@ -842,15 +842,15 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                         color: Colors.green[100],
                                       ),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       width: 8,
                                     ),
-                                    Text(
+                                    const Text(
                                       "Wi-fi",
                                     ),
                                   ],
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 16,
                                 ),
                                 Row(
@@ -862,15 +862,15 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                         color: Colors.green[100],
                                       ),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       width: 8,
                                     ),
-                                    Text(
+                                    const Text(
                                       "Wi-fi",
                                     ),
                                   ],
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 16,
                                 ),
                                 Row(
@@ -882,10 +882,10 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                         color: Colors.green[100],
                                       ),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       width: 8,
                                     ),
-                                    Text(
+                                    const Text(
                                       "Wi-fi",
                                     ),
                                   ],
@@ -905,15 +905,15 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                         color: Colors.green[100],
                                       ),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       width: 8,
                                     ),
-                                    Text(
+                                    const Text(
                                       "Wi-fi",
                                     ),
                                   ],
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 16,
                                 ),
                                 Row(
@@ -925,15 +925,15 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                         color: Colors.green[100],
                                       ),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       width: 8,
                                     ),
-                                    Text(
+                                    const Text(
                                       "Wi-fi",
                                     ),
                                   ],
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 16,
                                 ),
                                 Row(
@@ -945,10 +945,10 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                                         color: Colors.green[100],
                                       ),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       width: 8,
                                     ),
-                                    Text(
+                                    const Text(
                                       "Wi-fi",
                                     ),
                                   ],
@@ -959,29 +959,29 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 16,
                     ),
-                    Text("VIEW LOCATION"),
+                    const Text("VIEW LOCATION"),
                     Container(
-                      margin: EdgeInsets.symmetric(vertical: 8),
+                      margin: const EdgeInsets.symmetric(vertical: 8),
                       height: 108,
                       decoration: BoxDecoration(
                           color: Colors.orange,
                           borderRadius: BorderRadius.circular(8)),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 16,
                     ),
-                    Text("POSTED BY"),
+                    const Text("POSTED BY"),
                     Container(
-                      margin: EdgeInsets.symmetric(vertical: 8),
+                      margin: const EdgeInsets.symmetric(vertical: 8),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(8),
                         border: Border.all(),
                       ),
                       padding:
-                          EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                          const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                       child: Row(
                         children: [
                           Container(
@@ -989,10 +989,10 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                             width: 42,
                             color: Colors.green,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 8,
                           ),
-                          Expanded(
+                          const Expanded(
                               child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -1004,9 +1004,9 @@ class _HomeManagementDetailPageState extends State<HomeManagementDetailPage> {
                             ],
                           )),
                           Container(
-                            padding: EdgeInsets.all(12),
-                            decoration: BoxDecoration(color: Colors.blueAccent),
-                            child: Text("View profile"),
+                            padding: const EdgeInsets.all(12),
+                            decoration: const BoxDecoration(color: Colors.blueAccent),
+                            child: const Text("View profile"),
                           )
                         ],
                       ),

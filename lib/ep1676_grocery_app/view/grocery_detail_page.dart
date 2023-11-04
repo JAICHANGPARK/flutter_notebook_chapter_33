@@ -30,8 +30,8 @@ class _GroceryDetailPageState extends State<GroceryDetailPage> {
                         color: Colors.green[50],
                       ),
                       padding:
-                          EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-                      child: Text(
+                          const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                      child: const Text(
                         "Back",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
@@ -41,7 +41,7 @@ class _GroceryDetailPageState extends State<GroceryDetailPage> {
                       ),
                     ),
                   ),
-                  Expanded(
+                  const Expanded(
                     child: Center(
                       child: Text(
                         "Items",
@@ -57,8 +57,8 @@ class _GroceryDetailPageState extends State<GroceryDetailPage> {
                       borderRadius: BorderRadius.circular(32),
                       border: Border.all(color: Colors.white, width: 1.5),
                     ),
-                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-                    child: Row(
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                    child: const Row(
                       children: [
                         Icon(
                           Icons.shopping_bag_outlined,
@@ -82,7 +82,7 @@ class _GroceryDetailPageState extends State<GroceryDetailPage> {
                 length: 4,
                 child: Column(
                   children: [
-                    TabBar(
+                    const TabBar(
                       isScrollable: true,
                       labelStyle: TextStyle(
                         fontSize: 32,
@@ -115,10 +115,10 @@ class _GroceryDetailPageState extends State<GroceryDetailPage> {
                         child: TabBarView(
                       children: [
                         Container(
-                          padding: EdgeInsets.all(8),
+                          padding: const EdgeInsets.all(8),
                           child: GridView.builder(
                             gridDelegate:
-                                SliverGridDelegateWithFixedCrossAxisCount(
+                                const SliverGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 2, childAspectRatio: 0.8),
                             itemBuilder: (context, index) {
                               return Card(

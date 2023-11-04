@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_33/ep1688_community_app/view/community_main_page.dart';
 
 void main() {
-  runApp(CommunityApp());
+  runApp(const CommunityApp());
 }
 
 class CommunityApp extends StatelessWidget {
@@ -10,7 +10,7 @@ class CommunityApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: CommunityMainPage(),
     );
   }

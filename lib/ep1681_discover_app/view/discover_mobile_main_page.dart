@@ -81,7 +81,7 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
             ),
             Expanded(
               child: TabBarView(
-                physics: NeverScrollableScrollPhysics(),
+                physics: const NeverScrollableScrollPhysics(),
                 children: [
                   SingleChildScrollView(
                     child: Column(
@@ -114,7 +114,7 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
                                           ),
                                           borderRadius:
                                               BorderRadius.circular(8),
-                                          image: DecorationImage(
+                                          image: const DecorationImage(
                                               image: NetworkImage(
                                                   "https://cdn.pixabay.com/photo/2017/03/09/20/53/microphone-2130806_1280.jpg"),
                                               fit: BoxFit.cover),
@@ -301,14 +301,14 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
                         ),
                         Container(
                           height: 200,
-                          margin: EdgeInsets.only(left: 16),
+                          margin: const EdgeInsets.only(left: 16),
                           child: ListView.builder(
                             scrollDirection: Axis.horizontal,
                             itemBuilder: (context, index) {
                               return Container(
                                 width: 280,
-                                margin: EdgeInsets.only(right: 16),
-                                decoration: BoxDecoration(
+                                margin: const EdgeInsets.only(right: 16),
+                                decoration: const BoxDecoration(
                                   color: Colors.orange,
                                   image: DecorationImage(
                                     image: NetworkImage(
@@ -377,7 +377,7 @@ class _DiscoverMobileMainPageState extends State<DiscoverMobileMainPage> {
                 onTap: () {
                   Navigator.of(context).push(
                     MaterialPageRoute(
-                      builder: (context) => DiscoverMenuPage(),
+                      builder: (context) => const DiscoverMenuPage(),
                     ),
                   );
                 },

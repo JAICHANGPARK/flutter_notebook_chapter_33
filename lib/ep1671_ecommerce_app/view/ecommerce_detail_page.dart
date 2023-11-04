@@ -42,8 +42,8 @@ class _EcommerceDetailPageState extends State<ECommerceDetailPage> {
                       const CircleAvatar(
                         radius: 24,
                         backgroundColor: Colors.white,
-                        child: Icon(Icons.favorite),
                         foregroundColor: Colors.red,
+                        child: Icon(Icons.favorite),
                       ),
                       const SizedBox(
                         width: 16,

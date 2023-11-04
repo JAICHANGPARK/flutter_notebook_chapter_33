@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_33/ep1661_home_management_app/view/home_management_home_page.dart';
 
 void main() {
-  runApp(HomeManagementApp());
+  runApp(const HomeManagementApp());
 }
 
 class HomeManagementApp extends StatelessWidget {
@@ -10,7 +10,7 @@ class HomeManagementApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: HomeManagementHomePage(),
     );
   }

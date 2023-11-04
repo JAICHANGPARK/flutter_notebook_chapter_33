@@ -64,7 +64,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                                 Navigator.of(context).push(
                                   MaterialPageRoute(
                                     builder: (context) =>
-                                        EcommerceNotificationPage(),
+                                        const EcommerceNotificationPage(),
                                   ),
                                 );
                               },
@@ -332,7 +332,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                           const SizedBox(
                             height: 8,
                           ),
-                          Container(
+                          SizedBox(
                             height: 120,
                             child: ListView.builder(
                               scrollDirection: Axis.horizontal,

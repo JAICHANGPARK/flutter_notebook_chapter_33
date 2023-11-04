@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_notebook_chapter_33/ep1655_e_commerce_app/view/e_commerce_detail_page.dart';
 import 'package:flutter_notebook_chapter_33/ep1671_ecommerce_app/view/ecommerce_detail_page.dart';
 
 class EcommerceMainPage extends StatefulWidget {
@@ -241,7 +240,7 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
                             return GestureDetector(
                               onTap: () => Navigator.of(context).push(
                                 MaterialPageRoute(
-                                  builder: (context) => ECommerceDetailPage(),
+                                  builder: (context) => const ECommerceDetailPage(),
                                 ),
                               ),
                               child: Column(

@@ -41,7 +41,7 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                               decoration:
                                   const BoxDecoration(color: Colors.blue),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 8,
                             ),
                             Column(
@@ -54,7 +54,7 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                                     fontSize: 12,
                                   ),
                                 ),
-                                Row(
+                                const Row(
                                   children: [
                                     Text("Seoul, Republic of Korea"),
                                     Icon(Icons.keyboard_arrow_down_outlined),
@@ -100,14 +100,14 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                         children: [
                           const Icon(Icons.location_on_outlined),
                           const Text("Find on the map"),
-                          Spacer(),
+                          const Spacer(),
                           Container(
                             decoration: BoxDecoration(
                               color: Colors.grey[300]!,
                               borderRadius: BorderRadius.circular(4),
                             ),
                             child: IconButton(
-                              constraints: BoxConstraints(
+                              constraints: const BoxConstraints(
                                 maxHeight: 42,
                                 maxWidth: 42,
                               ),
@@ -122,7 +122,7 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                   ),
                 ),
               ),
-              Text(
+              const Text(
                 "🔥 Best for you",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
@@ -135,11 +135,11 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                   children: tabItems
                       .map(
                         (e) => Container(
-                          padding: EdgeInsets.symmetric(
+                          padding: const EdgeInsets.symmetric(
                             horizontal: 8,
                             vertical: 8,
                           ),
-                          margin: EdgeInsets.only(right: 8),
+                          margin: const EdgeInsets.only(right: 8),
                           decoration: BoxDecoration(
                             border: Border.all(
                               color: Colors.grey[300]!,
@@ -156,7 +156,7 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                 child: ListView.separated(
                   itemCount: 10,
                   separatorBuilder: (context, index) {
-                    return Divider(
+                    return const Divider(
                       color: Colors.grey,
                       height: 32,
                     );
@@ -173,7 +173,7 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                               borderRadius: BorderRadius.circular(8),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 8,
                           ),
                           Row(
@@ -183,30 +183,30 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                                   Navigator.of(context).push(
                                     MaterialPageRoute(
                                       builder: (context) =>
-                                          HomeManagementProfilePage(),
+                                          const HomeManagementProfilePage(),
                                     ),
                                   );
                                 },
-                                child: CircleAvatar(
+                                child: const CircleAvatar(
                                   radius: 12,
                                 ),
                               ),
-                              SizedBox(width: 8),
-                              Text("Dream Walker"),
-                              Spacer(),
-                              Icon(Icons.favorite_border),
+                              const SizedBox(width: 8),
+                              const Text("Dream Walker"),
+                              const Spacer(),
+                              const Icon(Icons.favorite_border),
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 8,
                           ),
-                          Text(
+                          const Text(
                             "Sigle private room in sunny apt.",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 8,
                           ),
                           Row(
@@ -222,20 +222,20 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                                   color: Colors.grey[600],
                                 ),
                               ),
-                              Spacer(),
-                              Text(
+                              const Spacer(),
+                              const Text(
                                 "\$150/",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 18,
                                 ),
                               ),
-                              Text(
+                              const Text(
                                 "mo",
                               )
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 8,
                           ),
                           Row(
@@ -246,7 +246,7 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                                     Navigator.of(context).push(
                                         MaterialPageRoute(
                                             builder: (context) =>
-                                                HomeManagementDetailPage()));
+                                                const HomeManagementDetailPage()));
                                   },
                                   child: Container(
                                     height: 42,
@@ -255,8 +255,8 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                                       borderRadius: BorderRadius.circular(4),
                                     ),
                                     padding:
-                                        EdgeInsets.symmetric(horizontal: 8),
-                                    child: Row(
+                                        const EdgeInsets.symmetric(horizontal: 8),
+                                    child: const Row(
                                       children: [
                                         Text("View details"),
                                         Spacer(),
@@ -266,7 +266,7 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                                   ),
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 16,
                               ),
                               Expanded(
@@ -276,7 +276,7 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
                                     color: Colors.blueAccent,
                                     borderRadius: BorderRadius.circular(4),
                                   ),
-                                  child: Center(
+                                  child: const Center(
                                     child: Text(
                                       "Book room",
                                       style: TextStyle(
@@ -302,28 +302,28 @@ class _HomeManagementHomePageState extends State<HomeManagementHomePage> {
         showSelectedLabels: false,
         showUnselectedLabels: false,
         type: BottomNavigationBarType.fixed,
-        items: [
-          const BottomNavigationBarItem(
+        items: const [
+          BottomNavigationBarItem(
             icon: Icon(
               Icons.home_outlined,
             ),
             label: "Home",
           ),
-          const BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: Icon(
               Icons.search,
             ),
             label: "Home",
           ),
-          const BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: Icon(Icons.add_box_outlined),
             label: "add",
           ),
-          const BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: Icon(Icons.chat_outlined),
             label: "add",
           ),
-          const BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: Icon(Icons.person_outline),
             label: "add",
           ),

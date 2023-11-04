@@ -135,10 +135,10 @@ class _GroceryMainPageState extends State<GroceryMainPage> {
                                     ),
                                     TextButton(
                                       onPressed: () {},
-                                      child: const Text("View All"),
                                       style: TextButton.styleFrom(
                                         foregroundColor: Colors.grey,
                                       ),
+                                      child: const Text("View All"),
                                     )
                                   ],
                                 ),

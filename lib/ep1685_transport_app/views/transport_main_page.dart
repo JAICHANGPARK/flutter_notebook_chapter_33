@@ -33,15 +33,15 @@ class _TransportMainPageState extends State<TransportMainPage> {
                   ),
                 ),
               ),
-              Gap(6),
+              const Gap(6),
               Container(
                 height: 52,
-                margin: EdgeInsets.symmetric(horizontal: 16),
+                margin: const EdgeInsets.symmetric(horizontal: 16),
                 decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(8)),
-                padding: EdgeInsets.symmetric(horizontal: 8),
-                child: IntrinsicHeight(
+                padding: const EdgeInsets.symmetric(horizontal: 8),
+                child: const IntrinsicHeight(
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
@@ -97,13 +97,13 @@ class _TransportMainPageState extends State<TransportMainPage> {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 180,
               ),
               Expanded(
                 child: Container(
-                  padding: EdgeInsets.all(24),
-                  decoration: BoxDecoration(
+                  padding: const EdgeInsets.all(24),
+                  decoration: const BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.vertical(
                       top: Radius.circular(
@@ -119,23 +119,23 @@ class _TransportMainPageState extends State<TransportMainPage> {
                           Container(
                             height: 32,
                             width: 32,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               color: Colors.black,
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 8,
                           ),
-                          Text(
+                          const Text(
                             "Kings Cross Station",
                             style: TextStyle(fontSize: 20),
                           )
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 8,
                       ),
-                      Row(
+                      const Row(
                         children: [
                           CircleAvatar(
                             radius: 14,
@@ -157,32 +157,32 @@ class _TransportMainPageState extends State<TransportMainPage> {
                           )
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 16,
                       ),
-                      Text(
+                      const Text(
                         "Lines:",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 12),
+                      const Padding(
+                        padding: EdgeInsets.symmetric(vertical: 12),
                         child: Text(
                           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 16,
                       ),
-                      Text(
+                      const Text(
                         "Departing in:",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                         ),
                       ),
                       Container(
-                        margin: EdgeInsets.only(top: 16),
+                        margin: const EdgeInsets.only(top: 16),
                         height: 180,
                         child: ListView.builder(
                           scrollDirection: Axis.horizontal,
@@ -203,7 +203,7 @@ class _TransportMainPageState extends State<TransportMainPage> {
                                       children: [
                                         Row(
                                           children: [
-                                            Icon(Icons.train),
+                                            const Icon(Icons.train),
                                             Container(
                                               decoration: BoxDecoration(
                                                 border: Border.all(
@@ -212,8 +212,8 @@ class _TransportMainPageState extends State<TransportMainPage> {
                                                 borderRadius:
                                                     BorderRadius.circular(4),
                                               ),
-                                              padding: EdgeInsets.all(2),
-                                              child: Text("T4"),
+                                              padding: const EdgeInsets.all(2),
+                                              child: const Text("T4"),
                                             ),
                                             Container(
                                               decoration: BoxDecoration(
@@ -223,20 +223,20 @@ class _TransportMainPageState extends State<TransportMainPage> {
                                                 borderRadius:
                                                     BorderRadius.circular(4),
                                               ),
-                                              padding: EdgeInsets.all(2),
-                                              child: Text("T3"),
+                                              padding: const EdgeInsets.all(2),
+                                              child: const Text("T3"),
                                             )
                                           ],
                                         ),
-                                        Text("Due"),
-                                        Text(
+                                        const Text("Due"),
+                                        const Text(
                                           "03 Mins",
                                           style: TextStyle(
                                             fontWeight: FontWeight.bold,
                                             fontSize: 32,
                                           ),
                                         ),
-                                        Text(
+                                        const Text(
                                           "Kings Cross Platform 1",
                                         )
                                       ],
@@ -256,16 +256,16 @@ class _TransportMainPageState extends State<TransportMainPage> {
           ),
         ),
         bottomNavigationBar: BottomNavigationBar(
-          items: [
-            const BottomNavigationBarItem(
+          items: const [
+            BottomNavigationBarItem(
               icon: Icon(Icons.upload),
               label: "Departing",
             ),
-            const BottomNavigationBarItem(
+            BottomNavigationBarItem(
               icon: Icon(Icons.download),
               label: "Arriving",
             ),
-            const BottomNavigationBarItem(
+            BottomNavigationBarItem(
               icon: Icon(Icons.explore_outlined),
               label: "Map",
             ),

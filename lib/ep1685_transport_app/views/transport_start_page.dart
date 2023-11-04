@@ -25,7 +25,7 @@ class _TransportStartPageState extends State<TransportStartPage> {
                     onTap: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(
-                          builder: (context) => TransportMainPage(),
+                          builder: (context) => const TransportMainPage(),
                         ),
                       );
                     },
@@ -53,7 +53,7 @@ class _TransportStartPageState extends State<TransportStartPage> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.symmetric(vertical: 24),
+                padding: const EdgeInsets.symmetric(vertical: 24),
                 child: Text(
                   "Choose your preferred\nmode of transport below",
                   style: Theme.of(context).textTheme.titleLarge,
@@ -78,8 +78,8 @@ class _TransportStartPageState extends State<TransportStartPage> {
                                   CircleAvatar(
                                     backgroundColor: Colors.orange,
                                     radius: 10,
-                                    child: Text("T"),
                                     foregroundColor: Colors.white,
+                                    child: Text("T"),
                                   ),
                                   SizedBox(
                                     width: 8,
@@ -110,8 +110,8 @@ class _TransportStartPageState extends State<TransportStartPage> {
                                   CircleAvatar(
                                     backgroundColor: Colors.red,
                                     radius: 10,
-                                    child: Text("L"),
                                     foregroundColor: Colors.white,
+                                    child: Text("L"),
                                   ),
                                   SizedBox(
                                     width: 8,
@@ -142,8 +142,8 @@ class _TransportStartPageState extends State<TransportStartPage> {
                                   CircleAvatar(
                                     backgroundColor: Colors.lightBlue,
                                     radius: 10,
-                                    child: Text("B"),
                                     foregroundColor: Colors.white,
+                                    child: Text("B"),
                                   ),
                                   SizedBox(
                                     width: 8,
@@ -159,7 +159,7 @@ class _TransportStartPageState extends State<TransportStartPage> {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 24,
               ),
               Text(

@@ -18,12 +18,12 @@ class _NewsAppAudioPageState extends State<NewsAppAudioPage> {
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Icons.more_horiz,
             ),
           )
         ],
-        title: Text("Politics"),
+        title: const Text("Politics"),
         centerTitle: true,
       ),
       body: Padding(
@@ -35,56 +35,56 @@ class _NewsAppAudioPageState extends State<NewsAppAudioPage> {
               decoration: BoxDecoration(
                   color: Colors.pink, borderRadius: BorderRadius.circular(16)),
             ),
-            SizedBox(
+            const SizedBox(
               height: 48,
             ),
-            Text(
+            const Text(
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 16,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 8,
             ),
-            Text(
+            const Text(
               "Lorem ipsum",
               style: TextStyle(
                 color: Colors.grey,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 72,
             ),
             Container(
               height: 64,
               color: Colors.purple,
             ),
-            SizedBox(
+            const SizedBox(
               height: 8,
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text("2:20"),
                 Text("10:00"),
               ],
             ),
-            Spacer(),
+            const Spacer(),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                IconButton(onPressed: () {}, icon: Icon(Icons.shuffle)),
-                IconButton(onPressed: () {}, icon: Icon(Icons.skip_previous)),
-                CircleAvatar(
+                IconButton(onPressed: () {}, icon: const Icon(Icons.shuffle)),
+                IconButton(onPressed: () {}, icon: const Icon(Icons.skip_previous)),
+                const CircleAvatar(
                   radius: 28,
                   backgroundColor: Colors.black,
                   foregroundColor: Colors.white,
                   child: Icon(Icons.pause),
                 ),
-                IconButton(onPressed: () {}, icon: Icon(Icons.skip_next)),
-                IconButton(onPressed: () {}, icon: Icon(Icons.list)),
+                IconButton(onPressed: () {}, icon: const Icon(Icons.skip_next)),
+                IconButton(onPressed: () {}, icon: const Icon(Icons.list)),
               ],
             )
           ],

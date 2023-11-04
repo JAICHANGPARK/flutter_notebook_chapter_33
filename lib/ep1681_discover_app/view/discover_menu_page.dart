@@ -176,7 +176,7 @@ class _DiscoverMenuPageState extends State<DiscoverMenuPage> {
                     width: 100,
                     margin: const EdgeInsets.only(left: 16),
                     decoration: BoxDecoration(
-                      image: DecorationImage(
+                      image: const DecorationImage(
                         image: NetworkImage(
                             "https://cdn.pixabay.com/photo/2013/07/18/10/55/dna-163466_1280.jpg"),
                         fit: BoxFit.cover,
