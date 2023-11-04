@@ -77,7 +77,9 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
               icon: Icon(
                 Icons.home_filled,
               ),
-              color: Colors.grey,
+              color: menuIndex != 0  ? Colors.grey :
+              Colors.orange,
+
             ),
             IconButton(
               onPressed: () {
@@ -88,7 +90,8 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
               icon: Icon(
                 Icons.explore_outlined,
               ),
-              color: Colors.grey,
+              color: menuIndex != 1  ? Colors.grey :
+              Colors.orange,
             ),
             Badge(
               label: Text(""),
@@ -101,6 +104,8 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                     menuIndex = 2;
                   });
                 },
+                color: menuIndex != 2  ? Colors.grey :
+                Colors.orange,
               ),
             ),
             Badge(
@@ -112,6 +117,8 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                 onPressed: () {setState(() {
                   menuIndex = 3;
                 });},
+                color: menuIndex != 3  ? Colors.grey :
+                Colors.orange,
               ),
             ),
             IconButton(
@@ -123,6 +130,8 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
               icon: Icon(
                 Icons.person,
               ),
+              color: menuIndex != 4  ? Colors.grey :
+              Colors.orange,
             )
           ],
         ),
