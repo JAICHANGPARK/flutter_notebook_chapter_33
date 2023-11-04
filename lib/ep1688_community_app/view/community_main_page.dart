@@ -53,15 +53,65 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                 Container(),
                 Column(
                   children: [
-
                     Expanded(
-                      child: ListView(
-                        children: [
+                        child: ListView(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              CircleAvatar(
+                                radius: 12,
+                              ),
+                              SizedBox(
+                                width: 8,
+                              ),
+                              Expanded(
+                                child: Column(
+                                  children: [
+                                    Row(
+                                      children: [
+                                        Text(
+                                          "Dreamwalker",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                        Icon(
+                                          Icons.verified,
+                                          color: Colors.blue,
+                                        ),
+                                        Text(
+                                          "highlights message in chat",
+                                          style: TextStyle(
+                                            color: Colors.grey,
+                                          ),
+                                        ),
+                                        Icon(
+                                          Icons.more_horiz,
+                                          color: Colors.white,
+                                        )
+                                      ],
+                                    ),
+                                    Row(
+                                      children: [Text("Flutter"), Text("3h ago")],
+                                    ),
+                                    Container(
+                                      height: 72,
+                                      decoration: BoxDecoration(
+                                        color: Colors.blueGrey,
+                                      ),
+                                    ),
 
-                        ],
-                      )
-                    ),
-
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        )
+                      ],
+                    )),
                   ],
                 ),
                 Container(),
@@ -76,7 +126,7 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
       ),
       bottomNavigationBar: BottomAppBar(
         color: Colors.black,
-        height: 80,
+        height: 72,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
@@ -103,7 +153,7 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
               color: menuIndex != 1 ? Colors.grey : Colors.orange,
             ),
             Badge(
-              label: const Text(""),
+              label: const Text("8"),
               child: IconButton(
                 icon: const Icon(
                   Icons.newspaper,
@@ -118,7 +168,6 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
             ),
             Badge(
               label: const Text("1"),
-
               child: IconButton(
                 icon: const Icon(
                   Icons.chat,
