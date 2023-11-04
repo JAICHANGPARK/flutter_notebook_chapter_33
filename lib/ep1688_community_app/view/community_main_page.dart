@@ -8,6 +8,8 @@ class CommunityMainPage extends StatefulWidget {
 }
 
 class _CommunityMainPageState extends State<CommunityMainPage> {
+  int menuIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,20 +40,25 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
           ),
         ],
       ),
-      body: Column(
+      body: IndexedStack(
+        index: menuIndex,
         children: [
-          Divider(
-            color: Colors.grey,
-          ),
-          Expanded(
-            child: ListView.builder(
-              itemBuilder: (context, index) {
-                return Container();
-              },
-            ),
-          ),
-          Divider(
-            color: Colors.grey,
+          Column(
+            children: [
+              Divider(
+                color: Colors.grey,
+              ),
+              Expanded(
+                child: ListView.builder(
+                  itemBuilder: (context, index) {
+                    return Container();
+                  },
+                ),
+              ),
+              Divider(
+                color: Colors.grey,
+              ),
+            ],
           ),
         ],
       ),
@@ -76,6 +83,7 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
               color: Colors.grey,
             ),
             Badge(
+              label: Text(""),
               child: IconButton(
                 icon: Icon(
                   Icons.newspaper,
@@ -84,6 +92,7 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
               ),
             ),
             Badge(
+              label: Text(""),
               child: IconButton(
                 icon: Icon(
                   Icons.chat,
