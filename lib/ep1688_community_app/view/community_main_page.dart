@@ -134,7 +134,9 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                                       const Gap(16),
                                       Container(
                                         decoration: BoxDecoration(
-                                            color: Colors.lightBlue, borderRadius: BorderRadius.circular(8)),
+                                          color: Colors.lightBlue,
+                                          borderRadius: BorderRadius.circular(8),
+                                        ),
                                         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                                         child: const Text(
                                           "OPEN CHAT",
@@ -152,6 +154,26 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                           const Divider(
                             color: Colors.grey,
                           ),
+                          Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: Row(
+                              children: [
+                                const CircleAvatar(
+                                  radius: 12,
+                                ),
+                                const SizedBox(
+                                  width: 8,
+                                ),
+                                Expanded(
+                                  child: Column(
+                                    children: [
+                                      
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          )
                         ],
                       ),
                     ),
