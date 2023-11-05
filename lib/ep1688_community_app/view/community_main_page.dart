@@ -176,14 +176,24 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                                                 color: Colors.grey,
                                               ),
                                             ),
-                                            TextSpan(text: "Memes"),
+                                            TextSpan(
+                                              text: "Memes",
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                              ),
+                                            ),
                                             TextSpan(
                                               text: "by",
                                               style: TextStyle(
                                                 color: Colors.grey,
                                               ),
                                             ),
-                                            TextSpan(text: "Dreamwalker"),
+                                            TextSpan(
+                                              text: "Dreamwalker",
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                              ),
+                                            ),
                                             TextSpan(
                                               text: "3h ago",
                                               style: TextStyle(
@@ -192,6 +202,10 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                                             ),
                                           ],
                                         ),
+                                      ),
+                                      Icon(
+                                        Icons.more_horiz,
+                                        color: Colors.white,
                                       )
                                     ],
                                   ),
