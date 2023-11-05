@@ -212,11 +212,20 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                                           )
                                         ],
                                       ),
+                                      Gap(16),
                                       Text(
                                         "Lorem ipsum dolor sit amet",
                                         style: TextStyle(
                                           color: Colors.white,
                                           fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      Gap(16),
+                                      Container(
+                                        height: 240,
+                                        decoration: BoxDecoration(
+                                          color: Colors.grey,
+                                          borderRadius: BorderRadius.circular(16)
                                         ),
                                       )
                                     ],
