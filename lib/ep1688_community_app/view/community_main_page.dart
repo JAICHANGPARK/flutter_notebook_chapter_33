@@ -88,6 +88,7 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                                             color: Colors.grey,
                                           ),
                                         ),
+                                        Spacer(),
                                         Icon(
                                           Icons.more_horiz,
                                           color: Colors.white,
