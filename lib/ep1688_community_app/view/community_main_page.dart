@@ -231,12 +231,30 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                                         children: [
                                           Icon(
                                             Icons.favorite,
+                                            color: Colors.redAccent,
                                           ),
-                                          Text("187"),
-                                          Icon(Icons.chat_bubble_outline),
-                                          Text("94"),
+                                          Text(
+                                            "187",
+                                            style: TextStyle(
+                                              color: Colors.grey,
+                                            ),
+                                          ),
+                                          Icon(
+                                            Icons.chat_bubble_outline,
+                                          ),
+                                          Text(
+                                            "94",
+                                            style: TextStyle(
+                                              color: Colors.grey,
+                                            ),
+                                          ),
                                           Icon(Icons.local_fire_department_outlined),
-                                          Text("74"),
+                                          Text(
+                                            "74",
+                                            style: TextStyle(
+                                              color: Colors.grey,
+                                            ),
+                                          ),
                                           CircleAvatar(
                                             radius: 12,
                                           ),
