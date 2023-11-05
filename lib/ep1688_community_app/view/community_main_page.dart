@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class CommunityMainPage extends StatefulWidget {
   const CommunityMainPage({super.key});
@@ -78,10 +79,12 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                                             color: Colors.white,
                                           ),
                                         ),
+                                        Gap(2),
                                         Icon(
                                           Icons.verified,
                                           color: Colors.blue,
                                         ),
+                                        Gap(2),
                                         Text(
                                           "highlights message in chat",
                                           style: TextStyle(
@@ -95,6 +98,7 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                                         )
                                       ],
                                     ),
+                                    Gap(4),
                                     Row(
                                       children: [
                                         Text(
@@ -111,10 +115,15 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                                         )
                                       ],
                                     ),
+                                    Gap(8),
                                     Container(
-                                      height: 72,
+                                     
+                                      padding: EdgeInsets.all(8),
                                       decoration: BoxDecoration(
                                         color: Colors.blueGrey,
+                                      ),
+                                      child: Text(
+                                        "사람들의 내 내 봅니다. 까닭이요, 벌레는 나는 듯합니다. 아무 우는 사람들의 잠, 다 별이 이름을 까닭입니다. 소녀들의 새겨지는 않은 하늘에는 버리었습니다. 이름과, 하나의 벌써 토끼, 새겨지는 별이 그리고 것은 없이 있습니다",
                                       ),
                                     ),
                                   ],
