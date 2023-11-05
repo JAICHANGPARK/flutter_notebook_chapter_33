@@ -241,6 +241,7 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                                           ),
                                           Icon(
                                             Icons.chat_bubble_outline,
+                                            color: Colors.grey,
                                           ),
                                           Text(
                                             "94",
@@ -248,7 +249,10 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                                               color: Colors.grey,
                                             ),
                                           ),
-                                          Icon(Icons.local_fire_department_outlined),
+                                          Icon(
+                                            Icons.local_fire_department_outlined,
+                                            color: Colors.grey,
+                                          ),
                                           Text(
                                             "74",
                                             style: TextStyle(
@@ -257,6 +261,11 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                                           ),
                                           CircleAvatar(
                                             radius: 12,
+                                          ),
+                                          Spacer(),
+                                          Icon(
+                                            Icons.upload,
+                                            color: Colors.grey,
                                           ),
                                         ],
                                       )
