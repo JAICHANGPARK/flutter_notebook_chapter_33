@@ -130,8 +130,15 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                                         ),
                                       ),
                                       Container(
-                                        decoration: BoxDecoration(),
-                                        child: Text("OPEN CHAT"),
+                                        decoration: BoxDecoration(
+                                          color: Colors.lightBlue,
+                                        ),
+                                        child: Text(
+                                          "OPEN CHAT",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                          ),
+                                        ),
                                       )
                                     ],
                                   ),
