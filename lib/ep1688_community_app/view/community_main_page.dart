@@ -70,6 +70,7 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                                 ),
                                 Expanded(
                                   child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Row(
                                         children: [
@@ -129,10 +130,11 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                                           ),
                                         ),
                                       ),
+                                      Gap(16),
                                       Container(
                                         decoration: BoxDecoration(
-                                          color: Colors.lightBlue,
-                                        ),
+                                            color: Colors.lightBlue, borderRadius: BorderRadius.circular(8)),
+                                        padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                                         child: Text(
                                           "OPEN CHAT",
                                           style: TextStyle(
@@ -146,7 +148,9 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                               ],
                             ),
                           ),
-                          Divider(),
+                          Divider(
+                            color: Colors.grey,
+                          ),
                         ],
                       ),
                     ),
