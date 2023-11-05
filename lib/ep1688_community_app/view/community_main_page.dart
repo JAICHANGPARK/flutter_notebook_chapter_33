@@ -115,7 +115,7 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                                         )
                                       ],
                                     ),
-                                    Gap(8),
+                                    Gap(16),
                                     Container(
                                       padding: EdgeInsets.all(12),
                                       decoration: BoxDecoration(
@@ -129,6 +129,11 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                                         ),
                                       ),
                                     ),
+                                    
+                                    Container(
+                                      decoration: BoxDecoration(),
+                                      child: Text("OPEN CHAT"),
+                                    )
                                   ],
                                 ),
                               ),
