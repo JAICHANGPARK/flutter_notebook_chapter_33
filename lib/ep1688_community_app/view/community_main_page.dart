@@ -157,6 +157,7 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                           Padding(
                             padding: const EdgeInsets.all(16.0),
                             child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 const CircleAvatar(
                                   radius: 12,
@@ -222,11 +223,9 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                                       ),
                                       Gap(16),
                                       Container(
-                                        height: 240,
-                                        decoration: BoxDecoration(
-                                          color: Colors.grey,
-                                          borderRadius: BorderRadius.circular(16)
-                                        ),
+                                        height: 280,
+                                        decoration:
+                                            BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(16)),
                                       )
                                     ],
                                   ),
