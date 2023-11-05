@@ -117,13 +117,16 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                                     ),
                                     Gap(8),
                                     Container(
-                                     
-                                      padding: EdgeInsets.all(8),
+                                      padding: EdgeInsets.all(12),
                                       decoration: BoxDecoration(
-                                        color: Colors.blueGrey,
+                                        color: Color.fromRGBO(44, 47, 52, 1),
+                                        borderRadius: BorderRadius.circular(12),
                                       ),
                                       child: Text(
                                         "사람들의 내 내 봅니다. 까닭이요, 벌레는 나는 듯합니다. 아무 우는 사람들의 잠, 다 별이 이름을 까닭입니다. 소녀들의 새겨지는 않은 하늘에는 버리었습니다. 이름과, 하나의 벌써 토끼, 새겨지는 별이 그리고 것은 없이 있습니다",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                        ),
                                       ),
                                     ),
                                   ],
