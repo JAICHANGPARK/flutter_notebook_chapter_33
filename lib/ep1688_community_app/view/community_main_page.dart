@@ -170,14 +170,26 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                                       Text.rich(
                                         TextSpan(
                                           children: [
-                                            TextSpan(text: "new post in",
-                                            style: TextStyle(
-                                              color: Colors.grey,
-                                            )),
+                                            TextSpan(
+                                              text: "new post in",
+                                              style: TextStyle(
+                                                color: Colors.grey,
+                                              ),
+                                            ),
                                             TextSpan(text: "Memes"),
-                                            TextSpan(text: "by"),
+                                            TextSpan(
+                                              text: "by",
+                                              style: TextStyle(
+                                                color: Colors.grey,
+                                              ),
+                                            ),
                                             TextSpan(text: "Dreamwalker"),
-                                            TextSpan(text: "3h ago"),
+                                            TextSpan(
+                                              text: "3h ago",
+                                              style: TextStyle(
+                                                color: Colors.grey,
+                                              ),
+                                            ),
                                           ],
                                         ),
                                       )
