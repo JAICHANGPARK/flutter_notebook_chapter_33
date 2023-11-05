@@ -167,7 +167,20 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                                 Expanded(
                                   child: Column(
                                     children: [
-                                      
+                                      Text.rich(
+                                        TextSpan(
+                                          children: [
+                                            TextSpan(text: "new post in",
+                                            style: TextStyle(
+                                              color: Colors.grey,
+                                            )),
+                                            TextSpan(text: "Memes"),
+                                            TextSpan(text: "by"),
+                                            TextSpan(text: "Dreamwalker"),
+                                            TextSpan(text: "3h ago"),
+                                          ],
+                                        ),
+                                      )
                                     ],
                                   ),
                                 ),
