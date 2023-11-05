@@ -62,17 +62,17 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                             child: Row(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                CircleAvatar(
+                                const CircleAvatar(
                                   radius: 12,
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   width: 8,
                                 ),
                                 Expanded(
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Row(
+                                      const Row(
                                         children: [
                                           Text(
                                             "Dreamwalker",
@@ -99,8 +99,8 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                                           )
                                         ],
                                       ),
-                                      Gap(4),
-                                      Row(
+                                      const Gap(4),
+                                      const Row(
                                         children: [
                                           Text(
                                             "Flutter",
@@ -108,6 +108,7 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                                               color: Colors.white,
                                             ),
                                           ),
+                                          Gap(4),
                                           Text(
                                             "3h ago",
                                             style: TextStyle(
@@ -116,26 +117,26 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                                           )
                                         ],
                                       ),
-                                      Gap(16),
+                                      const Gap(16),
                                       Container(
-                                        padding: EdgeInsets.all(12),
+                                        padding: const EdgeInsets.all(12),
                                         decoration: BoxDecoration(
-                                          color: Color.fromRGBO(44, 47, 52, 1),
+                                          color: const Color.fromRGBO(44, 47, 52, 1),
                                           borderRadius: BorderRadius.circular(12),
                                         ),
-                                        child: Text(
+                                        child: const Text(
                                           "사람들의 내 내 봅니다. 까닭이요, 벌레는 나는 듯합니다. 아무 우는 사람들의 잠, 다 별이 이름을 까닭입니다. 소녀들의 새겨지는 않은 하늘에는 버리었습니다. 이름과, 하나의 벌써 토끼, 새겨지는 별이 그리고 것은 없이 있습니다",
                                           style: TextStyle(
                                             color: Colors.white,
                                           ),
                                         ),
                                       ),
-                                      Gap(16),
+                                      const Gap(16),
                                       Container(
                                         decoration: BoxDecoration(
                                             color: Colors.lightBlue, borderRadius: BorderRadius.circular(8)),
-                                        padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-                                        child: Text(
+                                        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                                        child: const Text(
                                           "OPEN CHAT",
                                           style: TextStyle(
                                             color: Colors.white,
@@ -148,7 +149,7 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                               ],
                             ),
                           ),
-                          Divider(
+                          const Divider(
                             color: Colors.grey,
                           ),
                         ],
