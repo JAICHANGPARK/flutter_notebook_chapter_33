@@ -166,6 +166,7 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                                 ),
                                 Expanded(
                                   child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Row(
                                         children: [
