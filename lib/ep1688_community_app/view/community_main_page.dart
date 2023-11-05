@@ -167,45 +167,56 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                                 Expanded(
                                   child: Column(
                                     children: [
-                                      Text.rich(
-                                        TextSpan(
-                                          children: [
+                                      Row(
+                                        children: [
+                                          Text.rich(
                                             TextSpan(
-                                              text: "new post in",
-                                              style: TextStyle(
-                                                color: Colors.grey,
-                                              ),
+                                              children: [
+                                                TextSpan(
+                                                  text: "new post in",
+                                                  style: TextStyle(
+                                                    color: Colors.grey,
+                                                  ),
+                                                ),
+                                                TextSpan(
+                                                  text: "Memes",
+                                                  style: TextStyle(
+                                                    color: Colors.white,
+                                                  ),
+                                                ),
+                                                TextSpan(
+                                                  text: "by",
+                                                  style: TextStyle(
+                                                    color: Colors.grey,
+                                                  ),
+                                                ),
+                                                TextSpan(
+                                                  text: "Dreamwalker",
+                                                  style: TextStyle(
+                                                    color: Colors.white,
+                                                  ),
+                                                ),
+                                                TextSpan(
+                                                  text: "3h ago",
+                                                  style: TextStyle(
+                                                    color: Colors.grey,
+                                                  ),
+                                                ),
+                                              ],
                                             ),
-                                            TextSpan(
-                                              text: "Memes",
-                                              style: TextStyle(
-                                                color: Colors.white,
-                                              ),
-                                            ),
-                                            TextSpan(
-                                              text: "by",
-                                              style: TextStyle(
-                                                color: Colors.grey,
-                                              ),
-                                            ),
-                                            TextSpan(
-                                              text: "Dreamwalker",
-                                              style: TextStyle(
-                                                color: Colors.white,
-                                              ),
-                                            ),
-                                            TextSpan(
-                                              text: "3h ago",
-                                              style: TextStyle(
-                                                color: Colors.grey,
-                                              ),
-                                            ),
-                                          ],
-                                        ),
+                                          ),
+                                          Icon(
+                                            Icons.more_horiz,
+                                            color: Colors.white,
+                                          )
+                                        ],
                                       ),
-                                      Icon(
-                                        Icons.more_horiz,
-                                        color: Colors.white,
+                                      Text(
+                                        "Lorem ipsum dolor sit amet",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       )
                                     ],
                                   ),
