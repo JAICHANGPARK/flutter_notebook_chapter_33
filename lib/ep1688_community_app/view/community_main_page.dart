@@ -213,19 +213,34 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                                           )
                                         ],
                                       ),
-                                      Gap(16),
+                                      Gap(8),
                                       Text(
                                         "Lorem ipsum dolor sit amet",
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.bold,
-                                        ),
+                                        style:
+                                            TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 18),
                                       ),
                                       Gap(16),
                                       Container(
                                         height: 280,
-                                        decoration:
-                                            BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(16)),
+                                        decoration: BoxDecoration(
+                                          color: Colors.grey,
+                                          borderRadius: BorderRadius.circular(16),
+                                        ),
+                                      ),
+                                      Row(
+                                        children: [
+                                          Icon(
+                                            Icons.favorite,
+                                          ),
+                                          Text("187"),
+                                          Icon(Icons.chat_bubble_outline),
+                                          Text("94"),
+                                          Icon(Icons.local_fire_department_outlined),
+                                          Text("74"),
+                                          CircleAvatar(
+                                            radius: 12,
+                                          ),
+                                        ],
                                       )
                                     ],
                                   ),
