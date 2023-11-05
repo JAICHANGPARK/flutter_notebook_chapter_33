@@ -169,7 +169,7 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Row(
+                                      const Row(
                                         children: [
                                           Text.rich(
                                             TextSpan(
@@ -213,13 +213,13 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                                           )
                                         ],
                                       ),
-                                      Gap(8),
-                                      Text(
+                                      const Gap(8),
+                                      const Text(
                                         "Lorem ipsum dolor sit amet",
                                         style:
                                             TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 18),
                                       ),
-                                      Gap(16),
+                                      const Gap(16),
                                       Container(
                                         height: 280,
                                         decoration: BoxDecoration(
@@ -227,38 +227,45 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                                           borderRadius: BorderRadius.circular(16),
                                         ),
                                       ),
-                                      Row(
+                                      const Gap(12),
+                                      const Row(
                                         children: [
                                           Icon(
                                             Icons.favorite,
                                             color: Colors.redAccent,
                                           ),
+                                          Gap(4),
                                           Text(
                                             "187",
                                             style: TextStyle(
                                               color: Colors.grey,
                                             ),
                                           ),
+                                          Gap(16),
                                           Icon(
                                             Icons.chat_bubble_outline,
                                             color: Colors.grey,
                                           ),
+                                          Gap(4),
                                           Text(
                                             "94",
                                             style: TextStyle(
                                               color: Colors.grey,
                                             ),
                                           ),
+                                          Gap(16),
                                           Icon(
                                             Icons.local_fire_department_outlined,
                                             color: Colors.grey,
                                           ),
+                                          Gap(4),
                                           Text(
                                             "74",
                                             style: TextStyle(
                                               color: Colors.grey,
                                             ),
                                           ),
+                                          Gap(16),
                                           CircleAvatar(
                                             radius: 12,
                                           ),
