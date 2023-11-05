@@ -95,7 +95,20 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                                       ],
                                     ),
                                     Row(
-                                      children: [Text("Flutter"), Text("3h ago")],
+                                      children: [
+                                        Text(
+                                          "Flutter",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                        Text(
+                                          "3h ago",
+                                          style: TextStyle(
+                                            color: Colors.grey,
+                                          ),
+                                        )
+                                      ],
                                     ),
                                     Container(
                                       height: 72,
@@ -103,7 +116,6 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
                                         color: Colors.blueGrey,
                                       ),
                                     ),
-
                                   ],
                                 ),
                               ),
