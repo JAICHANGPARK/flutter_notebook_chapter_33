@@ -134,10 +134,16 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                     Container(
                       height: 300,
                       child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
                           return Container(
+                            width: 120,
                             decoration: BoxDecoration(
-                              border: Border.all(),
+
+                              border: Border.all(
+                                color: Colors.grey
+                              ),
+                              borderRadius: BorderRadius.circular(12),
                             ),
                           );
                         },
