@@ -35,30 +35,37 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  "HEY,",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 42,
-                    color: Colors.white,
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "HEY,",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 42,
+                      color: Colors.white,
+                    ),
                   ),
-                ),
-                Text(
-                  "DREAM",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 42,
-                    color: Colors.white,
-                  ),
-                )
-              ],
+                  Text(
+                    "DREAM",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 42,
+                      color: Colors.white,
+                    ),
+                  )
+                ],
+              ),
             ),
             Container(
+              margin: EdgeInsets.symmetric(horizontal: 16),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8),
+                border: Border.all(
+                  color: Colors.grey,
+                ),
               ),
               child: TextField(
                 decoration: InputDecoration(
