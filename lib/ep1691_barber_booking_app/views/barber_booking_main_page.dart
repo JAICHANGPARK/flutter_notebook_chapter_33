@@ -11,14 +11,26 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       appBar: AppBar(
+        foregroundColor: Colors.grey,
+        backgroundColor: Colors.black,
         centerTitle: true,
         title: Text(
           "THURSDAY, AUGUST 24",
         ),
         leading: IconButton(
-          icon: Icon(Icons.notifications), onPressed: () {  },
+          icon: Icon(Icons.notifications),
+          onPressed: () {},
         ),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Icons.settings,
+            ),
+          )
+        ],
       ),
       body: SafeArea(
         child: Column(
