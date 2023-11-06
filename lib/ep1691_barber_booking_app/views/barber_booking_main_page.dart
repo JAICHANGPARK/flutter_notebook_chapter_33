@@ -34,7 +34,22 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
       ),
       body: SafeArea(
         child: Column(
-          children: [],
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  "HEY,",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 42,
+                    color: Colors.white,
+                  ),
+                ),
+                Text("DREAM")
+              ],
+            )
+          ],
         ),
       ),
     );
