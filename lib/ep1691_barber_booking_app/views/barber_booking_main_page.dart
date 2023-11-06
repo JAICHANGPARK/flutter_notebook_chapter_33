@@ -83,49 +83,60 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                 ),
               ),
             ),
-            Gap(16),
-            Padding(
-              padding: const EdgeInsets.only(left: 16),
-              child: Text(
-                "LATEST VISIT",
-                style: TextStyle(
-                  color: Colors.grey,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
-            Gap(16),
-            SizedBox(
-              height: 92,
-              child: Padding(
-                padding: const EdgeInsets.only(left: 16),
-                child: ListView.builder(
-                  scrollDirection: Axis.horizontal,
-                  itemCount: 10,
-                  itemBuilder: (context, index) {
-                    return Container(
-                      width: 360,
-                      decoration: BoxDecoration(
-                        border: Border.all(
+            Expanded(
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+
+                    Gap(16),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 16),
+                      child: Text(
+                        "LATEST VISIT",
+                        style: TextStyle(
                           color: Colors.grey,
+                          fontWeight: FontWeight.bold,
                         ),
                       ),
-                    );
-                  },
+                    ),
+                    Gap(16),
+                    SizedBox(
+                      height: 92,
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 16),
+                        child: ListView.builder(
+                          scrollDirection: Axis.horizontal,
+                          itemCount: 10,
+                          itemBuilder: (context, index) {
+                            return Container(
+                              width: 360,
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.grey,
+                                ),
+                              ),
+                            );
+                          },
+                        ),
+                      ),
+                    ),
+                    Gap(48),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 16),
+                      child: Text(
+                        "NEARBY BARBERSHOPS",
+                        style: TextStyle(
+                          color: Colors.grey,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+
+                  ],
                 ),
               ),
             ),
-            Gap(48),
-            Padding(
-              padding: const EdgeInsets.only(left: 16),
-              child: Text(
-                "NEARBY BARBERSHOPS",
-                style: TextStyle(
-                  color: Colors.grey,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
+
           ],
         ),
       ),
