@@ -66,11 +66,18 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                 border: Border.all(
                   color: Colors.grey,
                 ),
-                color: Colors.white.withOpacity(0.15)
+                color: Colors.white.withOpacity(0.15),
               ),
+              padding: EdgeInsets.symmetric(vertical: 4),
               child: TextField(
                 decoration: InputDecoration(
+                  prefixIcon: Icon(Icons.search),
+                  prefixIconColor: Colors.yellow,
                   hintText: "SEARCH",
+                  hintStyle: TextStyle(
+                    color: Colors.grey,
+                  ),
+                  border: InputBorder.none,
                 ),
               ),
             )
