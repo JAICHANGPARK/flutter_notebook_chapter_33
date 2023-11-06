@@ -86,8 +86,8 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
             Expanded(
               child: SingleChildScrollView(
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-
                     Gap(16),
                     Padding(
                       padding: const EdgeInsets.only(left: 16),
@@ -131,12 +131,22 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                         ),
                       ),
                     ),
-
+                    Container(
+                      height: 300,
+                      child: ListView.builder(
+                        itemBuilder: (context, index) {
+                          return Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(),
+                            ),
+                          );
+                        },
+                      ),
+                    )
                   ],
                 ),
               ),
             ),
-
           ],
         ),
       ),
