@@ -16,17 +16,17 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
         foregroundColor: Colors.grey,
         backgroundColor: Colors.black,
         centerTitle: true,
-        title: Text(
+        title: const Text(
           "THURSDAY, AUGUST 24",
         ),
         leading: IconButton(
-          icon: Icon(Icons.notifications),
+          icon: const Icon(Icons.notifications),
           onPressed: () {},
         ),
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Icons.settings,
             ),
           )
@@ -35,8 +35,8 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Padding(
-              padding: const EdgeInsets.all(16.0),
+            const Padding(
+              padding: EdgeInsets.all(16.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -60,7 +60,7 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
               ),
             ),
             Container(
-              margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+              margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8),
                 border: Border.all(
@@ -68,8 +68,8 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                 ),
                 color: Colors.white.withOpacity(0.15),
               ),
-              padding: EdgeInsets.symmetric(vertical: 4),
-              child: TextField(
+              padding: const EdgeInsets.symmetric(vertical: 4),
+              child: const TextField(
                 decoration: InputDecoration(
                   prefixIcon: Icon(Icons.search),
                   prefixIconColor: Colors.yellow,
@@ -80,7 +80,9 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                   border: InputBorder.none,
                 ),
               ),
-            )
+            ),
+            Text("LATEST VISIT"),
+            ListView.builder(itemBuilder: (context,index))
           ],
         ),
       ),
