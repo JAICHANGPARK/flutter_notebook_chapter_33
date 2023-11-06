@@ -46,8 +46,25 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                     color: Colors.white,
                   ),
                 ),
-                Text("DREAM")
+                Text(
+                  "DREAM",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 42,
+                    color: Colors.white,
+                  ),
+                )
               ],
+            ),
+            Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: TextField(
+                decoration: InputDecoration(
+                  hintText: "SEARCH",
+                ),
+              ),
             )
           ],
         ),
