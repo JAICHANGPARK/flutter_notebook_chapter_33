@@ -132,7 +132,7 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                       ),
                     ),
                     Container(
-                      height: 300,
+                      height: 340,
                       margin: EdgeInsets.only(left: 16, top: 16, bottom: 16),
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
