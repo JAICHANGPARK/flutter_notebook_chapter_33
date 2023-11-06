@@ -10,6 +10,21 @@ class BarberBookingMainPage extends StatefulWidget {
 class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text(
+          "THURSDAY, AUGUST 24",
+        ),
+        leading: IconButton(
+          icon: Icon(Icons.notifications), onPressed: () {  },
+        ),
+      ),
+      body: SafeArea(
+        child: Column(
+          children: [],
+        ),
+      ),
+    );
   }
 }
