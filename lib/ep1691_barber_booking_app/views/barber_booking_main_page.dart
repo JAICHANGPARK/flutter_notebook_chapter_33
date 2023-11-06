@@ -115,6 +115,7 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                 ),
               ),
             ),
+            Gap(48),
             Padding(
               padding: const EdgeInsets.only(left: 16),
               child: Text(
