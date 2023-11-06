@@ -60,7 +60,7 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
               ),
             ),
             Container(
-              margin: EdgeInsets.symmetric(horizontal: 16),
+              margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8),
                 border: Border.all(
