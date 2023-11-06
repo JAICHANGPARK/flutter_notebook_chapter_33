@@ -139,13 +139,36 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                         itemBuilder: (context, index) {
                           return Container(
                             width: 200,
-                            margin: EdgeInsets.only(right:
-                            12),
+                            margin: EdgeInsets.only(right: 12),
                             decoration: BoxDecoration(
-
-                              border: Border.all(
-                                color: Colors.grey
-                              ),
+                              border: Border.all(color: Colors.grey),
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                          );
+                        },
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 16),
+                      child: Text(
+                        "BEST BARBERS",
+                        style: TextStyle(
+                          color: Colors.grey,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                    Container(
+                      height: 340,
+                      margin: EdgeInsets.only(left: 16, top: 16, bottom: 16),
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemBuilder: (context, index) {
+                          return Container(
+                            width: 200,
+                            margin: EdgeInsets.only(right: 12),
+                            decoration: BoxDecoration(
+                              border: Border.all(color: Colors.grey),
                               borderRadius: BorderRadius.circular(12),
                             ),
                           );
