@@ -35,6 +35,7 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
       ),
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Padding(
               padding: EdgeInsets.all(16.0),
@@ -83,16 +84,19 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
               ),
             ),
             Gap(16),
-            Text(
-              "LATEST VISIT",
-              style: TextStyle(
-                color: Colors.grey,
-                fontWeight: FontWeight.bold,
+            Padding(
+              padding: const EdgeInsets.only(left: 16),
+              child: Text(
+                "LATEST VISIT",
+                style: TextStyle(
+                  color: Colors.grey,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
-            Gap(8),
+            Gap(16),
             SizedBox(
-              height: 72,
+              height: 92,
               child: Padding(
                 padding: const EdgeInsets.only(left: 16),
                 child: ListView.builder(
@@ -110,7 +114,17 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                   },
                 ),
               ),
-            )
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 16),
+              child: Text(
+                "NEARBY BARBERSHOPS",
+                style: TextStyle(
+                  color: Colors.grey,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
           ],
         ),
       ),
