@@ -66,6 +66,7 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                 border: Border.all(
                   color: Colors.grey,
                 ),
+                color: Colors.white.withOpacity(0.15)
               ),
               child: TextField(
                 decoration: InputDecoration(
