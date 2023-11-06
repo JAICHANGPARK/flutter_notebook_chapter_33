@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class BarberBookingMainPage extends StatefulWidget {
   const BarberBookingMainPage({super.key});
@@ -81,19 +82,33 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                 ),
               ),
             ),
-            Text("LATEST VISIT"),
+            Gap(16),
+            Text(
+              "LATEST VISIT",
+              style: TextStyle(
+                color: Colors.grey,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Gap(8),
             SizedBox(
               height: 72,
-              child: ListView.builder(
-                itemBuilder: (context, index) {
-                  return Container(
-                    decoration: BoxDecoration(
-                      border: Border.all(
-                        color: Colors.grey,
+              child: Padding(
+                padding: const EdgeInsets.only(left: 16),
+                child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: 10,
+                  itemBuilder: (context, index) {
+                    return Container(
+                      width: 360,
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.grey,
+                        ),
                       ),
-                    ),
-                  );
-                },
+                    );
+                  },
+                ),
               ),
             )
           ],
