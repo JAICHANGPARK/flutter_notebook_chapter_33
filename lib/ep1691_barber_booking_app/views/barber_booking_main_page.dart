@@ -82,7 +82,20 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
               ),
             ),
             Text("LATEST VISIT"),
-            ListView.builder(itemBuilder: (context,index))
+            SizedBox(
+              height: 72,
+              child: ListView.builder(
+                itemBuilder: (context, index) {
+                  return Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.grey,
+                      ),
+                    ),
+                  );
+                },
+              ),
+            )
           ],
         ),
       ),
