@@ -118,7 +118,7 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                                 color: Colors.white.withOpacity(0.1),
                                 borderRadius: BorderRadius.circular(8),
                               ),
-                              padding: EdgeInsets.all(8),
+                              padding: const EdgeInsets.all(8),
                               child: Row(
                                 children: [
                                   Container(
@@ -130,7 +130,7 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                                       ),
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     width: 16,
                                   ),
                                   const Expanded(
@@ -141,7 +141,7 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                                         Text(
                                           "DREAM WALKER",
                                           style:
-                                          TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 18),
+                                              TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 18),
                                         ),
                                         SizedBox(
                                           height: 12,
@@ -209,28 +209,34 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                                         color: Colors.grey,
                                         border: Border.all(
                                           color: Colors.white10,
-                                        )
-                                    ),
+                                        )),
                                   ),
                                 ),
-                                SizedBox(height: 16),
-                                Text.rich(TextSpan(
+                                const SizedBox(height: 16),
+                                const Text.rich(
+                                  TextSpan(
+                                    children: [
+                                      TextSpan(
+                                        text: "OPEN NOW",
+                                      ),
+                                      TextSpan(
+                                        text: "8:00~21:00",
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                const Text("THE FLUTTER FACTORY"),
+                                const Row(
                                   children: [
-                                    TextSpan(
-                                      text: "OPEN NOW",
+                                    Icon(
+                                      Icons.location_on_outlined,
                                     ),
-                                    TextSpan(
-                                        text: "8:00~21:00,
+                                    Text(
+                                      "0.7km",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                      ),
                                     ),
-                                  ],
-                                ),),
-                                Text("THE FLUTTER FACTORY"),
-                                Row(
-                                  children: [
-                                    Icon(Icons.location_on_outlined,),
-                                    Text("0.7km", style: TextStyle(
-                                      color: Colors.white,
-                                    ),)
                                   ],
                                 )
                               ],
