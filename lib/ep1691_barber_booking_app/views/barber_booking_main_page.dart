@@ -122,11 +122,12 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                               child: Row(
                                 children: [
                                   Container(
-                                    
                                     width: 72,
                                     decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(8),
-                                      border: Border.all(),
+                                      border: Border.all(
+                                        color: Colors.white,
+                                      ),
                                     ),
                                   ),
                                   SizedBox(
@@ -144,11 +145,15 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                                             color: Colors.white,
                                           ),
                                         ),
+                                        SizedBox(
+                                          height: 12,
+                                        ),
                                         Row(
                                           children: [
                                             Icon(
                                               Icons.star,
                                               color: Colors.yellow,
+                                              size: 16,
                                             ),
                                             Text(
                                               "4.8",
@@ -156,7 +161,12 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                                                 color: Colors.white,
                                               ),
                                             ),
-                                            Text("114 reviews"),
+                                            Text(
+                                              " 114 reviews",
+                                              style: TextStyle(
+                                                color: Colors.grey,
+                                              ),
+                                            ),
                                           ],
                                         )
                                       ],
