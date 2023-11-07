@@ -223,7 +223,16 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                                         text: "8:00~21:00,
                                     ),
                                   ],
-                                ))
+                                ),),
+                                Text("THE FLUTTER FACTORY"),
+                                Row(
+                                  children: [
+                                    Icon(Icons.location_on_outlined,),
+                                    Text("0.7km", style: TextStyle(
+                                      color: Colors.white,
+                                    ),)
+                                  ],
+                                )
                               ],
                             ),
                           );
