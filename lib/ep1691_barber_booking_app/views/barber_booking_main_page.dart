@@ -110,10 +110,38 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                           itemBuilder: (context, index) {
                             return Container(
                               width: 360,
+                              margin: EdgeInsets.only(right: 12),
                               decoration: BoxDecoration(
                                 border: Border.all(
                                   color: Colors.grey,
                                 ),
+                                color: Colors.white.withOpacity(0.1),
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                              child: Row(
+                                children: [
+                                  Container(
+                                    height: 54,
+                                    width: 54,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(8),
+                                    ),
+                                  ),
+                                  Expanded(
+                                    child: Column(
+                                      children: [
+                                        Text("DREAM WALKER"),
+                                        Row(
+                                          children: [
+                                            Icon(Icons.star),
+                                            Text("4.8"),
+                                            Text("114 reviews"),
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                  )
+                                ],
                               ),
                             );
                           },
