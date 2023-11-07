@@ -88,9 +88,9 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Gap(16),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 16),
+                    const Gap(16),
+                    const Padding(
+                      padding: EdgeInsets.only(left: 16),
                       child: Text(
                         "LATEST VISIT",
                         style: TextStyle(
@@ -99,7 +99,7 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                         ),
                       ),
                     ),
-                    Gap(16),
+                    const Gap(16),
                     SizedBox(
                       height: 92,
                       child: Padding(
@@ -110,7 +110,7 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                           itemBuilder: (context, index) {
                             return Container(
                               width: 360,
-                              margin: EdgeInsets.only(right: 12),
+                              margin: const EdgeInsets.only(right: 12),
                               decoration: BoxDecoration(
                                 border: Border.all(
                                   color: Colors.grey,
@@ -127,12 +127,17 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                                       borderRadius: BorderRadius.circular(8),
                                     ),
                                   ),
-                                  Expanded(
+                                  const Expanded(
                                     child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
                                         Text(
                                           "DREAM WALKER",
-                                          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.white,
+                                          ),
                                         ),
                                         Row(
                                           children: [
@@ -159,9 +164,9 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                         ),
                       ),
                     ),
-                    Gap(48),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 16),
+                    const Gap(48),
+                    const Padding(
+                      padding: EdgeInsets.only(left: 16),
                       child: Text(
                         "NEARBY BARBERSHOPS",
                         style: TextStyle(
@@ -172,13 +177,13 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                     ),
                     Container(
                       height: 340,
-                      margin: EdgeInsets.only(left: 16, top: 16, bottom: 16),
+                      margin: const EdgeInsets.only(left: 16, top: 16, bottom: 16),
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
                           return Container(
                             width: 200,
-                            margin: EdgeInsets.only(right: 12),
+                            margin: const EdgeInsets.only(right: 12),
                             decoration: BoxDecoration(
                               border: Border.all(color: Colors.grey),
                               borderRadius: BorderRadius.circular(12),
@@ -187,8 +192,8 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                         },
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 16),
+                    const Padding(
+                      padding: EdgeInsets.only(left: 16),
                       child: Text(
                         "BEST BARBERS",
                         style: TextStyle(
@@ -199,13 +204,13 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                     ),
                     Container(
                       height: 340,
-                      margin: EdgeInsets.only(left: 16, top: 16, bottom: 16),
+                      margin: const EdgeInsets.only(left: 16, top: 16, bottom: 16),
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
                           return Container(
                             width: 200,
-                            margin: EdgeInsets.only(right: 12),
+                            margin: const EdgeInsets.only(right: 12),
                             decoration: BoxDecoration(
                               border: Border.all(color: Colors.grey),
                               borderRadius: BorderRadius.circular(12),
