@@ -113,7 +113,7 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                               margin: const EdgeInsets.only(right: 12),
                               decoration: BoxDecoration(
                                 border: Border.all(
-                                  color: Colors.grey,
+                                  color: Colors.white.withOpacity(0.4),
                                 ),
                                 color: Colors.white.withOpacity(0.1),
                                 borderRadius: BorderRadius.circular(8),
@@ -126,7 +126,7 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                                     decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(8),
                                       border: Border.all(
-                                        color: Colors.white,
+                                        color: Colors.white.withOpacity(0.4),
                                       ),
                                     ),
                                   ),
@@ -143,6 +143,7 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                                           style: TextStyle(
                                             fontWeight: FontWeight.bold,
                                             color: Colors.white,
+                                            fontSize: 18
                                           ),
                                         ),
                                         SizedBox(
