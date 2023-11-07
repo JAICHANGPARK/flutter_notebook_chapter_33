@@ -140,11 +140,8 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                                       children: [
                                         Text(
                                           "DREAM WALKER",
-                                          style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            color: Colors.white,
-                                            fontSize: 18
-                                          ),
+                                          style:
+                                          TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 18),
                                         ),
                                         SizedBox(
                                           height: 12,
@@ -203,6 +200,27 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                             decoration: BoxDecoration(
                               border: Border.all(color: Colors.grey),
                               borderRadius: BorderRadius.circular(12),
+                            ),
+                            child: Column(
+                              children: [
+                                Expanded(
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey,
+                                    ),
+                                  ),
+                                ),
+                                Text.rich(TextSpan(
+                                  children: [
+                                    TextSpan(
+                                      text: "OPEN NOW",
+                                    ),
+                                    TextSpan(
+                                        text: "8:00~21:00,
+                                    ),
+                                  ],
+                                ))
+                              ],
                             ),
                           );
                         },
