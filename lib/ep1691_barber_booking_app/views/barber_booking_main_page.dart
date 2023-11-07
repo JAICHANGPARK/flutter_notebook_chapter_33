@@ -125,6 +125,7 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                                     width: 84,
                                     decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(8),
+                                      border: Border.all(),
                                     ),
                                   ),
                                   const Expanded(
