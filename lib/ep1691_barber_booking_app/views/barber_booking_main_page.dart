@@ -130,7 +130,13 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                                   Expanded(
                                     child: Column(
                                       children: [
-                                        Text("DREAM WALKER"),
+                                        Text(
+                                          "DREAM WALKER",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.white
+                                          ),
+                                        ),
                                         Row(
                                           children: [
                                             Icon(Icons.star),
