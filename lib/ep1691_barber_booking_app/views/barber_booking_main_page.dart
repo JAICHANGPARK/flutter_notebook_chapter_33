@@ -121,8 +121,8 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                               child: Row(
                                 children: [
                                   Container(
-                                    height: 54,
-                                    width: 54,
+                                    height: 84,
+                                    width: 84,
                                     decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(8),
                                     ),
