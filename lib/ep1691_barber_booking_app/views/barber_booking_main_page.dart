@@ -206,10 +206,14 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                                 Expanded(
                                   child: Container(
                                     decoration: BoxDecoration(
-                                      color: Colors.grey,
+                                        color: Colors.grey,
+                                        border: Border.all(
+                                          color: Colors.white10,
+                                        )
                                     ),
                                   ),
                                 ),
+                                SizedBox(height: 16),
                                 Text.rich(TextSpan(
                                   children: [
                                     TextSpan(
