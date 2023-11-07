@@ -132,15 +132,20 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                                       children: [
                                         Text(
                                           "DREAM WALKER",
-                                          style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            color: Colors.white
-                                          ),
+                                          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
                                         ),
                                         Row(
                                           children: [
-                                            Icon(Icons.star),
-                                            Text("4.8"),
+                                            Icon(
+                                              Icons.star,
+                                              color: Colors.yellow,
+                                            ),
+                                            Text(
+                                              "4.8",
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                              ),
+                                            ),
                                             Text("114 reviews"),
                                           ],
                                         )
