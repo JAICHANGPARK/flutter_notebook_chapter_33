@@ -118,15 +118,19 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                                 color: Colors.white.withOpacity(0.1),
                                 borderRadius: BorderRadius.circular(8),
                               ),
+                              padding: EdgeInsets.all(8),
                               child: Row(
                                 children: [
                                   Container(
-                                    height: 84,
-                                    width: 84,
+                                    
+                                    width: 72,
                                     decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(8),
                                       border: Border.all(),
                                     ),
+                                  ),
+                                  SizedBox(
+                                    width: 16,
                                   ),
                                   const Expanded(
                                     child: Column(
