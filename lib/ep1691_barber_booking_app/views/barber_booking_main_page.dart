@@ -201,6 +201,7 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                               border: Border.all(color: Colors.grey),
                               borderRadius: BorderRadius.circular(12),
                             ),
+                            padding: EdgeInsets.all(8),
                             child: Column(
                               children: [
                                 Expanded(
