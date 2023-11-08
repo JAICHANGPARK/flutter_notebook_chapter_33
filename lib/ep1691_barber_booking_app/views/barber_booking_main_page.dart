@@ -140,8 +140,11 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                                       children: [
                                         Text(
                                           "DREAM WALKER",
-                                          style:
-                                              TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 18),
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.white,
+                                            fontSize: 18,
+                                          ),
                                         ),
                                         SizedBox(
                                           height: 12,
