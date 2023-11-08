@@ -233,6 +233,7 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                             ),
                             padding: const EdgeInsets.all(8),
                             child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Expanded(
                                   child: Container(
@@ -275,8 +276,7 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                                     ),
                                   ),
                                 ),
-                                const SizedBox(height: 16),
-                                
+                                Gap(8),
                                 const Text.rich(
                                   TextSpan(
                                     children: [
@@ -293,17 +293,18 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                                     ],
                                   ),
                                 ),
+                                Gap(6),
                                 const Text(
                                   "THE FLUTTER FACTORY",
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 16
-                                  ),
+                                  style: TextStyle(color: Colors.white, fontSize: 16),
                                 ),
+                                Gap(4),
                                 const Row(
                                   children: [
                                     Icon(
                                       Icons.location_on_outlined,
+                                      color: Colors.yellow,
+                                      size: 18,
                                     ),
                                     Text(
                                       "0.7km",
@@ -311,6 +312,23 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                                         color: Colors.white,
                                       ),
                                     ),
+                                  ],
+                                ),
+                                Gap(7),
+                                Row(
+                                  children: [
+                                    Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.white38,
+                                        borderRadius: BorderRadius.circular(4),
+                                      ),
+                                      child: IconButton(
+                                        icon: Icon(
+                                          Icons.bookmark_add_outlined,
+                                        ),
+                                        onPressed: () {},
+                                      ),
+                                    )
                                   ],
                                 )
                               ],
