@@ -243,6 +243,11 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                                         color: Colors.white10,
                                       ),
                                       borderRadius: BorderRadius.circular(8),
+                                      image: DecorationImage(
+                                        image: NetworkImage(
+                                            "https://cdn.pixabay.com/photo/2016/06/12/21/41/barber-1453064_1280.jpg"),
+                                        fit: BoxFit.cover,
+                                      ),
                                     ),
                                     child: Stack(
                                       children: [
@@ -251,8 +256,9 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                                           top: 12,
                                           child: Container(
                                             decoration: BoxDecoration(
-                                                color: Colors.black.withOpacity(0.4),
-                                                borderRadius: BorderRadius.circular(4)),
+                                              color: Colors.black.withOpacity(0.4),
+                                              borderRadius: BorderRadius.circular(4),
+                                            ),
                                             padding: EdgeInsets.all(4),
                                             child: Row(
                                               children: [
