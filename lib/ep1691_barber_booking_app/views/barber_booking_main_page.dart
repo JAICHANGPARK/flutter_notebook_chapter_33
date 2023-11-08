@@ -250,9 +250,8 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                                           top: 12,
                                           child: Container(
                                             decoration: BoxDecoration(
-                                              color: Colors.black.withOpacity(0.4),
-                                              borderRadius: BorderRadius.circular(4)
-                                            ),
+                                                color: Colors.black.withOpacity(0.4),
+                                                borderRadius: BorderRadius.circular(4)),
                                             padding: EdgeInsets.all(4),
                                             child: Row(
                                               children: [
@@ -281,11 +280,15 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                                   TextSpan(
                                     children: [
                                       TextSpan(
-                                        text: "OPEN NOW",
-                                      ),
+                                          text: "OPEN NOW",
+                                          style: TextStyle(
+                                            color: Colors.yellow,
+                                          )),
                                       TextSpan(
-                                        text: "8:00~21:00",
-                                      ),
+                                          text: "8:00~21:00",
+                                          style: TextStyle(
+                                            color: Colors.grey,
+                                          )),
                                     ],
                                   ),
                                 ),
