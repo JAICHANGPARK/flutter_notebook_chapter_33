@@ -276,6 +276,7 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                                   ),
                                 ),
                                 const SizedBox(height: 16),
+                                
                                 const Text.rich(
                                   TextSpan(
                                     children: [
@@ -292,7 +293,13 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                                     ],
                                   ),
                                 ),
-                                const Text("THE FLUTTER FACTORY"),
+                                const Text(
+                                  "THE FLUTTER FACTORY",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 16
+                                  ),
+                                ),
                                 const Row(
                                   children: [
                                     Icon(
