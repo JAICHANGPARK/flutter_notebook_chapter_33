@@ -328,6 +328,25 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                                         ),
                                         onPressed: () {},
                                       ),
+                                    ),
+                                    Gap(12),
+                                    Expanded(
+                                      child: Container(
+                                        height: 48,
+                                        decoration: BoxDecoration(
+                                          color: Colors.yellow,
+                                          borderRadius: BorderRadius.circular(8),
+                                        ),
+                                        child: Center(
+                                          child: Text(
+                                            "BOOK NOW",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.black,
+                                            ),
+                                          ),
+                                        ),
+                                      ),
                                     )
                                   ],
                                 )
