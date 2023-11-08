@@ -250,7 +250,8 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                                           top: 12,
                                           child: Container(
                                             decoration: BoxDecoration(
-                                              color: Colors.black,
+                                              color: Colors.black.withOpacity(0.4),
+                                              borderRadius: BorderRadius.circular(8)
                                             ),
                                             padding: EdgeInsets.all(4),
                                             child: Row(
@@ -264,7 +265,7 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                                                   "4.8",
                                                   style: TextStyle(
                                                     fontWeight: FontWeight.bold,
-                                                    color: Colors.white10,
+                                                    color: Colors.white,
                                                   ),
                                                 )
                                               ],
