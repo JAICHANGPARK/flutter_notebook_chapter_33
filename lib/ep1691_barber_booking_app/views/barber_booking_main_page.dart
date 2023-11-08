@@ -124,11 +124,15 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                                   Container(
                                     width: 72,
                                     decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(8),
-                                      border: Border.all(
-                                        color: Colors.white.withOpacity(0.4),
-                                      ),
-                                    ),
+                                        borderRadius: BorderRadius.circular(8),
+                                        border: Border.all(
+                                          color: Colors.white.withOpacity(0.4),
+                                        ),
+                                        image: DecorationImage(
+                                          image: NetworkImage(
+                                              "https://cdn.pixabay.com/photo/2017/07/20/10/51/beauty-salon-2521943_1280.jpg"),
+                                          fit: BoxFit.cover,
+                                        )),
                                   ),
                                   const SizedBox(
                                     width: 16,
