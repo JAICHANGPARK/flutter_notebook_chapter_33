@@ -251,7 +251,7 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                                           child: Container(
                                             decoration: BoxDecoration(
                                               color: Colors.black.withOpacity(0.4),
-                                              borderRadius: BorderRadius.circular(8)
+                                              borderRadius: BorderRadius.circular(4)
                                             ),
                                             padding: EdgeInsets.all(4),
                                             child: Row(
