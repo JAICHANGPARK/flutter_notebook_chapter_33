@@ -147,6 +147,9 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                                             child: Center(
                                               child: Text(
                                                 "PRO",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                ),
                                               ),
                                             ),
                                           ),
