@@ -128,7 +128,7 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                                       border: Border.all(
                                         color: Colors.white.withOpacity(0.4),
                                       ),
-                                      image: DecorationImage(
+                                      image: const DecorationImage(
                                         image: NetworkImage(
                                             "https://cdn.pixabay.com/photo/2017/07/20/10/51/beauty-salon-2521943_1280.jpg"),
                                         fit: BoxFit.cover,
@@ -141,10 +141,10 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                                           right: 0,
                                           bottom: 0,
                                           child: Container(
-                                            decoration: BoxDecoration(
+                                            decoration: const BoxDecoration(
                                               color: Colors.yellow,
                                             ),
-                                            child: Center(
+                                            child: const Center(
                                               child: Text(
                                                 "PRO",
                                                 style: TextStyle(
@@ -231,16 +231,48 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                               border: Border.all(color: Colors.grey),
                               borderRadius: BorderRadius.circular(12),
                             ),
-                            padding: EdgeInsets.all(8),
+                            padding: const EdgeInsets.all(8),
                             child: Column(
                               children: [
                                 Expanded(
                                   child: Container(
                                     decoration: BoxDecoration(
-                                        color: Colors.grey,
-                                        border: Border.all(
-                                          color: Colors.white10,
-                                        )),
+                                      color: Colors.grey,
+                                      border: Border.all(
+                                        color: Colors.white10,
+                                      ),
+                                      borderRadius: BorderRadius.circular(8),
+                                    ),
+                                    child: Stack(
+                                      children: [
+                                        Positioned(
+                                          left: 12,
+                                          top: 12,
+                                          child: Container(
+                                            decoration: BoxDecoration(
+                                              color: Colors.black,
+                                            ),
+                                            padding: EdgeInsets.all(4),
+                                            child: Row(
+                                              children: [
+                                                Icon(
+                                                  Icons.star,
+                                                  size: 14,
+                                                  color: Colors.yellow,
+                                                ),
+                                                Text(
+                                                  "4.8",
+                                                  style: TextStyle(
+                                                    fontWeight: FontWeight.bold,
+                                                    color: Colors.white10,
+                                                  ),
+                                                )
+                                              ],
+                                            ),
+                                          ),
+                                        )
+                                      ],
+                                    ),
                                   ),
                                 ),
                                 const SizedBox(height: 16),
