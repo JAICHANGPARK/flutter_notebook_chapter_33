@@ -10,6 +10,26 @@ class BarberShopPage extends StatefulWidget {
 class _BarberShopPageState extends State<BarberShopPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Stack(
+        children: [
+          Positioned(
+            child: Column(
+              children: [
+                Expanded(child: Container(
+
+                )),
+                Expanded(child: Container()),
+              ],
+            ),
+          ),
+          Positioned(
+            child: Row(
+              children: [],
+            ),
+          )
+        ],
+      ),
+    );
   }
 }
