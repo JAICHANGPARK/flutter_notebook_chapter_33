@@ -18,7 +18,7 @@ class _BarberShopPageState extends State<BarberShopPage> {
               children: [
                 Expanded(
                   child: Container(
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       image: DecorationImage(
                         image:
                             NetworkImage("https://cdn.pixabay.com/photo/2020/05/24/02/00/barber-shop-5212059_1280.jpg"),
@@ -43,8 +43,8 @@ class _BarberShopPageState extends State<BarberShopPage> {
             child: SafeArea(
               child: Column(
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.all(16.0),
+                  const Padding(
+                    padding: EdgeInsets.all(16.0),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -67,12 +67,12 @@ class _BarberShopPageState extends State<BarberShopPage> {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 200,
                   ),
                   Expanded(
                     child: Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Colors.black,
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(24),
@@ -97,14 +97,14 @@ class _BarberShopPageState extends State<BarberShopPage> {
                   color: Colors.white38,
                 ),
               ),
-              padding: EdgeInsets.all(24),
+              padding: const EdgeInsets.all(24),
               child: Container(
                 decoration: BoxDecoration(
                   color: Colors.yellow,
                   borderRadius: BorderRadius.circular(32),
                 ),
-                padding: EdgeInsets.symmetric(vertical: 16),
-                child: Center(
+                padding: const EdgeInsets.symmetric(vertical: 16),
+                child: const Center(
                   child: Text(
                     "BOOK NOW",
                     style: TextStyle(
@@ -115,7 +115,7 @@ class _BarberShopPageState extends State<BarberShopPage> {
               ),
             ),
           ),
-          Positioned(
+          const Positioned(
             child: Row(
               children: [],
             ),
