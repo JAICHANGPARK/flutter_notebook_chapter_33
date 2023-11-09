@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_33/ep1691_barber_booking_app/views/barber_shop_page.dart';
 import 'package:gap/gap.dart';
 
 class BarberBookingMainPage extends StatefulWidget {
@@ -224,139 +225,148 @@ class _BarberBookingMainPageState extends State<BarberBookingMainPage> {
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
-                          return Container(
-                            width: 200,
-                            margin: const EdgeInsets.only(right: 12),
-                            decoration: BoxDecoration(
-                              border: Border.all(color: Colors.grey),
-                              borderRadius: BorderRadius.circular(12),
-                            ),
-                            padding: const EdgeInsets.all(8),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Expanded(
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                      color: Colors.grey,
-                                      border: Border.all(
-                                        color: Colors.white10,
+                          return GestureDetector(
+                            onTap: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) => BarberShopPage(),
+                                ),
+                              );
+                            },
+                            child: Container(
+                              width: 200,
+                              margin: const EdgeInsets.only(right: 12),
+                              decoration: BoxDecoration(
+                                border: Border.all(color: Colors.grey),
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                              padding: const EdgeInsets.all(8),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Expanded(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.grey,
+                                        border: Border.all(
+                                          color: Colors.white10,
+                                        ),
+                                        borderRadius: BorderRadius.circular(8),
+                                        image: DecorationImage(
+                                          image: NetworkImage(
+                                              "https://cdn.pixabay.com/photo/2016/06/12/21/41/barber-1453064_1280.jpg"),
+                                          fit: BoxFit.cover,
+                                        ),
                                       ),
-                                      borderRadius: BorderRadius.circular(8),
-                                      image: DecorationImage(
-                                        image: NetworkImage(
-                                            "https://cdn.pixabay.com/photo/2016/06/12/21/41/barber-1453064_1280.jpg"),
-                                        fit: BoxFit.cover,
+                                      child: Stack(
+                                        children: [
+                                          Positioned(
+                                            left: 12,
+                                            top: 12,
+                                            child: Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.black.withOpacity(0.4),
+                                                borderRadius: BorderRadius.circular(4),
+                                              ),
+                                              padding: EdgeInsets.all(4),
+                                              child: Row(
+                                                children: [
+                                                  Icon(
+                                                    Icons.star,
+                                                    size: 14,
+                                                    color: Colors.yellow,
+                                                  ),
+                                                  Text(
+                                                    "4.8",
+                                                    style: TextStyle(
+                                                      fontWeight: FontWeight.bold,
+                                                      color: Colors.white,
+                                                    ),
+                                                  )
+                                                ],
+                                              ),
+                                            ),
+                                          )
+                                        ],
                                       ),
                                     ),
-                                    child: Stack(
+                                  ),
+                                  Gap(8),
+                                  const Text.rich(
+                                    TextSpan(
                                       children: [
-                                        Positioned(
-                                          left: 12,
-                                          top: 12,
-                                          child: Container(
-                                            decoration: BoxDecoration(
-                                              color: Colors.black.withOpacity(0.4),
-                                              borderRadius: BorderRadius.circular(4),
-                                            ),
-                                            padding: EdgeInsets.all(4),
-                                            child: Row(
-                                              children: [
-                                                Icon(
-                                                  Icons.star,
-                                                  size: 14,
-                                                  color: Colors.yellow,
-                                                ),
-                                                Text(
-                                                  "4.8",
-                                                  style: TextStyle(
-                                                    fontWeight: FontWeight.bold,
-                                                    color: Colors.white,
-                                                  ),
-                                                )
-                                              ],
-                                            ),
-                                          ),
-                                        )
+                                        TextSpan(
+                                            text: "OPEN NOW",
+                                            style: TextStyle(
+                                              color: Colors.yellow,
+                                            )),
+                                        TextSpan(
+                                            text: "8:00~21:00",
+                                            style: TextStyle(
+                                              color: Colors.grey,
+                                            )),
                                       ],
                                     ),
                                   ),
-                                ),
-                                Gap(8),
-                                const Text.rich(
-                                  TextSpan(
+                                  Gap(6),
+                                  const Text(
+                                    "THE FLUTTER FACTORY",
+                                    style: TextStyle(color: Colors.white, fontSize: 16),
+                                  ),
+                                  Gap(4),
+                                  const Row(
                                     children: [
-                                      TextSpan(
-                                          text: "OPEN NOW",
-                                          style: TextStyle(
-                                            color: Colors.yellow,
-                                          )),
-                                      TextSpan(
-                                          text: "8:00~21:00",
-                                          style: TextStyle(
-                                            color: Colors.grey,
-                                          )),
+                                      Icon(
+                                        Icons.location_on_outlined,
+                                        color: Colors.yellow,
+                                        size: 18,
+                                      ),
+                                      Text(
+                                        "0.7km",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                        ),
+                                      ),
                                     ],
                                   ),
-                                ),
-                                Gap(6),
-                                const Text(
-                                  "THE FLUTTER FACTORY",
-                                  style: TextStyle(color: Colors.white, fontSize: 16),
-                                ),
-                                Gap(4),
-                                const Row(
-                                  children: [
-                                    Icon(
-                                      Icons.location_on_outlined,
-                                      color: Colors.yellow,
-                                      size: 18,
-                                    ),
-                                    Text(
-                                      "0.7km",
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                                Gap(7),
-                                Row(
-                                  children: [
-                                    Container(
-                                      decoration: BoxDecoration(
-                                        color: Colors.white38,
-                                        borderRadius: BorderRadius.circular(4),
-                                      ),
-                                      child: IconButton(
-                                        icon: Icon(
-                                          Icons.bookmark_add_outlined,
-                                        ),
-                                        onPressed: () {},
-                                      ),
-                                    ),
-                                    Gap(12),
-                                    Expanded(
-                                      child: Container(
-                                        height: 48,
+                                  Gap(7),
+                                  Row(
+                                    children: [
+                                      Container(
                                         decoration: BoxDecoration(
-                                          color: Colors.yellow,
-                                          borderRadius: BorderRadius.circular(8),
+                                          color: Colors.white38,
+                                          borderRadius: BorderRadius.circular(4),
                                         ),
-                                        child: Center(
-                                          child: Text(
-                                            "BOOK NOW",
-                                            style: TextStyle(
-                                              fontWeight: FontWeight.bold,
-                                              color: Colors.black,
+                                        child: IconButton(
+                                          icon: Icon(
+                                            Icons.bookmark_add_outlined,
+                                          ),
+                                          onPressed: () {},
+                                        ),
+                                      ),
+                                      Gap(12),
+                                      Expanded(
+                                        child: Container(
+                                          height: 48,
+                                          decoration: BoxDecoration(
+                                            color: Colors.yellow,
+                                            borderRadius: BorderRadius.circular(8),
+                                          ),
+                                          child: Center(
+                                            child: Text(
+                                              "BOOK NOW",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.black,
+                                              ),
                                             ),
                                           ),
                                         ),
-                                      ),
-                                    )
-                                  ],
-                                )
-                              ],
+                                      )
+                                    ],
+                                  )
+                                ],
+                              ),
                             ),
                           );
                         },
