@@ -45,7 +45,8 @@ class _BarberShopPageState extends State<BarberShopPage> {
                 color: Colors.black,
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(24),
-                )
+                  topRight: Radius.circular(24),
+                ),
               ),
             ),
           ),
