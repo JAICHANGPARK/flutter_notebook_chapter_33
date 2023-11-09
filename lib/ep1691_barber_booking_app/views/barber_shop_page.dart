@@ -16,10 +16,22 @@ class _BarberShopPageState extends State<BarberShopPage> {
           Positioned(
             child: Column(
               children: [
-                Expanded(child: Container(
-
-                )),
-                Expanded(child: Container()),
+                Expanded(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image:
+                            NetworkImage("https://cdn.pixabay.com/photo/2020/05/24/02/00/barber-shop-5212059_1280.jpg"),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: Container(
+                    color: Colors.black,
+                  ),
+                ),
               ],
             ),
           ),
