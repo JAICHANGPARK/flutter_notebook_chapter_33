@@ -86,6 +86,30 @@ class _BarberShopPageState extends State<BarberShopPage> {
             ),
           ),
           Positioned(
+            left: 0,
+            right: 0,
+            bottom: 0,
+            child: Container(
+              decoration: BoxDecoration(color: Colors.white.withOpacity(0.2)),
+              padding: EdgeInsets.all(16),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.yellow,
+                  borderRadius: BorderRadius.circular(32),
+                ),
+                padding: EdgeInsets.symmetric(vertical: 16),
+                child: Center(
+                  child: Text(
+                    "BOOK NOW",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+          Positioned(
             child: Row(
               children: [],
             ),
