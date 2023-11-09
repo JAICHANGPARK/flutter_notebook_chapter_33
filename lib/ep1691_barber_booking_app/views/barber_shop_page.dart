@@ -39,15 +39,27 @@ class _BarberShopPageState extends State<BarberShopPage> {
             left: 0,
             right: 0,
             bottom: 0,
-            top: 320,
-            child: Container(
-              decoration: BoxDecoration(
-                color: Colors.black,
-                borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(24),
-                  topRight: Radius.circular(24),
+            top: 0,
+            child: Column(
+              children: [
+                Row(
+                  children: [],
                 ),
-              ),
+                SizedBox(
+                  height: 300,
+                ),
+                Expanded(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.black,
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(24),
+                        topRight: Radius.circular(24),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             ),
           ),
           Positioned(
