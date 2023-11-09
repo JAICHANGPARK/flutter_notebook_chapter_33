@@ -49,6 +49,7 @@ class _BarberShopPageState extends State<BarberShopPage> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         CircleAvatar(
+                          radius: 28,
                           backgroundColor: Colors.black,
                           foregroundColor: Colors.white,
                           child: Icon(
@@ -56,6 +57,7 @@ class _BarberShopPageState extends State<BarberShopPage> {
                           ),
                         ),
                         CircleAvatar(
+                          radius: 28,
                           backgroundColor: Colors.black,
                           foregroundColor: Colors.white,
                           child: Icon(
