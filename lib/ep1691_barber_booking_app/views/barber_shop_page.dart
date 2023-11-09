@@ -94,7 +94,7 @@ class _BarberShopPageState extends State<BarberShopPage> {
                 color: Colors.white.withOpacity(0.2),
                 borderRadius: BorderRadius.circular(48),
                 border: Border.all(
-                  color: Colors.grey,
+                  color: Colors.white38,
                 ),
               ),
               padding: EdgeInsets.all(24),
