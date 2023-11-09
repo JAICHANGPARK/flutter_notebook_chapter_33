@@ -40,26 +40,47 @@ class _BarberShopPageState extends State<BarberShopPage> {
             right: 0,
             bottom: 0,
             top: 0,
-            child: Column(
-              children: [
-                Row(
-                  children: [],
-                ),
-                SizedBox(
-                  height: 300,
-                ),
-                Expanded(
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.black,
-                      borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(24),
-                        topRight: Radius.circular(24),
+            child: SafeArea(
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        CircleAvatar(
+                          backgroundColor: Colors.black,
+                          foregroundColor: Colors.white,
+                          child: Icon(
+                            Icons.arrow_back,
+                          ),
+                        ),
+                        CircleAvatar(
+                          backgroundColor: Colors.black,
+                          foregroundColor: Colors.white,
+                          child: Icon(
+                            Icons.bookmark_add_outlined,
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    height: 200,
+                  ),
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.black,
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(24),
+                          topRight: Radius.circular(24),
+                        ),
                       ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
           Positioned(
