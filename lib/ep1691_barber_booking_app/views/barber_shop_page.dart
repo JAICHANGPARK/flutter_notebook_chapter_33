@@ -90,8 +90,14 @@ class _BarberShopPageState extends State<BarberShopPage> {
             right: 0,
             bottom: 0,
             child: Container(
-              decoration: BoxDecoration(color: Colors.white.withOpacity(0.2)),
-              padding: EdgeInsets.all(16),
+              decoration: BoxDecoration(
+                color: Colors.white.withOpacity(0.2),
+                borderRadius: BorderRadius.circular(48),
+                border: Border.all(
+                  color: Colors.grey,
+                ),
+              ),
+              padding: EdgeInsets.all(24),
               child: Container(
                 decoration: BoxDecoration(
                   color: Colors.yellow,
