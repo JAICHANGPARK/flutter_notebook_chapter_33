@@ -174,10 +174,28 @@ class _BarberShopPageState extends State<BarberShopPage> {
                                 SwitchListTile.adaptive(
                                   value: true,
                                   onChanged: (value) {},
-                                  title: Text("HAIRCUT"),
+                                  title: Text(
+                                    "HAIRCUT",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
                                   subtitle: Text.rich(
                                     TextSpan(
-                                      children: [],
+                                      children: [
+                                        TextSpan(
+                                          text: '\$20.99 ',
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text: ' 40min',
+                                          style: TextStyle(
+                                            color: Colors.grey,
+                                          ),
+                                        ),
+                                      ],
                                     ),
                                   ),
                                 )
