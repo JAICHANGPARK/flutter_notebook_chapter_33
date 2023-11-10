@@ -116,14 +116,26 @@ class _BarberShopPageState extends State<BarberShopPage> {
                                 color: Colors.grey,
                               ),
                             ),
+                            padding: EdgeInsets.all(16),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text("FRIDAY, AUGUST 25"),
-                                    Text("15:00~16:10"),
+                                    Text(
+                                      "FRIDAY, AUGUST 25",
+                                      style: TextStyle(
+                                        color: Colors.yellow,
+                                      ),
+                                    ),
+                                    Text(
+                                      "15:00~16:10",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 24
+                                      ),
+                                    ),
                                   ],
                                 ),
                                 IconButton(
