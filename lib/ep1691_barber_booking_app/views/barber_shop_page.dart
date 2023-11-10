@@ -129,6 +129,7 @@ class _BarberShopPageState extends State<BarberShopPage> {
                               border: Border.all(
                                 color: Colors.grey,
                               ),
+                              borderRadius: BorderRadius.circular(8)
                             ),
                             padding: EdgeInsets.all(16),
                             child: Row(
@@ -161,6 +162,11 @@ class _BarberShopPageState extends State<BarberShopPage> {
                             ),
                           ),
                           Gap(12),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white38
+                            ),
+                          )
                         ],
                       ),
                     ),
