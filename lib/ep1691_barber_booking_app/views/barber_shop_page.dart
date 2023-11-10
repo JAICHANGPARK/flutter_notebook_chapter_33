@@ -164,137 +164,141 @@ class _BarberShopPageState extends State<BarberShopPage> {
                             ),
                           ),
                           Gap(12),
-                          Container(
-                            decoration: BoxDecoration(
-                                color: Colors.white10,
-                                borderRadius: BorderRadius.circular(16),
-                                border: Border.all(color: Colors.white24)),
-                            child: Column(
-                              children: [
-                                SwitchListTile.adaptive(
-                                  value: true,
-                                  activeColor: Colors.yellow,
-                                  onChanged: (value) {},
-                                  title: Text(
-                                    "HAIRCUT",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                    ),
-                                  ),
-                                  subtitle: Text.rich(
-                                    TextSpan(
-                                      children: [
-                                        TextSpan(
-                                          text: '\$20.99 ',
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                          ),
+                          Expanded(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                  color: Colors.white10,
+                                  borderRadius: BorderRadius.circular(16),
+                                  border: Border.all(color: Colors.white24)),
+                              child: SingleChildScrollView(
+                                child: Column(
+                                  children: [
+                                    SwitchListTile.adaptive(
+                                      value: true,
+                                      activeColor: Colors.yellow,
+                                      onChanged: (value) {},
+                                      title: Text(
+                                        "HAIRCUT",
+                                        style: TextStyle(
+                                          color: Colors.white,
                                         ),
+                                      ),
+                                      subtitle: Text.rich(
                                         TextSpan(
-                                          text: ' 40 min',
-                                          style: TextStyle(
-                                            color: Colors.grey,
-                                          ),
+                                          children: [
+                                            TextSpan(
+                                              text: '\$20.99 ',
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                              ),
+                                            ),
+                                            TextSpan(
+                                              text: ' 40 min',
+                                              style: TextStyle(
+                                                color: Colors.grey,
+                                              ),
+                                            ),
+                                          ],
                                         ),
-                                      ],
+                                      ),
                                     ),
-                                  ),
+                                    Divider(
+                                      color: Colors.white24,
+                                    ),
+                                    SwitchListTile.adaptive(
+                                      value: false,
+                                      activeColor: Colors.yellow,
+                                      onChanged: (value) {},
+                                      title: Text(
+                                        "KIDS CUT",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                        ),
+                                      ),
+                                      subtitle: Text.rich(
+                                        TextSpan(
+                                          children: [
+                                            TextSpan(
+                                              text: '\$12.99 ',
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                              ),
+                                            ),
+                                            TextSpan(
+                                              text: ' 40 min',
+                                              style: TextStyle(
+                                                color: Colors.grey,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    Divider(),
+                                    SwitchListTile.adaptive(
+                                      value: true,
+                                      activeColor: Colors.yellow,
+                                      onChanged: (value) {},
+                                      title: Text(
+                                        "HAIRCUT",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                        ),
+                                      ),
+                                      subtitle: Text.rich(
+                                        TextSpan(
+                                          children: [
+                                            TextSpan(
+                                              text: '\$20.99 ',
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                              ),
+                                            ),
+                                            TextSpan(
+                                              text: ' 40 min',
+                                              style: TextStyle(
+                                                color: Colors.grey,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    Divider(
+                                      color: Colors.white24,
+                                    ),
+                                    SwitchListTile.adaptive(
+                                      value: false,
+                                      activeColor: Colors.yellow,
+                                      onChanged: (value) {},
+                                      title: Text(
+                                        "KIDS CUT",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                        ),
+                                      ),
+                                      subtitle: Text.rich(
+                                        TextSpan(
+                                          children: [
+                                            TextSpan(
+                                              text: '\$12.99 ',
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                              ),
+                                            ),
+                                            TextSpan(
+                                              text: ' 40 min',
+                                              style: TextStyle(
+                                                color: Colors.grey,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ],
                                 ),
-                                Divider(
-                                  color: Colors.white24,
-                                ),
-                                SwitchListTile.adaptive(
-                                  value: false,
-                                  activeColor: Colors.yellow,
-                                  onChanged: (value) {},
-                                  title: Text(
-                                    "KIDS CUT",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                    ),
-                                  ),
-                                  subtitle: Text.rich(
-                                    TextSpan(
-                                      children: [
-                                        TextSpan(
-                                          text: '\$12.99 ',
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                          ),
-                                        ),
-                                        TextSpan(
-                                          text: ' 40 min',
-                                          style: TextStyle(
-                                            color: Colors.grey,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                                Divider(),
-                                SwitchListTile.adaptive(
-                                  value: true,
-                                  activeColor: Colors.yellow,
-                                  onChanged: (value) {},
-                                  title: Text(
-                                    "HAIRCUT",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                    ),
-                                  ),
-                                  subtitle: Text.rich(
-                                    TextSpan(
-                                      children: [
-                                        TextSpan(
-                                          text: '\$20.99 ',
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                          ),
-                                        ),
-                                        TextSpan(
-                                          text: ' 40 min',
-                                          style: TextStyle(
-                                            color: Colors.grey,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                                Divider(
-                                  color: Colors.white24,
-                                ),
-                                SwitchListTile.adaptive(
-                                  value: false,
-                                  activeColor: Colors.yellow,
-                                  onChanged: (value) {},
-                                  title: Text(
-                                    "KIDS CUT",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                    ),
-                                  ),
-                                  subtitle: Text.rich(
-                                    TextSpan(
-                                      children: [
-                                        TextSpan(
-                                          text: '\$12.99 ',
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                          ),
-                                        ),
-                                        TextSpan(
-                                          text: ' 40 min',
-                                          style: TextStyle(
-                                            color: Colors.grey,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ],
+                              ),
                             ),
                           )
                         ],
