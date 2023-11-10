@@ -126,9 +126,7 @@ class _BarberShopPageState extends State<BarberShopPage> {
                           Gap(12),
                           Container(
                             decoration: BoxDecoration(
-                              border: Border.all(
-                                color: Colors.grey,
-                              ),
+                              border: Border.all(color: Colors.white24),
                               borderRadius: BorderRadius.circular(8),
                               color: Colors.white10,
                             ),
@@ -148,7 +146,10 @@ class _BarberShopPageState extends State<BarberShopPage> {
                                     Gap(4),
                                     Text(
                                       "15:00~16:10",
-                                      style: TextStyle(color: Colors.white, fontSize: 24),
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 24,
+                                      ),
                                     ),
                                   ],
                                 ),
@@ -164,7 +165,24 @@ class _BarberShopPageState extends State<BarberShopPage> {
                           ),
                           Gap(12),
                           Container(
-                            decoration: BoxDecoration(color: Colors.white38),
+                            decoration: BoxDecoration(
+                                color: Colors.white10,
+                                borderRadius: BorderRadius.circular(16),
+                                border: Border.all(color: Colors.white24)),
+                            child: Column(
+                              children: [
+                                SwitchListTile.adaptive(
+                                  value: true,
+                                  onChanged: (value) {},
+                                  title: Text("HAIRCUT"),
+                                  subtitle: Text.rich(
+                                    TextSpan(
+                                      children: [],
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
                           )
                         ],
                       ),
