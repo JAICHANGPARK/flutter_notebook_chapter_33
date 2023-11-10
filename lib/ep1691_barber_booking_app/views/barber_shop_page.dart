@@ -89,10 +89,7 @@ class _BarberShopPageState extends State<BarberShopPage> {
                             padding: EdgeInsets.all(4),
                             child: Text(
                               "PRO BARBER",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 12
-                              ),
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
                             ),
                           ),
                           Gap(8),
@@ -158,6 +155,7 @@ class _BarberShopPageState extends State<BarberShopPage> {
                                   icon: Icon(
                                     Icons.edit,
                                   ),
+                                  color: Colors.white,
                                 ),
                               ],
                             ),
