@@ -198,7 +198,8 @@ class _BarberShopPageState extends State<BarberShopPage> {
                                       ],
                                     ),
                                   ),
-                                )
+                                ),
+                                Divider(color: Colors.white24,)
                               ],
                             ),
                           )
