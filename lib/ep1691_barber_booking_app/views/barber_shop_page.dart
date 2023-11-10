@@ -168,7 +168,7 @@ class _BarberShopPageState extends State<BarberShopPage> {
                             child: Container(
                               decoration: BoxDecoration(
                                   color: Colors.white10,
-                                  borderRadius: BorderRadius.circular(16),
+                                  borderRadius: BorderRadius.circular(8),
                                   border: Border.all(color: Colors.white24)),
                               child: SingleChildScrollView(
                                 child: Column(
