@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class BarberShopPage extends StatefulWidget {
   const BarberShopPage({super.key});
@@ -84,24 +85,39 @@ class _BarberShopPageState extends State<BarberShopPage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
-                            decoration: BoxDecoration(
-                              color: Colors.yellow,
+                            decoration: BoxDecoration(color: Colors.yellow, borderRadius: BorderRadius.circular(4)),
+                            padding: EdgeInsets.all(4),
+                            child: Text(
+                              "PRO BARBER",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 12
+                              ),
                             ),
-                            child: Text("PRO BARBER"),
                           ),
-                          Text("DREAM WALKER"),
+                          Gap(8),
+                          Text(
+                            "DREAM WALKER",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 24,
+                            ),
+                          ),
+                          Gap(8),
                           Row(
                             children: [
                               Icon(
                                 Icons.star,
                                 color: Colors.yellow,
                               ),
+                              Gap(8),
                               Text(
                                 "4.9",
                                 style: TextStyle(
                                   color: Colors.white,
                                 ),
                               ),
+                              Gap(8),
                               Text(
                                 "114 reviews",
                                 style: TextStyle(
@@ -110,6 +126,7 @@ class _BarberShopPageState extends State<BarberShopPage> {
                               )
                             ],
                           ),
+                          Gap(12),
                           Container(
                             decoration: BoxDecoration(
                               border: Border.all(
@@ -129,12 +146,10 @@ class _BarberShopPageState extends State<BarberShopPage> {
                                         color: Colors.yellow,
                                       ),
                                     ),
+                                    Gap(4),
                                     Text(
                                       "15:00~16:10",
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 24
-                                      ),
+                                      style: TextStyle(color: Colors.white, fontSize: 24),
                                     ),
                                   ],
                                 ),
@@ -147,6 +162,7 @@ class _BarberShopPageState extends State<BarberShopPage> {
                               ],
                             ),
                           ),
+                          Gap(12),
                         ],
                       ),
                     ),
