@@ -79,6 +79,10 @@ class _BarberShopPageState extends State<BarberShopPage> {
                           topRight: Radius.circular(24),
                         ),
                       ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [],
+                      ),
                     ),
                   ),
                 ],
