@@ -79,9 +79,63 @@ class _BarberShopPageState extends State<BarberShopPage> {
                           topRight: Radius.circular(24),
                         ),
                       ),
+                      padding: EdgeInsets.all(16),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [],
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.yellow,
+                            ),
+                            child: Text("PRO BARBER"),
+                          ),
+                          Text("DREAM WALKER"),
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.star,
+                                color: Colors.yellow,
+                              ),
+                              Text(
+                                "4.9",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
+                              Text(
+                                "114 reviews",
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                ),
+                              )
+                            ],
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Colors.grey,
+                              ),
+                            ),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text("FRIDAY, AUGUST 25"),
+                                    Text("15:00~16:10"),
+                                  ],
+                                ),
+                                IconButton(
+                                  onPressed: () {},
+                                  icon: Icon(
+                                    Icons.edit,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ),
