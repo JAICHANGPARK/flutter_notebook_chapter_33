@@ -21,11 +21,15 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
                   CircleAvatar(
                     radius: 20,
                   ),
+                  SizedBox(
+                    width: 16,
+                  ),
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text("Dream Walker"),
+                        SizedBox(height: 12,),
                         Text("@Dreamwalker"),
                       ],
                     ),
