@@ -73,6 +73,7 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
                         color: Colors.grey,
                       ),
                     ),
+                    child: TextField(),
                   ),
                 ),
                 IconButton(
