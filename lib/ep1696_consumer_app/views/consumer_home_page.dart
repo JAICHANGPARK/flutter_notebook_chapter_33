@@ -92,18 +92,23 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
                 children: [
                   Text(
                     "Folders",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 16
-                    ),
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                   ),
                   Spacer(),
                   Icon(
                     Icons.open_in_full,
+                    size: 14,
+                  ),
+                  SizedBox(
+                    width: 4,
                   ),
                   Text("More"),
                 ],
               ),
+            ),
+            Container(
+              height: 200,
+              color: Colors.blue,
             )
           ],
         ),
