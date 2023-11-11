@@ -163,7 +163,7 @@ class _BarberShopPageState extends State<BarberShopPage> {
                               ],
                             ),
                           ),
-                          Gap(12),
+                          Gap(24),
                           Expanded(
                             child: Container(
                               decoration: BoxDecoration(
