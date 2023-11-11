@@ -86,6 +86,9 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
                 )
               ],
             ),
+            SizedBox(
+              height: 16,
+            ),
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Row(
