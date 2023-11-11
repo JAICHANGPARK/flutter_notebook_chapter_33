@@ -23,6 +23,7 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
                   ),
                   Expanded(
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text("Dream Walker"),
                         Text("@Dreamwalker"),
