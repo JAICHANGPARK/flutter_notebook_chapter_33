@@ -94,6 +94,7 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
                     "Folders",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
+                      fontSize: 16
                     ),
                   ),
                   Spacer(),
