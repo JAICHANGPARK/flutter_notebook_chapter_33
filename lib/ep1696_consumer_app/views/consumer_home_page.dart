@@ -67,6 +67,8 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
               children: [
                 Expanded(
                   child: Container(
+                    height: 38,
+                    margin: EdgeInsets.symmetric(vertical: 16, horizontal: 16),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(4),
                       border: Border.all(
@@ -82,6 +84,18 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
                     Icons.tune,
                   ),
                 )
+              ],
+            ),
+            Row(
+              children: [
+                Text(
+                  "Folders",
+                ),
+                Spacer(),
+                Icon(
+                  Icons.open_in_full,
+                ),
+                Text("More"),
               ],
             )
           ],
