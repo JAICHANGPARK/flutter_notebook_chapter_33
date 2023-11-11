@@ -86,17 +86,23 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
                 )
               ],
             ),
-            Row(
-              children: [
-                Text(
-                  "Folders",
-                ),
-                Spacer(),
-                Icon(
-                  Icons.open_in_full,
-                ),
-                Text("More"),
-              ],
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                children: [
+                  Text(
+                    "Folders",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Spacer(),
+                  Icon(
+                    Icons.open_in_full,
+                  ),
+                  Text("More"),
+                ],
+              ),
             )
           ],
         ),
