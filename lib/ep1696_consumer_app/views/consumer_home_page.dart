@@ -14,36 +14,41 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                CircleAvatar(
-                  radius: 20,
-                ),
-                Column(
-                  children: [
-                    Text("Dream Walker"),
-                    Text("@Dreamwalker"),
-                  ],
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.pink[50],
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                children: [
+                  CircleAvatar(
+                    radius: 20,
                   ),
-                  child: IconButton(
+                  Expanded(
+                    child: Column(
+                      children: [
+                        Text("Dream Walker"),
+                        Text("@Dreamwalker"),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.pink[50],
+                    ),
+                    child: IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.add,
+                      ),
+                      color: Colors.pink,
+                    ),
+                  ),
+                  IconButton(
                     onPressed: () {},
                     icon: Icon(
-                      Icons.add,
+                      Icons.settings_outlined,
                     ),
-                    color: Colors.pink,
-                  ),
-                ),
-                IconButton(
-                  onPressed: () {},
-                  icon: Icon(
-                    Icons.settings_outlined,
-                  ),
-                )
-              ],
+                  )
+                ],
+              ),
             )
           ],
         ),
