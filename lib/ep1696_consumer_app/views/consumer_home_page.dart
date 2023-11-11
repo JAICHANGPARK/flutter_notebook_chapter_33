@@ -36,6 +36,12 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
                     ),
                     color: Colors.pink,
                   ),
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.settings_outlined,
+                  ),
                 )
               ],
             )
