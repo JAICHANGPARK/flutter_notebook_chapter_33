@@ -109,6 +109,12 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
             Container(
               height: 200,
               color: Colors.blue,
+            ),
+            Divider(
+              height: 42,
+              indent: 16,
+              endIndent: 16,
+              color: Colors.grey,
             )
           ],
         ),
