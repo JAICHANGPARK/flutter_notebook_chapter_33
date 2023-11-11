@@ -19,7 +19,7 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
               child: Row(
                 children: [
                   CircleAvatar(
-                    radius: 20,
+                    radius: 28,
                   ),
                   SizedBox(
                     width: 16,
@@ -29,14 +29,22 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text("Dream Walker"),
-                        SizedBox(height: 12,),
-                        Text("@Dreamwalker"),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Text(
+                          "@Dreamwalker",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                       ],
                     ),
                   ),
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.pink[50],
+                      borderRadius: BorderRadius.circular(4),
                     ),
                     child: IconButton(
                       onPressed: () {},
