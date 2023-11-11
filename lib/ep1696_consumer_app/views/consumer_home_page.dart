@@ -19,7 +19,7 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
               child: Row(
                 children: [
                   CircleAvatar(
-                    radius: 28,
+                    radius: 26,
                   ),
                   SizedBox(
                     width: 16,
