@@ -66,7 +66,14 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
             Row(
               children: [
                 Expanded(
-                  child: Container(),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(4),
+                      border: Border.all(
+                        color: Colors.grey,
+                      ),
+                    ),
+                  ),
                 ),
                 IconButton(
                   onPressed: () {},
