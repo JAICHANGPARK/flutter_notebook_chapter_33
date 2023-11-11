@@ -15,7 +15,7 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(12.0),
               child: Row(
                 children: [
                   CircleAvatar(
@@ -62,6 +62,19 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
                   )
                 ],
               ),
+            ),
+            Row(
+              children: [
+                Expanded(
+                  child: Container(),
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.tune,
+                  ),
+                )
+              ],
             )
           ],
         ),
