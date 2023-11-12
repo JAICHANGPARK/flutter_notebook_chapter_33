@@ -95,7 +95,10 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
                 children: [
                   Text(
                     "Folders",
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16,
+                    ),
                   ),
                   Spacer(),
                   Icon(
@@ -111,7 +114,19 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
             ),
             Container(
               height: 200,
-              color: Colors.blue,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemBuilder: (context, index) {
+
+                  return Card(
+                    child: Column(
+                      children: [
+
+                      ],
+                    ),
+                  );
+                },
+              ),
             ),
             const Divider(
               height: 42,
