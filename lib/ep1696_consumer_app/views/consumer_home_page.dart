@@ -13,6 +13,7 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
     return Scaffold(
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
               padding: const EdgeInsets.all(12.0),
@@ -127,7 +128,6 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
                           children: [
                             Container(
                               height: 140,
-
                               decoration: BoxDecoration(
                                 color: Colors.orange,
                                 borderRadius: BorderRadius.only(
@@ -182,10 +182,21 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
               ),
             ),
             const Divider(
-              height: 42,
+              height: 54,
               indent: 16,
               endIndent: 16,
               color: Colors.grey,
+            ),
+
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Text(
+                "Items",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 16
+                ),
+              ),
             )
           ],
         ),
