@@ -117,12 +117,54 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
-
-                  return Card(
-                    child: Column(
-                      children: [
-
-                      ],
+                  return Padding(
+                    padding: const EdgeInsets.only(left: 8),
+                    child: Card(
+                      child: Column(
+                        children: [
+                          Container(
+                            height: 120,
+                            width: 160,
+                            decoration: BoxDecoration(
+                              color: Colors.orange,
+                              borderRadius: BorderRadius.only(
+                                topRight: Radius.circular(4),
+                                topLeft: Radius.circular(4),
+                              ),
+                            ),
+                            child: Stack(
+                              children: [
+                                Positioned(
+                                  right: 8,
+                                  top: 8,
+                                  child: Container(
+                                    height: 32,
+                                    width: 32,
+                                    decoration: BoxDecoration(
+                                      shape: BoxShape.circle,
+                                      
+                                      border: Border.all(),
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                          Row(
+                            children: [
+                              Column(
+                                children: [
+                                  Text("Backpacks"),
+                                  Text("22 items"),
+                                ],
+                              ),
+                              Icon(
+                                Icons.lock_open,
+                              )
+                            ],
+                          )
+                        ],
+                      ),
                     ),
                   );
                 },
