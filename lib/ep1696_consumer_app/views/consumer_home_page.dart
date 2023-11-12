@@ -137,6 +137,61 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
           ],
         ),
       ),
+      bottomNavigationBar: BottomAppBar(
+        height: 72,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.home_filled),
+                  iconSize: 32,
+                ),
+                Gap(4),
+                CircleAvatar(
+                  radius: 4,
+                  backgroundColor: Colors.transparent,
+                )
+              ],
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.notifications_none),
+                  iconSize: 32,
+                ),
+                Gap(4),
+                CircleAvatar(
+                  radius: 4,
+                  backgroundColor: Colors.transparent,
+                )
+              ],
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.account_circle_outlined,
+                  ),
+                  iconSize: 32,
+                ),
+                Gap(4),
+                CircleAvatar(
+                  radius: 4,
+                  backgroundColor: Colors.black,
+                )
+              ],
+            )
+          ],
+        ),
+      ),
     );
   }
 }
