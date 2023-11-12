@@ -11,6 +11,7 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -187,15 +188,11 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
               endIndent: 16,
               color: Colors.grey,
             ),
-
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Text(
                 "Items",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 16
-                ),
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
               ),
             )
           ],
