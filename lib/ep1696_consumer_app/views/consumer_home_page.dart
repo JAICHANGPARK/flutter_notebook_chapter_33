@@ -18,13 +18,13 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
               padding: const EdgeInsets.all(12.0),
               child: Row(
                 children: [
-                  CircleAvatar(
+                  const CircleAvatar(
                     radius: 26,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 16,
                   ),
-                  Expanded(
+                  const Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -48,7 +48,7 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
                     ),
                     child: IconButton(
                       onPressed: () {},
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.add,
                       ),
                       color: Colors.pink,
@@ -56,7 +56,7 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
                   ),
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.settings_outlined,
                     ),
                   )
@@ -68,29 +68,29 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
                 Expanded(
                   child: Container(
                     height: 38,
-                    margin: EdgeInsets.symmetric(vertical: 16, horizontal: 16),
+                    margin: const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(4),
                       border: Border.all(
                         color: Colors.grey,
                       ),
                     ),
-                    child: TextField(),
+                    child: const TextField(),
                   ),
                 ),
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.tune,
                   ),
                 )
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 16,
             ),
-            Padding(
-              padding: const EdgeInsets.all(16.0),
+            const Padding(
+              padding: EdgeInsets.all(16.0),
               child: Row(
                 children: [
                   Text(
@@ -113,7 +113,7 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
               height: 200,
               color: Colors.blue,
             ),
-            Divider(
+            const Divider(
               height: 42,
               indent: 16,
               endIndent: 16,
