@@ -121,10 +121,11 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
                     padding: const EdgeInsets.only(left: 8),
                     child: Card(
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
-                            height: 120,
-                            width: 160,
+                            height: 140,
+                            width: 170,
                             decoration: BoxDecoration(
                               color: Colors.orange,
                               borderRadius: BorderRadius.only(
@@ -142,26 +143,32 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
                                     width: 32,
                                     decoration: BoxDecoration(
                                       shape: BoxShape.circle,
-                                      
-                                      border: Border.all(),
+                                      border: Border.all(color: Colors.grey, width: 1.5),
+                                      color: Colors.white,
                                     ),
                                   ),
                                 )
                               ],
                             ),
                           ),
-                          Row(
-                            children: [
-                              Column(
+                          Expanded(
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Row(
                                 children: [
-                                  Text("Backpacks"),
-                                  Text("22 items"),
+                                  Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text("Backpacks"),
+                                      Text("22 items"),
+                                    ],
+                                  ),
+                                  Icon(
+                                    Icons.lock_open,
+                                  )
                                 ],
                               ),
-                              Icon(
-                                Icons.lock_open,
-                              )
-                            ],
+                            ),
                           )
                         ],
                       ),
