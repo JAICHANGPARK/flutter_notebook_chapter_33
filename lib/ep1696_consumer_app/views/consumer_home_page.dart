@@ -119,58 +119,62 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
                 itemBuilder: (context, index) {
                   return Padding(
                     padding: const EdgeInsets.only(left: 8),
-                    child: Card(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Container(
-                            height: 140,
-                            width: 170,
-                            decoration: BoxDecoration(
-                              color: Colors.orange,
-                              borderRadius: BorderRadius.only(
-                                topRight: Radius.circular(4),
-                                topLeft: Radius.circular(4),
+                    child: SizedBox(
+                      width: 180,
+                      child: Card(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                              height: 140,
+
+                              decoration: BoxDecoration(
+                                color: Colors.orange,
+                                borderRadius: BorderRadius.only(
+                                  topRight: Radius.circular(4),
+                                  topLeft: Radius.circular(4),
+                                ),
                               ),
-                            ),
-                            child: Stack(
-                              children: [
-                                Positioned(
-                                  right: 8,
-                                  top: 8,
-                                  child: Container(
-                                    height: 32,
-                                    width: 32,
-                                    decoration: BoxDecoration(
-                                      shape: BoxShape.circle,
-                                      border: Border.all(color: Colors.grey, width: 1.5),
-                                      color: Colors.white,
-                                    ),
-                                  ),
-                                )
-                              ],
-                            ),
-                          ),
-                          Expanded(
-                            child: Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Row(
+                              child: Stack(
                                 children: [
-                                  Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Text("Backpacks"),
-                                      Text("22 items"),
-                                    ],
-                                  ),
-                                  Icon(
-                                    Icons.lock_open,
+                                  Positioned(
+                                    right: 8,
+                                    top: 8,
+                                    child: Container(
+                                      height: 32,
+                                      width: 32,
+                                      decoration: BoxDecoration(
+                                        shape: BoxShape.circle,
+                                        border: Border.all(color: Colors.grey, width: 1.5),
+                                        color: Colors.white,
+                                      ),
+                                    ),
                                   )
                                 ],
                               ),
                             ),
-                          )
-                        ],
+                            Expanded(
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text("Backpacks"),
+                                        Text("22 items"),
+                                      ],
+                                    ),
+                                    Icon(
+                                      Icons.lock_open,
+                                    )
+                                  ],
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
                       ),
                     ),
                   );
