@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class ConsumerHomeApp extends StatefulWidget {
   const ConsumerHomeApp({super.key});
@@ -114,7 +115,7 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
                 ],
               ),
             ),
-            const _CardListWidget(),
+            const _FoldersListWidget(),
             const Divider(
               height: 54,
               indent: 16,
@@ -131,6 +132,8 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
                 ),
               ),
             ),
+            Gap(16),
+            _ItemsListWidget(),
           ],
         ),
       ),
@@ -138,8 +141,8 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
   }
 }
 
-class _CardListWidget extends StatelessWidget {
-  const _CardListWidget({super.key});
+class _FoldersListWidget extends StatelessWidget {
+  const _FoldersListWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -198,6 +201,91 @@ class _CardListWidget extends StatelessWidget {
                             ),
                             Icon(
                               Icons.lock_open,
+                            )
+                          ],
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            ),
+          );
+        },
+      ),
+    );
+  }
+}
+
+class _ItemsListWidget extends StatelessWidget {
+  const _ItemsListWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: 220,
+      child: ListView.builder(
+        scrollDirection: Axis.horizontal,
+        itemBuilder: (context, index) {
+          return Padding(
+            padding: const EdgeInsets.only(left: 8),
+            child: SizedBox(
+              width: 180,
+              child: Card(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      height: 130,
+                      decoration: const BoxDecoration(
+                        color: Colors.orange,
+                        borderRadius: BorderRadius.only(
+                          topRight: Radius.circular(4),
+                          topLeft: Radius.circular(4),
+                        ),
+                        image: DecorationImage(
+                          image: NetworkImage(
+                            "https://cdn.pixabay.com/photo/2016/11/23/15/25/cabinet-1853504_1280.jpg",
+                          ),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            right: 8,
+                            top: 8,
+                            child: Container(
+                              height: 32,
+                              width: 32,
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                border: Border.all(color: Colors.grey, width: 1.5),
+                                color: Colors.white,
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                    const Expanded(
+                      child: Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Hand made sweater 4/5, limited edition, limited edition, limited edition, limited edition, ",
+                              maxLines: 2,
+                            ),
+                            SizedBox(
+                              height: 8,
+                            ),
+                            Row(
+                              children: [
+                                Text("\$9.99"),
+                                Icon(Icons.stacked_line_chart),
+                              ],
                             )
                           ],
                         ),
