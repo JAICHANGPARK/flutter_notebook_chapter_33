@@ -3,7 +3,7 @@ import 'package:flutter_notebook_chapter_33/ep1696_consumer_app/views/consumer_h
 import 'package:flutter_notebook_chapter_33/ep1696_consumer_app/views/consumer_login_page.dart';
 
 void main() {
-  runApp(ConsumerApp());
+  runApp(const ConsumerApp());
 }
 
 class ConsumerApp extends StatelessWidget {
@@ -13,8 +13,8 @@ class ConsumerApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-        "/": (context) => ConsumerLoginPage(),
-        "/home": (context) => ConsumerHomeApp(),
+        "/": (context) => const ConsumerLoginPage(),
+        "/home": (context) => const ConsumerHomeApp(),
       },
     );
   }
