@@ -11,6 +11,25 @@ class ConsumerLoginPage extends StatefulWidget {
 class _ConsumerLoginPageState extends State<ConsumerLoginPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.redAccent,
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(24.0),
+          child: Column(
+            children: [
+                  Container(
+                    height: 200,
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                      borderRadius: BorderRadius.circular(16)
+                    ),
+                  )
+
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
