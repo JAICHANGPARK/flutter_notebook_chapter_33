@@ -13,15 +13,18 @@ class _ConsumerLoginPageState extends State<ConsumerLoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(24.0),
+          padding: const EdgeInsets.fromLTRB(24, 32, 24, 24),
           child: Column(
             children: [
               Container(
                 height: 360,
                 decoration: BoxDecoration(
-                  color: Colors.blue,
+                  border: Border.all(
+                    color: Colors.grey[400]!,
+                  ),
                   borderRadius: BorderRadius.circular(16),
                 ),
               ),
@@ -50,8 +53,8 @@ class _ConsumerLoginPageState extends State<ConsumerLoginPage> {
               DotsIndicator(
                 dotsCount: 3,
                 decorator: DotsDecorator(
-                  size: const Size(48, 6),
-                  activeSize: const Size(48, 6),
+                  size: const Size(48, 4),
+                  activeSize: const Size(48, 4),
                   shape: const RoundedRectangleBorder(),
                   activeShape: const RoundedRectangleBorder(),
                   activeColor: Colors.pink,
