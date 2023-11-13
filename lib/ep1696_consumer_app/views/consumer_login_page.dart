@@ -12,7 +12,7 @@ class _ConsumerLoginPageState extends State<ConsumerLoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.redAccent,
+      backgroundColor: Colors.grey,
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(24.0),
@@ -38,6 +38,8 @@ class _ConsumerLoginPageState extends State<ConsumerLoginPage> {
                   activeSize: Size(48, 6),
                   shape: RoundedRectangleBorder(),
                   activeShape: RoundedRectangleBorder(),
+                  activeColor: Colors.pink,
+                  color: Colors.pink[50]!,
                 ),
               ),
             ],
