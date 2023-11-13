@@ -38,10 +38,10 @@ class _ConsumerLoginPageState extends State<ConsumerLoginPage> {
                   fontSize: 38,
                 ),
               ),
-              Gap(16),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 32),
-                child: const Text(
+              const Gap(16),
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 32),
+                child: Text(
                   "Get notified every time there's a discount on your saved items",
                   style: TextStyle(
                     color: Colors.grey,
@@ -49,7 +49,7 @@ class _ConsumerLoginPageState extends State<ConsumerLoginPage> {
                   textAlign: TextAlign.center,
                 ),
               ),
-              Gap(16),
+              const Gap(16),
               DotsIndicator(
                 dotsCount: 3,
                 decorator: DotsDecorator(
@@ -61,7 +61,7 @@ class _ConsumerLoginPageState extends State<ConsumerLoginPage> {
                   color: Colors.pink[50]!,
                 ),
               ),
-              Gap(24),
+              const Gap(24),
               Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(4),
@@ -69,8 +69,8 @@ class _ConsumerLoginPageState extends State<ConsumerLoginPage> {
                     color: Colors.grey[300]!,
                   ),
                 ),
-                padding: EdgeInsets.symmetric(vertical: 12),
-                child: Center(
+                padding: const EdgeInsets.symmetric(vertical: 12),
+                child: const Center(
                   child: Text(
                     "Continue with Google",
                     style: TextStyle(
@@ -81,10 +81,10 @@ class _ConsumerLoginPageState extends State<ConsumerLoginPage> {
               ),
               Container(
                 height: 52,
-                decoration: BoxDecoration(),
+                decoration: const BoxDecoration(),
                 child: Stack(
                   children: [
-                    Positioned.fill(
+                    const Positioned.fill(
                       child: Divider(
                         color: Colors.grey,
                       ),
@@ -92,11 +92,11 @@ class _ConsumerLoginPageState extends State<ConsumerLoginPage> {
                     Positioned.fill(
                       child: Center(
                         child: Container(
-                          padding: EdgeInsets.symmetric(horizontal: 16),
-                          decoration: BoxDecoration(
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          decoration: const BoxDecoration(
                             color: Colors.white,
                           ),
-                          child: Text("or"),
+                          child: const Text("or"),
                         ),
                       ),
                     )
@@ -110,8 +110,8 @@ class _ConsumerLoginPageState extends State<ConsumerLoginPage> {
                     color: Colors.grey[300]!,
                   ),
                 ),
-                padding: EdgeInsets.symmetric(vertical: 12),
-                child: Center(
+                padding: const EdgeInsets.symmetric(vertical: 12),
+                child: const Center(
                   child: Text(
                     "Continue with Email",
                     style: TextStyle(
@@ -120,8 +120,8 @@ class _ConsumerLoginPageState extends State<ConsumerLoginPage> {
                   ),
                 ),
               ),
-              Gap(32),
-              Text.rich(
+              const Gap(32),
+              const Text.rich(
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Colors.grey,
