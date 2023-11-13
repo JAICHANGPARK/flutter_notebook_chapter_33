@@ -11,6 +11,6 @@ class ConsumerLoginPage extends StatefulWidget {
 class _ConsumerLoginPageState extends State<ConsumerLoginPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold();
   }
 }
