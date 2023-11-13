@@ -80,7 +80,7 @@ class _ConsumerLoginPageState extends State<ConsumerLoginPage> {
                 ),
               ),
               Container(
-                height: 42,
+                height: 52,
                 decoration: BoxDecoration(),
                 child: Stack(
                   children: [
@@ -100,6 +100,50 @@ class _ConsumerLoginPageState extends State<ConsumerLoginPage> {
                         ),
                       ),
                     )
+                  ],
+                ),
+              ),
+              Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(4),
+                  border: Border.all(
+                    color: Colors.grey[300]!,
+                  ),
+                ),
+                padding: EdgeInsets.symmetric(vertical: 12),
+                child: Center(
+                  child: Text(
+                    "Continue with Email",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+              Gap(32),
+              Text.rich(
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.grey,
+                ),
+                TextSpan(
+                  children: [
+                    TextSpan(text: 'By continuing you agree to the'),
+                    TextSpan(
+                      text: "Terms and Conditions",
+                      style: TextStyle(
+                        decoration: TextDecoration.underline,
+                      ),
+                    ),
+                    TextSpan(
+                      text: "and",
+                    ),
+                    TextSpan(
+                      text: "Privacy Policy",
+                      style: TextStyle(
+                        decoration: TextDecoration.underline,
+                      ),
+                    ),
                   ],
                 ),
               )
