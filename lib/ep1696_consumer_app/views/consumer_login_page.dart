@@ -25,11 +25,22 @@ class _ConsumerLoginPageState extends State<ConsumerLoginPage> {
                   borderRadius: BorderRadius.circular(16),
                 ),
               ),
+              SizedBox(
+                height: 24,
+              ),
               Text(
                 "Discounts",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 42,
+                ),
               ),
               Text(
                 "Get notified every time there's a discount on your saved items",
+                style: TextStyle(
+                  color: Colors.grey,
+                ),
+                textAlign: TextAlign.center,
               ),
               DotsIndicator(
                 dotsCount: 3,
