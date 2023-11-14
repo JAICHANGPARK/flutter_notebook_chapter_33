@@ -62,19 +62,24 @@ class _ConsumerLoginPageState extends State<ConsumerLoginPage> {
                 ),
               ),
               const Gap(24),
-              Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(4),
-                  border: Border.all(
-                    color: Colors.grey[300]!,
+              InkWell(
+                onTap: (){
+                  Navigator.of(context).pushReplacementNamed("/home");
+                },
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(4),
+                    border: Border.all(
+                      color: Colors.grey[300]!,
+                    ),
                   ),
-                ),
-                padding: const EdgeInsets.symmetric(vertical: 12),
-                child: const Center(
-                  child: Text(
-                    "Continue with Google",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
+                  padding: const EdgeInsets.symmetric(vertical: 12),
+                  child: const Center(
+                    child: Text(
+                      "Continue with Google",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                 ),
