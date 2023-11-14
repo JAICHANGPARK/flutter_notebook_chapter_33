@@ -31,14 +31,17 @@ class _ConsumerDetailPageState extends State<ConsumerDetailPage> {
                     children: [
                       CircleAvatar(),
                       Gap(12),
-                      Text("@Dreamwalker"),
+                      Text("@Dreamwalker",style: TextStyle(
+                        fontSize: 16
+                      ),),
                       Gap(12),
                       Container(
                         decoration: BoxDecoration(
                           color: Colors.black87,
                           borderRadius: BorderRadius.circular(24),
                         ),
-                        
+                        padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+
                         child: Text(
                           "Purchased",
                           style: TextStyle(
@@ -62,6 +65,7 @@ class _ConsumerDetailPageState extends State<ConsumerDetailPage> {
                           height: 300,
                           decoration: BoxDecoration(
                             color: Colors.blue,
+                            
                           ),
                         ),
                         Padding(
