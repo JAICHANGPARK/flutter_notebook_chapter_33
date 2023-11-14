@@ -212,7 +212,7 @@ class _FoldersListWidget extends StatelessWidget {
               width: 180,
               child: InkWell(
                 onTap: () {
-                  Navigator.of(context).pushReplacementNamed(
+                  Navigator.of(context).pushNamed(
                     "/detail",
                   );
                 },
