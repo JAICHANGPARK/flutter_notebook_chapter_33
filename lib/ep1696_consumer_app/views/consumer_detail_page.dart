@@ -86,6 +86,7 @@ class _ConsumerDetailPageState extends State<ConsumerDetailPage> {
                                 right: 12,
                                 bottom: 12,
                                 child: Container(
+                                  padding: EdgeInsets.symmetric(horizontal: 8,vertical: 4),
                                   decoration: BoxDecoration(
                                     color: Colors.white,
                                     borderRadius: BorderRadius.circular(32),
