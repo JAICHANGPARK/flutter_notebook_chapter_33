@@ -36,9 +36,28 @@ class _ConsumerDetailPageState extends State<ConsumerDetailPage> {
                         color: Colors.white,
                       ),
                     ),
+                  ),
+                  Spacer(),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.more_horiz,
+                    ),
                   )
                 ],
-              )
+              ),
+              Card(
+                child: Column(
+                  children: [
+                    Container(
+                      height: 300,
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                      ),
+                    )
+                  ],
+                ),
+              ),
             ],
           );
         },
