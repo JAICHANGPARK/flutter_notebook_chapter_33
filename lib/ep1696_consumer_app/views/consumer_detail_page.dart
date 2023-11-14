@@ -31,9 +31,10 @@ class _ConsumerDetailPageState extends State<ConsumerDetailPage> {
                     children: [
                       CircleAvatar(),
                       Gap(12),
-                      Text("@Dreamwalker",style: TextStyle(
-                        fontSize: 16
-                      ),),
+                      Text(
+                        "@Dreamwalker",
+                        style: TextStyle(fontSize: 16),
+                      ),
                       Gap(12),
                       Container(
                         decoration: BoxDecoration(
@@ -41,7 +42,6 @@ class _ConsumerDetailPageState extends State<ConsumerDetailPage> {
                           borderRadius: BorderRadius.circular(24),
                         ),
                         padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-
                         child: Text(
                           "Purchased",
                           style: TextStyle(
@@ -64,8 +64,28 @@ class _ConsumerDetailPageState extends State<ConsumerDetailPage> {
                         Container(
                           height: 300,
                           decoration: BoxDecoration(
-                            color: Colors.blue,
-                            
+                              color: Colors.blue, borderRadius: BorderRadius.vertical(top: Radius.circular(8))),
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                right: 12,
+                                top: 12,
+                                child: Container(
+                                  height: 42,
+                                  width: 42,
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    border: Border.all(
+                                      color: Colors.grey,
+                                    ),
+
+                                  ),
+                                ),
+                              ),
+                              Positioned(
+                                child: Container(),
+                              )
+                            ],
                           ),
                         ),
                         Padding(
