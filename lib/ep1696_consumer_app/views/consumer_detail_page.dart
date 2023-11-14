@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class ConsumerDetailPage extends StatefulWidget {
   const ConsumerDetailPage({super.key});
@@ -57,28 +58,43 @@ class _ConsumerDetailPageState extends State<ConsumerDetailPage> {
                           color: Colors.blue,
                         ),
                       ),
-                      Row(
-                        children: [
-                          Text("AUDIBLE"),
-                          Container(
-                            decoration: BoxDecoration(
-                              color: Colors.blueGrey,
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                Text("AUDIBLE"),
+                                Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.blueGrey,
 
+                                  ),
+                                  child: Text("Updated"),
+                                ),
+                                Text("\$12.98"),
+                              ],
                             ),
-                            child: Text("Updated"),
-                          ),
-                          Text("\$12.98"),
-                        ],
-                      ),
-                      Text("The Flutter Dev"),
-                      Row(
-                        children: [
-                          Icon(Icons.chat),
-                          Text("10"),
-                          Icon(Icons.thumb_up_alt_outlined),
-                          Text("200")
-                        ],
+                            Gap(12),
+                            Text("The Flutter Dev"),
+                            Gap(12),
+                            Row(
+                              children: [
+                                Icon(Icons.chat),
+                                Gap(8),
+                                Text("10"),
+                                Gap(8),
+                                Icon(Icons.thumb_up_alt_outlined),
+                                Gap(8),
+                                Text("200"),
+                                Spacer(),
+                                Text("2 DAYS AGO",)
+                              ],
+                            )
+                          ],
+                        ),
                       )
+
                     ],
                   ),
                 ),
