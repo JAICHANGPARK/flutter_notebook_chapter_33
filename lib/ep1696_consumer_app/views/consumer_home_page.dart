@@ -132,8 +132,8 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
                 ),
               ),
             ),
-            Gap(16),
-            _ItemsListWidget(),
+            const Gap(16),
+            const _ItemsListWidget(),
           ],
         ),
       ),
@@ -147,11 +147,11 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
               children: [
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(Icons.home_filled),
+                  icon: const Icon(Icons.home_filled),
                   iconSize: 32,
                 ),
-                Gap(4),
-                CircleAvatar(
+                const Gap(4),
+                const CircleAvatar(
                   radius: 4,
                   backgroundColor: Colors.transparent,
                 )
@@ -162,11 +162,11 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
               children: [
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(Icons.notifications_none),
+                  icon: const Icon(Icons.notifications_none),
                   iconSize: 32,
                 ),
-                Gap(4),
-                CircleAvatar(
+                const Gap(4),
+                const CircleAvatar(
                   radius: 4,
                   backgroundColor: Colors.transparent,
                 )
@@ -177,13 +177,13 @@ class _ConsumerHomeAppState extends State<ConsumerHomeApp> {
               children: [
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.account_circle_outlined,
                   ),
                   iconSize: 32,
                 ),
-                Gap(4),
-                CircleAvatar(
+                const Gap(4),
+                const CircleAvatar(
                   radius: 4,
                   backgroundColor: Colors.black,
                 )
