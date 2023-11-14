@@ -62,9 +62,19 @@ class _ConsumerDetailPageState extends State<ConsumerDetailPage> {
                     child: Column(
                       children: [
                         Container(
-                          height: 300,
+                          height: 400,
                           decoration: BoxDecoration(
-                              color: Colors.blue, borderRadius: BorderRadius.vertical(top: Radius.circular(8))),
+                            color: Colors.blue,
+                            borderRadius: BorderRadius.vertical(
+                              top: Radius.circular(8),
+                            ),
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                "https://cdn.pixabay.com/photo/2023/10/10/15/12/landscape-8306693_1280.jpg",
+                              ),
+                              fit: BoxFit.cover,
+                            ),
+                          ),
                           child: Stack(
                             children: [
                               Positioned(
@@ -86,7 +96,7 @@ class _ConsumerDetailPageState extends State<ConsumerDetailPage> {
                                 right: 12,
                                 bottom: 12,
                                 child: Container(
-                                  padding: EdgeInsets.symmetric(horizontal: 8,vertical: 4),
+                                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                   decoration: BoxDecoration(
                                     color: Colors.white,
                                     borderRadius: BorderRadius.circular(32),
