@@ -23,82 +23,85 @@ class _ConsumerDetailPageState extends State<ConsumerDetailPage> {
         padding: const EdgeInsets.all(16.0),
         child: ListView.builder(
           itemBuilder: (context, index) {
-            return Column(
-              children: [
-                Row(
-                  children: [
-                    CircleAvatar(),
-                    Text("@Dreamwalker"),
-                    Container(
-                      decoration: BoxDecoration(
-                        color: Colors.black26,
-                      ),
-                      child: Text(
-                        "Purchased",
-                        style: TextStyle(
-                          color: Colors.white,
-                        ),
-                      ),
-                    ),
-                    Spacer(),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(
-                        Icons.more_horiz,
-                      ),
-                    ),
-                  ],
-                ),
-                Card(
-                  child: Column(
+            return Padding(
+              padding: const EdgeInsets.only(bottom: 16),
+              child: Column(
+                children: [
+                  Row(
                     children: [
+                      CircleAvatar(),
+                      Text("@Dreamwalker"),
                       Container(
-                        height: 300,
                         decoration: BoxDecoration(
-                          color: Colors.blue,
+                          color: Colors.black26,
+                        ),
+                        child: Text(
+                          "Purchased",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Column(
-                          children: [
-                            Row(
-                              children: [
-                                Text("AUDIBLE"),
-                                Container(
-                                  decoration: BoxDecoration(
-                                    color: Colors.blueGrey,
-
-                                  ),
-                                  child: Text("Updated"),
-                                ),
-                                Text("\$12.98"),
-                              ],
-                            ),
-                            Gap(12),
-                            Text("The Flutter Dev"),
-                            Gap(12),
-                            Row(
-                              children: [
-                                Icon(Icons.chat),
-                                Gap(8),
-                                Text("10"),
-                                Gap(8),
-                                Icon(Icons.thumb_up_alt_outlined),
-                                Gap(8),
-                                Text("200"),
-                                Spacer(),
-                                Text("2 DAYS AGO",)
-                              ],
-                            )
-                          ],
+                      Spacer(),
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.more_horiz,
                         ),
-                      )
-
+                      ),
                     ],
                   ),
-                ),
-              ],
+                  Card(
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 300,
+                          decoration: BoxDecoration(
+                            color: Colors.blue,
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Column(
+                            children: [
+                              Row(
+                                children: [
+                                  Text("AUDIBLE"),
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.blueGrey,
+
+                                    ),
+                                    child: Text("Updated"),
+                                  ),
+                                  Text("\$12.98"),
+                                ],
+                              ),
+                              Gap(12),
+                              Text("The Flutter Dev"),
+                              Gap(12),
+                              Row(
+                                children: [
+                                  Icon(Icons.chat),
+                                  Gap(8),
+                                  Text("10"),
+                                  Gap(8),
+                                  Icon(Icons.thumb_up_alt_outlined),
+                                  Gap(8),
+                                  Text("200"),
+                                  Spacer(),
+                                  Text("2 DAYS AGO",)
+                                ],
+                              )
+                            ],
+                          ),
+                        )
+
+                      ],
+                    ),
+                  ),
+                ],
+              ),
             );
           },
         ),
