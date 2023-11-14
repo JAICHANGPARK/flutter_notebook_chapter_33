@@ -131,30 +131,45 @@ class _ConsumerDetailPageState extends State<ConsumerDetailPage> {
                                   Gap(16),
                                   Text(
                                     "\$12.98",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 18
-                                    ),
+                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                                   ),
                                 ],
                               ),
                               Gap(12),
-                              Text("The Flutter Dev",style: TextStyle(
-                                fontSize: 18
-                              ),),
+                              Text(
+                                "The Flutter Dev",
+                                style: TextStyle(fontSize: 18),
+                              ),
                               Gap(12),
                               Row(
                                 children: [
-                                  Icon(Icons.chat),
+                                  Icon(
+                                    Icons.chat,
+                                    color: Colors.grey,
+                                  ),
                                   Gap(8),
-                                  Text("10"),
+                                  Text(
+                                    "10",
+                                    style: TextStyle(
+                                      color: Colors.grey,
+                                    ),
+                                  ),
                                   Gap(8),
-                                  Icon(Icons.thumb_up_alt_outlined),
+                                  Icon(
+                                    Icons.thumb_up_alt_outlined,
+                                    color: Colors.grey,
+                                  ),
                                   Gap(8),
-                                  Text("200"),
+                                  Text(
+                                    "200",
+                                    style: TextStyle(color: Colors.grey),
+                                  ),
                                   Spacer(),
                                   Text(
                                     "2 DAYS AGO",
+                                    style: TextStyle(
+                                      color: Colors.grey,
+                                    ),
                                   )
                                 ],
                               )
