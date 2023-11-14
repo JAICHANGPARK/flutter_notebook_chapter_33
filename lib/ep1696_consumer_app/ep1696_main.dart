@@ -16,7 +16,7 @@ class ConsumerApp extends StatelessWidget {
       routes: {
         "/": (context) => const ConsumerLoginPage(),
         "/home": (context) => const ConsumerHomeApp(),
-        "/detail": (context)=> ConsumerDetailPage(),
+        "/detail": (context)=> const ConsumerDetailPage(),
       },
     );
   }
