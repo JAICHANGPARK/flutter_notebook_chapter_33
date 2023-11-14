@@ -16,7 +16,7 @@ class _ConsumerDetailPageState extends State<ConsumerDetailPage> {
         backgroundColor: Colors.white,
         foregroundColor: Colors.black,
         centerTitle: true,
-        title: Text("Fantasy"),
+        title: const Text("Fantasy"),
         elevation: 0,
       ),
       body: Padding(
@@ -29,30 +29,30 @@ class _ConsumerDetailPageState extends State<ConsumerDetailPage> {
                 children: [
                   Row(
                     children: [
-                      CircleAvatar(),
-                      Gap(12),
-                      Text(
+                      const CircleAvatar(),
+                      const Gap(12),
+                      const Text(
                         "@Dreamwalker",
                         style: TextStyle(fontSize: 16),
                       ),
-                      Gap(12),
+                      const Gap(12),
                       Container(
                         decoration: BoxDecoration(
                           color: Colors.black87,
                           borderRadius: BorderRadius.circular(24),
                         ),
-                        padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                        child: Text(
+                        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                        child: const Text(
                           "Purchased",
                           style: TextStyle(
                             color: Colors.white,
                           ),
                         ),
                       ),
-                      Spacer(),
+                      const Spacer(),
                       IconButton(
                         onPressed: () {},
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.more_horiz,
                         ),
                       ),
@@ -63,7 +63,7 @@ class _ConsumerDetailPageState extends State<ConsumerDetailPage> {
                       children: [
                         Container(
                           height: 400,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Colors.blue,
                             borderRadius: BorderRadius.vertical(
                               top: Radius.circular(8),
@@ -96,12 +96,12 @@ class _ConsumerDetailPageState extends State<ConsumerDetailPage> {
                                 right: 12,
                                 bottom: 12,
                                 child: Container(
-                                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                   decoration: BoxDecoration(
                                     color: Colors.white,
                                     borderRadius: BorderRadius.circular(32),
                                   ),
-                                  child: Text(
+                                  child: const Text(
                                     "Fantasy",
                                     style: TextStyle(),
                                   ),
@@ -110,7 +110,7 @@ class _ConsumerDetailPageState extends State<ConsumerDetailPage> {
                             ],
                           ),
                         ),
-                        Gap(12),
+                        const Gap(12),
                         Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Column(
@@ -118,30 +118,33 @@ class _ConsumerDetailPageState extends State<ConsumerDetailPage> {
                             children: [
                               Row(
                                 children: [
-                                  Text("AUDIBLE"),
-                                  Spacer(),
+                                  const Text("AUDIBLE"),
+                                  const Spacer(),
                                   Container(
                                     decoration: BoxDecoration(
                                       color: Colors.grey[300],
                                       borderRadius: BorderRadius.circular(32),
                                     ),
-                                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                                    child: Text("Updated"),
+                                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                    child: const Text("Updated"),
                                   ),
-                                  Gap(16),
-                                  Text(
+                                  const Gap(16),
+                                  const Text(
                                     "\$12.98",
-                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18,
+                                    ),
                                   ),
                                 ],
                               ),
-                              Gap(12),
-                              Text(
+                              const Gap(12),
+                              const Text(
                                 "The Flutter Dev",
                                 style: TextStyle(fontSize: 18),
                               ),
-                              Gap(12),
-                              Row(
+                              const Gap(12),
+                              const Row(
                                 children: [
                                   Icon(
                                     Icons.chat,
