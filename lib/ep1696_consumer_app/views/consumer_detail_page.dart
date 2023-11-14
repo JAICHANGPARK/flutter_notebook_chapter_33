@@ -78,12 +78,23 @@ class _ConsumerDetailPageState extends State<ConsumerDetailPage> {
                                     border: Border.all(
                                       color: Colors.grey,
                                     ),
-
+                                    shape: BoxShape.circle,
                                   ),
                                 ),
                               ),
                               Positioned(
-                                child: Container(),
+                                right: 12,
+                                bottom: 12,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(32),
+                                  ),
+                                  child: Text(
+                                    "Fantasy",
+                                    style: TextStyle(),
+                                  ),
+                                ),
                               )
                             ],
                           ),
