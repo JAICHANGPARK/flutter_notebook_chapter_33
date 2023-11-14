@@ -110,24 +110,38 @@ class _ConsumerDetailPageState extends State<ConsumerDetailPage> {
                             ],
                           ),
                         ),
+                        Gap(12),
                         Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Row(
                                 children: [
                                   Text("AUDIBLE"),
+                                  Spacer(),
                                   Container(
                                     decoration: BoxDecoration(
-                                      color: Colors.blueGrey,
+                                      color: Colors.grey[300],
+                                      borderRadius: BorderRadius.circular(32),
                                     ),
+                                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                     child: Text("Updated"),
                                   ),
-                                  Text("\$12.98"),
+                                  Gap(16),
+                                  Text(
+                                    "\$12.98",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18
+                                    ),
+                                  ),
                                 ],
                               ),
                               Gap(12),
-                              Text("The Flutter Dev"),
+                              Text("The Flutter Dev",style: TextStyle(
+                                fontSize: 18
+                              ),),
                               Gap(12),
                               Row(
                                 children: [
