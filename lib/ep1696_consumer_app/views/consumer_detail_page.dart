@@ -30,11 +30,15 @@ class _ConsumerDetailPageState extends State<ConsumerDetailPage> {
                   Row(
                     children: [
                       CircleAvatar(),
+                      Gap(12),
                       Text("@Dreamwalker"),
+                      Gap(12),
                       Container(
                         decoration: BoxDecoration(
-                          color: Colors.black26,
+                          color: Colors.black87,
+                          borderRadius: BorderRadius.circular(24),
                         ),
+                        
                         child: Text(
                           "Purchased",
                           style: TextStyle(
@@ -70,7 +74,6 @@ class _ConsumerDetailPageState extends State<ConsumerDetailPage> {
                                   Container(
                                     decoration: BoxDecoration(
                                       color: Colors.blueGrey,
-
                                     ),
                                     child: Text("Updated"),
                                   ),
@@ -90,13 +93,14 @@ class _ConsumerDetailPageState extends State<ConsumerDetailPage> {
                                   Gap(8),
                                   Text("200"),
                                   Spacer(),
-                                  Text("2 DAYS AGO",)
+                                  Text(
+                                    "2 DAYS AGO",
+                                  )
                                 ],
                               )
                             ],
                           ),
                         )
-
                       ],
                     ),
                   ),
