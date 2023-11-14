@@ -10,6 +10,13 @@ class ConsumerDetailPage extends StatefulWidget {
 class _ConsumerDetailPageState extends State<ConsumerDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        foregroundColor: Colors.black,
+        centerTitle: true,
+        title: Text("Fantasy"),
+      ),
+    );
   }
 }
