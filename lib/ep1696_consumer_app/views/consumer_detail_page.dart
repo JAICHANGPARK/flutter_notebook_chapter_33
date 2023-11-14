@@ -70,7 +70,15 @@ class _ConsumerDetailPageState extends State<ConsumerDetailPage> {
                           Text("\$12.98"),
                         ],
                       ),
-                      Text("The Flutter Dev")
+                      Text("The Flutter Dev"),
+                      Row(
+                        children: [
+                          Icon(Icons.chat),
+                          Text("10"),
+                          Icon(Icons.thumb_up_alt_outlined),
+                          Text("200")
+                        ],
+                      )
                     ],
                   ),
                 ),
